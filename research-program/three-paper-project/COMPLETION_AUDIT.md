@@ -19,7 +19,7 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Exact comparison with accessible primary literature | PASS with residual priority risk | PASS with residual priority risk | PASS with medium residual priority risk |
 | MathSciNet/zbMATH and equation-isomorphism priority audit | OPEN: human/database follow-up | OPEN: human/database follow-up | PARTIAL: exact minimal model/conductor searched; human database/citation-graph follow-up remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
-| Internal clean-clone reproduction of a committed tree | PASS at commit `4a8dae3dbc04` | PASS at the same commit | PASS at the same commit |
+| Internal clean-clone reproduction of a committed tree | PASS at commit `85eb55b49f9f` | PASS at the same commit | PASS at the same commit |
 | Public source location and repository integrity manifest | PASS: GitHub `main` plus root `MANIFEST.sha256` | PASS | PASS |
 | Human author identity, affiliation, contributions, funding and conflicts | OPEN: author-supplied facts required | OPEN: author-supplied facts required | OPEN: author-supplied facts required |
 | Final journal choice and submission authorization | OPEN | OPEN | OPEN |
@@ -31,7 +31,7 @@ asserted symbolic identities and finite certificates, not external peer
 review, priority, or the unresolved long-term problems.
 
 The clean-clone runner independently checked the committed rather than working
-tree in an operating-system temporary directory.  Its latest successful run
+tree in an operating-system temporary directory.  Its eighth-round successful run
 used the clean commit `4a8dae3dbc04712991783053e97b14b2d073964a`: all 198 tests
 passed, the three papers rebuilt to 10, 7 and 9 pages, every final-log warning
 list was empty, and the extracted-text SHA-256 of every rebuilt PDF equalled its
@@ -42,9 +42,15 @@ with complete stdout/stderr in the adjacent `.log`.  The earlier commit
 historical seventh-round baseline.  This closes an internal environment-
 isolation gap but is explicitly not external human reproduction.
 
-The Round09 working tree has passed 218 tests in the six groups
-`78,33,29,14,8,56`. This is not yet a clean-clone result: no new
-committed Round09 tree has been run through `tools/cold_reproduce.py`.
+The same protocol then passed on the clean Round09 commit
+`85eb55b49f9f80e05a7d890fec7cc289083b802b`: source clean, all 218 tests
+in groups `78,33,29,14,8,56`, PDF page counts 10, 7 and 10, identical
+committed/rebuilt `pdftotext` SHA-256 values for each paper, and empty final-log
+warning lists.  The exact records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.json`
+and `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.log`; the combined log SHA-256 is
+`6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00`.
+This remains internal clean-clone evidence, not external human reproduction.
 
 ## Current mathematical status
 

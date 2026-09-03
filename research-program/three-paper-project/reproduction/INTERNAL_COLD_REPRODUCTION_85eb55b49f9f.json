@@ -1,0 +1,52 @@
+{
+  "classification": "internal clean-clone reproduction; not external independent review",
+  "combined_log": "INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.log",
+  "combined_log_sha256": "6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00",
+  "commit": "85eb55b49f9f80e05a7d890fec7cc289083b802b",
+  "failure": null,
+  "papers": {
+    "campbell_selmer": {
+      "committed_pdf_text_sha256": "b1413392f725f042a3809bb4d7c3f709453a11e7024a2ed0faaa23033b6fac98",
+      "final_log_warning_patterns": [],
+      "pages": 10,
+      "rebuilt_pdf_text_sha256": "b1413392f725f042a3809bb4d7c3f709453a11e7024a2ed0faaa23033b6fac98",
+      "text_identical": true
+    },
+    "pure_cubic": {
+      "committed_pdf_text_sha256": "6ca420753b087ed24bbf675c8c5f8069a9dfc54428213b4b455503120fbfbbf4",
+      "final_log_warning_patterns": [],
+      "pages": 7,
+      "rebuilt_pdf_text_sha256": "6ca420753b087ed24bbf675c8c5f8069a9dfc54428213b4b455503120fbfbbf4",
+      "text_identical": true
+    },
+    "squareclasses": {
+      "committed_pdf_text_sha256": "f945d398d6169e5e2ad1009d1b6f9ef0f9150f89c72a5fb67a4b37ea6bdfa7a4",
+      "final_log_warning_patterns": [],
+      "pages": 10,
+      "rebuilt_pdf_text_sha256": "f945d398d6169e5e2ad1009d1b6f9ef0f9150f89c72a5fb67a4b37ea6bdfa7a4",
+      "text_identical": true
+    }
+  },
+  "schema": "vibemath-internal-cold-reproduction-v1",
+  "source_worktree_dirty_during_run": false,
+  "success": true,
+  "tests": {
+    "all_passed": true,
+    "group_counts": [
+      78,
+      33,
+      29,
+      14,
+      8,
+      56
+    ],
+    "total": 218
+  },
+  "tools": {
+    "git": "git version 2.36.1.windows.1",
+    "latexmk": "Latexmk, John Collins, 17 Mar. 2022. Version 4.77",
+    "pdfinfo": "pdfinfo version 26.05.0",
+    "python": "Python 3.14.5",
+    "sympy": "1.14.0"
+  }
+}

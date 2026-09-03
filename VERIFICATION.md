@@ -55,14 +55,26 @@ matched-warning list.  The committed/rebuilt `pdftotext` SHA-256 pairs were:
 | pure cubic | `83f8f4bb14c275015e2d4e83d6ef42671abad7ae641bbe449fd6cb988907fbdc` | `83f8f4bb14c275015e2d4e83d6ef42671abad7ae641bbe449fd6cb988907fbdc` |
 | Campbell Selmer | `35134ec00e087ea53929d95bf8c71c33fe4dea9e80c0df924fe57006979fd2b9` | `35134ec00e087ea53929d95bf8c71c33fe4dea9e80c0df924fe57006979fd2b9` |
 
-The latest versioned result is
+The eighth-round versioned result is
 `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_4a8dae3dbc04.json`;
 its complete combined stdout/stderr is the adjacent `.log` file.
 
-For Round09, the current working tree passed the updated six-group total of
-218 tests (`78,33,29,14,8,56`). No Round09 commit has yet been
-subjected to the clean-clone protocol, so the eighth-round commit above remains
-the latest clean-clone evidence.
+The same protocol then succeeded on the clean Round09 commit
+`85eb55b49f9f80e05a7d890fec7cc289083b802b`.  The source was clean; all 218
+tests passed in groups `78,33,29,14,8,56`; the three PDFs had 10, 7 and 10
+pages; every final-log warning list was empty; and each committed/rebuilt
+`pdftotext` SHA-256 pair was identical:
+
+| paper | committed text SHA-256 | rebuilt text SHA-256 |
+|---|---|---|
+| squareclasses | `f945d398d6169e5e2ad1009d1b6f9ef0f9150f89c72a5fb67a4b37ea6bdfa7a4` | `f945d398d6169e5e2ad1009d1b6f9ef0f9150f89c72a5fb67a4b37ea6bdfa7a4` |
+| pure cubic | `6ca420753b087ed24bbf675c8c5f8069a9dfc54428213b4b455503120fbfbbf4` | `6ca420753b087ed24bbf675c8c5f8069a9dfc54428213b4b455503120fbfbbf4` |
+| Campbell Selmer | `b1413392f725f042a3809bb4d7c3f709453a11e7024a2ed0faaa23033b6fac98` | `b1413392f725f042a3809bb4d7c3f709453a11e7024a2ed0faaa23033b6fac98` |
+
+The Round09 records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.json`
+and `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.log`; the combined log SHA-256 is
+`6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00`.
 
 This is an internal clean-environment check, not an external independent
 reproduction or a substitute for human review of the proofs.

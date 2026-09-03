@@ -5,8 +5,8 @@
 主持：导师（root）
 
 结论：三线都取得严格但有边界的增量。当前工作树六组共 **218/218**
-项回归通过；Round09 尚未对冻结提交运行 clean-clone，因此第八轮提交仍是最新
-clean-clone 证据。外部真人复现和数据库级新颖性核验继续开放。
+项回归通过；冻结 commit `85eb55b49f9f80e05a7d890fec7cc289083b802b` 的 Round09
+内部 clean-clone 也已成功。外部真人复现和数据库级新颖性核验继续开放。
 
 ## 1. 研究生甲：mask 90 将必要模式从 10 降至 7
 
@@ -87,7 +87,7 @@ clean-clone 证据。外部真人复现和数据库级新颖性核验继续开�
 三份交叉审稿中的独立复算不能由下述统一回归替代；乙线错误被保留在审稿记录中，
 没有因后续修复而抹去。
 
-## 5. 当前工作树合并验证
+## 5. 合并验证与 Round09 clean-clone
 
 `python tools/run_all_checks.py` 的六组结果为：
 
@@ -102,7 +102,20 @@ clean-clone 证据。外部真人复现和数据库级新颖性核验继续开�
 | **合计** | **218** |
 
 全部通过。`tools/cold_reproduce.py` 的期望计数已同步为
-`[78,33,29,14,8,56]`，但本组会不宣称 Round09 clean-clone 已运行。
+`[78,33,29,14,8,56]`。同一组数随后在 clean Round09 commit
+`85eb55b49f9f80e05a7d890fec7cc289083b802b` 上实际通过：source clean，PDF 页数依次
+为 10、7、10，三份 final-log warning list 均为空。提交版/重建版各自的
+`pdftotext` SHA-256 完全一致：
+
+- squareclasses: `f945d398d6169e5e2ad1009d1b6f9ef0f9150f89c72a5fb67a4b37ea6bdfa7a4`;
+- pure cubic: `6ca420753b087ed24bbf675c8c5f8069a9dfc54428213b4b455503120fbfbbf4`;
+- Campbell Selmer: `b1413392f725f042a3809bb4d7c3f709453a11e7024a2ed0faaa23033b6fac98`.
+
+机器记录为 `INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.json` 与
+`INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.log`；combined log SHA-256 为
+`6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00`。
+第七轮 `559e89364b6e` 和第八轮 `4a8dae3dbc04` 的记录继续作为历史基线保留。
+三次都只是内部 clean-clone reproduction，不是工作区外的真人独立复现。
 
 ## 6. 开放边界与下一步
 
