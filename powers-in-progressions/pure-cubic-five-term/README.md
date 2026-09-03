@@ -15,7 +15,8 @@ paper.
 
 The result does not classify all four-hit progressions; 31 finite
 colour/position models remain.  The prior-art search is evidence of a careful
-search, not a proof of novelty.
+search, not a proof of novelty.  `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` gives the
+current claim-by-claim correctness and prior-art audit.
 
 Minimal check:
 
@@ -23,4 +24,3 @@ Minimal check:
 Set-Location code
 python -m unittest -v PAPER_CUBE_KUMMER5_test.py
 ```
-

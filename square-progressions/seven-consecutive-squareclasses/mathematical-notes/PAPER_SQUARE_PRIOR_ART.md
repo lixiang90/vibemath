@@ -70,9 +70,28 @@ common rational scaling and proves two integral-quartic exclusions.  The audit
 found no theorem in those papers that obviously subsumes these finite pattern
 counts, but the introduction must say “we did not locate” rather than “first”.
 
-## 5. Safe wording
+## 5. Products of subsets of intervals and progressions
+
+This audit originally underweighted the literature closest to the character
+equations. The following sources study square products of terms selected from
+intervals or arithmetic progressions:
+
+- N. Saradha, [Squares in products with terms in an arithmetic progression](https://doi.org/10.4064/aa-86-1-27-43), Acta Arith. 86 (1998), 27--43. Its principal theorem treats products of complete arithmetic-progression blocks (and related almost-square equations), rather than affine squareclass rank of a fixed seven-term interval.
+- Granville--Selfridge, [Product of integers in an interval, modulo squares](https://doi.org/10.37236/1549), Electron. J. Combin. 8 (2001), R5. It studies when an interval contains a subproduct in a prescribed squareclass.
+- Bui--Pratt--Zaharescu, [A problem of Erdős--Graham--Granville--Selfridge on integral points on hyperelliptic curves](https://doi.org/10.1017/S0305004123000488), Math. Proc. Camb. Phil. Soc. 176 (2024), 309--323. It connects interval subproducts to integral points on curves such as $y^2=x\prod(x+j_i)$ and proves distributional results for the least endpoint.
+
+These are genuine conceptual predecessors for the character quotients
+$y^2=\prod_{i\in S}(t+i)$. The located statements do not classify seven-term
+affine-rank-two equality partitions, impose all fifteen character equations at
+one parameter, or state the reduction `651 -> 23`. Therefore the safe unit of
+claimed contribution is the combined finite classification, not the general
+use of subset-product curves and not the three elementary quartic point lists
+in isolation.
+
+## 6. Safe wording
 
 Permitted wording: “In the sources and exact-equation searches above, we did not
-locate a published determination of these integral quartics or these finite
-pattern reductions.”  Forbidden without a stronger bibliographic review:
+locate the seven-term affine-squareclass classification and simultaneous
+same-parameter reductions stated here.” The elementary quartic point lists
+should not be advertised as independently new. Forbidden without a stronger bibliographic review:
 “new”, “first”, “previously unknown”, or “complete prior-art search”.

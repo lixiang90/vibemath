@@ -14,7 +14,9 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT = ROOT / "PAPER_ELLIPTIC_ROUND_06_CERTIFICATE.json"
+CERT_ROOT = ROOT.parent / "certificates"
+NOTES_ROOT = ROOT.parent / "notes"
+OUTPUT = CERT_ROOT / "campbell_source_provenance.json"
 m, x = sp.symbols("m x")
 
 D_COEFFS = (-264815, -19343520, 62846856064, -2906312951808, -495507443511296)
@@ -98,7 +100,7 @@ def campbell_source_certificate() -> dict[str, object]:
 
 
 def same_m_certificate_summary() -> dict[str, object]:
-    path = ROOT / "STUDENT_ELLIPTIC_ROUND_03_certificate.json"
+    path = CERT_ROOT / "same_m_local.json"
     data = json.loads(path.read_text(encoding="utf-8"))
     local = data["same_m_local_certificates"]
     odd = local["odd"]
@@ -169,16 +171,22 @@ def prior_art_audit() -> dict[str, object]:
 
 
 def provenance() -> dict[str, object]:
-    magma = ROOT / "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m"
+    candidates = [
+        NOTES_ROOT / "candidate-input" / "UNEXECUTED_full_two_selmer.m",
+        NOTES_ROOT / "candidate-input" / "UNEXECUTED_same_m_and_descent_H.m",
+        NOTES_ROOT / "candidate-input" / "UNEXECUTED_run_magma_audit.ps1",
+    ]
     return {
         "python_exact_pipeline": {
             "status": "EXECUTED_AND_REGRESSION_TESTED",
             "mathematical_evidence_eligible": True,
         },
         "magma_full_descent": {
-            "path": magma.name,
-            "sha256": sha256(magma),
-            "status": "UNEXECUTED_FROZEN_CANDIDATE_INPUT",
+            "candidate_inputs": [
+                {"path": path.relative_to(ROOT.parent).as_posix(), "sha256": sha256(path)}
+                for path in candidates
+            ],
+            "status": "BUNDLED_UNEXECUTED_NOT_EVIDENCE",
             "transcript": None,
             "magma_binary_sha256": None,
             "mathematical_evidence_eligible": False,

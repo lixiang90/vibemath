@@ -27,7 +27,9 @@ e = 4_230_241
 e_other = 339_106_321
 
 ROOT = Path(__file__).resolve().parent
-CERTIFICATE_PATH = ROOT / "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json"
+CERT_ROOT = ROOT.parent / "certificates"
+NOTES_ROOT = ROOT.parent / "notes"
+CERTIFICATE_PATH = CERT_ROOT / "ct_formula_rejection.json"
 
 # A rational point on Q_d: N^2=d R^2+A R S+C S^2.
 CONIC_POINT = (16_257_024, 1, 36_058_176)
@@ -228,10 +230,9 @@ def certificate_payload() -> dict:
     assert products == [-1, 1]
 
     selmer = round04.isogeny_selmer_certificate()["exact_selmer_groups"]
-    matrix_path = ROOT / "PAPER_ELLIPTIC_CAMPBELL_CERTIFICATE.json"
-    round04_path = ROOT / "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json"
-    same_m_path = ROOT / "STUDENT_ELLIPTIC_ROUND_03_certificate.json"
-    magma_path = ROOT / "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m"
+    matrix_path = CERT_ROOT / "local_matrix_512.json"
+    round04_path = CERT_ROOT / "selmer_clean_v2.json"
+    same_m_path = CERT_ROOT / "same_m_local.json"
     return {
         "schema": "paper-elliptic-campbell-round-05-correction-v1",
         "claim_boundary": {
@@ -282,10 +283,15 @@ def certificate_payload() -> dict:
         },
         "source_sha256": {
             "PAPER_ELLIPTIC_ROUND_05_analysis.py": sha256(Path(__file__)),
-            "PAPER_ELLIPTIC_CAMPBELL_CERTIFICATE.json": sha256(matrix_path),
-            "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json": sha256(round04_path),
-            "STUDENT_ELLIPTIC_ROUND_03_certificate.json": sha256(same_m_path),
-            "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m": sha256(magma_path),
+            "certificates/local_matrix_512.json": sha256(matrix_path),
+            "certificates/selmer_clean_v2.json": sha256(round04_path),
+            "certificates/same_m_local.json": sha256(same_m_path),
+        },
+        "excluded_unexecuted_input": {
+            "path": "notes/candidate-input/UNEXECUTED_full_two_selmer.m",
+            "sha256": sha256(NOTES_ROOT / "candidate-input" / "UNEXECUTED_full_two_selmer.m"),
+            "status": "BUNDLED_UNEXECUTED_NOT_EVIDENCE",
+            "mathematical_evidence_eligible": False,
         },
     }
 

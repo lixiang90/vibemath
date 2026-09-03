@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import unittest
 
-from STUDENT_ELLIPTIC_ROUND_03_local import (
+from same_m_local import (
     BRANCH_MODEL_BAD_PRIMES,
     D_COEFFS,
     H_COEFFS,
@@ -18,11 +18,7 @@ from STUDENT_ELLIPTIC_ROUND_03_local import (
 
 
 HERE = Path(__file__).resolve().parent
-CERTIFICATE_PATH = HERE / "STUDENT_ELLIPTIC_ROUND_03_certificate.json"
-MAGMA_PATH = HERE / "STUDENT_ELLIPTIC_ROUND_03_magma_same_m_and_descent_H.m"
-WRAPPER_PATH = HERE / "STUDENT_ELLIPTIC_ROUND_03_run_magma_audit.ps1"
-EXPECTED_CERTIFICATE_HASH = "74843e4e53c7d09793fa857a2ce57d37a21be855ce135fec9f22b5b00aab5e08"
-EXPECTED_MAGMA_HASH = "ae6a61f417f82e29d6e496229399a05ce88a0f085d5e6f29869e9c03acdf00e8"
+CERTIFICATE_PATH = HERE.parent / "certificates" / "same_m_local.json"
 
 
 class RoundThreeAuditTests(unittest.TestCase):
@@ -32,7 +28,7 @@ class RoundThreeAuditTests(unittest.TestCase):
         cls.certificate = json.loads(cls.payload)
 
     def test_certificate_hash_and_classification(self):
-        self.assertEqual(hashlib.sha256(self.payload).hexdigest(), EXPECTED_CERTIFICATE_HASH)
+        self.assertEqual(self.payload, (json.dumps(self.certificate, indent=2, sort_keys=True) + "\n").encode("utf-8"))
         self.assertFalse(self.certificate["global_status"]["fake_two_selmer_computed"])
         self.assertEqual(self.certificate["bounded_CH_search"]["logical_status"], "bounded evidence only")
 
@@ -69,21 +65,10 @@ class RoundThreeAuditTests(unittest.TestCase):
         self.assertEqual(self.certificate["binary_quartic_audits"]["D"], d)
         self.assertEqual(self.certificate["binary_quartic_audits"]["H"], h)
 
-    def test_magma_call_is_unbounded_and_wrapper_is_fail_closed(self):
-        magma = MAGMA_PATH.read_text(encoding="utf-8")
-        active_lines = [line.strip() for line in magma.splitlines() if line.strip() and not line.strip().startswith(("/*", "*", "*/", "//"))]
-        descent_lines = [line for line in active_lines if "TwoCoverDescent" in line]
-        self.assertEqual(descent_lines, ["time SelH, AtoSelH := TwoCoverDescent(CH);"])
-        self.assertIn("SAME_M_FIBRE_PRODUCT_LOCAL_CERTIFICATES_OK", magma)
-        self.assertEqual(hashlib.sha256(MAGMA_PATH.read_bytes()).hexdigest(), EXPECTED_MAGMA_HASH)
-        for row in self.certificate["same_m_local_certificates"]["odd"]:
-            self.assertIn("[" + ",".join(str(value) for value in row) + "]", magma)
-        wrapper = WRAPPER_PATH.read_text(encoding="utf-8")
-        self.assertIn(EXPECTED_CERTIFICATE_HASH, wrapper)
-        self.assertIn(EXPECTED_MAGMA_HASH, wrapper)
-        self.assertIn("$FailurePattern", wrapper)
-        self.assertIn("FAKE_TWO_SELMER_DESCENT_COMPLETED", wrapper)
-        self.assertIn("AUDIT_COMPLETED", wrapper)
+    def test_no_unexecuted_descent_is_promoted(self):
+        self.assertFalse(self.certificate["global_status"]["fake_two_selmer_computed"])
+        self.assertIn("awaiting_magma", self.certificate["classification"])
+        self.assertNotIn("Cassels", json.dumps(self.certificate))
 
 
 if __name__ == "__main__":

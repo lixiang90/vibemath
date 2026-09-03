@@ -71,7 +71,7 @@ $R_1(6)=5$.
 If six rational terms have classes in $V=\langle[D]\rangle$, they are six
 squares in the quadratic field $\Q(\sqrt D)$.  Xarles proves that a
 nonconstant progression over a quadratic field has at most five square
-terms \cite[Theorem~1, $S(2)=6$]{XarlesNF}.  Conversely,
+terms \cite[Section~4]{XarlesNF}.  Conversely,
 \[
 49,169,289,409,529
 \]
@@ -114,10 +114,14 @@ fixed biquadratic field.
 \section{The finite pattern space}
 Represent a rank-two configuration by labels $\ell_i\in\F_2^2$.
 Lemma~\ref{lem:R16} forces both endpoint six-term windows to
-contain at least three labels. A block of size at least five is excluded
-by $Q(7)=4$, and a block at four positions $(i,j,k,l)$ with
-$j-i=l-k$ is excluded by
-\cite[Proposition~5 and Corollary~6]{GJXRudin}.
+contain at least three labels. A block of size at least five is excluded by
+$Q(7)=4$ \cite[Corollary~6]{GJXRudin}. A block at four positions
+$(i,j,k,l)$ with $j-i=l-k$ is a symmetric four-subset of
+$\{0,\ldots,6\}$; after translation and division by the common gap it is
+one of the five exceptional sets in \cite[Proposition~5]{GJXRudin}, and is
+therefore excluded. Indeed its positive successive gaps are $(a,b,a)$ with
+$2a+b\leq6$; after division by $\gcd(a,b)$ the possibilities are
+$(1,1),(1,2),(1,3),(1,4),(2,1)$.
 
 \begin{proposition}[Exact pattern count]\label{prop:count}
 Before these screens there are 343 label patterns up to reversal. The
@@ -235,8 +239,9 @@ d&(a,b),\operatorname{sign}(x)&\text{modulus}\\ \hline
  &(3,2),-;\ (6,1),+;\ (6,1),-&8;\ 8;\ 8.
 \end{array}
 \]
-The certificate exhausts every residue triple, making each row a finite
-proof.
+For each row the certificate records the branch equations and the modulus;
+the accompanying generator and regression test exhaust every residue triple.
+Thus each row is a finite proof rather than a bounded search.
 
 For $d=2,(a,b)=(1,2),x>0$,
 \[
@@ -432,8 +437,9 @@ mathematical content and diagnostics, not necessarily byte for byte.
 
 The full regression command is stored verbatim in the manifest.  The finite
 congruence certificate stores, for each of the 15 excluded mask-77 branches,
-the modulus and exhaustive residue predicate.  The remaining three branches
-carry symbolic factor identities and thresholds.
+its equations and obstruction modulus; its generator and regression test
+implement and exhaust the corresponding residue predicate.  The remaining
+three branches carry symbolic factor identities and thresholds.
 
 \paragraph{Online Resource 1 (supplementary code and certificates).}
 The supplementary ZIP contains the exact Python generators, regression tests,
@@ -451,9 +457,15 @@ Our affine formulation allows Proposition~\ref{prop:scaling}'s common
 rational scaling. Nearby algorithmic work concerns $S$-integral points
 \cite{PethoEtAl}, simultaneous Pell equations \cite{MasserRickert},
 and integral points in progression on congruent-number curves \cite{BST}.
-Exact-quartic, $S$-integral-transform and Pell-system searches found no
-published statement identical to Theorems~\ref{thm:H} and~\ref{thm:54}.
-This is a \emph{not found} report, not proof of novelty.
+There is also a substantial literature on square products of selected terms
+or blocks in progressions and on the associated hyperelliptic curves over
+short intervals \cite{SaradhaProducts,GranvilleSelfridge,BuiPrattZaharescu}.
+Those works do not, as far as our search found, state the affine-rank-two
+equality-pattern classification or carry out the simultaneous 15-character,
+same-parameter audit used here. We did not locate the combined seven-term
+reduction of Theorem~\ref{thm:summary}. This is a \emph{not found} report,
+not proof of novelty; in particular, the elementary quartic point lists are
+not claimed to be independently new.
 
 The manifest and nested certificates bind SAFE and Round-04 inputs by
 SHA-256 and store the

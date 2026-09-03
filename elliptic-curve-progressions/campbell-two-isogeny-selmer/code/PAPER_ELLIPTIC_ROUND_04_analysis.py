@@ -23,8 +23,9 @@ import PAPER_ELLIPTIC_NEXT_analysis as nxt
 
 
 ROOT = Path(__file__).resolve().parent
+CERT_ROOT = ROOT.parent / "certificates"
 SCRIPT_PATH = ROOT / "PAPER_ELLIPTIC_ROUND_04_analysis.py"
-CERTIFICATE_PATH = ROOT / "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json"
+CERTIFICATE_PATH = CERT_ROOT / "selmer_clean_v2.json"
 
 D_FIELD = 1434501462453361
 RESOLVENT_ROOT = 269378023424
@@ -335,7 +336,7 @@ def build_certificate() -> dict[str, object]:
                 "It is not a defined Cassels--Tate pairing and is excluded from this clean "
                 "mathematical certificate."
             ),
-            "negative_audit": "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json",
+            "negative_audit": "ct_formula_rejection.json",
         },
         "claim_boundary": {
             "proved": [

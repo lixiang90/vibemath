@@ -168,6 +168,20 @@
   },
   "provenance": {
     "magma_full_descent": {
+      "candidate_inputs": [
+        {
+          "path": "notes/candidate-input/UNEXECUTED_full_two_selmer.m",
+          "sha256": "bd6eb7f20b3c3c4acf43ad3ce0817fa44f33cdbd29482f6da82a2086ba3cac15"
+        },
+        {
+          "path": "notes/candidate-input/UNEXECUTED_same_m_and_descent_H.m",
+          "sha256": "ae6a61f417f82e29d6e496229399a05ce88a0f085d5e6f29869e9c03acdf00e8"
+        },
+        {
+          "path": "notes/candidate-input/UNEXECUTED_run_magma_audit.ps1",
+          "sha256": "481fbb078d125a42df174f21028e7f48952e039fc35f2b6870628cc7065b67cc"
+        }
+      ],
       "forbidden_promotions": [
         "full 2-Selmer dimension",
         "Cassels-Tate pairing value",
@@ -176,9 +190,7 @@
       ],
       "magma_binary_sha256": null,
       "mathematical_evidence_eligible": false,
-      "path": "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m",
-      "sha256": "bd6eb7f20b3c3c4acf43ad3ce0817fa44f33cdbd29482f6da82a2086ba3cac15",
-      "status": "UNEXECUTED_FROZEN_CANDIDATE_INPUT",
+      "status": "BUNDLED_UNEXECUTED_NOT_EVIDENCE",
       "transcript": null
     },
     "python_exact_pipeline": {
@@ -496,7 +508,7 @@
       "m": -400
     },
     "resultant_D_H": 249918936310209364016026530540023811712428205321732822813675628832494323299778560000,
-    "source_file": "STUDENT_ELLIPTIC_ROUND_03_certificate.json",
+    "source_file": "same_m_local.json",
     "source_sha256": "74843e4e53c7d09793fa857a2ce57d37a21be855ce135fec9f22b5b00aab5e08",
     "two_adic_witness": {
       "D_m": -498350929215375,

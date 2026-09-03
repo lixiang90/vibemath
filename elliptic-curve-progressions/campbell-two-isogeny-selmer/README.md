@@ -19,5 +19,10 @@ Hilbert-symbol expression was invalid.  Its rejection is preserved in
 `notes/ct-pairing-correction.md` and `certificates/ct_formula_rejection.json`;
 those files are negative evidence, not a pairing computation.
 
-Unexecuted Magma inputs are deliberately excluded from this repository.
+Three unexecuted Magma/audit input texts are retained under
+`notes/candidate-input/` solely so that the fail-closed provenance tests are
+reproducible.  They are `INELIGIBLE` as mathematical evidence: no Magma output,
+execution transcript, or claimed CAS conclusion is present.
 
+`NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` gives the current claim-by-claim
+correctness, contamination, and prior-art audit.

@@ -18,9 +18,10 @@ import PAPER_ELLIPTIC_NEXT_analysis as nxt
 
 
 ROOT = Path(__file__).resolve().parent
+CERT_ROOT = ROOT.parent / "certificates"
 SCRIPT_PATH = ROOT / "PAPER_ELLIPTIC_CAMPBELL_analysis.py"
 NEXT_PATH = ROOT / "PAPER_ELLIPTIC_NEXT_analysis.py"
-CERTIFICATE_PATH = ROOT / "PAPER_ELLIPTIC_CAMPBELL_CERTIFICATE.json"
+CERTIFICATE_PATH = CERT_ROOT / "local_matrix_512.json"
 
 M = sp.symbols("m")
 H_COEFFS = (-850079, -11210976, 138714149248, -5501355374592, -1679721044504576)

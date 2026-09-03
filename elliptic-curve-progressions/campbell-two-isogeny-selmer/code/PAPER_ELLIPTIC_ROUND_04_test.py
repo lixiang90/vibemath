@@ -53,7 +53,7 @@ class CampbellRound04Tests(unittest.TestCase):
         self.assertNotIn("<35,339106321>", serialized)
         self.assertEqual(
             data["supersession"]["negative_audit"],
-            "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json",
+            "ct_formula_rejection.json",
         )
 
     def test_disk_certificate_matches(self):

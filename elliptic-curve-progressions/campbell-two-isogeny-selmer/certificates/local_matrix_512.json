@@ -7096,7 +7096,7 @@
   ],
   "schema": "PAPER_ELLIPTIC_CAMPBELL-local-matrix-v1",
   "source_sha256": {
-    "PAPER_ELLIPTIC_CAMPBELL_analysis.py": "6e22518a4ab2570059854c5401130dd8bdcae2424f2721f5e6a969c2419da489",
+    "PAPER_ELLIPTIC_CAMPBELL_analysis.py": "2eff025eb03583b21fa0f4bb33908a4a8bbd7c97faf88fe0ebd2510a9e25642d",
     "PAPER_ELLIPTIC_NEXT_analysis.py": "eca5a1ba67d2178724555cd770ee832864b11bd850953c18444efb6300b1abdf"
   },
   "summary": {

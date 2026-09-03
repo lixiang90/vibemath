@@ -65,6 +65,12 @@
     "rank_formula": "rank(E(Q)) <= dim Sel^(dual_phi)+dim Sel^phi-2 = 3+2-2",
     "rank_upper_bound": 3
   },
+  "excluded_unexecuted_input": {
+    "mathematical_evidence_eligible": false,
+    "path": "notes/candidate-input/UNEXECUTED_full_two_selmer.m",
+    "sha256": "bd6eb7f20b3c3c4acf43ad3ce0817fa44f33cdbd29482f6da82a2086ba3cac15",
+    "status": "BUNDLED_UNEXECUTED_NOT_EVIDENCE"
+  },
   "rejected_opposite_side_formula_audit": {
     "branch_symbols": {
       "59": [
@@ -293,10 +299,9 @@
   },
   "schema": "paper-elliptic-campbell-round-05-correction-v1",
   "source_sha256": {
-    "PAPER_ELLIPTIC_CAMPBELL_CERTIFICATE.json": "b7df31fc2bd81f99e2e4d00095233be45e9659438014f12f8326a597ad3e40ed",
-    "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json": "ae6e8a3895cc8a09bb6e3f7fc23904e4adfabd7fc9738b8c428150db1650c431",
-    "PAPER_ELLIPTIC_ROUND_05_analysis.py": "3efd4ef169b1e8e3d37d689df74bc88ba2516ec62c1960b03c51d9a59e57f2ac",
-    "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m": "bd6eb7f20b3c3c4acf43ad3ce0817fa44f33cdbd29482f6da82a2086ba3cac15",
-    "STUDENT_ELLIPTIC_ROUND_03_certificate.json": "74843e4e53c7d09793fa857a2ce57d37a21be855ce135fec9f22b5b00aab5e08"
+    "PAPER_ELLIPTIC_ROUND_05_analysis.py": "a8207486a46397c87c51b7a33c7b4e15181e548fef4a32191c411613eb3156ec",
+    "certificates/local_matrix_512.json": "fff2f35f398c2d14227d9b032d205e24d5332a39346487c76180cdf805ba32c9",
+    "certificates/same_m_local.json": "74843e4e53c7d09793fa857a2ce57d37a21be855ce135fec9f22b5b00aab5e08",
+    "certificates/selmer_clean_v2.json": "7fbd4d00435d2f3ef7bd74b0f87822b8e6fb3b893e2023ce9b5741c411538e18"
   }
 }

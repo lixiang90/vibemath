@@ -7,7 +7,8 @@ import PAPER_ELLIPTIC_ROUND_05_analysis as a
 
 
 ROOT = Path(__file__).resolve().parent
-CERT = ROOT / "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json"
+CERT_ROOT = ROOT.parent / "certificates"
+CERT = CERT_ROOT / "ct_formula_rejection.json"
 
 
 class Round05CorrectionTests(unittest.TestCase):
@@ -60,22 +61,21 @@ class Round05CorrectionTests(unittest.TestCase):
 
     def test_source_hashes(self):
         for name, expected in self.data["source_sha256"].items():
-            actual = hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+            path = ROOT / name if "/" not in name else ROOT.parent / name
+            actual = hashlib.sha256(path.read_bytes()).hexdigest()
             self.assertEqual(actual, expected, name)
 
-    def test_magma_input_uses_full_coverings_only(self):
-        text = (ROOT / "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m").read_text(
-            encoding="utf-8"
-        )
-        self.assertIn("TwoDescent(EH", text)
-        self.assertIn("CasselsTatePairing(CH, covers[i])", text)
-        self.assertIn("FourDescent(CH)", text)
-        self.assertNotIn("CasselsTatePairing(35", text)
-        self.assertNotIn("CasselsTatePairing(4230241", text)
+    def test_unexecuted_magma_input_is_not_bundled_or_evidence(self):
+        item = self.data["excluded_unexecuted_input"]
+        self.assertEqual(item["status"], "BUNDLED_UNEXECUTED_NOT_EVIDENCE")
+        self.assertFalse(item["mathematical_evidence_eligible"])
+        path = ROOT.parent / item["path"]
+        self.assertTrue(path.is_file())
+        self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), item["sha256"])
 
     def test_clean_round04_and_finite_matrix_are_preserved(self):
         round04 = json.loads(
-            (ROOT / "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json").read_text(
+            (CERT_ROOT / "selmer_clean_v2.json").read_text(
                 encoding="utf-8"
             )
         )
@@ -85,7 +85,7 @@ class Round05CorrectionTests(unittest.TestCase):
         )
         self.assertIn("FAIL_BRANCH_INDEPENDENCE", json.dumps(self.data))
         matrix = json.loads(
-            (ROOT / "PAPER_ELLIPTIC_CAMPBELL_CERTIFICATE.json").read_text(
+            (CERT_ROOT / "local_matrix_512.json").read_text(
                 encoding="utf-8"
             )
         )

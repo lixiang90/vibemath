@@ -263,9 +263,9 @@
   "schema": "paper-elliptic-campbell-round-04-clean-v2",
   "semantic_version": "2.0.0",
   "source_sha256": {
-    "PAPER_ELLIPTIC_CAMPBELL_analysis.py": "6e22518a4ab2570059854c5401130dd8bdcae2424f2721f5e6a969c2419da489",
+    "PAPER_ELLIPTIC_CAMPBELL_analysis.py": "2eff025eb03583b21fa0f4bb33908a4a8bbd7c97faf88fe0ebd2510a9e25642d",
     "PAPER_ELLIPTIC_NEXT_analysis.py": "eca5a1ba67d2178724555cd770ee832864b11bd850953c18444efb6300b1abdf",
-    "PAPER_ELLIPTIC_ROUND_04_analysis.py": "af4e761fa594e2def473769868ee91bba73b5377b8144ac33e7163547388edf5"
+    "PAPER_ELLIPTIC_ROUND_04_analysis.py": "4c824b6e1d1053507ca0f50ec8ddac19aeeb6c1a5754d203500d985d62663277"
   },
   "supersession": {
     "excluded_fields": [
@@ -273,7 +273,7 @@
       "pairing_bits_to_compute",
       "decisive_outcome"
     ],
-    "negative_audit": "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json",
+    "negative_audit": "ct_formula_rejection.json",
     "reason": "The former proposal paired classes from opposite isogeny Selmer groups. It is not a defined Cassels--Tate pairing and is excluded from this clean mathematical certificate."
   }
 }

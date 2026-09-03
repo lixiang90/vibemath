@@ -35,6 +35,12 @@ class Round06Tests(unittest.TestCase):
     def test_magma_is_fail_closed(self):
         d = a.provenance()["magma_full_descent"]
         self.assertFalse(d["mathematical_evidence_eligible"])
+        self.assertEqual(d["status"], "BUNDLED_UNEXECUTED_NOT_EVIDENCE")
+        self.assertEqual(len(d["candidate_inputs"]), 3)
+        for item in d["candidate_inputs"]:
+            path = a.ROOT.parent / item["path"]
+            self.assertTrue(path.is_file())
+            self.assertEqual(a.sha256(path), item["sha256"])
         self.assertIsNone(d["transcript"])
         self.assertIsNone(d["magma_binary_sha256"])
         self.assertIn("C_H(Q) empty or nonempty", d["forbidden_promotions"])

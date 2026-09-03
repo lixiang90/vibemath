@@ -1,5 +1,12 @@
 # 丙线第四轮：Campbell 二次域分量、精确 2-同源 Selmer 群与 d=35 配对闸门
 
+> **历史/部分失效说明（2026-09-03）**：本笔记第 1--5 节的
+> `Q x K`、两个精确 2-同源 Selmer 群和 `rank <= 3` 结论仍有效；
+> 第 6 节把 `35` 与对侧类 `4230241`、`339106321` 直接配对的方案已撤回，
+> 不构成 Cassels--Tate 配对，也不支持任何关于 `C_H(Q)` 的结论。
+> 权威纠错见 `ct-pairing-correction.md` 与
+> `../certificates/ct_formula_rejection.json`。
+
 日期：2026-09-03  
 证据范围：本轮使用现有 512 格精确局部证书、整数/有理符号计算和标准 2-同源下降引理；没有可信 Magma transcript，没有计算出 Cassels--Tate 配对，也没有判定 `C_H(Q)`。
 

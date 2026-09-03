@@ -284,7 +284,7 @@ def canonical_json_bytes(certificate: dict[str, object]) -> bytes:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--bound", type=int, default=50000)
-    parser.add_argument("--output", default="STUDENT_ELLIPTIC_ROUND_03_certificate.json")
+    parser.add_argument("--output", default=str(Path(__file__).resolve().parent.parent / "certificates" / "same_m_local.json"))
     args = parser.parse_args()
     certificate = build_certificate(args.bound)
     payload = canonical_json_bytes(certificate)
