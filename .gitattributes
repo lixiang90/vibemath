@@ -1,3 +1,4 @@
 # Certificates and source copies are archival bytes; do not normalize line endings.
 * -text
+research-program/three-paper-project/reproduction/*.log -diff
 

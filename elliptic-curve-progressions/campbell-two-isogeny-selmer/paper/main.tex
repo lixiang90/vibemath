@@ -27,7 +27,8 @@ for the ninth candidate and record every rational specialization boundary.
 We identify its Jacobian and rational $2$-torsion, then perform an exact
 finite local calculation for the dual $2$-isogeny descents.  The resulting
 Selmer groups have dimensions $3$ and $2$, respectively, which gives
-Mordell--Weil rank at most $3$.  We also compute the full $\Q\times K$
+Mordell--Weil rank at most $3$.  An explicit integral change gives a global
+minimal semistable model of conductor $301245307115205810$.  We also compute the full $\Q\times K$
 representative of the binary-quartic cubic invariant and its rational
 $2$-torsion projection.  A versioned supplement records the $512$ local
 cells, common-parameter local witnesses, exact generators, certificates, and
@@ -224,6 +225,96 @@ $\varphi_0=269378023424$, the rational projection of $[H]\in
 H^1(\Q,E[2])$ is the $X$-Kummer squareclass $[35]$.  This assertion concerns
 one projection only: $C_H$ is not thereby identified with the even quartic
 $C_{35}$ below.
+
+\subsection{A global minimal model and conductor}
+
+The model \eqref{eq:E} is convenient for the rational $2$-isogeny but is
+not globally minimal.  The admissible change
+\begin{equation}\label{eq:minimal-change}
+ X=36x,\qquad y=216y_0+108x
+\end{equation}
+gives
+\begin{equation}\label{eq:Eminimal}
+ E_{\min}:\quad y_0^2+xy_0
+ =x^3-16441530x^2+45166889779200x.
+\end{equation}
+Equivalently, the admissible parameters are $(u,r,s,t)=(6,0,3,0)$, and the
+$a$-invariants of \eqref{eq:Eminimal} are
+$(1,-16441530,0,45166889779200,0)$.
+
+\begin{proposition}\label{prop:minimal-model}
+Equation \eqref{eq:Eminimal} is a global minimal model.  Its invariants are
+\[
+ c_4=2157171698920561,\qquad
+ c_6=70577985500751764077559,
+\]
+and
+\[
+ \begin{split}
+ \Delta_{\min}
+ &=2926451742397178075653974744686961623040000\\
+ &=2^{28}3^{16}5^4 7^{10}\cdot59\cdot71699\cdot339106321.
+ \end{split}
+\]
+The curve is semistable, with multiplicative reduction of type
+$I_{v_p(\Delta_{\min})}$ at each prime in
+\[
+\{2,3,5,7,59,71699,339106321\},
+\]
+and good reduction elsewhere.  The multiplicative reduction at $2$ and at
+$3$ is split.  In particular,
+\[
+ N_E=2\cdot3\cdot5\cdot7\cdot59\cdot71699\cdot339106321
+     =301245307115205810.
+\]
+Finally,
+\[
+ j(E)=
+ \frac{10038160648206649953061393462836377818780518481}
+ {2926451742397178075653974744686961623040000}.
+\]
+\end{proposition}
+\begin{proof}
+Substitution in the general admissible-change formulas gives
+\eqref{eq:Eminimal}.  Direct calculation gives the displayed $c_4,c_6$
+and discriminant and verifies $c_4^3-c_6^2=1728\Delta_{\min}$; the original
+invariants are respectively $6^4,6^6,6^{12}$ times these invariants.
+Moreover
+\[
+ \gcd(c_4,\Delta_{\min})=1.
+\]
+At every prime dividing $\Delta_{\min}$ we therefore have
+$v_p(c_4)=0$.  An integral Weierstrass equation that were nonminimal at
+$p$ would have $p^4\mid c_4$, so this proves $p$-minimality.  This argument
+is valid without change at $p=2$ and $p=3$.
+
+For an explicit check at these two residue characteristics, move the right
+side of \eqref{eq:Eminimal} to the left.  Both $16441530$ and
+$45166889779200$ vanish modulo $2$ and modulo $3$, so the reduced affine
+equation is
+\[
+ F(x,y)=y^2+xy-x^3=0.
+\]
+Modulo $2$ its partial derivatives are $(F_x,F_y)=(y+x^2,x)$, and modulo
+$3$ they are $(F_x,F_y)=(y,2y+x)$.  Thus in either case the unique affine
+singular point is $(0,0)$; the point at infinity is smooth because the
+$Z$-derivative of the homogenized equation is nonzero there.  At $(0,0)$
+the quadratic tangent cone is
+\[
+ y^2+xy=y(y+x),
+\]
+whose two linear factors are distinct over both $\mathbf F_2$ and
+$\mathbf F_3$.  Hence the multiplicative reduction at $2$ and $3$ is
+split.  The criterion $v_p(\Delta)>0$, $v_p(c_4)=0$ gives multiplicative
+reduction at every other bad prime as well, with conductor exponent one.
+At every other prime the discriminant is a unit.  The conductor and Kodaira
+symbols follow, and $j=c_4^3/\Delta_{\min}$.  See
+\cite[Chapter~VII, Section~5]{Silverman2009} for the reduction criteria.
+\end{proof}
+
+This calculation supplies exact isomorphism-class search keys.  It is not a
+rank computation, and the absence of a database row at this large composite
+conductor is not evidence for novelty.
 
 \section{The rational two-isogeny}
 Write $A=-591895071$ and $B=58536289153843200$.  The quotient by
@@ -466,7 +557,9 @@ For the binary quartic $H$ obtained at index $8$ from Campbell's
 Theorem~2.5, the two isogeny Selmer groups are those in
 Theorem~\ref{thm:selmer}; hence $\operatorname{rank}E(\Q)\le3$.  Its
 cubic-algebra invariant is the pair of Proposition~\ref{prop:z}, with
-rational $2$-torsion projection $[35]$.  Moreover the same-parameter
+rational $2$-torsion projection $[35]$.  Its global minimal model,
+discriminant, local reduction types, and conductor are those of
+Proposition~\ref{prop:minimal-model}.  Moreover the same-parameter
 genus-$5$ fibre product is everywhere locally soluble.
 \end{theorem}
 This is a finite, certificate-backed theorem.  Exact-coefficient searches did

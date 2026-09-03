@@ -12,21 +12,21 @@
 Dear <<EDITOR NAME OR “Editors”>>,
 
 Please consider the manuscript “Square-class patterns of seven consecutive
-integers and three elementary integral quartics” for publication in
+integers and five elementary integral quartics” for publication in
 <<JOURNAL NAME>>.
 
 The paper studies a finite squareclass formulation of seven consecutive
 integers.  It combines an exact enumeration of affine rank-two label patterns
-with three complete integral-point arguments on explicit quartics.  After
+with complete integral-point arguments on explicit quartics.  After
 affine rank at most one is excluded, the final theorem reduces the 651 three-
-or four-block patterns to 15 explicitly listed necessary candidates.  It does
+or four-block patterns to 10 explicitly listed necessary candidates.  It does
 not claim to decide the unrestricted `R_2(7)` problem or to realize the
 surviving patterns.
 
 The computational portion is designed for independent audit.  Supplement
-release `paper-square-supplement-v0.6.0` binds 26 core generators,
+release `paper-square-supplement-v0.7.0` binds 29 core generators,
 certificates and tests through the manifest SHA-256
-`3ad3dd167ad349ad6d0720e558e96c6546797ffcfa26788827be512001b41659`.
+`127dd691252f12ef6bb0c96dfb328c3fac8c019a7fe0ce616372e87e368b28c9`.
 The current public working record is
 <https://github.com/lixiang90/vibemath/tree/main/square-progressions/seven-consecutive-squareclasses>.
 At submission this must be replaced or supplemented by the verified immutable

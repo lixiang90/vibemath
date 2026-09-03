@@ -212,10 +212,10 @@ Use only:
 > same-parameter genus-5 fibre product.
 
 Do not use “first”, “new solution of the nine-term problem”, “rank of the
-Campbell curve”, or “Cassels--Tate obstruction”.  Priority risk remains
-**medium** until a minimal global model and conductor are computed with an
-independent audited system and searched by isomorphism class, and Campbell's
-citation graph/dissertation are checked beyond exact-string indexing.
+Campbell curve”, or “Cassels--Tate obstruction”.  The minimal-model and
+isomorphism-class part of this earlier risk assessment is discharged in
+Section 6 below.  The remaining priority risk is the incomplete human audit
+of Campbell's full citation graph and non-indexed literature.
 
 ## 5. Repairs and reproducibility result
 
@@ -298,10 +298,10 @@ record.  The additional queries were
 "10038160648206649953061393462836377818780518481"
 ```
 
-No Sage, Magma, PARI/GP, or remote CAS was available or invoked; the five
+No Sage, Magma, PARI/GP, or remote CAS was available or invoked; the six
 new regression tests independently re-evaluate the coordinate change,
 invariant scaling, minimality criterion, discriminant factorization,
-conductor, and `j`.
+conductor, `j`, and the manuscript formulas.
 
 Priority assessment after the isomorphism-invariant search: **low-to-medium
 risk for the narrowly worded finite theorem**, rather than the previous
@@ -310,3 +310,9 @@ coverage and is not novelty evidence.  A claim of absolute priority still
 requires human inspection of Campbell's dissertation and a citation-graph
 search, but neither the original model nor its global minimal isomorphism
 class was located in indexed literature through 2026-09-03.
+
+The query log and database-scope boundary are frozen separately in
+`notes/isomorphism-prior-art-search.md`.  In particular, Campbell's
+Proposition 2.6 computes the rank of the parameter curve `D`, not the
+Jacobian of the later ninth-value quartic `H`; the two calculations must not
+be conflated.

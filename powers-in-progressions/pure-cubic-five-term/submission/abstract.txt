@@ -12,4 +12,8 @@ a displayed prime of good reduction; a versioned certificate records all
 p^2-1 nonzero parameter pairs. The progression (-3,-1,1,3,5) supplies four
 counted terms over Q(cuberoot(3)). Thus R^times_(3,1)(5)=4. This finite
 classification excludes every five-hit color pattern but does not classify all
-rational progressions attaining four hits.
+rational progressions attaining four hits.  As a first partial classification,
+we prove that two distinct four-hit color/position orbits lie on the smooth
+plane cubic 2X^3-3Y^3+Z^3=0 and have positive Mordell--Weil rank.  Consequently
+each orbit supplies infinitely many inequivalent maximizers; 29 of the 31
+rational-point models remain open.

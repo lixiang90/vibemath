@@ -1,0 +1,1220 @@
+{
+  "genus1_inventory": {
+    "all_distinct_masks": 53,
+    "all_genus1_masks": [
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 23,
+        "pattern_ids": [
+          134,
+          230
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          1
+        ],
+        "gcd_bound_from_pairing": 3,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            2,
+            1
+          ],
+          "proved_mask_family": 108
+        },
+        "mask": 27,
+        "pattern_ids": [
+          12,
+          59,
+          83
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 29,
+        "pattern_ids": [
+          43,
+          83,
+          251
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          3
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 39,
+        "pattern_ids": [
+          31,
+          257
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 43,
+        "pattern_ids": [
+          268,
+          276
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            2,
+            3
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          2,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": 6,
+        "known_complete_integral_translate": null,
+        "mask": 45,
+        "pattern_ids": [
+          59,
+          134,
+          251
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 46,
+        "pattern_ids": [
+          59,
+          83,
+          134,
+          214
+        ],
+        "patterns_hit": 4,
+        "support": [
+          1,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 4,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            1,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          3,
+          1
+        ],
+        "gcd_bound_from_pairing": 4,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            3,
+            1
+          ],
+          "proved_mask_family": 102
+        },
+        "mask": 51,
+        "pattern_ids": [
+          33,
+          83,
+          257,
+          268,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 53,
+        "pattern_ids": [
+          33,
+          59,
+          83,
+          230,
+          251,
+          257,
+          281,
+          283
+        ],
+        "patterns_hit": 8,
+        "support": [
+          0,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            1,
+            5
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          1
+        ],
+        "gcd_bound_from_pairing": 3,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            2,
+            1
+          ],
+          "proved_mask_family": 108
+        },
+        "mask": 54,
+        "pattern_ids": [
+          33,
+          59,
+          214,
+          230
+        ],
+        "patterns_hit": 4,
+        "support": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          3
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 57,
+        "pattern_ids": [
+          12,
+          134,
+          268,
+          283
+        ],
+        "patterns_hit": 4,
+        "support": [
+          0,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 58,
+        "pattern_ids": [
+          12,
+          134,
+          214
+        ],
+        "patterns_hit": 3,
+        "support": [
+          1,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          4
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 71,
+        "pattern_ids": [
+          33,
+          43,
+          59,
+          83,
+          134,
+          214,
+          251
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          1,
+          2,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          3
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 75,
+        "pattern_ids": [
+          12,
+          43,
+          214,
+          230,
+          281
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          3
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 78,
+        "pattern_ids": [
+          43,
+          257,
+          268,
+          281,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          3,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 83,
+        "pattern_ids": [
+          12,
+          31,
+          43,
+          134,
+          214
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 8,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          2,
+          2,
+          2
+        ],
+        "gcd_bound_from_pairing": 8,
+        "known_complete_integral_translate": null,
+        "mask": 85,
+        "pattern_ids": [
+          31,
+          276
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 86,
+        "pattern_ids": [
+          31,
+          43,
+          268,
+          276
+        ],
+        "patterns_hit": 4,
+        "support": [
+          1,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            1,
+            6
+          ],
+          "right": [
+            3,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          2,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": 6,
+        "known_complete_integral_translate": null,
+        "mask": 90,
+        "pattern_ids": [
+          43,
+          83,
+          251,
+          257,
+          281
+        ],
+        "patterns_hit": 5,
+        "support": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 92,
+        "pattern_ids": [
+          59,
+          83,
+          230,
+          257,
+          268,
+          276
+        ],
+        "patterns_hit": 6,
+        "support": [
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          3,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 101,
+        "pattern_ids": [
+          214,
+          268
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          2,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          3
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 105,
+        "pattern_ids": [
+          12,
+          59,
+          83,
+          134,
+          214,
+          230,
+          257
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 106,
+        "pattern_ids": [
+          12,
+          59,
+          134,
+          230,
+          251,
+          281
+        ],
+        "patterns_hit": 6,
+        "support": [
+          1,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          4
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 113,
+        "pattern_ids": [
+          12,
+          31,
+          33,
+          59,
+          214,
+          283
+        ],
+        "patterns_hit": 6,
+        "support": [
+          0,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          3
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 114,
+        "pattern_ids": [
+          12,
+          31,
+          33,
+          59,
+          83,
+          251
+        ],
+        "patterns_hit": 6,
+        "support": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "gap_signature_up_to_reflection": [
+          1,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": null,
+        "known_complete_integral_translate": null,
+        "mask": 116,
+        "pattern_ids": [
+          31,
+          33,
+          83,
+          276
+        ],
+        "patterns_hit": 4,
+        "support": [
+          2,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "already_proved_translate_ranking": [
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 4,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            1,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          3,
+          1
+        ],
+        "gcd_bound_from_pairing": 4,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            3,
+            1
+          ],
+          "proved_mask_family": 102
+        },
+        "mask": 51,
+        "pattern_ids": [
+          33,
+          83,
+          257,
+          268,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            1,
+            5
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          1
+        ],
+        "gcd_bound_from_pairing": 3,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            2,
+            1
+          ],
+          "proved_mask_family": 108
+        },
+        "mask": 54,
+        "pattern_ids": [
+          33,
+          59,
+          214,
+          230
+        ],
+        "patterns_hit": 4,
+        "support": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          1
+        ],
+        "gcd_bound_from_pairing": 3,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            2,
+            1
+          ],
+          "proved_mask_family": 108
+        },
+        "mask": 27,
+        "pattern_ids": [
+          12,
+          59,
+          83
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "characters_per_pattern": 15,
+    "distinct_genus1_four_factor_masks": 26,
+    "genus1_occurrences": 113,
+    "input_pattern_count": 15,
+    "pairable_ranking": [
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 4,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            1,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          3,
+          1
+        ],
+        "gcd_bound_from_pairing": 4,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            3,
+            1
+          ],
+          "proved_mask_family": 102
+        },
+        "mask": 51,
+        "pattern_ids": [
+          33,
+          83,
+          257,
+          268,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            1,
+            6
+          ],
+          "right": [
+            3,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          2,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": 6,
+        "known_complete_integral_translate": null,
+        "mask": 90,
+        "pattern_ids": [
+          43,
+          83,
+          251,
+          257,
+          281
+        ],
+        "patterns_hit": 5,
+        "support": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            1,
+            5
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          1
+        ],
+        "gcd_bound_from_pairing": 3,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            2,
+            1
+          ],
+          "proved_mask_family": 108
+        },
+        "mask": 54,
+        "pattern_ids": [
+          33,
+          59,
+          214,
+          230
+        ],
+        "patterns_hit": 4,
+        "support": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          1,
+          2,
+          1
+        ],
+        "gcd_bound_from_pairing": 3,
+        "known_complete_integral_translate": {
+          "gap_signature": [
+            1,
+            2,
+            1
+          ],
+          "proved_mask_family": 108
+        },
+        "mask": 27,
+        "pattern_ids": [
+          12,
+          59,
+          83
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            2,
+            3
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          2,
+          1,
+          2
+        ],
+        "gcd_bound_from_pairing": 6,
+        "known_complete_integral_translate": null,
+        "mask": 45,
+        "pattern_ids": [
+          59,
+          134,
+          251
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 8,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gap_signature_up_to_reflection": [
+          2,
+          2,
+          2
+        ],
+        "gcd_bound_from_pairing": 8,
+        "known_complete_integral_translate": null,
+        "mask": 85,
+        "pattern_ids": [
+          31,
+          276
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          2,
+          4,
+          6
+        ]
+      }
+    ],
+    "selection_rule": "among genus-1 masks with a complete integral translate already proved, maximize patterns hit; break ties by smaller pairing gcd bound, then mask",
+    "total_character_occurrences": 225
+  },
+  "input_sha256": {
+    "PAPER_SQUARE_MASK99_CERTIFICATE.json": "eada4ff78fa4ee947d963a48798105d9418220320d9116a0cb9a8f0432384011",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "integral_points": {
+    "A": "t(t+5)",
+    "B": "(t+1)(t+4)",
+    "B_minus_A": 4,
+    "bounded_search_used": false,
+    "common_positive_squarefree_kernels": [
+      1,
+      2
+    ],
+    "curve": "y^2=t(t+1)(t+4)(t+5)",
+    "d=1": {
+      "consequence": "U=0,V=2, contradicting A>0",
+      "equation": "V^2-U^2=4",
+      "positive_same_parity_factor_pairs": [
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "d=2": {
+      "consequence": "impossible modulo 4",
+      "equation": "V^2-U^2=2",
+      "square_differences_mod_4": [
+        0,
+        1,
+        3
+      ],
+      "squares_mod_4": [
+        0,
+        1
+      ]
+    },
+    "gcd_identity": "gcd(A,B)=gcd(A,4), hence gcd(A,B) divides 4",
+    "integral_translation_to_mask102": {
+      "bijection_on_integer_parameters": true,
+      "identity": "(s+1)(s+2)(s+5)(s+6)=t(t+1)(t+4)(t+5)",
+      "substitution": "s=t-1"
+    },
+    "mask": 51,
+    "middle_interval_exact_check": [
+      {
+        "rhs": 0,
+        "t": -5,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": -4,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 12,
+        "t": -3,
+        "ys": []
+      },
+      {
+        "rhs": 12,
+        "t": -2,
+        "ys": []
+      },
+      {
+        "rhs": 0,
+        "t": -1,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": 0,
+        "ys": [
+          0
+        ]
+      }
+    ],
+    "nondegenerate_integral_points": [],
+    "positive_regions": [
+      "t<=-6",
+      "t>=1"
+    ],
+    "proved_integral_points": [
+      [
+        -5,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "status": "PROVED_COMPLETE_BY_INTEGRAL_TRANSLATION_AND_INDEPENDENT_GCD_ARGUMENT",
+    "support": [
+      0,
+      1,
+      4,
+      5
+    ]
+  },
+  "pattern_impact": {
+    "affected_pattern_ids": [
+      33,
+      83,
+      257,
+      268,
+      283
+    ],
+    "input_remaining_count": 15,
+    "reason": "mask 51 has no nondegenerate integral parameter",
+    "remaining_count": 10,
+    "remaining_pattern_ids": [
+      12,
+      31,
+      43,
+      59,
+      134,
+      214,
+      230,
+      251,
+      276,
+      281
+    ],
+    "selected_mask": 51,
+    "strictly_excluded": 5
+  },
+  "schema": "paper-square-mask51-v1",
+  "semantic_version": "1.0.0"
+}

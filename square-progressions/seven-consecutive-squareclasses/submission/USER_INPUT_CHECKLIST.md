@@ -13,7 +13,7 @@
    affiliation; identify the corresponding author and provide a working email
    and postal address.
 3. **Immutable supplement locator:** freeze the current public repository
-   payload, including supplement v0.6.0 and the root `MANIFEST.sha256`, and
+   payload, including supplement v0.7.0 and the root `MANIFEST.sha256`, and
    provide a real release URL or preservation DOI.  If the payload changes,
    authorize a new release version instead of reusing the current one.
 4. **Declarations:** exact funding/grant text, conflicts of interest, and the

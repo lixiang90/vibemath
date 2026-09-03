@@ -8,7 +8,7 @@
    corresponding-author email and postal address.
 3. Independently verify every proof, the exact role of both cited papers, all
    60 certificate entries and the English manuscript.
-4. Decide whether the current four-page research note is sufficiently
+4. Decide whether the current seven-page research note is sufficiently
    contextualized for the chosen venue or needs a fuller introduction.
 5. Deposit the exact bundle and root manifest in a persistent archive; replace
    `<<ARCHIVE DOI / URL>>` only after deposit.
@@ -28,6 +28,6 @@
 
 ## Deliberately unresolved
 
-Do not state that all four-hit maximizers are classified. The 31-model problem
-is excluded from this release and need not be solved before submitting the
-exact-maximum theorem.
+Do not state that all four-hit maximizers are classified. Two of the 31 models
+are solved by positive-rank arguments; the other 29 need not be solved before
+submitting the exact-maximum theorem.

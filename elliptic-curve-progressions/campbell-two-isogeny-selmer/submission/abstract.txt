@@ -4,7 +4,9 @@ the ninth candidate and record every rational specialization boundary. We
 identify its Jacobian and rational 2-torsion, then perform an exact finite
 local calculation for the dual 2-isogeny descents. The resulting Selmer
 groups have dimensions 3 and 2, respectively, which gives Mordell-Weil rank
-at most 3. We also compute the full Q times K representative of the
+at most 3.  An explicit rational change of variables gives the global minimal
+model [1,-16441530,0,45166889779200,0].  Its bad reduction is multiplicative
+at every bad prime and its conductor is 301245307115205810. We also compute the full Q times K representative of the
 binary-quartic cubic invariant and its rational 2-torsion projection. A
 versioned supplement records the 512 local cells, common-parameter local
 witnesses, exact generators, certificates, and regression tests. The

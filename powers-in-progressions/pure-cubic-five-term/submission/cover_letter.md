@@ -13,6 +13,11 @@ The proof combines an explicit Kummer-kernel calculation, a complete
 good-prime local obstructions. A deterministic Python/SymPy supplement records
 the complete finite enumeration and per-model count summaries.
 
+The paper also goes beyond a single lower-bound witness: two distinct
+four-hit color/position orbits are shown, by an explicit map to a Mordell curve
+and a Nagell--Lutz certificate, to contain infinitely many inequivalent
+maximizers.
+
 The claim is intentionally narrow. We do not claim to classify all
 progressions attaining four terms, and a dated prior-art search is reported as
 “exact match not found,” not as a proof of novelty. The only external theorem
@@ -21,7 +26,9 @@ dependencies are identified precisely in the manuscript.
 `<<AUTHOR CONFIRMATION: This work is original, is not under consideration
 elsewhere, and all authors approve this submission.>>`
 
-Code and data archive: `<<ARCHIVE DOI / URL>>`.
+Public working code and data:
+<https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term>.
+Immutable archive: `<<ARCHIVE DOI / URL>>`.
 
 AI-use disclosure: `<<PASTE JOURNAL-COMPLIANT, HUMAN-APPROVED DISCLOSURE>>`.
 

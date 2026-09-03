@@ -72,6 +72,7 @@ def square_group() -> tuple[list[tuple[Path, str]], list[str]]:
         "PAPER_SQUARE_NEXT_GATE_test",
         "PAPER_SQUARE_MASK108_test",
         "PAPER_SQUARE_MASK99_test",
+        "PAPER_SQUARE_MASK51_test",
         "PAPER_SQUARE_SUPPLEMENT_MANIFEST_test",
     ]
     return mappings, modules
@@ -98,6 +99,7 @@ def cube_group() -> tuple[list[tuple[Path, str]], list[str]]:
     return all_files(base, "*.py") + all_files(base, "*.json"), [
         "PAPER_CUBE_KUMMER5_test",
         "PAPER_CUBE_FOURHIT_0001_test",
+        "PAPER_CUBE_FOURHIT_0010_test",
     ]
 
 

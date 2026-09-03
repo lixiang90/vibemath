@@ -12,7 +12,9 @@ congruence certificates. Together with an integral reflection, this eliminates
 constant-difference factorizations exclude another 19 and 12 patterns.  A
 third factorization gives the complete integral points on
 y^2=t(t+1)(t+5)(t+6), excluding eight more patterns and leaving 15 explicitly
-listed necessary candidates. Every computational count and
+listed necessary candidates.  Finally, the integral translate
+y^2=t(t+1)(t+4)(t+5) of a previously closed quartic excludes five further
+patterns, leaving 10 explicit necessary candidates. Every computational count and
 congruence certificate is bound by a versioned reproducibility manifest. No
 bounded search or unproved Mordell--Weil computation enters the proof. The
 theorem neither proves that any remaining pattern is realizable nor decides the

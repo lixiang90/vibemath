@@ -7,6 +7,9 @@ Current public working archive:
 The repository root `MANIFEST.sha256` binds the public bytes.  The historical
 supplement manifest identifies the original finite evidence release; it must
 not be interpreted as claiming that the unexecuted Magma inputs were run.
+The later exact minimal-model and conductor certificate is stored under
+`certificates/minimal_model_identity.json` and is bound by the repository-root
+manifest.
 
 Proposed statement after an immutable release or preservation deposit:
 

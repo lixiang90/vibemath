@@ -13,7 +13,7 @@ over journal-specific formatting.
 
 | Theme / paper | Status | Main result or current boundary |
 |---|---|---|
-| `square-progressions/seven-consecutive-squareclasses` | internally accepted | For integer `t`, the equality patterns of the nonzero block `t,...,t+6` with affine rational squareclass rank at most two are reduced through the exact chain `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15`.  Realizability or impossibility of the final 15 patterns, and therefore `R_2(7)`, remain open. |
+| `square-progressions/seven-consecutive-squareclasses` | internally accepted | For integer `t`, the equality patterns of the nonzero block `t,...,t+6` with affine rational squareclass rank at most two are reduced through the exact chain `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10`.  Realizability or impossibility of the final 10 patterns, and therefore `R_2(7)`, remain open. |
 | `powers-in-progressions/pure-cubic-five-term` | internally accepted + extension | `R^times_(3,1)(5)=4`; one four-hit genus-one model is additionally proved to have positive rank and yields infinitely many inequivalent maximizers. |
 | `elliptic-curve-progressions/campbell-two-isogeny-selmer` | internally accepted + identity audit | Exact two-isogeny Selmer groups and `rank <= 3`; an explicit global minimal model has conductor `301245307115205810`.  No ninth rational point, full 2-Selmer group, Cassels--Tate value, or rank equality is claimed. |
 | `square-progressions/magic-squares-over-number-fields` | active long-term project | Searches and reductions for order-three magic squares of squares over low-degree number fields; exploratory outputs are not promoted to theorems. |

@@ -4,7 +4,7 @@ The manuscript proves a necessary classification for **integer parameters**
 in the normalized consecutive progression `t,t+1,...,t+6`.  It does not
 classify arbitrary rational starting points and rational common differences.
 
-It reduces the canonical affine-rank-two pattern universe to 15 explicit
+It reduces the canonical affine-rank-two pattern universe to 10 explicit
 candidates.  It does not prove that any survivor is realizable, does not rule
 out every survivor, and therefore does not decide whether `R_2(7)=6` or `7`.
 
@@ -12,7 +12,7 @@ The common rational scaling in the field interpretation is essential.  The
 paper does not claim that the seven unscaled rational terms are simultaneously
 squares in one fixed biquadratic field.
 
-The three quartic integral-point lists are global proofs.  A bounded search
+The quartic integral-point lists are global proofs.  A bounded search
 included in one certificate is diagnostic only and is labelled conjectural.
 No unproved Mordell--Weil rank, generator list, Chabauty computation, or online
 CAS output is used.

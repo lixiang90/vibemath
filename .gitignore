@@ -6,6 +6,7 @@ __pycache__/
 *.fdb_latexmk
 *.fls
 *.log
+!research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_*.log
 *.out
 *.synctex.gz
 tmp/

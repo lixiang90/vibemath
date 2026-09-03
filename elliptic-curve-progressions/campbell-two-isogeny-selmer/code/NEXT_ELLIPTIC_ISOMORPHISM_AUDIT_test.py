@@ -1,5 +1,6 @@
 import json
 import math
+from pathlib import Path
 import unittest
 
 import NEXT_ELLIPTIC_ISOMORPHISM_AUDIT as a
@@ -25,6 +26,24 @@ class MinimalModelIdentityTests(unittest.TestCase):
         self.assertEqual(math.gcd(inv["c4"], inv["discriminant"]), 1)
         self.assertTrue(d["semistable"])
         self.assertTrue(all(row["v_c4"] == 0 for row in d["local_reduction"].values()))
+        # Directly certify the split nodal reductions at 2 and 3.  Here a2
+        # and a4 vanish, so the reduced affine cubic is F=y^2+x*y-x^3.
+        _, a2, _, a4, _ = a.MINIMAL_AINVS
+        for p in (2, 3):
+            self.assertEqual(a2 % p, 0)
+            self.assertEqual(a4 % p, 0)
+            singular = []
+            for x in range(p):
+                for y in range(p):
+                    f = (y*y + x*y - x**3) % p
+                    fx = (y - 3*x*x) % p
+                    fy = (2*y + x) % p
+                    if f == fx == fy == 0:
+                        singular.append((x, y))
+                    self.assertEqual((y*y + x*y) % p, (y*(y+x)) % p)
+            self.assertEqual(singular, [(0, 0)])
+            # The tangent lines y=0 and y+x=0 are distinct over both fields.
+            self.assertNotEqual((0, 1), (1 % p, 1 % p))
 
     def test_discriminant_conductor_and_j(self):
         d = a.certificate()
@@ -40,6 +59,21 @@ class MinimalModelIdentityTests(unittest.TestCase):
     def test_disk_certificate(self):
         self.assertEqual(json.loads(a.OUTPUT.read_text(encoding="utf-8")), a.certificate())
 
+    def test_manuscript_contains_exact_minimal_model_theorem(self):
+        tex = (Path(__file__).resolve().parent.parent / "paper" / "main.tex").read_text(encoding="utf-8")
+        for token in (
+            "(1,-16441530,0,45166889779200,0)",
+            "2926451742397178075653974744686961623040000",
+            "301245307115205810",
+            "valid without change at $p=2$ and $p=3$",
+            "unique affine",
+            "singular point is $(0,0)$",
+            "y^2+xy=y(y+x)",
+            "multiplicative reduction at $2$ and $3$ is",
+            "split",
+            "absence of a database row",
+        ):
+            self.assertIn(token, tex)
 
 if __name__ == "__main__":
     unittest.main()
