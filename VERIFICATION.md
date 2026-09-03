@@ -38,12 +38,26 @@ It creates no build product in the repository.
 ## Clean-clone reproduction
 
 The seventh-round baseline commit
-`559e89364b6e5c5e38e60d7b55b43ebb56e40409` was cloned locally with
-`--no-hardlinks` into a disposable directory and checked out detached.  In that
-clone, all 183 then-current tests passed and all three PDFs rebuilt with no matched final-log
-warning.  `pdftotext` output was byte-identical before and after each rebuild.
-The versioned JSON result and full combined stdout/stderr are in
-`research-program/three-paper-project/reproduction/`.
+`559e89364b6e5c5e38e60d7b55b43ebb56e40409` remains as a historical record.  It
+was cloned locally with `--no-hardlinks` into a disposable detached checkout;
+all 183 then-current tests passed and all three PDFs rebuilt with no matched
+final-log warning or change in their extracted text.
+
+The same protocol was then run successfully on the clean eighth-round source
+commit `4a8dae3dbc04712991783053e97b14b2d073964a`.  The source worktree was clean,
+all 198 tests passed, and the rebuilt squareclasses, pure-cubic and Campbell
+papers had respectively 10, 7 and 9 pages.  Every final log had an empty
+matched-warning list.  The committed/rebuilt `pdftotext` SHA-256 pairs were:
+
+| paper | committed text SHA-256 | rebuilt text SHA-256 |
+|---|---|---|
+| squareclasses | `00ff150a899afd2c477f953c5e268d6b2a28429b405bc961bcbd5cbe12646b07` | `00ff150a899afd2c477f953c5e268d6b2a28429b405bc961bcbd5cbe12646b07` |
+| pure cubic | `83f8f4bb14c275015e2d4e83d6ef42671abad7ae641bbe449fd6cb988907fbdc` | `83f8f4bb14c275015e2d4e83d6ef42671abad7ae641bbe449fd6cb988907fbdc` |
+| Campbell Selmer | `35134ec00e087ea53929d95bf8c71c33fe4dea9e80c0df924fe57006979fd2b9` | `35134ec00e087ea53929d95bf8c71c33fe4dea9e80c0df924fe57006979fd2b9` |
+
+The latest versioned result is
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_4a8dae3dbc04.json`;
+its complete combined stdout/stderr is the adjacent `.log` file.
 
 This is an internal clean-environment check, not an external independent
 reproduction or a substitute for human review of the proofs.

@@ -19,7 +19,7 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Exact comparison with accessible primary literature | PASS with residual priority risk | PASS with residual priority risk | PASS with medium residual priority risk |
 | MathSciNet/zbMATH and equation-isomorphism priority audit | OPEN: human/database follow-up | OPEN: human/database follow-up | PARTIAL: exact minimal model/conductor searched; human database/citation-graph follow-up remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
-| Internal clean-clone reproduction of a committed tree | PASS at commit `559e89364b6e` | PASS | PASS |
+| Internal clean-clone reproduction of a committed tree | PASS at commit `4a8dae3dbc04` | PASS at the same commit | PASS at the same commit |
 | Public source location and repository integrity manifest | PASS: GitHub `main` plus root `MANIFEST.sha256` | PASS | PASS |
 | Human author identity, affiliation, contributions, funding and conflicts | OPEN: author-supplied facts required | OPEN: author-supplied facts required | OPEN: author-supplied facts required |
 | Final journal choice and submission authorization | OPEN | OPEN | OPEN |
@@ -31,12 +31,16 @@ asserted symbolic identities and finite certificates, not external peer
 review, priority, or the unresolved long-term problems.
 
 The clean-clone runner independently checked the committed rather than working
-tree in an operating-system temporary directory.  For commit `559e89364b6e`,
-it reran all 183 tests, rebuilt all three PDFs with clean final logs, and found
-the extracted text of every rebuilt PDF identical to the committed PDF.  Its
-JSON report and complete combined stdout/stderr are stored under
-`research-program/three-paper-project/reproduction/`.  This closes an internal
-environment-isolation gap but is explicitly not external human reproduction.
+tree in an operating-system temporary directory.  Its latest successful run
+used the clean commit `4a8dae3dbc04712991783053e97b14b2d073964a`: all 198 tests
+passed, the three papers rebuilt to 10, 7 and 9 pages, every final-log warning
+list was empty, and the extracted-text SHA-256 of every rebuilt PDF equalled its
+committed counterpart.  The exact record is
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_4a8dae3dbc04.json`,
+with complete stdout/stderr in the adjacent `.log`.  The earlier commit
+`559e89364b6e5c5e38e60d7b55b43ebb56e40409` and its 183-test run remain as a
+historical seventh-round baseline.  This closes an internal environment-
+isolation gap but is explicitly not external human reproduction.
 
 ## Current mathematical status
 
