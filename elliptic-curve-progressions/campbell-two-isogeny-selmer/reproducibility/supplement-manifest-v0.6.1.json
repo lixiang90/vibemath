@@ -1,0 +1,184 @@
+{
+  "archival_url": null,
+  "claim_boundary": {
+    "not_proved": "a ninth rational point or its nonexistence, the full 2-Selmer group, a Cassels-Tate value, or Mordell-Weil rank equality",
+    "proved": "Campbell source identities, same-m local solubility, the 512-cell local matrix, both exact 2-isogeny Selmer groups, rank at most 3, and the Q x K invariant"
+  },
+  "files": [
+    {
+      "bytes": 7147,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_ELLIPTIC_ROUND_03_certificate.json",
+      "role": "same_m_input_certificate",
+      "sha256": "74843e4e53c7d09793fa857a2ce57d37a21be855ce135fec9f22b5b00aab5e08"
+    },
+    {
+      "bytes": 8446,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_MOODY_JUYAL.py",
+      "role": "next_stage_dependency",
+      "sha256": "b48786cf12228ccdfad603e52c249c5953e0146f441e386359cbc59494f802f9"
+    },
+    {
+      "bytes": 13990,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_NEXT_analysis.py",
+      "role": "local_matrix_base_generator",
+      "sha256": "eca5a1ba67d2178724555cd770ee832864b11bd850953c18444efb6300b1abdf"
+    },
+    {
+      "bytes": 3649,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_NEXT_test.py",
+      "role": "regression_test",
+      "sha256": "4d9c64b2e7d4d714178cc418028a26897a6ce9a00559ddca284e677594a5143c"
+    },
+    {
+      "bytes": 12606,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_CAMPBELL_analysis.py",
+      "role": "local_matrix_completion_generator",
+      "sha256": "6e22518a4ab2570059854c5401130dd8bdcae2424f2721f5e6a969c2419da489"
+    },
+    {
+      "bytes": 219625,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_CAMPBELL_CERTIFICATE.json",
+      "role": "512_cell_certificate",
+      "sha256": "b7df31fc2bd81f99e2e4d00095233be45e9659438014f12f8326a597ad3e40ed"
+    },
+    {
+      "bytes": 6277,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_CAMPBELL_test.py",
+      "role": "regression_test",
+      "sha256": "fd473a0c6466f39075ec68882e2f3f82116d8460b0d6cec3b87e9aa221655e5a"
+    },
+    {
+      "bytes": 14448,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_04_analysis.py",
+      "role": "exact_selmer_generator",
+      "sha256": "af4e761fa594e2def473769868ee91bba73b5377b8144ac33e7163547388edf5"
+    },
+    {
+      "bytes": 8379,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json",
+      "role": "clean_exact_selmer_certificate",
+      "sha256": "ae6e8a3895cc8a09bb6e3f7fc23904e4adfabd7fc9738b8c428150db1650c431"
+    },
+    {
+      "bytes": 3336,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_04_test.py",
+      "role": "regression_test",
+      "sha256": "4b5a1e182c730164c789f92ec18418f042fef10f6bbbf4e2977931fa47cfdef6"
+    },
+    {
+      "bytes": 10908,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_05_analysis.py",
+      "role": "rejected_formula_audit_generator",
+      "sha256": "3efd4ef169b1e8e3d37d689df74bc88ba2516ec62c1960b03c51d9a59e57f2ac"
+    },
+    {
+      "bytes": 9455,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json",
+      "role": "rejected_formula_certificate",
+      "sha256": "371a8775c96418b7c08c40d24abaf4ef0ff5f2d167fb0f96f13f8c193bb54d50"
+    },
+    {
+      "bytes": 3801,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_05_test.py",
+      "role": "regression_test",
+      "sha256": "bbcdf84a732d347db512a3b77836bf50660773fced81d8ff0045f018dd3fb576"
+    },
+    {
+      "bytes": 9882,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_06_analysis.py",
+      "role": "campbell_source_and_provenance_generator",
+      "sha256": "f5b6dd81eb75bdc78cf06ace906b3dce1cce113372290741be1f0b0d68f11c71"
+    },
+    {
+      "bytes": 11400,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_06_CERTIFICATE.json",
+      "role": "campbell_source_and_provenance_certificate",
+      "sha256": "6a1335da9ee9bb99e3a01ee99ac4c6b9eef0f903935fc5fde1df5b2989a2853b"
+    },
+    {
+      "bytes": 2358,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_ROUND_06_test.py",
+      "role": "regression_test",
+      "sha256": "66d8811a4db08842003892ded5bd02d620ceba935d024f72700d7fc7687d97cf"
+    },
+    {
+      "bytes": 1959,
+      "mathematical_evidence_eligible": false,
+      "path": "PAPER_ELLIPTIC_PRIOR_ART.md",
+      "role": "prior_art_not_found_report",
+      "sha256": "1d8837340332e265655ef8a0c89da8681d5ed2bfe7140ea8d831d652ab24dfad"
+    },
+    {
+      "bytes": 1725,
+      "mathematical_evidence_eligible": false,
+      "path": "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m",
+      "role": "unexecuted_candidate_input",
+      "sha256": "bd6eb7f20b3c3c4acf43ad3ce0817fa44f33cdbd29482f6da82a2086ba3cac15"
+    },
+    {
+      "bytes": 4824,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.py",
+      "role": "manifest_generator",
+      "sha256": "3ef7da557f5002aaa9e58e71e17766b1e39b9357608e40d8bb5c3e1353fb1862"
+    },
+    {
+      "bytes": 4086,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST_test.py",
+      "role": "manifest_and_isolation_test",
+      "sha256": "83835dddabc823359d1c5188b9579abe0325a95510faf88ff01d441fae268435"
+    }
+  ],
+  "ineligible_input_policy": {
+    "PAPER_ELLIPTIC_ROUND_05_full_two_selmer.m": "No transcript and no trusted Magma binary hash; never consumed by the proved pipeline."
+  },
+  "release_id": "paper-elliptic-campbell-supplement-v0.6.1",
+  "release_status": "LOCAL_RELEASE_CANDIDATE_NOT_PUBLICLY_ARCHIVED",
+  "reproduction_commands": [
+    "python PAPER_ELLIPTIC_CAMPBELL_analysis.py",
+    "python PAPER_ELLIPTIC_ROUND_04_analysis.py",
+    "python PAPER_ELLIPTIC_ROUND_05_analysis.py",
+    "python PAPER_ELLIPTIC_ROUND_06_analysis.py",
+    "python PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.py",
+    "python -m unittest -v PAPER_ELLIPTIC_NEXT_test.py PAPER_ELLIPTIC_CAMPBELL_test.py PAPER_ELLIPTIC_ROUND_04_test.py PAPER_ELLIPTIC_ROUND_05_test.py PAPER_ELLIPTIC_ROUND_06_test.py PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST_test.py"
+  ],
+  "runtime": {
+    "python": "3.14.5",
+    "sympy": "1.14.0"
+  },
+  "schema": "paper-elliptic-supplement-manifest-v1",
+  "semantic_version": "0.6.1",
+  "supersession_policy": {
+    "clean_certificate": "PAPER_ELLIPTIC_ROUND_04_CERTIFICATE.json",
+    "forbidden_clean_certificate_fields": [
+      "d35_cassels_tate_setup",
+      "pairing_bits_to_compute",
+      "decisive_outcome"
+    ],
+    "negative_audit": "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json",
+    "rule": "Round-05 proves only that the superseded opposite-side expression is invalid; it supplies no pairing value."
+  },
+  "test_accounting": {
+    "core_tests_run_inside_isolated_supplement": 39,
+    "full_release_total": 45,
+    "release_manifest_tests": 3,
+    "supplement_manifest_tests": 3
+  }
+}

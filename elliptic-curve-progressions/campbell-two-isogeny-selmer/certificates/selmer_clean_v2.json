@@ -1,0 +1,279 @@
+{
+  "claim_boundary": {
+    "not_proved": [
+      "the Mordell-Weil rank or full Mordell-Weil Kummer images",
+      "that any unexplained Selmer coset is a nonzero Sha class",
+      "either Cassels--Tate pairing bit for d=35",
+      "C_H(Q) is empty or nonempty"
+    ],
+    "proved": [
+      "the full Q x K coefficient representation, norms, and square scalings of z(H)",
+      "the 8 and 4 survivor sets are the exact two isogeny Selmer groups",
+      "their F2 dimensions are 3 and 2, giving rank(E(Q)) <= 3",
+      "the Kummer images of O and the visible rational 2-torsion points"
+    ]
+  },
+  "isogeny_descent": {
+    "curves_and_isogeny": {
+      "E": {
+        "a": -591895071,
+        "b": 58536289153843200,
+        "kernel": [
+          "O",
+          "(0,0)"
+        ]
+      },
+      "E_prime": {
+        "a": 1183790142,
+        "b": 116194618458722241,
+        "kernel": [
+          "O",
+          "(0,0)"
+        ]
+      },
+      "dual_phi": "E' -> E has kernel {O,(0,0)}",
+      "phi": "E -> E' has kernel {O,(0,0)}"
+    },
+    "exact_selmer_groups": {
+      "E_prime_side_F2_dimension": 2,
+      "E_prime_side_classes": [
+        1,
+        4230241,
+        339106321,
+        1434501462453361
+      ],
+      "E_prime_side_conventional_name": "Sel^phi(E/Q), identified with locally soluble x-Kummer classes on E'",
+      "E_prime_side_generators": [
+        4230241,
+        339106321
+      ],
+      "E_side_F2_dimension": 3,
+      "E_side_classes": [
+        1,
+        3,
+        5,
+        7,
+        15,
+        21,
+        35,
+        105
+      ],
+      "E_side_conventional_name": "Sel^(dual_phi)(E'/Q), identified with locally soluble x-Kummer classes on E",
+      "E_side_generators": [
+        3,
+        5,
+        7
+      ],
+      "rank_formula": "rank(E(Q)) <= dim Sel^(dual_phi)+dim Sel^phi-2 = 3+2-2",
+      "rank_upper_bound": 3
+    },
+    "good_prime_lemma": {
+      "S": [
+        "infinity",
+        2,
+        3,
+        5,
+        7,
+        59,
+        71699,
+        339106321
+      ],
+      "all_S_places_checked": true,
+      "quartic_polynomial_discriminant": "16*b*(a^2-4*b)^2",
+      "smoothness_discriminant_support": "divides 2*b*(a^2-4b)",
+      "statement": "For p not in S, p>=5 and C_d has smooth genus-one reduction. Hasse gives #C_d(F_p)>=p+1-2*sqrt(p)>0; every F_p point is smooth and Hensel lifts to Q_p.  Thus only S must be checked."
+    },
+    "support_lemma": {
+      "candidate_support_E": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "candidate_support_E_prime": [
+        3,
+        59,
+        71699,
+        339106321
+      ],
+      "number_of_signed_candidate_classes_on_each_side": 32,
+      "statement": "For y^2=x^3+a*x^2+b*x, every class in the x-Kummer/isogeny Selmer group has a squarefree representative supported on primes dividing b. It is represented by C_d: N^2=dU^4+aU^2V^2+(b/d)V^4.",
+      "valuation_proof": "If p does not divide b and v_p(d)=1, first use the original equation. If V were a unit, (b/d)V^4 would be its unique term of valuation -1, so the right side could not be a square; hence p divides V.  Primitivity then makes U a unit, and the original right side has valuation exactly 1, again not a square.  This argument never assumes that N is p-integral."
+    }
+  },
+  "known_mordell_weil_images": {
+    "Kummer_map": "alpha(O)=1; alpha((0,0))=[b]; alpha((x,y))=[x] for x!=0",
+    "proved_MW_image_subgroups": {
+      "E": [
+        1,
+        7
+      ],
+      "E_prime": [
+        1,
+        1434501462453361
+      ]
+    },
+    "proved_points_only": {
+      "E": [
+        {
+          "image": 1,
+          "point": "O"
+        },
+        {
+          "identity": "[b]=[7]",
+          "image": 7,
+          "point": "(0,0)"
+        }
+      ],
+      "E_prime": [
+        {
+          "image": 1,
+          "point": "O"
+        },
+        {
+          "identity": "[b']=[D]",
+          "image": 1434501462453361,
+          "point": "(0,0)"
+        }
+      ]
+    },
+    "unexplained_selmer_cosets_not_yet_Sha": {
+      "E_mod_known": [
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          5,
+          35
+        ],
+        [
+          15,
+          105
+        ]
+      ],
+      "E_prime_mod_known": [
+        [
+          1,
+          1434501462453361
+        ],
+        [
+          4230241,
+          339106321
+        ]
+      ],
+      "warning": "Unknown non-torsion rational points may account for these cosets; they are Sha candidates, not proved Sha classes."
+    }
+  },
+  "quadratic_field_and_z": {
+    "etale_algebra": "Q x K",
+    "field": {
+      "D": 1434501462453361,
+      "D_factorization": {
+        "339106321": 1,
+        "59": 1,
+        "71699": 1
+      },
+      "D_squarefree": true,
+      "basis": [
+        "1",
+        "w"
+      ],
+      "conjugation": "(u,v)->(u,-v)",
+      "definition": "Q(w)/(w^2-1434501462453361)",
+      "integral_basis_note": "D=1 mod 4, so O_K=Z[(1+w)/2]; computations use the Q-basis (1,w)",
+      "multiplication": "(u,v)*(x,y)=(u*x+D*v*y, u*y+v*x)",
+      "name": "K",
+      "norm": "N_K/Q(u,v)=u^2-D*v^2"
+    },
+    "full_etale_norm": {
+      "compatibility": "[N_K/Q(z_K)]=[z_Q]=35, so z_Q*N_K/Q(z_K) is a square",
+      "is_square": true,
+      "square_root": 37093056870271943410974720,
+      "value": 1375894867981228621717488095403425365462140479078400
+    },
+    "quadratic_resolvent_factor": {
+      "coefficients": [
+        1,
+        269378023424,
+        -36009487121810563530752
+      ],
+      "discriminant": 216602467991063346806784,
+      "discriminant_identity": "12288^2*1434501462453361",
+      "phi_minus_coefficients_in_basis_1_w": [
+        -134689011712,
+        -6144
+      ],
+      "phi_plus_coefficients_in_basis_1_w": [
+        -134689011712,
+        6144
+      ]
+    },
+    "z_components": {
+      "K": {
+        "conjugate_coefficients_in_basis_1_w": [
+          467235380575281152,
+          6963847168
+        ],
+        "norm_squareclass": 35,
+        "raw_coefficients_in_basis_1_w": [
+          467235380575281152,
+          -6963847168
+        ],
+        "raw_norm": 148742512333856495384017728952074240,
+        "reduced_norm": 8865744610658675157071216640,
+        "reduced_norm_identity": "N(z_K_reduced)=35*15915620907648^2",
+        "scaling_identity": "z_K_raw=64^2*z_K_reduced",
+        "square_equivalent_reduced_coefficients": [
+          114071137835762,
+          -1700158
+        ]
+      },
+      "Q": {
+        "identity": "raw=35*16257024^2",
+        "raw": 9250179026780160,
+        "square_equivalent_representative": 35
+      }
+    }
+  },
+  "scaling": {
+    "large_jacobian": "y_big^2=x_big^3-27*I*x_big-27*J",
+    "rational_2_torsion_scaling": "-3*phi_0=64^2*(-197298357), hence x_big+3*phi_0=64^2*X",
+    "small_short_model": {
+      "A": -58243635870855147,
+      "B": -3811211217040595260188186,
+      "equation": "y^2=x^3+(-58243635870855147)*x+(-3811211217040595260188186)"
+    },
+    "translated_E": {
+      "a": -591895071,
+      "b": 58536289153843200,
+      "equation": "y^2=X^3+(-591895071)*X^2+(58536289153843200)*X"
+    },
+    "translation": "X=x_small+197298357",
+    "weierstrass_scaling": {
+      "u": 64,
+      "x_big": "64^2*x_small",
+      "y_big": "64^3*y_small"
+    }
+  },
+  "schema": "paper-elliptic-campbell-round-04-clean-v2",
+  "semantic_version": "2.0.0",
+  "source_sha256": {
+    "PAPER_ELLIPTIC_CAMPBELL_analysis.py": "6e22518a4ab2570059854c5401130dd8bdcae2424f2721f5e6a969c2419da489",
+    "PAPER_ELLIPTIC_NEXT_analysis.py": "eca5a1ba67d2178724555cd770ee832864b11bd850953c18444efb6300b1abdf",
+    "PAPER_ELLIPTIC_ROUND_04_analysis.py": "af4e761fa594e2def473769868ee91bba73b5377b8144ac33e7163547388edf5"
+  },
+  "supersession": {
+    "excluded_fields": [
+      "d35_cassels_tate_setup",
+      "pairing_bits_to_compute",
+      "decisive_outcome"
+    ],
+    "negative_audit": "PAPER_ELLIPTIC_ROUND_05_CERTIFICATE.json",
+    "reason": "The former proposal paired classes from opposite isogeny Selmer groups. It is not a defined Cassels--Tate pairing and is excluded from this clean mathematical certificate."
+  }
+}

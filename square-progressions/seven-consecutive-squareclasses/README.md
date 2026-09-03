@@ -1,0 +1,27 @@
+# Seven consecutive squareclasses
+
+## Proved
+
+For a seven-term nonzero rational arithmetic progression with affine
+squareclass rank at most two, exact Kummer and finite-case arguments reduce the
+possible normalized patterns by
+
+`651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23`.
+
+The paper proves the enumerative reductions and the integer-point gates for
+masks 77/89, 102, and 108.  The code and JSON certificates expose every finite
+branch used in those reductions.
+
+## Not proved
+
+The 23 remaining necessary patterns are not classified as realizable or
+impossible.  The work does not decide `R_2(7)` and does not solve the rational
+three-by-three magic square of squares.
+
+`STUDENT_SQUARE_ROUND_04_CERTIFICATE.json` contains historical pipeline fields;
+only the exact geometry and occurrence data consumed by the later SAFE and mask
+certificates are evidence.  Simulated companion files are intentionally absent.
+
+See `paper/`, `mathematical-notes/`, and `reviews/` before interpreting a JSON
+field as a theorem.
+

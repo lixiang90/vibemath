@@ -1,0 +1,414 @@
+{
+  "binary_quartic_audits": {
+    "D": {
+      "I": 5355685992841788522496,
+      "J": 194499074788175267359487439142912,
+      "integral_scaled_model": [
+        0,
+        0,
+        0,
+        -137904664808967867,
+        -4890817235485401208238826
+      ],
+      "invariant_discriminant": 21357283489713863898119076302716972295525175659575149582090240000,
+      "long_jacobian_model": [
+        0,
+        0,
+        0,
+        -144603521806728290107392,
+        -5251475019280732218706160856858624
+      ],
+      "long_weierstrass_discriminant": 181602177520912408702084800470275367579299118043204433104889907773440000,
+      "minimality_claimed": false,
+      "quartic_discriminant": 21357283489713863898119076302716972295525175659575149582090240000,
+      "scaled_weierstrass_discriminant": 157514780317017177078690870892122156600531552829440000,
+      "scaling_u": 32
+    },
+    "H": {
+      "I": 36191335541877218738176,
+      "J": 9700164465385312324077552400334848,
+      "integral_scaled_model": [
+        0,
+        0,
+        0,
+        -58243635870855147,
+        -3811211217040595260188186
+      ],
+      "invariant_discriminant": 3537863071240168147645853705035182610652030650002834380071895040000,
+      "long_jacobian_model": [
+        0,
+        0,
+        0,
+        -977166059630684905930752,
+        -261904440565403432750093914809040896
+      ],
+      "long_weierstrass_discriminant": 30082647815087139208848962221721639708600413130690500892476607551242240000,
+      "minimality_claimed": false,
+      "quartic_discriminant": 3537863071240168147645853705035182610652030650002834380071895040000,
+      "scaled_weierstrass_discriminant": 6370248460006599531330043872424687910543362621440000,
+      "scaling_u": 64
+    }
+  },
+  "bounded_CH_search": {
+    "CH_point_count": 0,
+    "CH_points": [],
+    "bound_B": 50000,
+    "candidate_pairs_in_proved_H_positive_superset": 15635928,
+    "full_fibre_product_point_count": 0,
+    "height_definition": "b>0, gcd(|a|,b)=1, max(|a|,b)<=B",
+    "logical_status": "bounded evidence only",
+    "modular_survivors": 441241,
+    "reduced_pairs": 9505799,
+    "sieve_primes": [
+      11,
+      13,
+      17,
+      19,
+      23
+    ]
+  },
+  "branch_model_bad_primes": [
+    2,
+    3,
+    5,
+    7,
+    17,
+    19,
+    31,
+    59,
+    8599,
+    71699,
+    898543,
+    23037169,
+    339106321,
+    1153266911
+  ],
+  "classification": {
+    "awaiting_magma": [
+      "the fake 2-Selmer set returned by an unbounded TwoCoverDescent(CH)"
+    ],
+    "bounded_evidence": [
+      "the exact CH rational search with max(|a|,b)<=50000"
+    ],
+    "proved": [
+      "the smooth Campbell fibre product has points over R and every Q_p",
+      "the two quartic invariants and displayed integral Jacobian models satisfy the exact invariant identities"
+    ]
+  },
+  "coefficients": {
+    "D": [
+      -264815,
+      -19343520,
+      62846856064,
+      -2906312951808,
+      -495507443511296
+    ],
+    "H": [
+      -850079,
+      -11210976,
+      138714149248,
+      -5501355374592,
+      -1679721044504576
+    ]
+  },
+  "global_status": {
+    "CH_rational_point_known": false,
+    "fake_two_selmer_computed": false,
+    "full_fibre_product_rational_point_known": false
+  },
+  "root_isolation_for_search": [
+    {
+      "left_denominator": 19,
+      "left_numerator": -7898,
+      "multiplicity": 1,
+      "right_denominator": 79,
+      "right_numerator": -32839
+    },
+    {
+      "left_denominator": 53,
+      "left_numerator": -4971,
+      "multiplicity": 1,
+      "right_denominator": 24,
+      "right_numerator": -2251
+    },
+    {
+      "left_denominator": 82,
+      "left_numerator": 11789,
+      "multiplicity": 1,
+      "right_denominator": 13,
+      "right_numerator": 1869
+    },
+    {
+      "left_denominator": 152,
+      "left_numerator": 53583,
+      "multiplicity": 1,
+      "right_denominator": 25,
+      "right_numerator": 8813
+    }
+  ],
+  "same_m_local_certificates": {
+    "odd": [
+      [
+        3,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        5,
+        0,
+        4,
+        2,
+        4,
+        2
+      ],
+      [
+        7,
+        0,
+        1,
+        1,
+        4,
+        2
+      ],
+      [
+        11,
+        0,
+        4,
+        2,
+        4,
+        2
+      ],
+      [
+        13,
+        3,
+        3,
+        4,
+        1,
+        1
+      ],
+      [
+        17,
+        0,
+        16,
+        4,
+        16,
+        4
+      ],
+      [
+        19,
+        3,
+        11,
+        7,
+        11,
+        7
+      ],
+      [
+        23,
+        1,
+        16,
+        4,
+        9,
+        3
+      ],
+      [
+        29,
+        5,
+        28,
+        12,
+        25,
+        5
+      ],
+      [
+        31,
+        1,
+        18,
+        7,
+        14,
+        13
+      ],
+      [
+        37,
+        1,
+        1,
+        1,
+        25,
+        5
+      ],
+      [
+        41,
+        2,
+        18,
+        10,
+        1,
+        1
+      ],
+      [
+        43,
+        3,
+        1,
+        1,
+        35,
+        11
+      ],
+      [
+        47,
+        6,
+        37,
+        15,
+        27,
+        11
+      ],
+      [
+        53,
+        1,
+        10,
+        13,
+        1,
+        1
+      ],
+      [
+        59,
+        12,
+        3,
+        11,
+        35,
+        25
+      ],
+      [
+        61,
+        4,
+        36,
+        6,
+        46,
+        30
+      ],
+      [
+        67,
+        3,
+        35,
+        13,
+        56,
+        18
+      ],
+      [
+        71,
+        17,
+        58,
+        22,
+        38,
+        31
+      ],
+      [
+        73,
+        0,
+        9,
+        3,
+        37,
+        16
+      ],
+      [
+        79,
+        8,
+        2,
+        9,
+        19,
+        16
+      ],
+      [
+        83,
+        2,
+        7,
+        16,
+        25,
+        5
+      ],
+      [
+        89,
+        1,
+        55,
+        12,
+        34,
+        37
+      ],
+      [
+        97,
+        1,
+        65,
+        29,
+        93,
+        44
+      ],
+      [
+        8599,
+        5,
+        4872,
+        521,
+        3474,
+        1968
+      ],
+      [
+        71699,
+        1,
+        13080,
+        12817,
+        43856,
+        30327
+      ],
+      [
+        898543,
+        12,
+        593875,
+        198084,
+        686233,
+        420590
+      ],
+      [
+        23037169,
+        1,
+        7173562,
+        1999717,
+        70894,
+        4416133
+      ],
+      [
+        339106321,
+        1,
+        59232546,
+        46825223,
+        41459015,
+        138493612
+      ],
+      [
+        1153266911,
+        0,
+        604401320,
+        115415469,
+        678697814,
+        139525893
+      ]
+    ],
+    "odd_format": [
+      "p",
+      "m",
+      "D_mod_p",
+      "sqrt_D",
+      "H_mod_p",
+      "sqrt_H"
+    ],
+    "real": {
+      "D_m": 5181235987451904,
+      "H_m": 1670565049012224,
+      "m": -400
+    },
+    "remaining_good_primes": "p>=101 outside branch-model bad set; genus-5 Weil lower bound is positive, then smooth points Hensel lift",
+    "two_adic": {
+      "D_m": -498350929215375,
+      "D_mod_8": 1,
+      "H_m": -1685083697790975,
+      "H_mod_8": 1,
+      "m": 1
+    }
+  }
+}

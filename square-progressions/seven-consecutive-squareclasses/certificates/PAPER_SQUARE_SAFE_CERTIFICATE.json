@@ -1,0 +1,6041 @@
+{
+  "schema": "PAPER_SQUARE_SAFE-integral-pattern-inventory-v1",
+  "source_sha256": {
+    "STUDENT_SQUARE_ROUND_02_patterns.py": "c5303e17c6c861e391a4ce7ddb9b05c232afaaf0528ca4b687487faf06bf338d",
+    "STUDENT_SQUARE_ROUND_02_certificate.json": "ef179671912c3896d43f9f7ece1f2aaf4f69ae5ff7d83217c9df0caa2fb664d7",
+    "STUDENT_SQUARE_ROUND_03_isomorphisms.py": "24151ee23f0b0435a7fd9df704fc75f8199187c1c66cdc1b198e484146b13a98",
+    "STUDENT_SQUARE_ROUND_03_CERTIFICATE.json": "0858bde5a0261f06ca8467e55c7fd3386392fe3182b0e76c4a56517f0f46ec95",
+    "STUDENT_SQUARE_ROUND_04_pipeline.py": "19bef4a069a22412c78f957460582b380e43ac5cd1326abe690a80a8c15a7670",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "scope_warning": "Structural and elementary integral exclusions only; no unverified 2026 hypothesis is treated as an exclusion.",
+  "self_contained_enumeration": {
+    "raw_unlabelled_partitions_3_or_4_blocks": 651,
+    "reflection_fixed_before_screen": 35,
+    "reflection_orbits_before_screen": 343,
+    "strictly_excluded_raw": 109,
+    "strictly_excluded_reflection_orbits": 59,
+    "surviving_raw": 542,
+    "reflection_fixed_after_screen": 26,
+    "surviving_reflection_orbits": 284,
+    "kernel_rows_recomputed_exactly": 284,
+    "nonzero_characters_per_row": 15,
+    "total_nonzero_character_occurrences": 4260
+  },
+  "representative_classes": [
+    {
+      "class_id": 0,
+      "representative_mask": 15,
+      "members": [
+        15,
+        30,
+        60,
+        85,
+        120
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 6*t**3 + 11*t**2 + 6*t",
+      "coefficients_descending": [
+        1,
+        6,
+        11,
+        6,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 144,
+      "discriminant_factorization": {
+        "2": 4,
+        "3": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3
+      ],
+      "j_invariant": [
+        35152,
+        9
+      ],
+      "occurrence_count": 339,
+      "affected_pattern_count": 212,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 1,
+      "representative_mask": 23,
+      "members": [
+        23,
+        29,
+        46,
+        58,
+        92,
+        116
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 7*t**3 + 14*t**2 + 8*t",
+      "coefficients_descending": [
+        1,
+        7,
+        14,
+        8,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 2304,
+      "discriminant_factorization": {
+        "2": 8,
+        "3": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3
+      ],
+      "j_invariant": [
+        21952,
+        9
+      ],
+      "occurrence_count": 408,
+      "affected_pattern_count": 232,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 2,
+      "representative_mask": 27,
+      "members": [
+        27,
+        54,
+        108
+      ],
+      "support": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 8*t**3 + 19*t**2 + 12*t",
+      "coefficients_descending": [
+        1,
+        8,
+        19,
+        12,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 5184,
+      "discriminant_factorization": {
+        "2": 6,
+        "3": 4
+      },
+      "candidate_bad_primes": [
+        2,
+        3
+      ],
+      "j_invariant": [
+        1556068,
+        81
+      ],
+      "occurrence_count": 206,
+      "affected_pattern_count": 160,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 3,
+      "representative_mask": 39,
+      "members": [
+        39,
+        57,
+        78,
+        114
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 8*t**3 + 17*t**2 + 10*t",
+      "coefficients_descending": [
+        1,
+        8,
+        17,
+        10,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 14400,
+      "discriminant_factorization": {
+        "2": 6,
+        "3": 2,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        470596,
+        225
+      ],
+      "occurrence_count": 282,
+      "affected_pattern_count": 191,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 4,
+      "representative_mask": 43,
+      "members": [
+        43,
+        53,
+        86,
+        106
+      ],
+      "support": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 9*t**3 + 23*t**2 + 15*t",
+      "coefficients_descending": [
+        1,
+        9,
+        23,
+        15,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 57600,
+      "discriminant_factorization": {
+        "2": 8,
+        "3": 2,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        1906624,
+        225
+      ],
+      "occurrence_count": 279,
+      "affected_pattern_count": 190,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 5,
+      "representative_mask": 45,
+      "members": [
+        45,
+        90
+      ],
+      "support": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 10*t**3 + 31*t**2 + 30*t",
+      "coefficients_descending": [
+        1,
+        10,
+        31,
+        30,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 32400,
+      "discriminant_factorization": {
+        "2": 4,
+        "3": 4,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        3631696,
+        2025
+      ],
+      "occurrence_count": 138,
+      "affected_pattern_count": 118,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 6,
+      "representative_mask": 51,
+      "members": [
+        51,
+        102
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 10*t**3 + 29*t**2 + 20*t",
+      "coefficients_descending": [
+        1,
+        10,
+        29,
+        20,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 57600,
+      "discriminant_factorization": {
+        "2": 8,
+        "3": 2,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        13997521,
+        225
+      ],
+      "occurrence_count": 137,
+      "affected_pattern_count": 118,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 7,
+      "representative_mask": 71,
+      "members": [
+        71,
+        113
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 9*t**3 + 20*t**2 + 12*t",
+      "coefficients_descending": [
+        1,
+        9,
+        20,
+        12,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 57600,
+      "discriminant_factorization": {
+        "2": 8,
+        "3": 2,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        438976,
+        225
+      ],
+      "occurrence_count": 149,
+      "affected_pattern_count": 129,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 8,
+      "representative_mask": 75,
+      "members": [
+        75,
+        105
+      ],
+      "support": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 10*t**3 + 27*t**2 + 18*t",
+      "coefficients_descending": [
+        1,
+        10,
+        27,
+        18,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 291600,
+      "discriminant_factorization": {
+        "2": 4,
+        "3": 6,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        148176,
+        25
+      ],
+      "occurrence_count": 148,
+      "affected_pattern_count": 130,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 9,
+      "representative_mask": 77,
+      "members": [
+        77,
+        89
+      ],
+      "support": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 11*t**3 + 36*t**2 + 36*t",
+      "coefficients_descending": [
+        1,
+        11,
+        36,
+        36,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 186624,
+      "discriminant_factorization": {
+        "2": 8,
+        "3": 6
+      },
+      "candidate_bad_primes": [
+        2,
+        3
+      ],
+      "j_invariant": [
+        1728,
+        1
+      ],
+      "occurrence_count": 148,
+      "affected_pattern_count": 130,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 10,
+      "representative_mask": 83,
+      "members": [
+        83,
+        101
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 11*t**3 + 34*t**2 + 24*t",
+      "coefficients_descending": [
+        1,
+        11,
+        34,
+        24,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 518400,
+      "discriminant_factorization": {
+        "2": 8,
+        "3": 4,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        48228544,
+        2025
+      ],
+      "occurrence_count": 150,
+      "affected_pattern_count": 130,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 11,
+      "representative_mask": 99,
+      "members": [
+        99
+      ],
+      "support": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**4 + 12*t**3 + 41*t**2 + 30*t",
+      "coefficients_descending": [
+        1,
+        12,
+        41,
+        30,
+        0
+      ],
+      "degree": 4,
+      "genus": 1,
+      "polynomial_discriminant": 360000,
+      "discriminant_factorization": {
+        "2": 6,
+        "3": 2,
+        "5": 4
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": [
+        868327204,
+        5625
+      ],
+      "occurrence_count": 76,
+      "affected_pattern_count": 76,
+      "integral_point_entry": "quartic genus-1: compute a proven Mordell-Weil group, then integral points/Thue equations"
+    },
+    {
+      "class_id": 12,
+      "representative_mask": 63,
+      "members": [
+        63,
+        126
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalized_primitive_integral_model": "y^2=t**6 + 15*t**5 + 85*t**4 + 225*t**3 + 274*t**2 + 120*t",
+      "coefficients_descending": [
+        1,
+        15,
+        85,
+        225,
+        274,
+        120,
+        0
+      ],
+      "degree": 6,
+      "genus": 2,
+      "polynomial_discriminant": 1194393600,
+      "discriminant_factorization": {
+        "2": 16,
+        "3": 6,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": null,
+      "occurrence_count": 139,
+      "affected_pattern_count": 120,
+      "integral_point_entry": "sextic genus-2: 2-Selmer rank, Chabauty/Mordell-Weil sieve, then integral pullback"
+    },
+    {
+      "class_id": 13,
+      "representative_mask": 95,
+      "members": [
+        95,
+        125
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**6 + 16*t**5 + 95*t**4 + 260*t**3 + 324*t**2 + 144*t",
+      "coefficients_descending": [
+        1,
+        16,
+        95,
+        260,
+        324,
+        144,
+        0
+      ],
+      "degree": 6,
+      "genus": 2,
+      "polynomial_discriminant": 42998169600,
+      "discriminant_factorization": {
+        "2": 18,
+        "3": 8,
+        "5": 2
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": null,
+      "occurrence_count": 147,
+      "affected_pattern_count": 129,
+      "integral_point_entry": "sextic genus-2: 2-Selmer rank, Chabauty/Mordell-Weil sieve, then integral pullback"
+    },
+    {
+      "class_id": 14,
+      "representative_mask": 111,
+      "members": [
+        111,
+        123
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**6 + 17*t**5 + 107*t**4 + 307*t**3 + 396*t**2 + 180*t",
+      "coefficients_descending": [
+        1,
+        17,
+        107,
+        307,
+        396,
+        180,
+        0
+      ],
+      "degree": 6,
+      "genus": 2,
+      "polynomial_discriminant": 268738560000,
+      "discriminant_factorization": {
+        "2": 16,
+        "3": 8,
+        "5": 4
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": null,
+      "occurrence_count": 147,
+      "affected_pattern_count": 129,
+      "integral_point_entry": "sextic genus-2: 2-Selmer rank, Chabauty/Mordell-Weil sieve, then integral pullback"
+    },
+    {
+      "class_id": 15,
+      "representative_mask": 119,
+      "members": [
+        119
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "normalized_primitive_integral_model": "y^2=t**6 + 18*t**5 + 121*t**4 + 372*t**3 + 508*t**2 + 240*t",
+      "coefficients_descending": [
+        1,
+        18,
+        121,
+        372,
+        508,
+        240,
+        0
+      ],
+      "degree": 6,
+      "genus": 2,
+      "polynomial_discriminant": 477757440000,
+      "discriminant_factorization": {
+        "2": 20,
+        "3": 6,
+        "5": 4
+      },
+      "candidate_bad_primes": [
+        2,
+        3,
+        5
+      ],
+      "j_invariant": null,
+      "occurrence_count": 79,
+      "affected_pattern_count": 79,
+      "integral_point_entry": "sextic genus-2: 2-Selmer rank, Chabauty/Mordell-Weil sieve, then integral pullback"
+    }
+  ],
+  "window_rank_audit": {
+    "total_patterns": 284,
+    "both_six_windows_affinely_span_F2_squared": 284,
+    "rows": [
+      {
+        "pattern_id": 0,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 1,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 2,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 3,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 4,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 5,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 6,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 7,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 8,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 9,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          1,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 10,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 11,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 12,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 13,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 14,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 15,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 16,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 17,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 18,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 19,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 20,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 21,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 22,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 23,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 24,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 25,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 26,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 27,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 28,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 29,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 30,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 31,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 32,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 33,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 34,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 35,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 36,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 37,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 38,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 39,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 40,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 41,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 42,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 43,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 44,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 45,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 46,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 47,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 48,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 49,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 50,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 51,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 52,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 53,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 54,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 55,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 56,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 57,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          3,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 58,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 59,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 60,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 61,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 62,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 63,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 64,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 65,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 66,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 67,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 68,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 69,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 70,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 71,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 72,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 73,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 74,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 75,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 76,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 77,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 78,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 79,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 80,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 81,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 82,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 83,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 84,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 85,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 86,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 87,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 88,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 89,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 90,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 91,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 92,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 93,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 94,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 95,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 96,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 97,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          0,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 98,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          0,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 99,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 100,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          1,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 101,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 102,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 103,
+        "partition": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 104,
+        "partition": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 105,
+        "partition": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 106,
+        "partition": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 107,
+        "partition": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 108,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 109,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 110,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 111,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 112,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 113,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 114,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 115,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 116,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 117,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 118,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 119,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          3,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 120,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 121,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 122,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 123,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 124,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 125,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 126,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 127,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 128,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 129,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 130,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          3,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 131,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 132,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 133,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 134,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 135,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 136,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 137,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 138,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 139,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 140,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 141,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 142,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 143,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 144,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 145,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 146,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 147,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 148,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 149,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 150,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 151,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 152,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 153,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 154,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 155,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 156,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 157,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 158,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 159,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 160,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 161,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 162,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 163,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 164,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 165,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 166,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 167,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 168,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 169,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 170,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 171,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 172,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 173,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 174,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 175,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 176,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 177,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 178,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 179,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 180,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 181,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 182,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 183,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 184,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 185,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 186,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 187,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 188,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 189,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 190,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 191,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 192,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 193,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 194,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 195,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 196,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 197,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 198,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 199,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 200,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 201,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 202,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 203,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 204,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 205,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 206,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 207,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 208,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 209,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 210,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          3,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 211,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 212,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 213,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 214,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 215,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 216,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 217,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 218,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 219,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          2,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 220,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 221,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 222,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 223,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 224,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 225,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 226,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 227,
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 228,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 229,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 230,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 231,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 232,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 233,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 234,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 235,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 236,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 237,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 238,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 239,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 240,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 241,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 242,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 243,
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 244,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 245,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 246,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 247,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 248,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 249,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 250,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 251,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 252,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 253,
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 254,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 255,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 256,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 257,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 258,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 259,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 260,
+        "partition": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 261,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 262,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          2,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 263,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 264,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 265,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 266,
+        "partition": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 267,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          1,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 268,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 269,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 270,
+        "partition": [
+          0,
+          1,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 271,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          0,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 272,
+        "partition": [
+          0,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 273,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 274,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 275,
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 276,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 277,
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 278,
+        "partition": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 279,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 280,
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          3,
+          0
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 281,
+        "partition": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 282,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          1,
+          3
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      },
+      {
+        "pattern_id": 283,
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          3,
+          1
+        ],
+        "first_six_affine_rank": 2,
+        "last_six_affine_rank": 2,
+        "all_seven_affine_rank": 2
+      }
+    ]
+  },
+  "theorem_2026_scope": {
+    "conditionally_in_scope_patterns": 284,
+    "hypotheses_verified_from_labels_alone": 0,
+    "unconditionally_excluded_by_2026_citations": 0,
+    "reason": "The three quadratic subfields (squareclasses D) depend on the unknown integer t, so rank/class-number hypotheses are not pattern invariants."
+  },
+  "consecutive_four_character_theorem": {
+    "masks": [
+      15,
+      30,
+      60,
+      120
+    ],
+    "identity": "x(x+1)(x+2)(x+3)=(x(x+3)+1)^2-1",
+    "integral_x_solutions": [
+      -3,
+      -2,
+      -1,
+      0
+    ],
+    "strictly_excluded_pattern_count": 186,
+    "strictly_excluded_pattern_ids": [
+      0,
+      3,
+      5,
+      6,
+      7,
+      8,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24,
+      25,
+      29,
+      34,
+      36,
+      38,
+      39,
+      40,
+      42,
+      44,
+      46,
+      48,
+      52,
+      53,
+      54,
+      55,
+      58,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      69,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      111,
+      112,
+      113,
+      114,
+      115,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      128,
+      129,
+      130,
+      131,
+      133,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      160,
+      162,
+      163,
+      164,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      183,
+      184,
+      185,
+      186,
+      187,
+      189,
+      190,
+      191,
+      192,
+      196,
+      200,
+      201,
+      203,
+      204,
+      205,
+      208,
+      211,
+      216,
+      217,
+      218,
+      219,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      231,
+      232,
+      233,
+      235,
+      236,
+      239,
+      240,
+      241,
+      242,
+      243,
+      245,
+      247,
+      249,
+      252,
+      253,
+      254,
+      258,
+      259,
+      260,
+      262,
+      265,
+      269,
+      270,
+      273,
+      274,
+      275,
+      277,
+      278
+    ],
+    "witness_masks_by_pattern": {
+      "0": [
+        30
+      ],
+      "3": [
+        30
+      ],
+      "5": [
+        15,
+        30
+      ],
+      "6": [
+        15
+      ],
+      "7": [
+        15
+      ],
+      "8": [
+        15
+      ],
+      "14": [
+        30
+      ],
+      "15": [
+        15,
+        30
+      ],
+      "16": [
+        15
+      ],
+      "17": [
+        15
+      ],
+      "18": [
+        15
+      ],
+      "22": [
+        15,
+        30
+      ],
+      "23": [
+        15
+      ],
+      "24": [
+        15
+      ],
+      "25": [
+        15
+      ],
+      "29": [
+        30
+      ],
+      "34": [
+        30
+      ],
+      "36": [
+        120
+      ],
+      "38": [
+        120
+      ],
+      "39": [
+        15,
+        30
+      ],
+      "40": [
+        15
+      ],
+      "42": [
+        120
+      ],
+      "44": [
+        30
+      ],
+      "46": [
+        60,
+        120
+      ],
+      "48": [
+        120
+      ],
+      "52": [
+        15,
+        60
+      ],
+      "53": [
+        15
+      ],
+      "54": [
+        15
+      ],
+      "55": [
+        60
+      ],
+      "58": [
+        60
+      ],
+      "60": [
+        30
+      ],
+      "61": [
+        30
+      ],
+      "62": [
+        30
+      ],
+      "63": [
+        30,
+        120
+      ],
+      "64": [
+        30
+      ],
+      "65": [
+        30,
+        120
+      ],
+      "66": [
+        15
+      ],
+      "67": [
+        15,
+        60
+      ],
+      "69": [
+        60
+      ],
+      "72": [
+        30,
+        60
+      ],
+      "73": [
+        30,
+        60
+      ],
+      "74": [
+        30
+      ],
+      "75": [
+        30
+      ],
+      "76": [
+        30,
+        120
+      ],
+      "77": [
+        15
+      ],
+      "79": [
+        60
+      ],
+      "80": [
+        30
+      ],
+      "81": [
+        30
+      ],
+      "82": [
+        60
+      ],
+      "85": [
+        120
+      ],
+      "86": [
+        60,
+        120
+      ],
+      "87": [
+        120
+      ],
+      "88": [
+        120
+      ],
+      "89": [
+        30,
+        60,
+        120
+      ],
+      "90": [
+        30,
+        120
+      ],
+      "91": [
+        120
+      ],
+      "92": [
+        60,
+        120
+      ],
+      "93": [
+        30,
+        120
+      ],
+      "94": [
+        30,
+        120
+      ],
+      "95": [
+        60,
+        120
+      ],
+      "96": [
+        120
+      ],
+      "97": [
+        120
+      ],
+      "98": [
+        120
+      ],
+      "99": [
+        30,
+        120
+      ],
+      "100": [
+        30,
+        120
+      ],
+      "101": [
+        120
+      ],
+      "102": [
+        120
+      ],
+      "103": [
+        15,
+        30,
+        60,
+        120
+      ],
+      "104": [
+        15,
+        30,
+        120
+      ],
+      "105": [
+        15,
+        120
+      ],
+      "106": [
+        15,
+        120
+      ],
+      "107": [
+        15,
+        120
+      ],
+      "108": [
+        30
+      ],
+      "111": [
+        60
+      ],
+      "112": [
+        60
+      ],
+      "113": [
+        60
+      ],
+      "114": [
+        30,
+        120
+      ],
+      "115": [
+        120
+      ],
+      "117": [
+        60,
+        120
+      ],
+      "118": [
+        60
+      ],
+      "119": [
+        60
+      ],
+      "120": [
+        15,
+        30,
+        120
+      ],
+      "121": [
+        15
+      ],
+      "122": [
+        15,
+        120
+      ],
+      "123": [
+        15
+      ],
+      "124": [
+        15,
+        120
+      ],
+      "125": [
+        15
+      ],
+      "126": [
+        120
+      ],
+      "128": [
+        60,
+        120
+      ],
+      "129": [
+        60
+      ],
+      "130": [
+        60
+      ],
+      "131": [
+        120
+      ],
+      "133": [
+        120
+      ],
+      "139": [
+        30,
+        60,
+        120
+      ],
+      "140": [
+        30,
+        60
+      ],
+      "141": [
+        30,
+        60
+      ],
+      "142": [
+        30,
+        120
+      ],
+      "143": [
+        30
+      ],
+      "144": [
+        30
+      ],
+      "145": [
+        30,
+        120
+      ],
+      "146": [
+        120
+      ],
+      "147": [
+        60
+      ],
+      "148": [
+        120
+      ],
+      "150": [
+        15,
+        30,
+        120
+      ],
+      "151": [
+        15
+      ],
+      "152": [
+        15,
+        120
+      ],
+      "153": [
+        15
+      ],
+      "154": [
+        15,
+        60,
+        120
+      ],
+      "155": [
+        15,
+        60
+      ],
+      "156": [
+        120
+      ],
+      "157": [
+        60
+      ],
+      "158": [
+        120
+      ],
+      "160": [
+        120
+      ],
+      "162": [
+        60,
+        120
+      ],
+      "163": [
+        60
+      ],
+      "164": [
+        60
+      ],
+      "167": [
+        30,
+        120
+      ],
+      "168": [
+        30
+      ],
+      "169": [
+        30,
+        60,
+        120
+      ],
+      "170": [
+        30
+      ],
+      "171": [
+        30
+      ],
+      "172": [
+        15,
+        30
+      ],
+      "173": [
+        15,
+        120
+      ],
+      "174": [
+        15
+      ],
+      "175": [
+        15,
+        120
+      ],
+      "176": [
+        15,
+        60
+      ],
+      "177": [
+        15,
+        60,
+        120
+      ],
+      "178": [
+        120
+      ],
+      "179": [
+        120
+      ],
+      "180": [
+        60
+      ],
+      "181": [
+        120
+      ],
+      "183": [
+        120
+      ],
+      "184": [
+        60,
+        120
+      ],
+      "185": [
+        120
+      ],
+      "186": [
+        60
+      ],
+      "187": [
+        120
+      ],
+      "189": [
+        30,
+        60
+      ],
+      "190": [
+        30
+      ],
+      "191": [
+        60,
+        120
+      ],
+      "192": [
+        120
+      ],
+      "196": [
+        60
+      ],
+      "200": [
+        60
+      ],
+      "201": [
+        60
+      ],
+      "203": [
+        30
+      ],
+      "204": [
+        30
+      ],
+      "205": [
+        30,
+        60
+      ],
+      "208": [
+        60
+      ],
+      "211": [
+        30,
+        60
+      ],
+      "216": [
+        30,
+        120
+      ],
+      "217": [
+        120
+      ],
+      "218": [
+        120
+      ],
+      "219": [
+        30
+      ],
+      "222": [
+        15,
+        30
+      ],
+      "223": [
+        15,
+        120
+      ],
+      "224": [
+        15
+      ],
+      "225": [
+        15,
+        120
+      ],
+      "226": [
+        15,
+        60
+      ],
+      "227": [
+        15,
+        60,
+        120
+      ],
+      "231": [
+        120
+      ],
+      "232": [
+        60
+      ],
+      "233": [
+        60,
+        120
+      ],
+      "235": [
+        60
+      ],
+      "236": [
+        60
+      ],
+      "239": [
+        60
+      ],
+      "240": [
+        15
+      ],
+      "241": [
+        15,
+        120
+      ],
+      "242": [
+        15
+      ],
+      "243": [
+        15,
+        120
+      ],
+      "245": [
+        60
+      ],
+      "247": [
+        120
+      ],
+      "249": [
+        60
+      ],
+      "252": [
+        15,
+        120
+      ],
+      "253": [
+        15
+      ],
+      "254": [
+        60
+      ],
+      "258": [
+        60
+      ],
+      "259": [
+        30
+      ],
+      "260": [
+        30,
+        60
+      ],
+      "262": [
+        60
+      ],
+      "265": [
+        60
+      ],
+      "269": [
+        60
+      ],
+      "270": [
+        30,
+        60
+      ],
+      "273": [
+        120
+      ],
+      "274": [
+        120
+      ],
+      "275": [
+        60,
+        120
+      ],
+      "277": [
+        60
+      ],
+      "278": [
+        60
+      ]
+    },
+    "remaining_pattern_count": 98,
+    "remaining_pattern_ids": [
+      1,
+      2,
+      4,
+      9,
+      10,
+      11,
+      12,
+      13,
+      19,
+      20,
+      21,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      35,
+      37,
+      41,
+      43,
+      45,
+      47,
+      49,
+      50,
+      51,
+      56,
+      57,
+      59,
+      68,
+      70,
+      71,
+      78,
+      83,
+      84,
+      109,
+      110,
+      116,
+      127,
+      132,
+      134,
+      135,
+      136,
+      137,
+      138,
+      149,
+      159,
+      161,
+      165,
+      166,
+      182,
+      188,
+      193,
+      194,
+      195,
+      197,
+      198,
+      199,
+      202,
+      206,
+      207,
+      209,
+      210,
+      212,
+      213,
+      214,
+      215,
+      220,
+      221,
+      228,
+      229,
+      230,
+      234,
+      237,
+      238,
+      244,
+      246,
+      248,
+      250,
+      251,
+      255,
+      256,
+      257,
+      261,
+      263,
+      264,
+      266,
+      267,
+      268,
+      271,
+      272,
+      276,
+      279,
+      280,
+      281,
+      282,
+      283
+    ]
+  },
+  "mask_77_89_affine_reflection": {
+    "support_77": [
+      0,
+      2,
+      3,
+      6
+    ],
+    "support_89": [
+      0,
+      3,
+      4,
+      6
+    ],
+    "integer_preserving_map": "t=-u-6",
+    "polynomial_identity": "t(t+3)(t+4)(t+6)=u(u+2)(u+3)(u+6)",
+    "remaining_patterns_with_77": 26,
+    "remaining_patterns_with_89": 25,
+    "overlap": 7,
+    "union": 44,
+    "pattern_ids_77": [
+      1,
+      4,
+      27,
+      30,
+      35,
+      45,
+      51,
+      57,
+      78,
+      127,
+      132,
+      135,
+      136,
+      159,
+      182,
+      198,
+      206,
+      207,
+      215,
+      221,
+      244,
+      246,
+      261,
+      263,
+      272,
+      280
+    ],
+    "pattern_ids_89": [
+      13,
+      21,
+      27,
+      49,
+      57,
+      68,
+      109,
+      110,
+      132,
+      137,
+      149,
+      159,
+      161,
+      166,
+      194,
+      209,
+      215,
+      220,
+      228,
+      238,
+      244,
+      250,
+      255,
+      272,
+      282
+    ],
+    "pattern_ids_union": [
+      1,
+      4,
+      13,
+      21,
+      27,
+      30,
+      35,
+      45,
+      49,
+      51,
+      57,
+      68,
+      78,
+      109,
+      110,
+      127,
+      132,
+      135,
+      136,
+      137,
+      149,
+      159,
+      161,
+      166,
+      182,
+      194,
+      198,
+      206,
+      207,
+      209,
+      215,
+      220,
+      221,
+      228,
+      238,
+      244,
+      246,
+      250,
+      255,
+      261,
+      263,
+      272,
+      280,
+      282
+    ]
+  }
+}

@@ -1,0 +1,311 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref}
+\hypersetup{hidelinks}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbf Q}
+\newcommand{\F}{\mathbf F}
+\title{Five-Term Arithmetic Progressions and Cubes in a Pure Cubic Field}
+\author{\texttt{AUTHOR NAME(S) -- USER INPUT}\\
+\small\texttt{AFFILIATION(S), CITY, COUNTRY -- USER INPUT}\\
+\small\texttt{CORRESPONDING-AUTHOR EMAIL / ORCID -- USER INPUT}}
+\date{September 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For a nonconstant rational five-term arithmetic progression, we ask how many
+nonzero terms can, after multiplication by one common rational scalar, be
+cubes in a single nontrivial pure cubic field.  We prove that the exact
+maximum is four.  The proof begins by determining the kernel of the map from
+rational cube classes to the Kummer group of $\Q(\sqrt[3]{D})$.  After
+normalizing radicands and quotienting by affine color change and reversal, we
+obtain exactly 25 five-position color orbits.  Ten orbits are excluded by
+known theorems on rational cubes in arithmetic progression.  A prime-support
+lemma reduces the remaining 15 orbits to 60 explicit systems of three
+diagonal cubic equations.  For every system, exhaustive finite-field
+enumeration gives an obstruction at a displayed prime of good reduction; a
+versioned certificate records all $p^2-1$ nonzero parameter pairs.  The
+progression $(-3,-1,1,3,5)$ supplies four counted terms over
+$\Q(\sqrt[3]{3})$.  Thus $R^{\times}_{(3,1)}(5)=4$.  This finite
+classification excludes every five-hit color pattern but does not classify
+all rational progressions attaining four hits.
+\end{abstract}
+
+\noindent\textbf{Keywords:} arithmetic progression; pure cubic field;
+Kummer class; perfect cube; local obstruction.
+
+\medskip
+\noindent\textbf{Mathematics Subject Classification (2020):}
+Primary 11B25; Secondary 11D41, 11R16, 11Y50.
+
+\section{Definition and normalizations}
+Let $A_i=a+id$ for $0\leq i<5$, where $a,d\in\Q$ and $d\ne0$.  For a
+nontrivial class $[D]\in\Q^*/\Q^{*3}$ put
+$K_D=\Q(\sqrt[3]{D})$.  Define $R^{\times}_{(3,1)}(5)$ as the maximum number
+of nonzero $A_i$ for which there are one $D$ and one $\lambda\in\Q^*$ such
+that $\lambda A_i\in K_D^3$ at every counted position.
+
+The radicand may be chosen as a positive cube-free integer: $-1$ is already
+a rational cube, and multiplying $D$ by a rational cube changes no field.
+Moreover $D$ and $D^2$ generate the same field.  We quotient progressions by
+common rational scaling and by reversal
+$(a,d)\mapsto(a+4d,-d)$.  Zero has no class in $\Q^*/\Q^{*3}$ and is never
+counted.  If $D$ is a rational cube, then $K_D=\Q$ and the problem is the
+ordinary rational-cube problem, whose five-term maximum is three
+\cite{HT}; this degree-one degeneration cannot attain our maximum.
+
+\section{The pure-cubic Kummer kernel}
+\begin{lemma}\label{lem:kernel}
+If $[D]\ne1$ in $\Q^*/\Q^{*3}$, then
+\[
+\ker\bigl(\Q^*/\Q^{*3}\longrightarrow K_D^*/K_D^{*3}\bigr)
+=\langle[D]\rangle=\{1,[D],[D]^2\}.
+\]
+Equivalently, a nonzero rational $r$ is a cube in $K_D$ if and only if
+$[r]\in\langle[D]\rangle$.
+\end{lemma}
+\begin{proof}
+Write $\alpha^3=D$ and $y=a+b\alpha+c\alpha^2$.  Reduction of $y^3$ in the
+basis $1,\alpha,\alpha^2$ gives nonconstant coefficients
+\begin{align*}
+3(a^2b+Da c^2+Db^2c),\qquad
+3(a^2c+ab^2+Dbc^2).
+\end{align*}
+If $a=0$, their vanishing implies $bc=0$, so $y$ lies on either the
+$\Q\alpha$ or $\Q\alpha^2$ axis.  If $a\ne0$, put $B=b/a$, $C=c/a$.  The two
+equations are
+\[
+B+DC^2+DB^2C=0,\qquad C+B^2+DBC^2=0.
+\]
+Their resultants, eliminating $C$ and $B$ respectively, are
+\[
+BD(B^3D-1)^2,\qquad C(C^3D^2-1)^2.
+\]
+Since $D$ is not a rational cube, the first forces $B=0$, and then the first
+equation forces $C=0$.  Hence an element of $K_D$ with rational cube lies in
+exactly one of $\Q$, $\Q\alpha$, $\Q\alpha^2$.  Cubing proves the asserted
+three classes, and the converse is immediate.
+\end{proof}
+
+Thus, after the common scaling, every counted term has a unique color
+$c_i\in\F_3$ and can be written
+\begin{equation}\label{eq:colors}
+A_i=D^{c_i}x_i^3,\qquad x_i\in\Q^*.
+\end{equation}
+Changing the common scale by $D^k$, replacing $D$ by $D^2$, and reversing
+the progression act on color words by
+\[
+c_i\mapsto c_i+k,\qquad c_i\mapsto-c_i,\qquad
+(c_0,\ldots,c_4)\mapsto(c_4,\ldots,c_0).
+\]
+
+\section{The 25 color orbits}
+Exact enumeration gives 25 orbits of $\F_3^5$ under these operations.  For
+completeness, Burnside's lemma gives the same count without trusting the
+choice of representatives: the fixed-point counts of the 12 group elements
+are
+\[
+243,27,9,9,9,1,1,1,0,0,0,0.
+\]
+Their sum is 300, and hence there are $300/12=25$ orbits.  Nine
+contain a monochromatic three-term arithmetic progression of indices among
+\[
+(0,1,2),(1,2,3),(2,3,4),(0,2,4).
+\]
+Such an orbit would give three nonconstant rational cubes in arithmetic
+progression after scaling, contrary to Darmon--Merel \cite{DM}.  Exactly one
+further orbit, represented by $00100$, survives this test but has four terms
+of one color, at positions $0,1,3,4$.  It contradicts the exact ordinary
+bound $P_5(3)=3$ of Hajdu--Tengely \cite{HT}.  The remaining representatives
+are listed below.  There is no hidden integrality assumption here: choosing
+an integer $L$ that clears the finitely many rational cube roots and the
+progression parameters, multiplication of the entire progression by the
+common cube $L^3$ makes both the progression and those roots integral.
+Cube positions and nonconstancy are therefore preserved.
+\begin{gather*}
+00101,00102,00110,00112,00120,00121,00122,01001,01002,01012,\\
+01021,01102,01120,01201,01210.                         \tag{1}
+\end{gather*}
+
+\section{Prime support and the 60 curves}
+Clear denominators and divide by the common gcd, obtaining a primitive
+integer progression $A_i=a+id$.  Its classes have the affine form
+$g+c_i\delta$ in $\Q^*/\Q^{*3}$.  For $i\ne j$,
+\[
+\gcd(A_i,A_j)\mid |i-j|,
+\]
+because $\gcd(a,d)=1$.  Therefore a prime $p>3$ divides at most one of the
+five terms.
+
+\begin{lemma}[prime-support lemma]\label{lem:support}
+For each of the 15 words in (1), every $p>3$ occurs in every $A_i$ with
+exponent divisible by three.  Consequently both $g$ and $\delta$ are
+supported only at $2$ and $3$.
+\end{lemma}
+\begin{proof}
+If a $p>3$ exponent were nonzero modulo three, the five valuation residues
+would be supported at one position.  But they must be the values of the
+affine function $c\mapsto g_p+c\delta_p$ on the displayed color word.
+For a two-color word in (1), both color blocks have size at least two, so a
+singleton support is impossible.  For a three-color word, an affine function
+over $\F_3$ vanishing at the other two colors vanishes identically.  This is
+again impossible.  Hence all five residues vanish.  Taking differences of
+two used colors proves the assertion for $\delta$, and then for $g$.
+\end{proof}
+
+After another common rational scaling removes $g$, the four possible
+one-dimensional subspaces of the $\{2,3\}$-supported class plane have
+representatives
+\[
+D=2,3,6,18.
+\]
+For a word $c=(c_0,\ldots,c_4)$ and one such $D$, all five hits give the
+concrete projective curve in $\mathbf P^4$
+\begin{equation}\label{eq:curve}
+D^{c_i}x_i^3-2D^{c_{i+1}}x_{i+1}^3
+ +D^{c_{i+2}}x_{i+2}^3=0\quad(0\leq i\leq2).
+\end{equation}
+
+At every prime used below, $p\geq7$ and $p\nmid D$.  These conditions really
+give good reduction.  Put $u_i=D^{c_i}x_i^2$.  After deleting the invertible
+factor 3, the Jacobian matrix of the three equations is
+\[
+\begin{pmatrix}
+u_0&-2u_1&u_2&0&0\\
+0&u_1&-2u_2&u_3&0\\
+0&0&u_2&-2u_3&u_4
+\end{pmatrix}.
+\]
+A projective solution has at most one $u_i=0$: two zero terms in the induced
+five-term progression would force both its initial term and common difference
+to vanish because $p>4$.  If no $u_i$ is zero, columns $0,1,2$ give a nonzero
+minor.  If the unique zero is respectively $u_0,u_1,u_2,u_3,u_4$, columns
+$124,024,014,014,013$ give
+\[
+3u_1u_2u_4,-2u_0u_2u_4,u_0u_1u_4,u_0u_1u_4,-2u_0u_1u_3.
+\]
+Thus the Jacobian has rank 3 at every geometric point, proving smoothness.
+
+Table~\ref{tab:local-obstructions} gives, in word order (1), a prime with no
+nonzero projective point on \eqref{eq:curve}; columns correspond to
+$D=2,3,6,18$.
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{c|rrrr@{\qquad}c|rrrr}
+\toprule
+word&2&3&6&18&word&2&3&6&18\\\midrule
+00101&7&7&31&7&00102&7&7&13&7\\
+00110&7&7&13&7&00112&7&7&13&7\\
+00120&7&13&13&31&00121&7&19&61&31\\
+00122&13&13&13&43&01001&7&7&13&7\\
+01002&7&7&61&7&01012&13&7&13&7\\
+01021&7&13&13&31&01102&13&7&13&7\\
+01120&7&7&61&7&01201&7&7&13&7\\
+01210&7&13&31&31&&&&&\\
+\bottomrule
+\end{tabular}
+\caption{Good primes obstructing the 60 remaining word--radicand models}
+\label{tab:local-obstructions}
+\end{table}
+Every listed prime is coprime to $3D$.  The certificate enumerates all
+$(a,d)\in\F_p^2\setminus\{(0,0)\}$ and tests whether
+$a+id\in D^{c_i}\F_p^3$ for all five positions.  This is equivalent to
+enumerating the projective solutions of \eqref{eq:curve}, including solutions
+with some zero coordinates.  Absence modulo $p$ excludes a rational point.
+
+The complete finite computation is identified by
+\begin{quote}\small\ttfamily
+PAPER\_CUBE\_KUMMER5\_CERTIFICATE.json,\par
+schema paper-cube-pure-cubic-kummer-n5-v2,\par
+SHA-256\par
+7c5ff0bd36ebfc3bace0ca5898625b2fd7f03d318c754c6650d3a2483dd83977.
+\end{quote}
+Its generator and tests are located by the root-level file
+\begin{quote}\small\ttfamily
+PAPER\_CUBE\_KUMMER5\_SUPPLEMENT\_MANIFEST.json.
+\end{quote}
+Each of the 60
+cells scans all $p^2-1$ nonzero parameter pairs, for 23520 pairs in total.
+The local supplement is not a public archive; at submission its manifest must
+be deposited at the immutable DOI or URL stated in the data-availability
+record.
+
+\section{Exact maximum and scope of classification}
+\begin{theorem}\label{thm:main}
+With nonzero terms and nontrivial pure cubic fields as in Section 1,
+\[
+R^{\times}_{(3,1)}(5)=4.
+\]
+\end{theorem}
+\begin{proof}
+A five-hit progression has one of the 25 color orbits.  The first ten are
+excluded in Section 3.  Lemma \ref{lem:support} and the 60 good-prime
+obstructions exclude the remaining 15.  Hence the maximum is at most four.
+For the reverse inequality, in $K=\Q(\alpha)$ with $\alpha^3=3$, the nonzero
+progression
+\[
+-3,-1,1,3,5
+\]
+has its first four terms equal to the cubes of
+$-\alpha,-1,1,\alpha$.
+\end{proof}
+
+The theorem includes a complete classification and exclusion of every
+\emph{five-hit color/position class}.  It does not classify every rational
+progression attaining four hits.  That latter set is a distinct Diophantine
+problem: already a four-position pattern is naturally a weighted complete
+intersection, and several patterns have multiple rational examples.  We do
+not replace that rational-point classification by a bounded search.
+
+If zero were counted, $-2,-1,0,1,2$ would give five hits in
+$\Q(\sqrt[3]{2})$; this is exactly why the superscript $\times$ is necessary.
+
+\section*{Statements and Declarations}
+
+\paragraph{Funding.}
+\texttt{FUNDING STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
+
+\paragraph{Competing interests.}
+\texttt{COMPETING-INTERESTS STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
+
+\paragraph{Author contributions.}
+\texttt{AUTHOR-CONTRIBUTION STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
+
+\paragraph{Data and code availability.}
+The exact source, tests, and finite certificate will be deposited with the
+accepted release at
+\texttt{PERSISTENT ARCHIVE DOI/URL -- HUMAN AUTHOR INPUT REQUIRED}.  The local
+release candidate is not yet a public archive.
+
+\paragraph{Use of generative AI.}
+Generative AI tools were used during exploratory mathematical research,
+drafting, code generation, and preparation of the reproducibility package.
+No AI system is listed as an author.  Before submission, the human authors
+must independently verify every statement, proof, computation, citation, and
+file, approve that this disclosure is complete, and accept full responsibility
+for the submitted work.
+
+\paragraph{Ethics approval, consent to participate, and consent for publication.}
+Not applicable: this is a mathematical study involving no human participants,
+animals, or personal data.
+
+\paragraph{Supplementary information.}
+Online Resource 1, \texttt{PAPER\_CUBE\_KUMMER5\_ARCHIVE\_CANDIDATE.zip}
+(ZIP), contains the exact source, PDF, generator, tests, 60-model certificate,
+manifest, data dictionary, and release metadata used for the finite
+classification.  It is a local candidate until the human authors approve and
+deposit the immutable archive.
+
+\begin{thebibliography}{9}
+\bibitem{DM} H.~Darmon and L.~Merel,
+\emph{Winding quotient and some variants of Fermat's Last Theorem},
+J. Reine Angew. Math. \textbf{490} (1997), 81--100,
+\url{https://doi.org/10.1515/crll.1997.490.81}.
+\bibitem{HT} L.~Hajdu and S.~Tengely,
+\emph{Powers in arithmetic progressions}, Ramanujan J. \textbf{55}
+(2021), 965--986, \url{https://doi.org/10.1007/s11139-020-00331-5}.
+\end{thebibliography}
+\end{document}

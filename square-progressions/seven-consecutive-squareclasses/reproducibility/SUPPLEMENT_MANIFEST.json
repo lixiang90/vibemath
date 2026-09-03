@@ -1,0 +1,188 @@
+{
+  "archival_url": null,
+  "claim_boundary": {
+    "not_proved": "realizability or impossibility of the 23 remaining patterns; R_2(7) is not decided",
+    "proved": "exact finite pattern counts and the mask 77, 89, 102, 108 exclusions documented in the paper"
+  },
+  "files": [
+    {
+      "bytes": 13946,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_02_patterns.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "c5303e17c6c861e391a4ce7ddb9b05c232afaaf0528ca4b687487faf06bf338d"
+    },
+    {
+      "bytes": 1674351,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_02_certificate.json",
+      "role": "exact_certificate",
+      "sha256": "ef179671912c3896d43f9f7ece1f2aaf4f69ae5ff7d83217c9df0caa2fb664d7"
+    },
+    {
+      "bytes": 2278,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_02_test_patterns.py",
+      "role": "regression_test",
+      "sha256": "478132f48ca5a5a0830fc9d86a4c424da4bafbad4561ffb30b7c29b590626686"
+    },
+    {
+      "bytes": 14385,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_03_isomorphisms.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "24151ee23f0b0435a7fd9df704fc75f8199187c1c66cdc1b198e484146b13a98"
+    },
+    {
+      "bytes": 1802695,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_03_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "0858bde5a0261f06ca8467e55c7fd3386392fe3182b0e76c4a56517f0f46ec95"
+    },
+    {
+      "bytes": 5524,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_03_test.py",
+      "role": "regression_test",
+      "sha256": "a1f13c3b381babb75146f5883fa836be8ff0ea9a651609f2780ae814bbffeb11"
+    },
+    {
+      "bytes": 19386,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_04_pipeline.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "19bef4a069a22412c78f957460582b380e43ac5cd1326abe690a80a8c15a7670"
+    },
+    {
+      "bytes": 4428761,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+    },
+    {
+      "bytes": 6650,
+      "mathematical_evidence_eligible": true,
+      "path": "STUDENT_SQUARE_ROUND_04_test.py",
+      "role": "regression_test",
+      "sha256": "0682f96b218ca7ec0e0fbf6ea1ddeae90e8751680f62c79d0a106a8fa6a5d6b7"
+    },
+    {
+      "bytes": 9387,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_SAFE_inventory.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "293d2bd1a5c9a3743184b0ad4cc46734a47e2513a87b6573cb6d653289ca3062"
+    },
+    {
+      "bytes": 112102,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_SAFE_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "6fb8f023e2719b154e2c5a8b9948113281eb93e6b61f906cd9004f646a8c164c"
+    },
+    {
+      "bytes": 4516,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_SAFE_test.py",
+      "role": "regression_test",
+      "sha256": "72c7069cddcc25d03b6337276495165bc4d3208aa6184559fcf38cd108d3df5d"
+    },
+    {
+      "bytes": 17800,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK77_analysis.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "f026693968f7076d2ec15787750cced531ba1667edb8a9474fd765e6d3cf35ae"
+    },
+    {
+      "bytes": 40008,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK77_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "a74f2f82e377be59dccec054fe242d905815b5fc1ffee8d779a384c156cc25f8"
+    },
+    {
+      "bytes": 4319,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK77_test.py",
+      "role": "regression_test",
+      "sha256": "b4284aeb2b20fdbd86d73d3e96751cca8054055280641932cd3539a85dc55789"
+    },
+    {
+      "bytes": 6591,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_NEXT_GATE.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "0aac408a2b9257943b447d10a0b7e1398ce12e88c9e9d1bc06f454945daec952"
+    },
+    {
+      "bytes": 7256,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_NEXT_GATE_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "b63fa9ad9c200df9775d3952dcb5d1f8fee4ba802c614b037d21131fbabda178"
+    },
+    {
+      "bytes": 1249,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_NEXT_GATE_test.py",
+      "role": "regression_test",
+      "sha256": "0553a57fa4705092523780d3dbc347c621fc483f4958b9d7502063eb190fe769"
+    },
+    {
+      "bytes": 4512,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK108.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "a80eb7ac2fdc72d969a63a11af2d4dff12221cea5230990882085481b94ceba6"
+    },
+    {
+      "bytes": 2866,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK108_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "bb04a152389eaf93f5293714cfae2eda557e3c2dabdcfd65efcc3365cfc27595"
+    },
+    {
+      "bytes": 1459,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK108_test.py",
+      "role": "regression_test",
+      "sha256": "b5e73be40a7551bc5852c029754a9849303c569fd9b18aa0ac6da1b948c82d0f"
+    },
+    {
+      "bytes": 3564,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_SUPPLEMENT_MANIFEST.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "868c9e64b41cf51fc73850ae90f69b19ed5cf25c30416a89acd32a2b9fc4a615"
+    },
+    {
+      "bytes": 1516,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py",
+      "role": "regression_test",
+      "sha256": "e1eb6b9ff200d428a10952d950982abc4e43303a2adf3ae35348eb780d10390e"
+    }
+  ],
+  "release_id": "paper-square-supplement-v0.5.0",
+  "release_status": "LOCAL_RELEASE_CANDIDATE_NOT_PUBLICLY_ARCHIVED",
+  "reproduction_commands": [
+    "python PAPER_SQUARE_SAFE_inventory.py",
+    "python PAPER_SQUARE_MASK77_analysis.py --bound 1000000",
+    "python PAPER_SQUARE_NEXT_GATE.py",
+    "python PAPER_SQUARE_MASK108.py",
+    "python PAPER_SQUARE_SUPPLEMENT_MANIFEST.py",
+    "python -m unittest -v STUDENT_SQUARE_ROUND_02_test_patterns.py STUDENT_SQUARE_ROUND_03_test.py STUDENT_SQUARE_ROUND_04_test.py PAPER_SQUARE_SAFE_test.py PAPER_SQUARE_MASK77_test.py PAPER_SQUARE_NEXT_GATE_test.py PAPER_SQUARE_MASK108_test.py PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py"
+  ],
+  "runtime": {
+    "python": "3.14.5",
+    "sympy": "1.14.0"
+  },
+  "schema": "paper-square-supplement-manifest-v1",
+  "semantic_version": "0.5.0",
+  "source_control_commit": null,
+  "source_control_note": "workspace is not a Git repository; SHA-256 entries are the locator"
+}

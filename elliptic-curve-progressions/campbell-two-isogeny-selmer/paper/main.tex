@@ -1,0 +1,565 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,booktabs,longtable,microtype}
+\usepackage[a4paper,margin=26mm]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Q}{\mathbf Q}
+\newcommand{\F}{\mathbf F}
+\newcommand{\Sel}{\operatorname{Sel}}
+
+\title{A Two-Isogeny Descent Attached to Campbell's Eight-Term Family}
+\author{Draft}
+\date{Revised 3 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Starting from Campbell's cubic Weierstrass family with eight rational points
+whose $x$-coordinates are $0,\ldots,7$, we reconstruct the quartic condition
+for the ninth candidate and record every rational specialization boundary.
+We identify its Jacobian and rational $2$-torsion, then perform an exact
+finite local calculation for the dual $2$-isogeny descents.  The resulting
+Selmer groups have dimensions $3$ and $2$, respectively, which gives
+Mordell--Weil rank at most $3$.  We also compute the full $\Q\times K$
+representative of the binary-quartic cubic invariant and its rational
+$2$-torsion projection.  A versioned supplement records the $512$ local
+cells, common-parameter local witnesses, exact generators, certificates, and
+regression tests.  The same-parameter genus-$5$ fibre product is everywhere
+locally soluble.  Our calculation is deliberately narrower than the original
+extension problem: it neither produces nor excludes a ninth rational point
+on Campbell's family, claims no full $2$-Selmer group or Mordell--Weil rank
+equality, and does not evaluate a Cassels--Tate pairing.  The results
+are therefore a reproducible finite descent computation and a rigorously
+delimited input to further arithmetic study of the ninth-value curve.
+\end{abstract}
+
+\noindent\textbf{Keywords.} elliptic curves; $2$-isogeny descent; Selmer
+groups; arithmetic progressions; local solubility.
+
+\medskip
+\noindent\textbf{Mathematics Subject Classification (2020).} Primary 11G05;
+Secondary 11G30, 11Y50.
+
+\section{The Campbell quartic}
+Campbell \cite[Corollary~2.4 and Theorem~2.5]{Campbell2003} uses the
+parameter change
+\[
+ t=\frac{6m^2-126m-285360}{m^2-72256}.
+\]
+Its denominator never vanishes for $m\in\Q$, since
+$268^2<72256<269^2$.  In the normalization used here put
+\[
+ g_m(x)=g_3x^3+g_2x^2+g_1x+g_0,
+\]
+where
+\begin{align*}
+g_3={}&-18816m^4+677376m^3+1922543616m^2-48944480256m
+-40678301368320,\\
+g_2={}&236896m^4-9821952m^3-22598349824m^2+508953231360m
++520252184657920,\\
+g_1={}&-958800m^4+40985280m^3+89932669440m^2-1957723729920m
+-2113363439616000,\\
+g_0={}&1292769m^4-57304800m^3-118795148928m^2+2647001548800m
++2758336954896384.
+\end{align*}
+Exact expansion gives $g_m(j)=q_j(m)^2$ for $0\le j\le6$; the square roots
+are listed in Table~\ref{tab:campbell-roots}.
+\begin{table}[ht]
+\centering\small
+\caption{The first seven prescribed square roots in Campbell's family}
+\label{tab:campbell-roots}
+\begin{tabular}{c@{\quad}l}
+\toprule
+$j$&$q_j(m)$\\ \midrule
+0&$3(379m^2-8400m-17506624)$\\
+1&$743m^2-17136m-33534272$\\
+2&$415m^2-11088m-16946752$\\
+3&$3(67m^2-3696m-494656)$\\
+4&$209m^2-17136m+5050432$\\
+5&$263m^2-25200m+10631872$\\
+6&$63(m^2-2352m+72256)$\\ \bottomrule
+\end{tabular}
+\end{table}
+The eighth condition is
+\[
+\begin{aligned}
+Y^2=D(m)={}&-264815m^4-19343520m^3+62846856064m^2\\
+&-2906312951808m-495507443511296,
+\end{aligned}
+\]
+because $g_m(7)=D(m)$.  The candidate immediately following the eight
+indices $0,\ldots,7$ has index $8$, and direct expansion gives $g_m(8)=H(m)$,
+where
+\[
+ \begin{aligned}
+ H(m)={}&-850079m^4-11210976m^3+138714149248m^2\\
+        &-5501355374592m-1679721044504576
+ \end{aligned}
+\]
+and put $C_H:z^2=H(m)$.  Thus Campbell's construction supplies eight
+prescribed squares precisely when $(m,Y)$ lies on $Y^2=D(m)$, and
+$z^2=H(m)$ tests the ninth candidate at the same $m$.
+
+There are no omitted rational specialization boundaries.  The leading
+coefficient factors as
+\[
+g_3=-18816(m^2-72256)(m^2-36m-29920),
+\]
+and its two quadratic factors have no rational roots.  After division by
+$-65028096$, the discriminant of $g_m$ in $x$ is a primitive degree-$16$
+polynomial irreducible modulo $53$, hence it has no rational zero.  The point
+$m=\infty$ is not rational on $Y^2=D(m)$, since its leading equation would be
+$Y^2=-264815M^4$.  A zero of $D$ or $H$ merely gives $Y=0$ or $z=0$ at one
+of the distinct $x$-coordinates; it does not make $g_m$ singular.  Finally,
+$D$ and $H$ are separable and coprime, so their smooth fibre product has
+genus $5$.
+
+\begin{lemma}[same-parameter local solubility]\label{lem:same-m}
+The smooth curve
+\[
+Y^2=D(m),\qquad z^2=H(m)
+\]
+has points over $\mathbb R$ and every $\Q_p$.
+\end{lemma}
+\begin{proof}
+The supplement stores a common $m$ and both square roots at $\mathbb R$,
+$\Q_2$, every odd prime below $101$, and every odd prime dividing the two
+quartic discriminants or their resultant.  The branch-bad set is
+\[
+\{2,3,5,7,17,19,31,59,8599,71699,898543,23037169,
+339106321,1153266911\}.
+\]
+At every remaining prime $p\ge101$ the fibre product has smooth genus-$5$
+reduction, and the Weil bound
+$\#C(\F_p)\ge p+1-10\sqrt p>0$ supplies a smooth point, which lifts by
+Hensel's lemma.  The exact witness table is the object
+\texttt{same\_m\_local\_certificates} in the manifest-bound certificate.
+\end{proof}
+In particular $C_H$ is everywhere locally soluble.  Nothing here asserts
+that the fibre product or $C_H$ has a rational point.
+
+For a binary quartic
+\[
+ g(X,Z)=a_0X^4+a_1X^3Z+a_2X^2Z^2+a_3XZ^3+a_4Z^4
+\]
+we use
+\[
+ I=12a_0a_4-3a_1a_3+a_2^2,
+ \quad
+ J=72a_0a_2a_4-27a_0a_3^2-27a_1^2a_4
+      +9a_1a_2a_3-2a_2^3.
+\]
+The resulting Jacobian is $y^2=x^3-27Ix-27J$; see
+\cite[Lemma~2.1]{Fisher2022} for the binary-quartic description of the
+full $2$-Selmer group.
+
+\section{The cubic algebra and the Campbell class}
+Let $L=\Q[\varphi]/(\varphi^3-3I\varphi+J)$.  For the above normalization,
+the cubic invariant of $g$ is
+\begin{equation}\label{eq:cubic-invariant}
+ z(g)=\frac{4a_0\varphi+3a_1^2-8a_0a_2}{3}
+       \in L^\times/L^{\times2};
+\end{equation}
+this is the invariant used in \cite[Section~2]{Fisher2022}.  In the present
+case
+\[
+ L\simeq\Q\times K,\qquad
+K=\Q(w),\quad w^2=D,\quad
+ D=1434501462453361=59\cdot71699\cdot339106321.
+\]
+The quadratic resolvent factor is
+\[
+ T^2+269378023424T-36009487121810563530752,
+\]
+whose discriminant is $12288^2D$.  Thus its roots are
+$-134689011712\pm6144w$.  Although $\mathcal O_K=\mathbb
+Z[(1+w)/2]$, all displayed coordinates below use the $\Q$-basis $(1,w)$.
+
+\begin{proposition}\label{prop:z}
+The two components of the cubic invariant of $H$ are
+\[
+ z_{\Q}=9250179026780160=35\cdot16257024^2
+\]
+and
+\[
+ z_K=467235380575281152-6963847168w
+     =64^2(114071137835762-1700158w).
+\]
+Moreover
+\[
+ N_{K/\Q}(114071137835762-1700158w)
+   =35\cdot15915620907648^2,
+\]
+and the full norm is
+\[
+ z_{\Q}N_{K/\Q}(z_K)
+  =37093056870271943410974720^2.
+\]
+\end{proposition}
+\begin{proof}
+Insert the five coefficients of $H$ into \eqref{eq:cubic-invariant}, then
+evaluate in the rational and quadratic factors of $L$.  Squaring the three
+displayed integers gives the claimed identities.  These are integer
+identities, independently recomputed by the accompanying regression test.
+\end{proof}
+
+The rational factor in $L=\Q\times K$ is the cohomological factor induced by
+the rational $2$-torsion point.  On scaling
+\[
+ x_{\rm big}=64^2x,\qquad y_{\rm big}=64^3y
+\]
+and translating $X=x+197298357$, the Jacobian becomes
+\begin{equation}\label{eq:E}
+ E:y^2=X^3-591895071X^2+58536289153843200X.
+\end{equation}
+Since $-3\varphi_0=64^2(-197298357)$ for the rational resolvent root
+$\varphi_0=269378023424$, the rational projection of $[H]\in
+H^1(\Q,E[2])$ is the $X$-Kummer squareclass $[35]$.  This assertion concerns
+one projection only: $C_H$ is not thereby identified with the even quartic
+$C_{35}$ below.
+
+\section{The rational two-isogeny}
+Write $A=-591895071$ and $B=58536289153843200$.  The quotient by
+$(0,0)$ gives
+\[
+ \phi:E\longrightarrow E',\qquad
+ E':y^2=X^3-2AX^2+(A^2-4B)X,
+\]
+so explicitly
+\begin{equation}\label{eq:Eprime}
+ E':y^2=X^3+1183790142X^2+116194618458722241X.
+\end{equation}
+We denote the dual isogeny by $\widehat\phi:E'\to E$.  The standard
+isogeny descent and its covering quartics are described, for example, in
+\cite[Chapter~X, Section~4]{Silverman2009} and
+\cite[Chapter~14]{Cassels1991}; higher descent with rational $2$-torsion is
+treated directly in \cite{Fisher2017}.
+
+\begin{lemma}[support]\label{lem:support}
+For $E_{a,b}:y^2=x^3+ax^2+bx$, every class in the $x$-Kummer isogeny
+Selmer group has a squarefree representative supported on $-1$ and the
+prime divisors of $b$.  The class $d$ is represented by
+\begin{equation}\label{eq:Cd}
+ C_d:\quad N^2=dU^4+aU^2V^2+(b/d)V^4.
+\end{equation}
+\end{lemma}
+	\begin{proof}
+Let $p\nmid b$ divide a squarefree representative $d$, and after weighted
+projective scaling take $U,V\in\mathbb Z_p$ primitive.  In the original
+equation \eqref{eq:Cd}, if $V$ were a unit, then $(b/d)V^4$ would be the
+unique term of valuation $-1$ on the right, which cannot be the valuation
+of the square $N^2$.  Hence $p\mid V$, so primitivity makes $U$ a unit.
+The right side of \eqref{eq:Cd} then has valuation exactly $1$, again
+impossible for a square.  Notice that this argument does not assume in
+advance that $N$ is $p$-integral.  Thus $v_p(d)$ is even outside $b$, and
+squareclass reduction gives the stated support.
+	\end{proof}
+
+\begin{lemma}[good primes]\label{lem:good}
+Fix a supported squarefree $d$.  If a finite prime $p$ does not divide
+$2b(a^2-4b)$, then the smooth projective model of $C_d$ has a $\Q_p$-point.
+\end{lemma}
+\begin{proof}
+The binary-quartic discriminant of the right side of \eqref{eq:Cd} is
+\[
+ 16b(a^2-4b)^2.
+\]
+Thus $C_d$ has smooth geometrically connected genus-one reduction at $p$.
+In this application such a $p$ is at least $5$, so the Hasse bound gives
+\(
+ \#C_d(\F_p)\ge p+1-2\sqrt p>0.
+\)
+Every point of the smooth reduction lifts by Hensel's lemma.
+\end{proof}
+
+\section{Exact local classification}
+The only places required on either side are
+\[
+ S=\{\infty,2,3,5,7,59,71699,339106321\}.
+\]
+Lemma~\ref{lem:support} gives $32$ signed candidates on each side, and
+Lemma~\ref{lem:good} proves that no unlisted place can remove one.  The
+certificate contains all $64\times8=512$ local cells.  A YES cell contains
+an exact squareclass witness; a NO cell is either an exhaustive
+weighted-projective computation modulo the displayed prime power or the
+valuation-normalized double-root obstruction.  All $56$ cells that had
+previously been unresolved are now split into $24$ YES cells at $3$ and
+$32$ NO cells at $59$ or $71699$.
+
+\begin{table}[ht]
+\centering
+\caption{Exact local classification of the two isogeny-descent candidate sets}
+\label{tab:local-classification}
+\begin{tabular}{lrrrrl}
+\toprule
+side & candidates & first real NO & first finite NO & survivors & survivor set\\
+\midrule
+$E$ & 32 & 16 & $8$ at $59$ & 8 & $1,3,5,7,15,21,35,105$\\
+$E'$& 32 & 0 & $24$ at $2$, $4$ at $3$ & 4 & $1,4230241,339106321,D$\\
+\bottomrule
+\end{tabular}
+\end{table}
+The complete matrix has $384$ YES and $128$ NO cells.  Its JSON SHA-256 is
+\begin{quote}\small\ttfamily
+b7df31fc2bd81f99e2e4d00095233be45e9659438014f12f8326a597ad3e40ed.
+\end{quote}
+The structured $\Q\times K$ and Selmer certificate has SHA-256
+\begin{quote}\small\ttfamily
+ae6e8a3895cc8a09bb6e3f7fc23904e4adfabd7fc9738b8c428150db1650c431.
+\end{quote}
+This is the clean Round-04 certificate: it contains only the exact Selmer,
+$\Q\times K$, scaling, and proved Mordell--Weil-image data.  The superseded
+opposite-side pairing proposal is absent; its failure is recorded only in the
+separate Round-05 negative audit.
+Both files, the same-$m$ certificate, their generators and regression tests
+are located by supplement release
+\begin{center}
+\path{paper-elliptic-campbell-supplement-v0.6.1}
+\end{center}
+with root manifest
+\begin{center}
+\path{PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.json}.
+\end{center}
+The manifest SHA-256 is
+\begin{quote}\small\ttfamily
+583ec02b13c96824df5563d0dc7cc0312b7fbb33e5b7860b4f692b1fbed228fd.
+\end{quote}
+The manifest records byte lengths, roles, evidence eligibility, Python and
+SymPy versions, and exact reproduction commands.  Its archive URL is null;
+this is a local release candidate rather than a public archive.
+
+\begin{theorem}\label{thm:selmer}
+With $E$-side classes represented by the $X$-Kummer map on $E$ and
+$E'$-side classes by that on $E'$, one has
+\[
+ \Sel^{\widehat\phi}(E'/\Q)=\langle3,5,7\rangle,
+ \qquad
+ \Sel^{\phi}(E/\Q)=\langle4230241,339106321\rangle.
+\]
+Their $\F_2$-dimensions are respectively $3$ and $2$.
+\end{theorem}
+\begin{proof}
+The two support lists are exhaustive by Lemma~\ref{lem:support}; all good
+places are automatic by Lemma~\ref{lem:good}.  The certificate checks the
+remaining finite and real places and yields exactly the survivor sets in
+Table~\ref{tab:local-classification}.  Direct squareclass multiplication
+verifies that the two sets are
+the groups generated as displayed.
+\end{proof}
+
+The exact sequence underlying descent by a degree-$2$ isogeny gives
+\[
+ 2^{\operatorname{rank}E(\Q)}=
+ \frac{|E'(\Q)/\phi E(\Q)|\,|E(\Q)/\widehat\phi E'(\Q)|}
+ {|E(\Q)[\phi]|\,|E'(\Q)[\widehat\phi]|};
+\]
+see \cite[pp.~368--369]{vanBeekFisher2018}.  Both denominator groups here
+have order $2$, and the two Mordell--Weil quotients inject into the two
+Selmer groups.
+\begin{corollary}\label{cor:rank}
+$\operatorname{rank}E(\Q)\le3$.
+\end{corollary}
+
+\section{Correction of the proposed pairing gate}
+For clarity we record the relevant cohomological direction.  The standard
+pairing that upgrades a descent by $\widehat\phi$ to a full $2$-descent is
+an alternating pairing
+\begin{equation}\label{eq:isog-pairing}
+ \Sel^{\widehat\phi}(E'/\Q)\times
+ \Sel^{\widehat\phi}(E'/\Q)\longrightarrow\Q/\mathbb Z,
+\end{equation}
+whose radical is the image of the appropriate full $2$-Selmer group; see
+\cite[Equation~(2)]{vanBeekFisher2018}.  In particular, it is a pairing on
+one isogeny Selmer group squared, not a pairing between the two groups in
+Theorem~\ref{thm:selmer}.  The full Cassels--Tate pairing on binary quartics
+likewise has domain $\Sel^{(2)}(E/\Q)\times\Sel^{(2)}(E/\Q)$
+\cite[Theorem~3.1]{Fisher2022}.
+
+\begin{proposition}[pairing correction]\label{prop:correction}
+The expression formerly denoted
+$\langle35,4230241\rangle_{CT}$ in this project is not defined by either
+of the standard pairings just cited: $35$ and $4230241$ are coordinates in
+opposite isogeny Selmer groups.  Consequently its proposed tangent-line
+formula cannot be used to deduce $C_H(\Q)=\varnothing$.
+\end{proposition}
+\begin{proof}
+The domain mismatch follows directly from \eqref{eq:isog-pairing} and
+Theorem~\ref{thm:selmer}.  There is a second consistency check.  By
+Lemma~\ref{lem:same-m}, $C_H$ is everywhere locally soluble, so it represents a class of
+$\Sel^{(2)}(E/\Q)$, and its projection is $35$.  Hence $35$ already lies in
+the image whose radical is tested by \eqref{eq:isog-pairing}; any correctly
+defined same-side lifting pairing must annihilate it.
+\end{proof}
+
+The arithmetic that exposed the problem is still useful as a negative
+certificate.  For the standard even quartic
+\[
+ N^2=35U^4-591895071U^2V^2+1672465404395520V^4
+\]
+the associated conic in $R=U^2,S=V^2$ has the rational point
+\[
+ (R_0,S_0,N_0)=(16257024,1,36058176).
+\]
+A primitive tangent there is
+\[
+ L_{35}=60677401R-697502396215296S-8012928N.
+\]
+Both identities follow by direct substitution.  If one nevertheless
+evaluates the rejected expression $(L_{35}(P_v),4230241)_v$, then the two
+Hensel branches give the exact residues in
+Table~\ref{tab:rejected-hilbert}.
+
+\begin{table}[ht]
+\centering
+\caption{Branch dependence of the rejected local Hilbert-symbol expression}
+\label{tab:rejected-hilbert}
+\begin{tabular}{rrrrrr}
+\toprule
+$p$ & modulus & $N$ & $L_{35}$ & $v_p(L_{35})$ & Hilbert symbol\\
+\midrule
+$59$ & $59^3$ & $56226$ & $127303$ & $0$ & $-1$\\
+$59$ & $59^3$ & $149153$ & $145730$ & $1$ & $+1$\\
+$71699$ & $71699^3$ & $152989401412805$ & $252464922339130$ & $0$ & $-1$\\
+$71699$ & $71699^3$ & $215596989132294$ & $195462237955773$ & $1$ & $+1$\\
+\bottomrule
+\end{tabular}
+\end{table}
+Each listed $N$ squares to the quartic right side modulo the listed modulus.
+Thus independent local branch choices yield both possible products.  This
+does not compute a Cassels--Tate value; it proves that the formerly proposed
+bare expression lacks the cochain or denominator data needed for
+well-definedness.
+
+\section{The exact remaining full-descent problem}
+To test the Campbell class itself one must now do one of the following
+equivalent full-descent computations.
+\begin{enumerate}
+\item Compute a basis of $\Sel^{(2)}(E/\Q)$ as everywhere locally soluble
+binary quartics $g_i$ with the same $I,J$; identify $[H]$ by the full
+$z(H)\in(\Q\times K)^\times/(\Q\times K)^{\times2}$; and compute
+$\langle[H],[g_i]\rangle_{CT}$ by the full binary-quartic formula of
+\cite[Theorem~3.1]{Fisher2022}.
+\item Compute the locally soluble $4$-coverings lying above $C_H$.  An empty
+output proves that its $2$-Selmer class does not lift and hence that
+$C_H(\Q)=\varnothing$; a nonempty output does not by itself produce a
+rational point.  This is the precise role of a four-descent
+\cite[Section ``Four-Descent'']{MagmaHandbook}.
+\end{enumerate}
+The accompanying Magma input freezes both routes, but the manifest marks it
+\path{UNEXECUTED_FROZEN_CANDIDATE_INPUT} and
+\path{mathematical_evidence_eligible=false}.  No transcript or trusted
+binary hash is present.  Therefore no full $2$-Selmer dimension,
+Cassels--Tate value, Mordell--Weil rank equality, or rational-point conclusion
+is claimed.
+
+\section{Finite theorem and reproducibility boundary}
+\begin{theorem}[finite Campbell--Jacobian calculation]
+For the binary quartic $H$ obtained at index $8$ from Campbell's
+Theorem~2.5, the two isogeny Selmer groups are those in
+Theorem~\ref{thm:selmer}; hence $\operatorname{rank}E(\Q)\le3$.  Its
+cubic-algebra invariant is the pair of Proposition~\ref{prop:z}, with
+rational $2$-torsion projection $[35]$.  Moreover the same-parameter
+genus-$5$ fibre product is everywhere locally soluble.
+\end{theorem}
+This is a finite, certificate-backed theorem.  Exact-coefficient searches did
+not locate a published computation of these particular Selmer groups; that is
+a not-found report, not proof of novelty or priority.  The theorem neither
+asserts the existence or nonexistence of a rational ninth point nor computes
+the full $2$-Selmer group or any Cassels--Tate value.
+
+\section*{Statements and Declarations}
+
+\paragraph{Funding.}
+\emph{Placeholder: the human authors must insert the verified funding
+statement.}
+
+\paragraph{Competing interests.}
+\emph{Placeholder: the human authors must insert the verified financial and
+non-financial interests statement.}
+
+\paragraph{Author contributions.}
+\emph{Placeholder: the human authors must insert the approved contribution
+statement.}
+
+\paragraph{Ethics approval, consent to participate, and consent for publication.}
+Not applicable: this article contains only mathematical research and uses no
+human participants, personal data, or animals.
+
+\paragraph{Data and code availability.}
+The exact generators, JSON certificates, and regression tests are identified
+by supplement release
+\path{paper-elliptic-campbell-supplement-v0.6.1}.  They are currently sealed
+only in the local deterministic archive candidate; before submission the
+authors must deposit those exact bytes and provide a verified persistent DOI
+or URL: \texttt{<<PERSISTENT DOI/URL REQUIRED>>}.
+
+\paragraph{Use of generative AI and AI-assisted technologies.}
+AI-assisted tools were used during exploratory symbolic-algebra scripting,
+test drafting, literature-query formulation, and prose preparation.  No AI
+system is an author.  Before submission, the named human authors must
+independently verify and accept every mathematical claim, reference, source
+file, code artifact, and disclosure, and they remain accountable for the
+final work.
+
+\paragraph{Supplementary information.}
+Online Resource 1: deterministic verification archive containing the exact
+source, frozen reference PDF, generators, certificates, data dictionary, and regression tests
+identified by release root
+\path{paper-elliptic-campbell-local-release-v0.6.3}.  The unexecuted Magma
+input is included solely as an ineligible candidate input and is not evidence
+for any theorem.  The journal name, author names, affiliations, corresponding
+author email, and public archive identifier remain human-supplied metadata.
+
+{\small
+\begin{thebibliography}{9}
+\bibitem{Campbell2003}
+G. Campbell,
+``A note on arithmetic progressions on elliptic curves,''
+\emph{Journal of Integer Sequences} \textbf{6} (2003), Article 03.1.3,
+\url{https://cs.uwaterloo.ca/journals/JIS/VOL6/Campbell/campbell4.html}.
+
+\bibitem{Cassels1991}
+J. W. S. Cassels,
+\emph{Lectures on Elliptic Curves}, LMS Student Texts 24,
+Cambridge University Press, 1991.
+
+\bibitem{Fisher2022}
+T. Fisher,
+``On binary quartics and the Cassels--Tate pairing,''
+\emph{Research in Number Theory} \textbf{8} (2022), article 74,
+\url{https://doi.org/10.1007/s40993-022-00376-z}.
+
+\bibitem{Fisher2017}
+T. Fisher,
+``Higher descents on an elliptic curve with a rational $2$-torsion point,''
+\emph{Mathematics of Computation} \textbf{86} (2017), 2493--2518,
+\url{https://doi.org/10.1090/mcom/3163}.
+
+\bibitem{Silverman2009}
+J. H. Silverman,
+\emph{The Arithmetic of Elliptic Curves}, second edition,
+Graduate Texts in Mathematics 106, Springer, 2009.
+
+\bibitem{vanBeekFisher2018}
+M. van Beek and T. Fisher,
+``Computing the Cassels--Tate pairing on 3-isogeny Selmer groups via cubic
+norm equations,'' \emph{Acta Arithmetica} \textbf{185} (2018), 367--396,
+\url{https://doi.org/10.4064/aa171108-11-4}.
+
+\bibitem{MagmaHandbook}
+W. Bosma, J. Cannon, and C. Playoust,
+``The Magma algebra system. I. The user language,''
+\emph{J. Symbolic Comput.} \textbf{24} (1997), 235--265;
+current descent interface documented at
+\url{https://magma.maths.usyd.edu.au/magma/handbook/text/1570}.
+\end{thebibliography}
+}
+
+\end{document}

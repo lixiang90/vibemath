@@ -1,0 +1,1807 @@
+{
+  "bounded_search": {
+    "bound_abs_t": 1000000,
+    "conjectural_only": true,
+    "nonbranch_branch_data": [
+      {
+        "A": 72,
+        "B": 72,
+        "d": 2,
+        "gcd_A_B": 72,
+        "t": 6,
+        "u": 6,
+        "v": 6,
+        "x=t+3": 9,
+        "y_abs": 72
+      }
+    ],
+    "nonbranch_points_with_positive_y": [
+      [
+        6,
+        72
+      ]
+    ],
+    "points_with_nonnegative_y": [
+      [
+        -6,
+        0
+      ],
+      [
+        -3,
+        0
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        6,
+        72
+      ]
+    ]
+  },
+  "branch_summary": {
+    "factor_size_closed": 3,
+    "strictly_congruence_excluded": 15,
+    "total": 18,
+    "unresolved": 0
+  },
+  "branches": [
+    {
+      "a": 1,
+      "b": 1,
+      "d": 1,
+      "factor_size_closure": null,
+      "pell_equation": "1*R^2-1*S^2=1",
+      "quartic_norm_equation": "1*R^4-1*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 16,
+      "x": "1*R^2"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "d": 1,
+      "factor_size_closure": null,
+      "pell_equation": "1*S^2-1*R^2=1",
+      "quartic_norm_equation": "1*R^4-1*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-1*R^2"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "d": 2,
+      "factor_size_closure": {
+        "point": "x=9, t=6, y=+-72",
+        "result": "R=3, S=2, U=6"
+      },
+      "pell_equation": "1*R^2-2*S^2=1",
+      "quartic_norm_equation": "1*R^4-2*U^2=9",
+      "sign": "positive_x",
+      "status": "PROVED_CLOSED_BY_FACTOR_SIZE",
+      "strict_congruence_obstruction_modulus": null,
+      "x": "1*R^2"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "d": 2,
+      "factor_size_closure": null,
+      "pell_equation": "2*S^2-1*R^2=1",
+      "quartic_norm_equation": "1*R^4-2*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 9,
+      "x": "-1*R^2"
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "d": 2,
+      "factor_size_closure": null,
+      "pell_equation": "2*R^2-1*S^2=1",
+      "quartic_norm_equation": "4*R^4-2*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "2*R^2"
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "d": 2,
+      "factor_size_closure": null,
+      "pell_equation": "1*S^2-2*R^2=1",
+      "quartic_norm_equation": "4*R^4-2*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-2*R^2"
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "d": 3,
+      "factor_size_closure": null,
+      "pell_equation": "1*R^2-3*S^2=1",
+      "quartic_norm_equation": "1*R^4-3*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 9,
+      "x": "1*R^2"
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "d": 3,
+      "factor_size_closure": null,
+      "pell_equation": "3*S^2-1*R^2=1",
+      "quartic_norm_equation": "1*R^4-3*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-1*R^2"
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "d": 3,
+      "factor_size_closure": null,
+      "pell_equation": "3*R^2-1*S^2=1",
+      "quartic_norm_equation": "9*R^4-3*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "3*R^2"
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "d": 3,
+      "factor_size_closure": {
+        "point": "x=-3, t=-6, y=0 (branch)",
+        "result": "R=1, S=2, U=0"
+      },
+      "pell_equation": "1*S^2-3*R^2=1",
+      "quartic_norm_equation": "9*R^4-3*U^2=9",
+      "sign": "negative_x",
+      "status": "PROVED_CLOSED_BY_FACTOR_SIZE",
+      "strict_congruence_obstruction_modulus": null,
+      "x": "-3*R^2"
+    },
+    {
+      "a": 1,
+      "b": 6,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "1*R^2-6*S^2=1",
+      "quartic_norm_equation": "1*R^4-6*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 9,
+      "x": "1*R^2"
+    },
+    {
+      "a": 1,
+      "b": 6,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "6*S^2-1*R^2=1",
+      "quartic_norm_equation": "1*R^4-6*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-1*R^2"
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "2*R^2-3*S^2=1",
+      "quartic_norm_equation": "4*R^4-6*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "2*R^2"
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "3*S^2-2*R^2=1",
+      "quartic_norm_equation": "4*R^4-6*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-2*R^2"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "d": 6,
+      "factor_size_closure": {
+        "point": "x=3, t=0, y=0 (branch)",
+        "result": "R=1, S=1, U=0"
+      },
+      "pell_equation": "3*R^2-2*S^2=1",
+      "quartic_norm_equation": "9*R^4-6*U^2=9",
+      "sign": "positive_x",
+      "status": "PROVED_CLOSED_BY_FACTOR_SIZE",
+      "strict_congruence_obstruction_modulus": null,
+      "x": "3*R^2"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "2*S^2-3*R^2=1",
+      "quartic_norm_equation": "9*R^4-6*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-3*R^2"
+    },
+    {
+      "a": 6,
+      "b": 1,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "6*R^2-1*S^2=1",
+      "quartic_norm_equation": "36*R^4-6*U^2=9",
+      "sign": "positive_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "6*R^2"
+    },
+    {
+      "a": 6,
+      "b": 1,
+      "d": 6,
+      "factor_size_closure": null,
+      "pell_equation": "1*S^2-6*R^2=1",
+      "quartic_norm_equation": "36*R^4-6*U^2=9",
+      "sign": "negative_x",
+      "status": "STRICTLY_EXCLUDED_BY_CONGRUENCE",
+      "strict_congruence_obstruction_modulus": 8,
+      "x": "-6*R^2"
+    }
+  ],
+  "d1_branch": {
+    "candidate_x": [
+      -5,
+      -3,
+      3,
+      5
+    ],
+    "factorization": "(x-U)(x+U)=9",
+    "solutions": [],
+    "status": "PROVED_EMPTY",
+    "x_times_x_minus_1": {
+      "-3": 12,
+      "-5": 30,
+      "3": 6,
+      "5": 20
+    }
+  },
+  "factor_size_proofs": {
+    "d=2,a=1,b=2,positive": "R^2-2S^2=1 and R^4-2U^2=9.  R is odd.  R=1 is impossible; R=3 gives (S,U)=(2,6).  If R>=5, then (U-RS)(U+RS)=(R^2-9)/2>0, while S>R/2 makes U+RS>RS>R^2/2>(R^2-9)/2, impossible.",
+    "d=3,a=3,b=1,negative": "S^2-3R^2=1 and U^2=3(R^4-1).  R=0 is impossible and R=1 gives (S,U)=(2,0).  R=2 has S^2=13.  For R>=3, (RS-U)(RS+U)=R^2+3, but RS>sqrt(3)R^2>R^2+3, impossible.",
+    "d=6,a=3,b=2,positive": "3R^2-2S^2=1 and 3R^4-2U^2=3.  R is odd; R=1 gives (S,U)=(1,0).  If R>=3, then (U-RS)(U+RS)=(R^2-3)/2>0, while S>R/2 makes U+RS>RS>R^2/2>(R^2-3)/2, impossible."
+  },
+  "factor_size_structured_certificate": [
+    {
+      "S_bound_margin_numerator": "R**2 - 2",
+      "allowed_R_residues": [
+        1
+      ],
+      "factor_exceeds_product_margin_twice": 9,
+      "factor_identity": "-R**2/2 + (-R*S + U)*(R*S + U) + 9/2",
+      "factor_identity_after_equations": "0",
+      "key": "d=2,a=1,b=2,positive",
+      "parity_modulus": 2,
+      "pell": "R**2 - 2*S**2 - 1",
+      "product_numerator": "R**2 - 9",
+      "quartic": "R**4 - 2*U**2 - 9",
+      "small_R": [
+        1,
+        3
+      ],
+      "small_results": [
+        {
+          "R": 1,
+          "quartic_U2": -4,
+          "status": "quartic_impossible"
+        },
+        {
+          "R": 3,
+          "S": 2,
+          "U": 6,
+          "status": "solution"
+        }
+      ],
+      "threshold": 5
+    },
+    {
+      "factor_exceeds_product_square_margin": "2*R**4 - 5*R**2 - 9",
+      "factor_identity": "-R**2 + (R*S - U)*(R*S + U) - 3",
+      "factor_identity_after_equations": "0",
+      "key": "d=3,a=3,b=1,negative",
+      "pell": "-3*R**2 + S**2 - 1",
+      "quartic": "-3*R**4 + U**2 + 3",
+      "small_R": [
+        0,
+        1,
+        2
+      ],
+      "small_results": [
+        {
+          "R": 0,
+          "U2": -3,
+          "status": "quartic_impossible"
+        },
+        {
+          "R": 1,
+          "S": 2,
+          "U": 0,
+          "status": "solution"
+        },
+        {
+          "R": 2,
+          "S2": 13,
+          "status": "pell_impossible"
+        }
+      ],
+      "threshold": 3
+    },
+    {
+      "S_bound_margin_numerator": "5*R**2 - 2",
+      "allowed_R_residues": [
+        1
+      ],
+      "factor_exceeds_product_margin_twice": 3,
+      "factor_identity": "-R**2/2 + (-R*S + U)*(R*S + U) + 3/2",
+      "factor_identity_after_equations": "0",
+      "key": "d=6,a=3,b=2,positive",
+      "parity_modulus": 2,
+      "pell": "3*R**2 - 2*S**2 - 1",
+      "product_numerator": "R**2 - 3",
+      "quartic": "3*R**4 - 2*U**2 - 3",
+      "small_R": [
+        1
+      ],
+      "small_results": [
+        {
+          "R": 1,
+          "S": 1,
+          "U": 0,
+          "status": "solution"
+        }
+      ],
+      "threshold": 3
+    }
+  ],
+  "gcd_squarefree_lemma": {
+    "A": "t(t+6)",
+    "B": "(t+2)(t+3)",
+    "B-A": "6-t",
+    "nonbranch_sign": "B>0 for every integral nonroot t; y^2=AB>0 forces A>0",
+    "resultant_bound": "gcd(A,B) divides A(6)=72",
+    "squarefree_kernel_values": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "x_equations": [
+      "x^2-d*U^2=9",
+      "x(x-1)=d*V^2",
+      "x=t+3"
+    ]
+  },
+  "global_completeness_status": "PROVED_BY_GCD_BRANCHES",
+  "input_sha256": {
+    "PAPER_SQUARE_SAFE_CERTIFICATE.json": "6fb8f023e2719b154e2c5a8b9948113281eb93e6b61f906cd9004f646a8c164c",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "mapping": {
+    "X_roundtrip": "0",
+    "Y_roundtrip": "0",
+    "boundary": [
+      {
+        "E": "O",
+        "H": "(0,0)"
+      },
+      {
+        "E": "(-6,0)",
+        "H": "(-2,0)"
+      },
+      {
+        "E": "(0,0)",
+        "H": "(-3,0)"
+      },
+      {
+        "E": "(6,0)",
+        "H": "(-6,0)"
+      },
+      {
+        "E": "(12,36)",
+        "H": "infinity+ (y/t^2 -> +1)"
+      },
+      {
+        "E": "(12,-36)",
+        "H": "infinity- (y/t^2 -> -1)"
+      }
+    ],
+    "elliptic_model": "Y^2=X^3-36X",
+    "forward": {
+      "X": "12+36/t",
+      "Y": "36*y/t^2"
+    },
+    "forward_curve_identity": "0",
+    "inverse": {
+      "t": "36/(X-12)",
+      "y": "36*Y/(X-12)^2"
+    },
+    "inverse_curve_identity": "0",
+    "t_roundtrip": "0",
+    "y_roundtrip": "0"
+  },
+  "proved_integral_points": [
+    [
+      -6,
+      0
+    ],
+    [
+      -3,
+      0
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      6,
+      -72
+    ],
+    [
+      6,
+      72
+    ]
+  ],
+  "same_t_pattern_audit": {
+    "affected_remaining_patterns": 44,
+    "all_safe_survivors_have_15_distinct_character_masks": true,
+    "remaining_pattern_ids": [
+      2,
+      9,
+      10,
+      11,
+      12,
+      19,
+      20,
+      26,
+      28,
+      31,
+      32,
+      33,
+      37,
+      41,
+      43,
+      47,
+      50,
+      56,
+      59,
+      70,
+      71,
+      83,
+      84,
+      116,
+      134,
+      138,
+      165,
+      188,
+      193,
+      195,
+      197,
+      199,
+      202,
+      210,
+      212,
+      213,
+      214,
+      229,
+      230,
+      234,
+      237,
+      248,
+      251,
+      256,
+      257,
+      264,
+      266,
+      267,
+      268,
+      271,
+      276,
+      279,
+      281,
+      283
+    ],
+    "remaining_patterns_after_this_theorem": 54,
+    "rows": [
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 1,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              5,
+              6,
+              40,
+              43,
+              45,
+              46,
+              72,
+              75,
+              78,
+              96,
+              99,
+              101,
+              102
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 4,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              9,
+              10,
+              36,
+              39,
+              45,
+              46,
+              68,
+              71,
+              78,
+              96,
+              99,
+              105,
+              106
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 13,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              24,
+              27,
+              40,
+              43,
+              48,
+              51,
+              65,
+              66,
+              90,
+              105,
+              106,
+              113,
+              114
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 21,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              24,
+              29,
+              40,
+              45,
+              48,
+              53,
+              65,
+              68,
+              92,
+              105,
+              108,
+              113,
+              116
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 27,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 30,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              5,
+              6,
+              33,
+              34,
+              36,
+              39,
+              72,
+              75,
+              78,
+              105,
+              106,
+              108,
+              111
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 35,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              9,
+              10,
+              33,
+              34,
+              40,
+              43,
+              68,
+              71,
+              78,
+              101,
+              102,
+              108,
+              111
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 45,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              9,
+              12,
+              34,
+              39,
+              43,
+              46,
+              65,
+              68,
+              72,
+              99,
+              102,
+              106,
+              111
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 49,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              10,
+              12,
+              17,
+              23,
+              27,
+              29,
+              66,
+              68,
+              72,
+              78,
+              83,
+              85,
+              95
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 51,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              10,
+              12,
+              34,
+              36,
+              40,
+              46,
+              65,
+              71,
+              75,
+              99,
+              101,
+              105,
+              111
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 57,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 68,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              18,
+              23,
+              40,
+              45,
+              58,
+              63,
+              75,
+              78,
+              92,
+              99,
+              102,
+              113,
+              116
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 78,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              17,
+              23,
+              40,
+              46,
+              57,
+              63,
+              75,
+              90,
+              92,
+              99,
+              101,
+              114,
+              116
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 109,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              5,
+              6,
+              40,
+              43,
+              45,
+              46,
+              90,
+              92,
+              95,
+              113,
+              114,
+              116,
+              119
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 110,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              5,
+              6,
+              48,
+              51,
+              53,
+              54,
+              90,
+              92,
+              95,
+              105,
+              106,
+              108,
+              111
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 127,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              17,
+              18,
+              40,
+              43,
+              57,
+              58,
+              78,
+              92,
+              95,
+              101,
+              102,
+              116,
+              119
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 132,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 135,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              24,
+              27,
+              33,
+              34,
+              57,
+              58,
+              78,
+              85,
+              86,
+              108,
+              111,
+              116,
+              119
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 136,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              24,
+              27,
+              40,
+              43,
+              48,
+              51,
+              78,
+              85,
+              86,
+              101,
+              102,
+              125,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 137,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              24,
+              27,
+              45,
+              46,
+              53,
+              54,
+              65,
+              66,
+              90,
+              108,
+              111,
+              116,
+              119
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 149,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              9,
+              12,
+              51,
+              54,
+              58,
+              63,
+              80,
+              85,
+              92,
+              99,
+              102,
+              106,
+              111
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 159,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 161,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              18,
+              23,
+              34,
+              39,
+              48,
+              53,
+              75,
+              78,
+              92,
+              105,
+              108,
+              123,
+              126
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 166,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              24,
+              29,
+              43,
+              46,
+              51,
+              54,
+              65,
+              68,
+              92,
+              106,
+              111,
+              114,
+              119
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 182,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              17,
+              23,
+              33,
+              39,
+              48,
+              54,
+              75,
+              90,
+              92,
+              106,
+              108,
+              123,
+              125
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 194,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              27,
+              29,
+              40,
+              46,
+              51,
+              53,
+              66,
+              68,
+              95,
+              106,
+              108,
+              113,
+              119
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 198,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              9,
+              17,
+              24,
+              39,
+              46,
+              54,
+              63,
+              68,
+              85,
+              92,
+              99,
+              106,
+              114,
+              123
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 206,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              10,
+              17,
+              27,
+              34,
+              40,
+              51,
+              57,
+              71,
+              86,
+              92,
+              101,
+              111,
+              116,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 207,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              10,
+              18,
+              24,
+              33,
+              43,
+              51,
+              57,
+              71,
+              85,
+              95,
+              102,
+              108,
+              116,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 209,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              10,
+              18,
+              24,
+              39,
+              45,
+              53,
+              63,
+              65,
+              75,
+              83,
+              102,
+              108,
+              116,
+              126
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 215,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 220,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              9,
+              10,
+              36,
+              39,
+              45,
+              46,
+              80,
+              83,
+              90,
+              116,
+              119,
+              125,
+              126
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 221,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              9,
+              10,
+              48,
+              51,
+              57,
+              58,
+              68,
+              71,
+              78,
+              116,
+              119,
+              125,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 228,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              3,
+              17,
+              18,
+              36,
+              39,
+              53,
+              54,
+              72,
+              75,
+              90,
+              108,
+              111,
+              125,
+              126
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 238,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              9,
+              12,
+              34,
+              39,
+              43,
+              46,
+              80,
+              85,
+              92,
+              114,
+              119,
+              123,
+              126
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 244,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 246,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              18,
+              23,
+              33,
+              36,
+              51,
+              54,
+              72,
+              90,
+              95,
+              105,
+              108,
+              123,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 250,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              24,
+              29,
+              34,
+              39,
+              58,
+              63,
+              65,
+              68,
+              92,
+              99,
+              102,
+              123,
+              126
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 255,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              17,
+              23,
+              34,
+              36,
+              51,
+              53,
+              72,
+              78,
+              95,
+              106,
+              108,
+              123,
+              125
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 261,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              9,
+              17,
+              24,
+              34,
+              43,
+              51,
+              58,
+              68,
+              85,
+              92,
+              102,
+              111,
+              119,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 263,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              9,
+              18,
+              27,
+              33,
+              40,
+              51,
+              58,
+              68,
+              86,
+              95,
+              101,
+              108,
+              119,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [],
+        "pattern_id": 272,
+        "same_t_checks": [],
+        "special_masks": [
+          77,
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          6
+        ],
+        "pattern_id": 280,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              5,
+              9,
+              12,
+              51,
+              54,
+              58,
+              63,
+              65,
+              68,
+              72,
+              114,
+              119,
+              123,
+              126
+            ],
+            "t": 6
+          }
+        ],
+        "special_masks": [
+          77
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      },
+      {
+        "candidate_intersection": [
+          -12
+        ],
+        "pattern_id": 282,
+        "same_t_checks": [
+          {
+            "all_15_pass": false,
+            "failed_character_masks": [
+              6,
+              10,
+              12,
+              34,
+              36,
+              40,
+              46,
+              83,
+              85,
+              95,
+              113,
+              119,
+              123,
+              125
+            ],
+            "t": -12
+          }
+        ],
+        "special_masks": [
+          89
+        ],
+        "status": "STRICTLY_EXCLUDED_BY_COMPLETE_MASK77_89_LIST"
+      }
+    ],
+    "strictly_excluded": 44,
+    "survivors": 0
+  },
+  "schema": "paper-square-mask77-v1",
+  "scope_warning": "Bounded search is conjectural only; global completeness comes only from the independently checkable 18-branch proof."
+}

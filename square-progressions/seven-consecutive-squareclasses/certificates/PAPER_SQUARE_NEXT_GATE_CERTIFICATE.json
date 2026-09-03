@@ -1,0 +1,416 @@
+{
+  "constant_pairing_ranking": [
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 4,
+        "left": [
+          1,
+          6
+        ],
+        "right": [
+          2,
+          5
+        ]
+      },
+      "gcd_bound": 4,
+      "mask": 102,
+      "patterns_hit": 19,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        2
+      ],
+      "support": [
+        1,
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 3,
+        "left": [
+          1,
+          5
+        ],
+        "right": [
+          2,
+          4
+        ]
+      },
+      "gcd_bound": 3,
+      "mask": 54,
+      "patterns_hit": 16,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        3
+      ],
+      "support": [
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 6,
+        "left": [
+          0,
+          5
+        ],
+        "right": [
+          2,
+          3
+        ]
+      },
+      "gcd_bound": 6,
+      "mask": 45,
+      "patterns_hit": 16,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "support": [
+        0,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 3,
+        "left": [
+          2,
+          6
+        ],
+        "right": [
+          3,
+          5
+        ]
+      },
+      "gcd_bound": 3,
+      "mask": 108,
+      "patterns_hit": 15,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        3
+      ],
+      "support": [
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 4,
+        "left": [
+          0,
+          5
+        ],
+        "right": [
+          1,
+          4
+        ]
+      },
+      "gcd_bound": 4,
+      "mask": 51,
+      "patterns_hit": 15,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        2
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 5,
+        "left": [
+          0,
+          6
+        ],
+        "right": [
+          1,
+          5
+        ]
+      },
+      "gcd_bound": 5,
+      "mask": 99,
+      "patterns_hit": 15,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        5
+      ],
+      "support": [
+        0,
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 8,
+        "left": [
+          0,
+          6
+        ],
+        "right": [
+          2,
+          4
+        ]
+      },
+      "gcd_bound": 8,
+      "mask": 85,
+      "patterns_hit": 15,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        2
+      ],
+      "support": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 3,
+        "left": [
+          0,
+          4
+        ],
+        "right": [
+          1,
+          3
+        ]
+      },
+      "gcd_bound": 3,
+      "mask": 27,
+      "patterns_hit": 11,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        3
+      ],
+      "support": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "constant_pairing": {
+        "difference_right_minus_left": 6,
+        "left": [
+          1,
+          6
+        ],
+        "right": [
+          3,
+          4
+        ]
+      },
+      "gcd_bound": 6,
+      "mask": 90,
+      "patterns_hit": 11,
+      "squarefree_kernel_candidates_upper_bound": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "support": [
+        1,
+        3,
+        4,
+        6
+      ]
+    }
+  ],
+  "input_sha256": {
+    "PAPER_SQUARE_MASK77_CERTIFICATE.json": "a74f2f82e377be59dccec054fe242d905815b5fc1ffee8d779a384c156cc25f8",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "mask102_integral_points": {
+    "A": "(t+1)(t+6)",
+    "B": "(t+2)(t+5)",
+    "B_minus_A": 4,
+    "common_positive_squarefree_kernels": [
+      1,
+      2
+    ],
+    "curve": "y^2=(t+1)(t+2)(t+5)(t+6)",
+    "d=1": {
+      "consequence": "U=0,V=2, so A=0 (branch only)",
+      "equation": "V^2-U^2=4",
+      "factor_pairs_of_4": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "same_parity_pairs": [
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "d=2": {
+      "consequence": "impossible modulo 4",
+      "equation": "V^2-U^2=2",
+      "square_differences_mod_4": [
+        0,
+        1,
+        3
+      ],
+      "squares_mod_4": [
+        0,
+        1
+      ]
+    },
+    "middle_interval_exact_check": [
+      {
+        "is_square": true,
+        "rhs": 0,
+        "t": -6
+      },
+      {
+        "is_square": true,
+        "rhs": 0,
+        "t": -5
+      },
+      {
+        "is_square": false,
+        "rhs": 12,
+        "t": -4
+      },
+      {
+        "is_square": false,
+        "rhs": 12,
+        "t": -3
+      },
+      {
+        "is_square": true,
+        "rhs": 0,
+        "t": -2
+      },
+      {
+        "is_square": true,
+        "rhs": 0,
+        "t": -1
+      }
+    ],
+    "nondegenerate_integral_points": [],
+    "positive_regions": [
+      "t<=-7",
+      "t>=0"
+    ],
+    "proved_integral_points": [
+      [
+        -6,
+        0
+      ],
+      [
+        -5,
+        0
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "status": "PROVED_COMPLETE_BY_GCD_AND_FINITE_MIDDLE_INTERVAL"
+  },
+  "pattern_impact": {
+    "affected_pattern_ids": [
+      2,
+      10,
+      11,
+      19,
+      20,
+      28,
+      37,
+      41,
+      47,
+      56,
+      116,
+      138,
+      165,
+      199,
+      202,
+      213,
+      234,
+      267,
+      279
+    ],
+    "input_remaining_count": 54,
+    "reason": "mask 102 has no nondegenerate integral parameter, so no same-t candidate exists",
+    "remaining_count": 35,
+    "remaining_pattern_ids": [
+      9,
+      12,
+      26,
+      31,
+      32,
+      33,
+      43,
+      50,
+      59,
+      70,
+      71,
+      83,
+      84,
+      134,
+      188,
+      193,
+      195,
+      197,
+      210,
+      212,
+      214,
+      229,
+      230,
+      237,
+      248,
+      251,
+      256,
+      257,
+      264,
+      266,
+      268,
+      271,
+      276,
+      281,
+      283
+    ],
+    "selected_mask": 102,
+    "strictly_excluded": 19
+  },
+  "schema": "paper-square-next-gate-v1",
+  "selection_rule": "maximize remaining patterns hit among four-root masks with a constant quadratic pairing; break ties by smaller gcd bound"
+}
