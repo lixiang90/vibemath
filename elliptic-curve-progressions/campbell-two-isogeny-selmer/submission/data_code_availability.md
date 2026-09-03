@@ -4,22 +4,44 @@ Current public working archive:
 
 <https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer>
 
-The repository root `MANIFEST.sha256` binds the public bytes.  The historical
-supplement manifest identifies the original finite evidence release; it must
-not be interpreted as claiming that the unexecuted Magma inputs were run.
+The repository-root `MANIFEST.sha256` is a pre-Round-09 snapshot and does not
+bind the current working bytes.  The historical
+`reproducibility/supplement-manifest-v0.6.1.json` identifies the original
+finite evidence release; it must not be interpreted as claiming that the
+unexecuted Magma inputs were run.
 The later exact minimal-model and conductor certificate is stored under
 `certificates/minimal_model_identity.json` and is bound by the repository-root
 manifest.
 
-Proposed statement after an immutable release or preservation deposit:
+The Round-09 working-tree addition consists of
+`code/NEXT_ELLIPTIC_ROUND_09.py`,
+`code/NEXT_ELLIPTIC_ROUND_09_test.py`, and
+`certificates/round09_two_place_gate.json`.  It proves the complete E-side
+local reduction from 32 signed support classes to the same 16 classes at
+either `Q_59` or `Q_71699`, and to eight after imposing the real condition.
+These later bytes are not bound by the historical v0.6.1 supplement manifest;
+a new release manifest must bind them before submission.
+
+Proposed statement after a new immutable release or preservation deposit:
 
 The exact generators, JSON certificates, and regression tests are identified
-by `PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.json`, release
-`paper-elliptic-campbell-supplement-v0.6.1`. The manifest records each file's
-byte length, SHA-256, role, evidence eligibility, runtime, and reproduction
-commands. Public archive: <<DOI/URL>>.
+by `<<NEW ROUND-09 MANIFEST NAME>>`, release `<<NEW RELEASE TAG>>`. The
+manifest records each file's byte length, SHA-256, role, evidence eligibility,
+runtime, and reproduction commands. Public archive: <<DOI/URL>>.
 
 Until that immutable locator is independently download-checked, the GitHub
 `main` branch is a public working archive rather than a frozen journal deposit.
 The unexecuted Magma inputs are explicitly ineligible and have no transcript or
-software-binary hash.
+software-binary hash.  No independent second elliptic-curve CAS was available;
+the exact Python/SymPy implementation is not represented as an independent
+reproduction of the minimal-model or conductor calculation.
+
+The complete current regression command, run from `code/`, is
+
+```powershell
+python -W error -m unittest -q PAPER_ELLIPTIC_NEXT_test.py PAPER_ELLIPTIC_CAMPBELL_test.py PAPER_ELLIPTIC_ROUND_04_test.py PAPER_ELLIPTIC_ROUND_05_test.py PAPER_ELLIPTIC_ROUND_06_test.py test_same_m_local.py NEXT_ELLIPTIC_ISOMORPHISM_AUDIT_test.py NEXT_ELLIPTIC_ROUND_09_test.py
+```
+
+It passes 56 tests.  The current 10-page reference PDF has SHA-256
+`5509F6763F92416DDD37A318A2F46F1971E34BA31DC54784A61F037B6DE57B36`.
+Neither a database non-match nor this artifact hash establishes novelty.

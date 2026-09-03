@@ -28,6 +28,9 @@
 
 ## Deliberately unresolved
 
-Do not state that all four-hit maximizers are classified. Two of the 31 models
-are solved by positive-rank arguments; the other 29 need not be solved before
-submitting the exact-maximum theorem.
+Do not state that all four-hit maximizers are classified. Four of the 31
+models are solved by positive-rank arguments; the other 27 need not be solved
+before submitting the exact-maximum theorem.  Likewise, do not describe the
+25 Round-09 reuse clusters as an arbitrary-`Q`-isomorphism classification:
+they are certified only under the explicitly recorded coordinate and factor
+permutations.

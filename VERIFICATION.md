@@ -1,20 +1,20 @@
 # Verification snapshot
 
-Date: 2026-09-03
+Date: 2026-09-04
 
 The organized public source tree was checked again after the mathematical and
 novelty audit.
 
-- 70 tests passed for the seven-consecutive-squareclass project, including the
-  exact mask-99 and mask-51 integral-point gates.
+- 78 tests passed for the seven-consecutive-squareclass project, including the
+  exact mask-99, mask-51, and mask-90 integral-point gates.
 - 33 tests passed for the number-field magic-square project.
-- 23 tests passed for the pure-cubic five-term project, including two distinct
-  positive-rank four-hit branches.
+- 29 tests passed for the pure-cubic five-term project, including the exact
+  Round09 clustering and four distinct positive-rank four-hit branches.
 - 14 tests passed for the six-term fourth-power project.
 - 8 tests passed for the C29 simultaneous-torsion project.
-- 50 tests passed for the Campbell two-isogeny Selmer project, including the
-  exact minimal-model and conductor audit.
-- Total: 198 passing tests, 0 failures.
+- 56 tests passed for the Campbell two-isogeny Selmer project, including the
+  exact minimal-model/conductor audit and Round09 two-place local gate.
+- Total: 218 passing tests, 0 failures.
 - The public tree contained no LaTeX auxiliaries, caches, temporary build
   directories, archive ZIPs, or duplicate build-output directories.
 - A targeted scan found no environment files, private-key files, GitHub tokens,
@@ -58,6 +58,11 @@ matched-warning list.  The committed/rebuilt `pdftotext` SHA-256 pairs were:
 The latest versioned result is
 `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_4a8dae3dbc04.json`;
 its complete combined stdout/stderr is the adjacent `.log` file.
+
+For Round09, the current working tree passed the updated six-group total of
+218 tests (`78,33,29,14,8,56`). No Round09 commit has yet been
+subjected to the clean-clone protocol, so the eighth-round commit above remains
+the latest clean-clone evidence.
 
 This is an internal clean-environment check, not an external independent
 reproduction or a substitute for human review of the proofs.

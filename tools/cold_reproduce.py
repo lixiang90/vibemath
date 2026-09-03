@@ -178,7 +178,7 @@ def main() -> None:
                 environment=environment,
             )
             counts = [int(value) for value in re.findall(r"Ran (\d+) tests", test_result.stdout)]
-            if counts != [70, 33, 23, 14, 8, 50]:
+            if counts != [78, 33, 29, 14, 8, 56]:
                 raise RuntimeError(f"unexpected test group counts: {counts}")
             report["tests"] = {
                 "group_counts": counts,

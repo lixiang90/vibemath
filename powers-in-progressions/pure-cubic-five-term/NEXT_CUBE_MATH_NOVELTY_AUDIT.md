@@ -1,7 +1,7 @@
 # Pure-cubic five-term problem: mathematical and novelty audit
 
-Date: 2026-09-03  
-Audited tree: `vibemath/powers-in-progressions/pure-cubic-five-term/`  
+Date: 2026-09-04
+Audited tree: `vibemath/powers-in-progressions/pure-cubic-five-term/`
 Decision: **mathematics ACCEPT; novelty wording ACCEPT only in the narrow form stated in Section 4 below.**
 
 This is an adversarial audit of the mathematical claim, not a submission-format
@@ -191,6 +191,28 @@ has its first four nonzero terms equal to
 field.  This proves the lower bound 4, while Sections 2.1--2.5 prove the upper
 bound 4.
 
+### 2.7 Four-hit extension through Round 09
+
+The four-hit gate starts with 31 color/position models.  Four pairwise
+distinct affine-color/reversal orbits are now proved to contain infinitely
+many inequivalent maximizers:
+
+    ((0,1,3,4),0001), ((0,1,2,3),0010),
+    ((0,1,2,3),0100), ((0,1,2,4),0111).
+
+All four constructions are obtained from the positive-rank smooth plane cubic
+\(2X^3-3Y^3+Z^3=0\); the exact map to \(v^2=u^3-243\) and the Nagell--Lutz
+certificate supply the non-torsion point.  Thus 27 of the initial 31
+rational-point models remain open.
+
+After removing the two models closed before Round 09, the generator
+reconstructs all 29 inputs as 4 diagonal cubics, 9 bidegree \((3,3)\) curves,
+and 16 weighted superelliptic curves.  Exact coordinate permutations give
+\(2+9+14=25\) clusters.  This is only a reuse theorem under the displayed
+coordinate and factor permutations: unequal keys are not asserted to be
+non-isomorphic over \(\Q\), and the computation is not a complete
+classification under arbitrary \(\Q\)-isomorphisms.
+
 ## 3. Reproducibility result
 
 Command run from the repository root:
@@ -199,12 +221,21 @@ Command run from the repository root:
 python -m unittest discover -s vibemath/powers-in-progressions/pure-cubic-five-term/code -p "*_test.py" -v
 ```
 
-Result: **9/9 tests passed**.  They cover the kernel elimination, radicand
+Result after Round 09: **29/29 tests passed**.  They cover the kernel elimination, radicand
 normalization, all color orbits and their partition, Burnside counts, all 60
 good-prime obstructions, Jacobian minors, the lower witness, certificate/live
-equality, and the fail-closed four-hit-classification boundary.
+equality, the fail-closed four-hit-classification boundary, the first two
+positive-rank constructions, the complete 29-model reconstruction, all 25
+explicit permutation clusters, and the two further positive-rank lifts.
 
-No source, certificate, test, or paper change was needed in this audit.
+Round-09 cross-review found a deterministic metadata error in the 0100
+boundary record: its two zero checks had interchanged variables although the
+report and manuscript proof were correct.  The generator now verifies
+symbolically that \(A_1=0\) gives \(Z=-Y\) and then \(X^3=2Y^3\), while
+\(A_4=0\) gives \(Z^3=2Y^3\); the test independently checks the
+factorization, discriminant and substitutions.  The regenerated Round-09
+certificate has SHA-256
+4217f170ce6cd27d488811119289dd1cccb480b47c536c23bd10be99b1193662.
 
 ## 4. Prior art and the narrow publishable claim
 
@@ -258,8 +289,11 @@ The narrow claim supported by both the proof and the search is:
 
 Use “we determine,” not “for the first time,” “the first result,” or “complete
 classification of maximizers.”  The paper classifies and excludes all
-**five-hit color/position classes**, but explicitly does not classify the 31
-unresolved four-hit arithmetic-point models.  It must not be advertised as a
+**five-hit color/position classes**.  Of the initial 31 four-hit
+arithmetic-point models, four distinct orbits have positive-rank infinite
+families and 27 remain open.  The 25 Round-09 clusters on the 29-model input
+are proved only under explicit coordinate permutations and are not an
+arbitrary-\(\Q\)-isomorphism classification.  The work must not be advertised as a
 general theorem about cubes in cubic fields, because the rational-entry and
 common-rational-scale restrictions are central.
 
@@ -280,6 +314,11 @@ narrow descriptive sentence above is publishable; any priority claim is not.
 - **Finite computation:** accept as exhaustive and reproducible, not heuristic.
 - **Novelty:** plausibly distinct from accessible prior art, but only the
   narrowly defined exact maximum and exhaustive five-hit color-class
-  elimination should be claimed.
-- **Code/paper changes:** none; the current manuscript already states the
-  necessary scope limitation.
+  elimination, together with the four explicitly proved positive-rank
+  four-hit orbits, should be claimed.
+- **Four-hit boundary:** four of 31 models are closed and 27 remain open; the
+  25 permutation clusters are a strict reuse result, not a complete
+  \(\Q\)-isomorphism classification.
+- **Cross-review repair:** the 0100 certificate metadata was corrected and
+  upgraded to symbolic semantic assertions; the mathematical theorem was
+  unaffected.

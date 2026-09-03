@@ -8,15 +8,23 @@ Family” for publication in Research in Number Theory.
 The manuscript reconstructs Campbell's source family and proves an exact,
 certificate-backed finite calculation for the two 2-isogeny Selmer groups of
 the ninth-value quartic's Jacobian. It also gives a rank upper bound and an
-explicit cubic-algebra coordinate, global minimal model and conductor. The
-claim boundary is deliberately narrow:
-the paper does not assert a rational ninth point, nonexistence of one, a full
-2-Selmer computation, or a Cassels--Tate value.
+explicit cubic-algebra coordinate, global minimal model and conductor. A
+closed local argument shows that, on the E side, either of the primes 59 and
+71699 cuts the 32 signed support classes to the same 16, and the real
+condition leaves exactly eight. The 10-page manuscript is backed by 56
+regression tests. The claim boundary is deliberately narrow: the paper does
+not assert a rational ninth point, nonexistence of one, a full 2-Selmer
+computation, or a Cassels--Tate value. No independent second elliptic-curve
+CAS reproduction was available, and database non-matches are not offered as
+evidence of novelty or priority.
 
-The mathematical supplement is identified by
-`PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.json` and release
+The historical mathematical supplement is identified by
+`reproducibility/supplement-manifest-v0.6.1.json` and release
 `paper-elliptic-campbell-supplement-v0.6.1`. The current working source is
 <https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer>.
+Neither that historical manifest nor the current repository-root manifest
+binds the Round-09 additions or the current PDF. They must be included in a
+newly frozen release before submission.
 At submission insert the verified immutable
 persistent record here: <<PUBLIC ARCHIVE DOI/URL>>.
 

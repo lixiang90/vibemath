@@ -2,21 +2,25 @@ Starting from Campbell's cubic Weierstrass family with eight rational points
 whose x-coordinates are 0 through 7, we reconstruct the quartic condition for
 the ninth candidate and record every rational specialization boundary. We
 identify its Jacobian and rational 2-torsion, then perform an exact finite
-local calculation for the dual 2-isogeny descents. The resulting Selmer
-groups have dimensions 3 and 2, respectively, which gives Mordell-Weil rank
-at most 3.  An explicit rational change of variables gives the global minimal
-model [1,-16441530,0,45166889779200,0].  Its bad reduction is multiplicative
-at every bad prime and its conductor is 301245307115205810. We also compute the full Q times K representative of the
-binary-quartic cubic invariant and its rational 2-torsion projection. A
-versioned supplement records the 512 local cells, common-parameter local
-witnesses, exact generators, certificates, and regression tests. The
-same-parameter genus-5 fibre product is everywhere locally soluble. Our
-calculation is deliberately narrower than the original extension problem: it
-neither produces nor excludes a ninth rational point on Campbell's family,
-claims no full 2-Selmer group or Mordell-Weil rank equality, and does not
-evaluate a Cassels-Tate pairing. The results are therefore a reproducible
-finite descent computation and a rigorously delimited input to further
-arithmetic study of the ninth-value curve.
+local calculation for the dual 2-isogeny descents. On the E side, a direct
+two-place argument shows that either Q_59 or Q_71699 reduces the 32 signed
+support classes to the same 16 classes, while imposing real solubility leaves
+exactly eight. The resulting Selmer groups have dimensions 3 and 2,
+respectively, which gives Mordell-Weil rank at most 3. An explicit rational
+change of variables gives the global minimal model
+[1,-16441530,0,45166889779200,0]. Its bad reduction is multiplicative at
+every bad prime and its conductor is 301245307115205810. We also compute the
+full Q times K representative of the binary-quartic cubic invariant and its
+rational 2-torsion projection. A versioned supplement records the 512 local
+cells, common-parameter local witnesses, exact generators, certificates, and
+56 regression tests. The same-parameter genus-5 fibre product is everywhere
+locally soluble. Our calculation is deliberately narrower than the original
+extension problem: it neither produces nor excludes a ninth rational point
+on Campbell's family, claims no full 2-Selmer group or Mordell-Weil rank
+equality, and does not evaluate a Cassels-Tate pairing. No independent second
+elliptic-curve CAS reproduction was available. The results are therefore a
+reproducible finite descent computation and a rigorously delimited input to
+further arithmetic study of the ninth-value curve.
 
 Keywords: elliptic curves; 2-isogeny descent; Selmer groups; arithmetic
 progressions; local solubility.

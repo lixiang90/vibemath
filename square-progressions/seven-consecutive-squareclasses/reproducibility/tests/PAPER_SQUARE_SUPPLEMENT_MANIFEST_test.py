@@ -21,14 +21,14 @@ class SupplementManifestTests(unittest.TestCase):
 
     def test_release_is_fail_closed_about_archiving(self):
         data = manifest.build_manifest()
-        self.assertEqual(data["semantic_version"], "0.7.0")
+        self.assertEqual(data["semantic_version"], "0.8.0")
         self.assertIn("NOT_PUBLICLY_ARCHIVED", data["release_status"])
         self.assertIsNone(data["archival_url"])
         self.assertIn("not decided", data["claim_boundary"]["not_proved"])
 
     def test_commands_cover_all_paper_generators_and_tests(self):
         commands = "\n".join(manifest.build_manifest()["reproduction_commands"])
-        for needle in ("SAFE_inventory.py", "MASK77_analysis.py", "NEXT_GATE.py", "MASK108.py", "MASK99.py", "MASK51.py", "unittest"):
+        for needle in ("SAFE_inventory.py", "MASK77_analysis.py", "NEXT_GATE.py", "MASK108.py", "MASK99.py", "MASK51.py", "MASK90.py", "unittest"):
             self.assertIn(needle, commands)
 
 

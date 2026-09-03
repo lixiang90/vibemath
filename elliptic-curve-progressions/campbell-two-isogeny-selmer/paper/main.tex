@@ -15,7 +15,7 @@
 
 \title{A Two-Isogeny Descent Attached to Campbell's Eight-Term Family}
 \author{Draft}
-\date{Revised 3 September 2026}
+\date{Revised 4 September 2026}
 
 \begin{document}
 \maketitle
@@ -352,6 +352,66 @@ impossible for a square.  Notice that this argument does not assume in
 advance that $N$ is $p$-integral.  Thus $v_p(d)$ is even outside $b$, and
 squareclass reduction gives the stated support.
 	\end{proof}
+
+\begin{proposition}[two-place $E$-side gate]\label{prop:two-place-gate}
+For the curve $E$ in \eqref{eq:E}, let $d$ run through the $32$ signed
+squarefree classes supported on $\{2,3,5,7\}$.  Then
+\[
+ C_d(\mathbf Q_{59})\ne\varnothing
+ \quad\Longleftrightarrow\quad
+ C_d(\mathbf Q_{71699})\ne\varnothing.
+\]
+These equivalent conditions hold exactly for
+\[
+ d\in\left\{
+ \begin{gathered}
+ -210,-70,-42,-30,-14,-10,-6,-2,\\
+ 1,3,5,7,15,21,35,105
+ \end{gathered}
+ \right\}.
+\]
+Moreover $C_d(\mathbf R)\ne\varnothing$ exactly when $d>0$.
+Consequently the classes that survive the real place together with either
+one of these two finite places are exactly
+\[
+ \{1,3,5,7,15,21,35,105\}.
+\]
+\end{proposition}
+\begin{proof}
+Write $a=-591895071$, $b=58536289153843200$, and
+\[
+ \delta=a^2-4b=3^4\cdot59\cdot71699\cdot339106321.
+\]
+For $p=59$ or $71699$ one has $v_p(\delta)=1$, while every listed $d$
+and $2b$ are $p$-adic units.  The covering quartic satisfies
+\begin{equation}\label{eq:double-root-identity}
+ 4dF_d=(2dU^2+aV^2)^2-\delta V^4,
+ \qquad F_d=dU^4+aU^2V^2+(b/d)V^4.
+\end{equation}
+If $(d/p)=1$, the choice $(U:V)=(1:0)$ gives a point because $d$ is a
+square in $\mathbf Q_p$.  Conversely suppose $(d/p)=-1$ and normalize
+$U,V\in\mathbf Z_p$ to be primitive.  If $p\mid V$, then
+$F_d\equiv dU^4\pmod p$ is a nonsquare unit.  If $V$ is a unit and
+$2dU^2+aV^2$ is a unit, \eqref{eq:double-root-identity} shows that
+$F_d$ again has squareclass $d$ modulo $p$.  In the remaining case,
+$p\mid2dU^2+aV^2$; the right side of
+\eqref{eq:double-root-identity} then has valuation exactly one, so
+$v_p(F_d)=1$.  Each case contradicts $F_d=N^2$.
+
+Quadratic reciprocity gives, at both primes,
+\[
+ \left(\frac{-1}{p}\right)=
+ \left(\frac{2}{p}\right)=-1,\qquad
+ \left(\frac{3}{p}\right)=
+ \left(\frac{5}{p}\right)=
+ \left(\frac{7}{p}\right)=1.
+\]
+This yields the displayed $16$-class local list.  Finally, if $d>0$ then
+$(U:V)=(1:0)$ gives a real point.  If $d<0$, all three coefficients
+$d,a,b/d$ of $F_d$ are negative, so $F_d<0$ for every nonzero real pair
+$(U,V)$.  Intersecting the two classifications gives the eight positive
+odd divisors of $105$.
+\end{proof}
 
 \begin{lemma}[good primes]\label{lem:good}
 Fix a supported squarefree $d$.  If a finite prime $p$ does not divide

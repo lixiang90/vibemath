@@ -32,11 +32,10 @@ progression $(-3,-1,1,3,5)$ supplies four counted terms over
 $\Q(\sqrt[3]{3})$.  Thus $R^{\times}_{(3,1)}(5)=4$.  This finite
 classification excludes every five-hit color pattern but does not classify
 all rational progressions attaining four hits.  As a first strengthening, we
-prove that one positive-rank genus-one branch supplies infinite families in
-two distinct four-hit orbits: $((0,1,3,4),0001)$ and
-$((0,1,2,3),0010)$.  The progression $(64,1,-62,-125,-188)$ gives the first
-displayed member over $\Q(\sqrt[3]{188})$ and $\Q(\sqrt[3]{62})$,
-respectively.
+prove that one positive-rank genus-one curve supplies infinite families in
+four distinct four-hit orbits.  Besides $((0,1,3,4),0001)$ and
+$((0,1,2,3),0010)$, these are $((0,1,2,3),0100)$ and
+$((0,1,2,4),0111)$.  Explicit first members are displayed below.
 \end{abstract}
 
 \noindent\textbf{Keywords:} arithmetic progression; pure cubic field;
@@ -260,21 +259,21 @@ $-\alpha,-1,1,\alpha$.
 \end{proof}
 
 The theorem includes a complete classification and exclusion of every
-\emph{five-hit color/position class}.  The next section settles two of the 31
+\emph{five-hit color/position class}.  The next section settles four of the 31
 four-hit models left by the orbit sieve; it does not classify every rational
-progression attaining four hits.  The other 29 models remain distinct
+progression attaining four hits.  The other 27 models remain distinct
 Diophantine problems, and we do not replace their rational-point
 classification by a bounded search.
 
 If zero were counted, $-2,-1,0,1,2$ would give five hits in
 $\Q(\sqrt[3]{2})$; this is exactly why the superscript $\times$ is necessary.
 
-\section{Two four-hit branches on a positive-rank cubic}
+\section{Four four-hit branches on a positive-rank cubic}
 
-We now strengthen Theorem~\ref{thm:main} in exactly two of the 31
-four-hit color/position models left open above.  In both, positions $0,1,3$
-are rational cubes.  Writing them as $X^3,Y^3,Z^3$, respectively, the AP
-identity $A_3=3A_1-2A_0$ gives the smooth plane cubic
+We now strengthen Theorem~\ref{thm:main} in exactly four of the 31
+four-hit color/position models left open above.  Begin with positions
+$0,1,3$ rational cubes.  Writing them as $X^3,Y^3,Z^3$, respectively, the
+AP identity $A_3=3A_1-2A_0$ gives the smooth plane cubic
 \begin{equation}\label{eq:C0001}
 C:\qquad 2X^3-3Y^3+Z^3=0.
 \end{equation}
@@ -287,9 +286,12 @@ zero, so $C$ is a genus-one curve.  Put $O=(1:1:1)$ and use it as origin.
 
 \begin{theorem}\label{thm:0001}
 The curve \eqref{eq:C0001} has positive Mordell--Weil rank.  Consequently,
-in each of the two distinct color/position orbits
+in each of the four distinct color/position orbits
 \[
-((0,1,3,4),0001),\qquad ((0,1,2,3),0010),
+\begin{gathered}
+((0,1,3,4),0001),\qquad ((0,1,2,3),0010),\\
+((0,1,2,3),0100),\qquad ((0,1,2,4),0111),
+\end{gathered}
 \]
 there are infinitely many inequivalent nonconstant rational five-term
 arithmetic progressions, with no zero term, having exactly four counted
@@ -375,11 +377,36 @@ are not identified by affine color change and reversal: the first omits the
 central position 2, whereas the second omits an endpoint (position 4, or
 position 0 after reversal).
 
+Two further AP constructions use the same point $(X_n:Y_n:Z_n)$ of $C$:
+\begin{align}
+ &(Z_n^3,(Z_n^3+Y_n^3)/2,Y_n^3,X_n^3,2Y_n^3-Z_n^3),
+ \label{eq:AP0100}\\
+ &(2X_n^3-Y_n^3,X_n^3,Y_n^3,2Y_n^3-X_n^3,Z_n^3).
+ \label{eq:AP0111}
+\end{align}
+The first is an AP because $X^3-3Y^3+2Z^3=0$ after swapping $X$ and
+$Z$ in \eqref{eq:C0001}; its rational-cube positions are $0,2,3$.
+Its singleton $A_1$ cannot vanish: otherwise $Z=-Y$ and the cubic would
+give $X^3=2Y^3$.  Nor can its missing term $A_4$ vanish, since that would
+give $Z^3=2Y^3$.  If $A_1$ were a rational cube, positions $0,1,2,3$
+would contradict $P_5(3)=3$.  Its nontrivial cube class therefore produces
+the orbit $((0,1,2,3),0100)$, and Theorem~\ref{thm:main} excludes a fifth
+hit.
+
+In the second AP the rational-cube positions are $1,2,4$.  Its singleton
+$A_0$ and missing term $A_3$ are nonzero, since their vanishing would make
+$2$ a rational cube.  The singleton is not a rational cube by the same
+$P_5(3)=3$ argument.  Before color normalization its word is $1000$; the
+affine color map $c\mapsto2c+1$ gives the representative $0111$.
+Again Theorem~\ref{thm:main} excludes a fifth hit.  The exact orbit
+enumeration verifies that all four displayed models are pairwise distinct.
+
 Finally, distinct projective points of $C(\Q)$ give distinct progressions up
-to common rational scaling.  Indeed, comparison of the nonzero zeroth terms
-makes the scale a rational cube, after which injectivity of cubing on $\Q$
-recovers the same projective coordinates.  Reversal has fibers of size at
-most two, so infinitely many equivalence classes remain after reversal.
+to common rational scaling within each construction.  Indeed, comparison of
+any fixed nonzero rational-cube position makes the scale a rational cube,
+after which injectivity of cubing on $\Q$ recovers the same projective
+coordinates.  Reversal has fibers of size at most two, so infinitely many
+equivalence classes remain after reversal.
 \end{proof}
 
 For the first nonconstant point $P$, formula \eqref{eq:AP0001} gives
@@ -393,6 +420,14 @@ color/position models carried by the same rational AP.  They differ from the low
 in Theorem~\ref{thm:main}: that progression has four consecutive counted
 positions in the orbit $0110$ over $\Q(\sqrt[3]{3})$, while the present one
 realizes both of the displayed new orbits.
+
+The same point $P$ in \eqref{eq:AP0100} and \eqref{eq:AP0111} gives the
+reversed pair
+\[
+ (-125,-62,1,64,127),\qquad (127,64,1,-62,-125).
+\]
+The first realizes $0100$ over $\Q(\sqrt[3]{62})$, while the second realizes
+$0111$ over $\Q(\sqrt[3]{127})$.
 
 The construction is an integer-parameter Mordell--Weil family, made explicit
 by the exact chord law in the supplement.  It is not a rational
@@ -414,8 +449,11 @@ rational scale, partial hits, and one variable pure cubic field.
 Accordingly, the precise strengthened claim here is only Theorems
 \ref{thm:main} and \ref{thm:0001}: the exact five-term maximum, exhaustive
 exclusion of all five-hit color classes, and positive-rank infinite families
-in the two stated four-hit orbits $0001$ and $0010$.  We make no priority
-claim and no classification claim for the other 29 four-hit models.
+in the four stated four-hit orbits.  We make no priority claim and no
+classification claim for the other 27 four-hit models.  The supplement also
+reconstructs those models as four plane cubics, nine genus-$4$ bidegree
+curves, and sixteen genus-$4$ cyclic covers; its coordinate-permutation
+clusters are not asserted to be complete $\Q$-isomorphism classes.
 
 \section*{Statements and Declarations}
 

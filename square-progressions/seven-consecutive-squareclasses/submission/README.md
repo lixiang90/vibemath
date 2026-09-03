@@ -1,6 +1,14 @@
 # Submission materials — squareclass patterns
 
-Status: draft prose, not authorized for submission.  The mathematics lives in
+Status: draft prose, not authorized for submission.
+
+Current mathematical snapshot: the mask-90 gate leaves 7 necessary patterns;
+the squareclasses suite has 78 tests. Supplement release
+`paper-square-supplement-v0.8.0` is bound by SHA-256
+`29ee9fe4a34a01f4066c017912130f3c02dcd55a031fb9f19dc7046d8854eb54`.
+Realizability of every survivor and `R_2(7)` remain open.
+
+The mathematics lives in
 the sibling `paper/`, `code/`, `certificates/`, `mathematical-notes/`,
 `reviews/`, and `reproducibility/` directories.  This directory deliberately
 contains only editable submission prose.

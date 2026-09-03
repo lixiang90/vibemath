@@ -13,10 +13,13 @@ The proof combines an explicit Kummer-kernel calculation, a complete
 good-prime local obstructions. A deterministic Python/SymPy supplement records
 the complete finite enumeration and per-model count summaries.
 
-The paper also goes beyond a single lower-bound witness: two distinct
-four-hit color/position orbits are shown, by an explicit map to a Mordell curve
-and a Nagell--Lutz certificate, to contain infinitely many inequivalent
-maximizers.
+The paper also goes beyond a single lower-bound witness: four distinct
+four-hit color/position orbits are shown, using explicit constructions from
+one positive-rank plane cubic, a map to a Mordell curve, and a Nagell--Lutz
+certificate, to contain infinitely many inequivalent maximizers.  The
+structural audit groups the 29 Round-09 inputs into 25 reuse clusters under
+explicit coordinate permutations only; it does not claim an arbitrary
+Q-isomorphism classification.
 
 The claim is intentionally narrow. We do not claim to classify all
 progressions attaining four terms, and a dated prior-art search is reported as

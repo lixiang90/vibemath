@@ -4,10 +4,10 @@
 
 The exact generators, JSON certificates, and regression tests supporting the
 finite classification are collected in supplement release
-`paper-square-supplement-v0.7.0`.  Its root file is
+`paper-square-supplement-v0.8.0`.  Its root file is
 `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json`, SHA-256
-`127dd691252f12ef6bb0c96dfb328c3fac8c019a7fe0ce616372e87e368b28c9`.
-The manifest lists 29 bound artifacts, their byte lengths and SHA-256 values,
+`29ee9fe4a34a01f4066c017912130f3c02dcd55a031fb9f19dc7046d8854eb54`.
+The manifest lists 32 bound artifacts, their byte lengths and SHA-256 values,
 the Python and SymPy versions, the reproduction commands, and the mathematical
 claim boundary.
 
@@ -25,7 +25,7 @@ The historical supplement manifest still records its original local-release
 state and must not be reinterpreted retroactively.  For a submission release,
 freeze the current public payload, insert the immutable locator, and perform a
 download-and-hash check.  If any artifact changes, create a new semantic
-version and do not reuse the v0.7.0 supplement hash.
+version and do not reuse the v0.8.0 supplement hash.
 
 The supplement contains no confidential, personal, or third-party dataset.
 <<HUMAN AUTHOR TO CONFIRM THIS SENTENCE BEFORE SUBMISSION>>.

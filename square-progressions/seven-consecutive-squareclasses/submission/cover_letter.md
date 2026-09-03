@@ -19,14 +19,14 @@ The paper studies a finite squareclass formulation of seven consecutive
 integers.  It combines an exact enumeration of affine rank-two label patterns
 with complete integral-point arguments on explicit quartics.  After
 affine rank at most one is excluded, the final theorem reduces the 651 three-
-or four-block patterns to 10 explicitly listed necessary candidates.  It does
+or four-block patterns to 7 explicitly listed necessary candidates.  It does
 not claim to decide the unrestricted `R_2(7)` problem or to realize the
 surviving patterns.
 
 The computational portion is designed for independent audit.  Supplement
-release `paper-square-supplement-v0.7.0` binds 29 core generators,
+release `paper-square-supplement-v0.8.0` binds 32 core generators,
 certificates and tests through the manifest SHA-256
-`127dd691252f12ef6bb0c96dfb328c3fac8c019a7fe0ce616372e87e368b28c9`.
+`29ee9fe4a34a01f4066c017912130f3c02dcd55a031fb9f19dc7046d8854eb54`.
 The current public working record is
 <https://github.com/lixiang90/vibemath/tree/main/square-progressions/seven-consecutive-squareclasses>.
 At submission this must be replaced or supplemented by the verified immutable

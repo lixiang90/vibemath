@@ -1,0 +1,237 @@
+{
+  "claim_boundary": {
+    "not_proved": [
+      "an independent CAS reproduction of the minimal model or conductor",
+      "a new rational point or an obstruction on C_H",
+      "novelty from a database no-match"
+    ],
+    "proved": [
+      "the exact R, Q_59 and Q_71699 classification of all 32 E-side support classes",
+      "the two-place reduction to the eight positive odd divisors of 105"
+    ]
+  },
+  "environment": {
+    "applications": {
+      "gp.exe": null,
+      "magma.exe": null,
+      "mwrank.exe": null,
+      "pari-gp.exe": null,
+      "sage.exe": null
+    },
+    "audit_date": "2026-09-04",
+    "available_nonindependent_runtime": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python_binary_sha256": "3adbbf2af609e206e3ca18cd55fc7c4b52f5c8bb8218dd99fd5a9e50d7a193cd",
+      "python_executable": "C:\\Python314\\python.exe",
+      "python_version": "3.14.5",
+      "sympy_available": true,
+      "sympy_version": "1.14.0"
+    },
+    "claim_boundary": "No second CAS is present.  Python/SymPy is the first implementation's runtime and is not counted as an independent reproduction.",
+    "independent_elliptic_cas_available": false,
+    "powershell_gp_note": "gp is Get-ItemProperty alias, not a PARI/GP executable",
+    "python_modules": {
+      "cypari": false,
+      "cypari2": false,
+      "eclib": false,
+      "sage": false,
+      "sageall": false
+    }
+  },
+  "schema": "campbell-round09-two-place-gate-v1",
+  "source_sha256": {
+    "NEXT_ELLIPTIC_ROUND_09.py": "9334298cb02926d496622401a74d74712f8cc2081e4c03ff2612d6cd7ac0cf6b"
+  },
+  "two_place_gate": {
+    "all_32_candidates": [
+      -210,
+      -105,
+      -70,
+      -42,
+      -35,
+      -30,
+      -21,
+      -15,
+      -14,
+      -10,
+      -7,
+      -6,
+      -5,
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      10,
+      14,
+      15,
+      21,
+      30,
+      35,
+      42,
+      70,
+      105,
+      210
+    ],
+    "closed_theorem": "Among the 32 signed squarefree classes supported on 2,3,5,7, simultaneous solubility over R and Q_59 (equivalently here R and Q_71699) leaves exactly 1,3,5,7,15,21,35,105.",
+    "cover": "C_d: N^2=d*U^4+a*U^2*V^2+(b/d)*V^4",
+    "curve": {
+      "a": -591895071,
+      "a2_minus_4b": 116194618458722241,
+      "a2_minus_4b_factorization": {
+        "3": 4,
+        "339106321": 1,
+        "59": 1,
+        "71699": 1
+      },
+      "b": 58536289153843200,
+      "equation": "y^2=x^3-591895071*x^2+58536289153843200*x"
+    },
+    "local_classification": {
+      "59": {
+        "legendre_generators": {
+          "-1": -1,
+          "2": -1,
+          "3": 1,
+          "5": 1,
+          "7": 1
+        },
+        "necessity_identity": "4*d*F_d=(2*d*U^2+a*V^2)^2-(a^2-4*b)*V^4",
+        "obstructed_classes": [
+          -105,
+          -35,
+          -21,
+          -15,
+          -7,
+          -5,
+          -3,
+          -1,
+          2,
+          6,
+          10,
+          14,
+          30,
+          42,
+          70,
+          210
+        ],
+        "soluble_classes": [
+          -210,
+          -70,
+          -42,
+          -30,
+          -14,
+          -10,
+          -6,
+          -2,
+          1,
+          3,
+          5,
+          7,
+          15,
+          21,
+          35,
+          105
+        ],
+        "sufficiency": "if (d/p)=1, use (U,V)=(1,0) and N^2=d",
+        "v_p_a2_minus_4b": 1
+      },
+      "71699": {
+        "legendre_generators": {
+          "-1": -1,
+          "2": -1,
+          "3": 1,
+          "5": 1,
+          "7": 1
+        },
+        "necessity_identity": "4*d*F_d=(2*d*U^2+a*V^2)^2-(a^2-4*b)*V^4",
+        "obstructed_classes": [
+          -105,
+          -35,
+          -21,
+          -15,
+          -7,
+          -5,
+          -3,
+          -1,
+          2,
+          6,
+          10,
+          14,
+          30,
+          42,
+          70,
+          210
+        ],
+        "soluble_classes": [
+          -210,
+          -70,
+          -42,
+          -30,
+          -14,
+          -10,
+          -6,
+          -2,
+          1,
+          3,
+          5,
+          7,
+          15,
+          21,
+          35,
+          105
+        ],
+        "sufficiency": "if (d/p)=1, use (U,V)=(1,0) and N^2=d",
+        "v_p_a2_minus_4b": 1
+      }
+    },
+    "real_and_Q59_survivors": [
+      1,
+      3,
+      5,
+      7,
+      15,
+      21,
+      35,
+      105
+    ],
+    "real_and_Q71699_survivors": [
+      1,
+      3,
+      5,
+      7,
+      15,
+      21,
+      35,
+      105
+    ],
+    "real_soluble_classes": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      10,
+      14,
+      15,
+      21,
+      30,
+      35,
+      42,
+      70,
+      105,
+      210
+    ],
+    "signed_squarefree_support": [
+      2,
+      3,
+      5,
+      7
+    ]
+  }
+}

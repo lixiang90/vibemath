@@ -1,16 +1,17 @@
 # Seven consecutive squareclasses: mathematical and novelty audit
 
-Audit date: 2026-09-03  
+Audit date: 2026-09-04
 Audited tree: `vibemath/square-progressions/seven-consecutive-squareclasses/`
 
-## Round-8 status addendum
+## Round-9 status addendum
 
-The claim trace below originally stopped at 23 patterns. Two later elementary
+The claim trace below originally stopped at 23 patterns. Three later elementary
 gates are now proved and certificate-bound: mask 99 gives `23 -> 15`, and mask
-51 gives `15 -> 10`. The current headline theorem is therefore the necessary
+51 gives 15 -> 10, and mask 90 gives 10 -> 7. The current headline theorem
+is therefore the necessary
 classification
 
-`651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10`.
+`651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7`.
 
 For mask 51, all 15 input packets were re-read from the mask-99 certificate:
 225 occurrences contain 53 distinct masks and 26 genus-one four-factor masks.
@@ -18,9 +19,15 @@ Among masks already covered by a proved integral translate, mask 51 uniquely
 maximizes impact (five patterns). Its curve is the integral translate `s=t-1`
 of mask 102 and also has an independent `gcd(A,B)|4`, `d in {1,2}` proof.
 All its integral points are degenerate. See `PAPER_SQUARE_MASK51_REPORT.md` and
-`PAPER_SQUARE_MASK51_CERTIFICATE.json`. The same novelty boundary remains in
-force: the result is a necessary finite classification and does not decide
-`R_2(7)` or realize any of the ten survivors.
+`PAPER_SQUARE_MASK51_CERTIFICATE.json`.
+
+For mask 90, the exact pairing `A=(t+1)(t+6)`, `B=(t+3)(t+4)` gives
+`B-A=6` and `gcd(A,B)|6`. The four squarefree kernels
+`d in {1,2,3,6}` and the six complementary integers give only degenerate
+branch points, so IDs `43,251,281` are excluded. The remaining IDs are
+`12,31,59,134,214,230,276`. The same novelty boundary remains in force:
+this is a necessary finite classification and does not decide `R_2(7)` or
+realize any of the seven survivors.
 
 ## Verdict
 
@@ -29,9 +36,9 @@ publishable unit is deliberately narrow:
 
 > For an integer `t` with none of `t,...,t+6` zero, if their rational
 > squareclasses have affine rank at most two, then, up to relabelling and
-> reversal, their equality partition belongs to the explicitly listed 23
+> reversal, their equality partition belongs to the explicitly listed seven
 > patterns; the exact necessary-pattern reduction is
-> `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23`.
+> `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7`.
 
 This is a necessary-pattern classification, not a realization theorem and not
 a decision of `R_2(7)`.  Its strongest apparent novelty lies in combining an
@@ -68,7 +75,10 @@ and in the audited `vibemath/.../paper` source.
 | Integral points on mask 77 and `98 -> 54` | `code/PAPER_SQUARE_MASK77_analysis.py`; mask-77 certificate/test | `gcd(A,B)|72` gives 18 squarefree-kernel/sign/factor branches.  Fifteen are excluded by complete finite residue enumeration; the remaining three have verified factor-size contradictions, leaving only branch points and `(6,+/-72)`.  For every affected pattern the code tests the same candidate `t` against all 15 characters; it does not infer compatibility from separate quotient points | Sound.  The bounded search field is marked conjectural and is not used in completeness |
 | `54 -> 35` via mask 102 | `code/PAPER_SQUARE_NEXT_GATE.py`; certificate/test | `A=(t+1)(t+6)`, `B=(t+2)(t+5)`, `B-A=4`, `gcd(A,B)|4`; the two positive squarefree kernels and six middle integers exhaust all integer cases | Sound elementary integral-point theorem |
 | `35 -> 23` via mask 108 | `code/PAPER_SQUARE_MASK108.py`; certificate/test | `A=(t+2)(t+6)`, `B=(t+3)(t+5)=A+3`, `gcd(A,B)|3`; kernels 1 and 3 plus middle integers exhaust all cases.  Exactly 12 occurrence rows are removed | Sound elementary integral-point theorem |
-| Final 23-row table | Round-02 ranked rows plus mask-108 `remaining_pattern_ids` | Independently recomputed each displayed restricted-growth word from the stored partition for IDs `9,12,26,31,33,43,50,59,83,134,188,210,212,214,230,251,257,266,268,271,276,281,283` | Exact. IDs are ordering-dependent; partition words carry the mathematical content |
+| `23 -> 15` via mask 99 | `code/PAPER_SQUARE_MASK99.py`; certificate/test | Complete squarefree-kernel branches give the stated integral points and remove exactly eight occurrence rows | Sound elementary integral-point theorem |
+| `15 -> 10` via mask 51 | `code/PAPER_SQUARE_MASK51.py`; certificate/test | The integer translate to mask 102 and an independent `gcd(A,B)|4` proof agree; exactly five patterns are removed | Sound elementary integral-point theorem |
+| `10 -> 7` via mask 90 | `code/PAPER_SQUARE_MASK90.py`; certificate/test | `B-A=6`, `gcd(A,B)|6`; the kernels `1,2,3,6` plus the six middle integers leave only four degenerate branch points. Exactly IDs `43,251,281` are removed | Sound elementary integral-point theorem |
+| Final 7-row table | Mask-90 `remaining_pattern_ids` and the upstream ranked rows | Independently checked the seven IDs and partition words `12:0012202`, `31:0001202`, `59:0012231`, `134:0012131`, `214:0122213`, `230:0012102`, `276:0010203` | Exact. IDs are ordering-dependent; partition words carry the mathematical content |
 
 ## Search-to-proof boundary and synthetic-data audit
 
@@ -81,7 +91,7 @@ fixtures, and its certificate contains a warning about them.  This is a real
 audit hazard because a casual reader could conflate the parser demonstration
 with arithmetic evidence.  However, the present theorem chain reads only the
 exact `pattern_occurrences`, character masks, transforms and invariant fields
-constructed before those fixtures.  The three gate programs read the Round-04
+constructed before those fixtures.  The six gate programs read the Round-04
 occurrence table and their predecessor exact certificates; none reads
 `STUDENT_SQUARE_ROUND_04_SIMULATED_*`, Round-05 synthetic output, a claimed
 Mordell--Weil rank, or an unexecuted CAS transcript.  Thus no current theorem
@@ -137,7 +147,7 @@ novel.  Their role is to make the combined finite classification explicit.
 
 These sources confirm that neither the congruent-number model nor the general
 S-integral/Pell strategy is novel.  They do not appear to contain the present
-integer-parameter branch certificate or the 23-pattern conclusion.
+integer-parameter branch certificates or the seven-pattern conclusion.
 
 ## Claims to retain, narrow, or remove
 
@@ -145,14 +155,14 @@ integer-parameter branch certificate or the 23-pattern conclusion.
 
 The summary classification for **integer** `t`, **nonzero** seven-term block,
 **affine** rational squareclass rank at most two, modulo **relabelling and
-reversal**, with the 23 partition words printed in the theorem and exact
+reversal**, with the seven partition words printed in the theorem and exact
 certificate.  Describe it as an exact necessary-pattern reduction.
 
 ### Retain as supporting lemmas, not novelty headlines
 
 - the common-scaling/Kummer kernel equivalence;
 - the exact finite counts and fifteen-character construction;
-- the three integral-point gates for masks 77/89, 102 and 108;
+- the complete integral-point gates for masks 77/89, 102, 108, 99, 51 and 90;
 - the same-parameter compatibility checks.
 
 ### Must remain downgraded or explicitly disclaimed
@@ -160,7 +170,7 @@ certificate.  Describe it as an exact necessary-pattern reduction.
 - “first”, “new”, “previously unknown”, or “complete prior-art search”;
 - novelty of subset-product/Kummer curves or of `Y^2=X^3-36X`;
 - a classification of all rational `t` or arbitrary common difference;
-- existence of any of the 23 patterns;
+- existence of any of the seven patterns;
 - nonexistence of rank-two seven-term progressions or a decision of `R_2(7)`;
 - a claim that the unscaled seven terms are squares in one biquadratic field;
 - any result inferred from simulated rank/point fixtures or unexecuted CAS
@@ -171,14 +181,17 @@ certificate.  Describe it as an exact necessary-pattern reduction.
 
 ## Verification performed
 
-- Ran the eight mathematical regression modules: **57 tests, all passed**.
+- Ran the eleven squareclasses regression modules: **78 tests, all passed**.
 - Recomputed all headline counts and `284*15=4260` occurrences from source.
-- Recomputed the final 23 IDs and checked every partition word printed in the
-  table.
+- Recomputed the final seven IDs and checked every partition word printed in
+  the table.
 - Checked the mask-77 branch split: 18 total, 15 finite congruence
   obstructions, 3 factor-size closures, 0 unresolved.
-- Verified that the supplement-manifest hash printed in the paper matches the
-  mathematical supplement manifest used by the working tree.
+- Rechecked the mask-99, mask-51 and mask-90 pattern impacts and complete
+  squarefree-kernel branches.
+- Verified that supplement v0.8.0 and SHA-256
+  `29ee9fe4a34a01f4066c017912130f3c02dcd55a031fb9f19dc7046d8854eb54`
+  match the mathematical supplement manifest used by the working tree.
 - Rebuilt the revised paper with the full BibTeX/LaTeX chain; the final log has
   no undefined citation/reference, overfull/underfull box, or LaTeX warning.
 
