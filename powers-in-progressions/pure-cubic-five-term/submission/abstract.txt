@@ -1,0 +1,15 @@
+For a nonconstant rational five-term arithmetic progression, we ask how many
+nonzero terms can, after multiplication by one common rational scalar, be cubes
+in a single nontrivial pure cubic field. We prove that the exact maximum is
+four. The proof begins by determining the kernel of the map from rational cube
+classes to the Kummer group of Q(cuberoot(D)). After normalizing radicands and
+quotienting by affine color change and reversal, we obtain exactly 25
+five-position color orbits. Ten orbits are excluded by known theorems on
+rational cubes in arithmetic progression. A prime-support lemma reduces the
+remaining 15 orbits to 60 explicit systems of three diagonal cubic equations.
+For every system, exhaustive finite-field enumeration gives an obstruction at
+a displayed prime of good reduction; a versioned certificate records all
+p^2-1 nonzero parameter pairs. The progression (-3,-1,1,3,5) supplies four
+counted terms over Q(cuberoot(3)). Thus R^times_(3,1)(5)=4. This finite
+classification excludes every five-hit color pattern but does not classify all
+rational progressions attaining four hits.

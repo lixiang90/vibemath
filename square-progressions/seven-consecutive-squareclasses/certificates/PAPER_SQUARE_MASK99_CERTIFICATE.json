@@ -1,0 +1,1618 @@
+{
+  "input_sha256": {
+    "PAPER_SQUARE_MASK108_CERTIFICATE.json": "bb04a152389eaf93f5293714cfae2eda557e3c2dabdcfd65efcc3365cfc27595",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "integral_points": {
+    "A": "t(t+6)",
+    "B": "(t+1)(t+5)",
+    "B_minus_A": 5,
+    "bounded_search_used": false,
+    "common_positive_squarefree_kernels": [
+      1,
+      5
+    ],
+    "curve": "y^2=t(t+1)(t+5)(t+6)",
+    "d=1": {
+      "consequence": "U=2,V=3, so A=4 and (t+3)^2=13, impossible modulo 8",
+      "equation": "V^2-U^2=5",
+      "positive_same_parity_factor_pairs": [
+        [
+          1,
+          5
+        ]
+      ],
+      "squares_mod_8": [
+        0,
+        1,
+        4
+      ]
+    },
+    "d=5": {
+      "consequence": "U=0,V=1, contradicting A>0 in the positive regions",
+      "equation": "V^2-U^2=1",
+      "positive_factor_pairs": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "gcd_identity": "gcd(A,B)=gcd(A,5), hence gcd(A,B) divides 5",
+    "mask": 99,
+    "middle_interval_exact_check": [
+      {
+        "rhs": 0,
+        "t": -6,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": -5,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 24,
+        "t": -4,
+        "ys": []
+      },
+      {
+        "rhs": 36,
+        "t": -3,
+        "ys": [
+          -6,
+          6
+        ]
+      },
+      {
+        "rhs": 24,
+        "t": -2,
+        "ys": []
+      },
+      {
+        "rhs": 0,
+        "t": -1,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": 0,
+        "ys": [
+          0
+        ]
+      }
+    ],
+    "nondegenerate_integral_points": [],
+    "positive_regions": [
+      "t<=-7",
+      "t>=1"
+    ],
+    "proved_integral_points": [
+      [
+        -6,
+        0
+      ],
+      [
+        -5,
+        0
+      ],
+      [
+        -3,
+        -6
+      ],
+      [
+        -3,
+        6
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "status": "PROVED_COMPLETE_BY_GCD_AND_FINITE_MIDDLE_INTERVAL",
+    "support": [
+      0,
+      1,
+      5,
+      6
+    ]
+  },
+  "occurrence_inventory": {
+    "all_masks": [
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 3,
+        "pattern_ids": [
+          9,
+          12,
+          31,
+          33,
+          59,
+          134,
+          230,
+          276
+        ],
+        "patterns_hit": 8,
+        "support": [
+          0,
+          1
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 5,
+        "pattern_ids": [
+          31,
+          33,
+          43,
+          251,
+          281
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          2
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 6,
+        "pattern_ids": [
+          26,
+          31,
+          33,
+          50,
+          83,
+          188,
+          257,
+          283
+        ],
+        "patterns_hit": 8,
+        "support": [
+          1,
+          2
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 9,
+        "pattern_ids": [
+          43,
+          266,
+          276
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          3
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 10,
+        "pattern_ids": [
+          50,
+          210,
+          212,
+          268,
+          276,
+          283
+        ],
+        "patterns_hit": 6,
+        "support": [
+          1,
+          3
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 12,
+        "pattern_ids": [
+          43,
+          50,
+          214,
+          271,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          2,
+          3
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 17,
+        "pattern_ids": [
+          9,
+          26,
+          43,
+          281
+        ],
+        "patterns_hit": 4,
+        "support": [
+          0,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 18,
+        "pattern_ids": [
+          9,
+          188,
+          210,
+          257,
+          268
+        ],
+        "patterns_hit": 5,
+        "support": [
+          1,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 20,
+        "pattern_ids": [
+          43,
+          134,
+          188,
+          214,
+          230,
+          257,
+          266,
+          271,
+          281
+        ],
+        "patterns_hit": 9,
+        "support": [
+          2,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 23,
+        "pattern_ids": [
+          26,
+          134,
+          212,
+          230
+        ],
+        "patterns_hit": 4,
+        "support": [
+          0,
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 24,
+        "pattern_ids": [
+          12,
+          43,
+          59,
+          210,
+          214,
+          251,
+          268,
+          271
+        ],
+        "patterns_hit": 8,
+        "support": [
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 27,
+        "pattern_ids": [
+          12,
+          59,
+          83
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 29,
+        "pattern_ids": [
+          43,
+          83,
+          212,
+          251,
+          266
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 33,
+        "pattern_ids": [
+          12,
+          26,
+          31,
+          50,
+          230,
+          257,
+          268,
+          271,
+          276,
+          281
+        ],
+        "patterns_hit": 10,
+        "support": [
+          0,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 34,
+        "pattern_ids": [
+          12,
+          31,
+          212,
+          214,
+          230,
+          266,
+          276
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 36,
+        "pattern_ids": [
+          9,
+          31,
+          281
+        ],
+        "patterns_hit": 3,
+        "support": [
+          2,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 39,
+        "pattern_ids": [
+          9,
+          26,
+          31,
+          50,
+          210,
+          257
+        ],
+        "patterns_hit": 6,
+        "support": [
+          0,
+          1,
+          2,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 40,
+        "pattern_ids": [
+          83,
+          212,
+          251,
+          276
+        ],
+        "patterns_hit": 4,
+        "support": [
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 43,
+        "pattern_ids": [
+          50,
+          188,
+          266,
+          268,
+          276
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            2,
+            3
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 45,
+        "pattern_ids": [
+          50,
+          59,
+          134,
+          188,
+          210,
+          251,
+          271
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 46,
+        "pattern_ids": [
+          59,
+          83,
+          134,
+          214
+        ],
+        "patterns_hit": 4,
+        "support": [
+          1,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 48,
+        "pattern_ids": [
+          26,
+          33,
+          251,
+          281
+        ],
+        "patterns_hit": 4,
+        "support": [
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 4,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            1,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 51,
+        "pattern_ids": [
+          33,
+          83,
+          257,
+          268,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 53,
+        "pattern_ids": [
+          9,
+          33,
+          59,
+          83,
+          210,
+          212,
+          230,
+          251,
+          257,
+          271,
+          281,
+          283
+        ],
+        "patterns_hit": 12,
+        "support": [
+          0,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            1,
+            5
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 54,
+        "pattern_ids": [
+          9,
+          26,
+          33,
+          59,
+          214,
+          230,
+          266
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 57,
+        "pattern_ids": [
+          12,
+          134,
+          188,
+          268,
+          271,
+          283
+        ],
+        "patterns_hit": 6,
+        "support": [
+          0,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 58,
+        "pattern_ids": [
+          12,
+          134,
+          214
+        ],
+        "patterns_hit": 3,
+        "support": [
+          1,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 63,
+        "pattern_ids": [
+          188,
+          210,
+          212,
+          266,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 65,
+        "pattern_ids": [
+          33,
+          83,
+          212,
+          266
+        ],
+        "patterns_hit": 4,
+        "support": [
+          0,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 66,
+        "pattern_ids": [
+          26,
+          33,
+          43,
+          50,
+          251,
+          271,
+          283
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 68,
+        "pattern_ids": [
+          9,
+          26,
+          33,
+          50,
+          59,
+          134,
+          210,
+          268,
+          283
+        ],
+        "patterns_hit": 9,
+        "support": [
+          2,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 71,
+        "pattern_ids": [
+          9,
+          33,
+          43,
+          59,
+          83,
+          134,
+          214,
+          251
+        ],
+        "patterns_hit": 8,
+        "support": [
+          0,
+          1,
+          2,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 72,
+        "pattern_ids": [
+          12,
+          50,
+          188,
+          230,
+          257,
+          266,
+          283
+        ],
+        "patterns_hit": 7,
+        "support": [
+          3,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 75,
+        "pattern_ids": [
+          12,
+          43,
+          212,
+          214,
+          230,
+          281
+        ],
+        "patterns_hit": 6,
+        "support": [
+          0,
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 78,
+        "pattern_ids": [
+          43,
+          50,
+          188,
+          210,
+          257,
+          268,
+          271,
+          281,
+          283
+        ],
+        "patterns_hit": 9,
+        "support": [
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 80,
+        "pattern_ids": [
+          12,
+          31,
+          134
+        ],
+        "patterns_hit": 3,
+        "support": [
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 83,
+        "pattern_ids": [
+          12,
+          26,
+          31,
+          43,
+          134,
+          214
+        ],
+        "patterns_hit": 6,
+        "support": [
+          0,
+          1,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 8,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 85,
+        "pattern_ids": [
+          9,
+          26,
+          31,
+          266,
+          276
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 86,
+        "pattern_ids": [
+          9,
+          31,
+          43,
+          210,
+          212,
+          268,
+          271,
+          276
+        ],
+        "patterns_hit": 8,
+        "support": [
+          1,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            1,
+            6
+          ],
+          "right": [
+            3,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 90,
+        "pattern_ids": [
+          43,
+          83,
+          188,
+          251,
+          257,
+          271,
+          281
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 92,
+        "pattern_ids": [
+          59,
+          83,
+          188,
+          210,
+          212,
+          230,
+          257,
+          266,
+          268,
+          276
+        ],
+        "patterns_hit": 10,
+        "support": [
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 95,
+        "pattern_ids": [
+          43,
+          59,
+          214,
+          230,
+          251,
+          276,
+          281
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 2,
+        "genus": 0,
+        "mask": 96,
+        "pattern_ids": [
+          9
+        ],
+        "patterns_hit": 1,
+        "support": [
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 5,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            1,
+            5
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 99,
+        "pattern_ids": [
+          9,
+          26,
+          50,
+          188,
+          210,
+          212,
+          266,
+          271
+        ],
+        "patterns_hit": 8,
+        "support": [
+          0,
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 101,
+        "pattern_ids": [
+          26,
+          50,
+          188,
+          214,
+          268
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          2,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 105,
+        "pattern_ids": [
+          12,
+          50,
+          59,
+          83,
+          134,
+          210,
+          212,
+          214,
+          230,
+          257
+        ],
+        "patterns_hit": 10,
+        "support": [
+          0,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 106,
+        "pattern_ids": [
+          12,
+          59,
+          134,
+          230,
+          251,
+          266,
+          281
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 111,
+        "pattern_ids": [
+          50,
+          83,
+          251,
+          257,
+          268,
+          271,
+          281
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 113,
+        "pattern_ids": [
+          9,
+          12,
+          31,
+          33,
+          59,
+          188,
+          210,
+          214,
+          283
+        ],
+        "patterns_hit": 9,
+        "support": [
+          0,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 114,
+        "pattern_ids": [
+          9,
+          12,
+          26,
+          31,
+          33,
+          59,
+          83,
+          251
+        ],
+        "patterns_hit": 8,
+        "support": [
+          1,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 4,
+        "genus": 1,
+        "mask": 116,
+        "pattern_ids": [
+          26,
+          31,
+          33,
+          83,
+          212,
+          276
+        ],
+        "patterns_hit": 6,
+        "support": [
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 119,
+        "pattern_ids": [
+          31,
+          33,
+          188,
+          251,
+          266,
+          268,
+          271,
+          276,
+          283
+        ],
+        "patterns_hit": 9,
+        "support": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 123,
+        "pattern_ids": [
+          210,
+          257,
+          271,
+          281,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 125,
+        "pattern_ids": [
+          134,
+          214,
+          230,
+          257,
+          268,
+          276,
+          283
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": null,
+        "degree": 6,
+        "genus": 2,
+        "mask": 126,
+        "pattern_ids": [
+          134,
+          212,
+          230,
+          266,
+          276,
+          281
+        ],
+        "patterns_hit": 6,
+        "support": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "characters_per_pattern": 15,
+    "constant_pairing_genus1_ranking": [
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 5,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            1,
+            5
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 99,
+        "pattern_ids": [
+          9,
+          26,
+          50,
+          188,
+          210,
+          212,
+          266,
+          271
+        ],
+        "patterns_hit": 8,
+        "support": [
+          0,
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            1,
+            5
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 54,
+        "pattern_ids": [
+          9,
+          26,
+          33,
+          59,
+          214,
+          230,
+          266
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            2,
+            3
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 45,
+        "pattern_ids": [
+          50,
+          59,
+          134,
+          188,
+          210,
+          251,
+          271
+        ],
+        "patterns_hit": 7,
+        "support": [
+          0,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            1,
+            6
+          ],
+          "right": [
+            3,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 90,
+        "pattern_ids": [
+          43,
+          83,
+          188,
+          251,
+          257,
+          271,
+          281
+        ],
+        "patterns_hit": 7,
+        "support": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 4,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            1,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 51,
+        "pattern_ids": [
+          33,
+          83,
+          257,
+          268,
+          283
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 8,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 85,
+        "pattern_ids": [
+          9,
+          26,
+          31,
+          266,
+          276
+        ],
+        "patterns_hit": 5,
+        "support": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "degree": 4,
+        "genus": 1,
+        "mask": 27,
+        "pattern_ids": [
+          12,
+          59,
+          83
+        ],
+        "patterns_hit": 3,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      }
+    ],
+    "distinct_masks": 55,
+    "frequency_of_pattern_hit_counts": {
+      "1": 1,
+      "10": 3,
+      "12": 1,
+      "3": 5,
+      "4": 6,
+      "5": 10,
+      "6": 7,
+      "7": 10,
+      "8": 7,
+      "9": 5
+    },
+    "input_pattern_count": 23,
+    "selection_rule": "maximize patterns hit among genus-1 masks admitting an equal-sum quadratic pairing; break ties by smaller absolute constant difference, then mask",
+    "total_occurrences": 345
+  },
+  "pattern_impact": {
+    "affected_pattern_ids": [
+      9,
+      26,
+      50,
+      188,
+      210,
+      212,
+      266,
+      271
+    ],
+    "input_remaining_count": 23,
+    "reason": "mask 99 has no nondegenerate integral parameter",
+    "remaining_count": 15,
+    "remaining_pattern_ids": [
+      12,
+      31,
+      33,
+      43,
+      59,
+      83,
+      134,
+      214,
+      230,
+      251,
+      257,
+      268,
+      276,
+      281,
+      283
+    ],
+    "selected_mask": 99,
+    "strictly_excluded": 8
+  },
+  "schema": "paper-square-mask99-v1",
+  "semantic_version": "1.0.0"
+}

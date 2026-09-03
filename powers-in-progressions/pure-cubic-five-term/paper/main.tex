@@ -31,7 +31,11 @@ versioned certificate records all $p^2-1$ nonzero parameter pairs.  The
 progression $(-3,-1,1,3,5)$ supplies four counted terms over
 $\Q(\sqrt[3]{3})$.  Thus $R^{\times}_{(3,1)}(5)=4$.  This finite
 classification excludes every five-hit color pattern but does not classify
-all rational progressions attaining four hits.
+all rational progressions attaining four hits.  As a first strengthening, we
+prove that the four-hit orbit with positions $0,1,3,4$ and colors $0001$ is a
+positive-rank genus-one branch.  It supplies infinitely many inequivalent
+four-hit progressions, beginning with $(64,1,-62,-125,-188)$ over
+$\Q(\sqrt[3]{188})$.
 \end{abstract}
 
 \noindent\textbf{Keywords:} arithmetic progression; pure cubic field;
@@ -229,9 +233,10 @@ PAPER\_CUBE\_KUMMER5\_SUPPLEMENT\_MANIFEST.json.
 \end{quote}
 Each of the 60
 cells scans all $p^2-1$ nonzero parameter pairs, for 23520 pairs in total.
-The local supplement is not a public archive; at submission its manifest must
-be deposited at the immutable DOI or URL stated in the data-availability
-record.
+The current working tree is public at
+\url{https://github.com/lixiang90/vibemath}.  At submission, its exact payload
+must additionally be frozen at the immutable DOI or release URL stated in the
+data-availability record.
 
 \section{Exact maximum and scope of classification}
 \begin{theorem}\label{thm:main}
@@ -254,14 +259,150 @@ $-\alpha,-1,1,\alpha$.
 \end{proof}
 
 The theorem includes a complete classification and exclusion of every
-\emph{five-hit color/position class}.  It does not classify every rational
-progression attaining four hits.  That latter set is a distinct Diophantine
-problem: already a four-position pattern is naturally a weighted complete
-intersection, and several patterns have multiple rational examples.  We do
-not replace that rational-point classification by a bounded search.
+\emph{five-hit color/position class}.  The next section settles one of the 31
+four-hit models left by the orbit sieve; it does not classify every rational
+progression attaining four hits.  The other 30 models remain distinct
+Diophantine problems, and we do not replace their rational-point
+classification by a bounded search.
 
 If zero were counted, $-2,-1,0,1,2$ would give five hits in
 $\Q(\sqrt[3]{2})$; this is exactly why the superscript $\times$ is necessary.
+
+\section{A positive-rank four-hit branch}
+
+We now strengthen Theorem~\ref{thm:main} in one, and only one, of the 31
+four-hit color/position models left open above.  Count positions $0,1,3,4$
+and take colors $0001$.  Writing the first three counted terms as
+$X^3,Y^3,Z^3$, respectively, gives the smooth plane cubic
+\begin{equation}\label{eq:C0001}
+C:\qquad 2X^3-3Y^3+Z^3=0.
+\end{equation}
+Indeed the associated five-term progression is
+\begin{equation}\label{eq:AP0001}
+ (X^3,Y^3,2Y^3-X^3,Z^3,4Y^3-3X^3).
+\end{equation}
+The three partial derivatives of \eqref{eq:C0001} have no common projective
+zero, so $C$ is a genus-one curve.  Put $O=(1:1:1)$ and use it as origin.
+
+\begin{theorem}\label{thm:0001}
+The branch \eqref{eq:C0001} has positive Mordell--Weil rank.  Consequently
+there are infinitely many inequivalent nonconstant rational five-term
+arithmetic progressions, with no zero term, having exactly four counted
+positions in a nontrivial pure cubic field.  They may all be taken in the
+color/position orbit
+\[
+((0,1,3,4),0001).
+\]
+\end{theorem}
+
+\begin{proof}
+For $(X:Y:Z)\in C$, set
+\[
+ \begin{split}
+ N&=6X^3Y^3+3Y^3Z^3-2Z^3X^3,\\
+ T&=(2X^3+3Y^3)(-3Y^3-Z^3)(Z^3-2X^3).
+ \end{split}
+\]
+On the open set $XYZ\ne0$, define
+\begin{equation}\label{eq:mordellmap}
+ \phi(X:Y:Z)=
+ \left(\frac{N}{X^2Y^2Z^2},
+       -\frac{T}{2X^3Y^3Z^3}\right)=(u,v).
+\end{equation}
+A direct expansion, followed by use of \eqref{eq:C0001}, gives
+\[
+ v^2=u^3-243.
+\]
+Equivalently, after clearing denominators the numerator of
+$v^2-u^3+243$ is divisible by $2X^3-3Y^3+Z^3$; the exact quotient is checked
+by the accompanying symbolic test.  Thus \eqref{eq:mordellmap} is a rational
+map to
+\[
+ E:\quad v^2=u^3-243.
+\]
+A rational map from a smooth projective curve to the proper curve $E$ extends
+over its apparent exceptional points.  Notice also that $C(\Q)$ has no point
+with $XYZ=0$: such a point would make one of $3,-2,3/2$ a rational cube.
+
+Let
+\[
+ P=(4:1:-5)\in C(\Q),\qquad Q=(7,10)\in E(\Q).
+\]
+Exact substitution and the tangent formula on $E$ give
+\[
+ \phi(O)=(7,-10)=-Q,
+ \qquad
+ \phi(P)=\left(\frac{16009}{400},-
+ \frac{2021723}{8000}\right)=2Q.
+\]
+The integral equation for $E$ has discriminant
+$-16\cdot27\cdot243^2=-2^4 3^{13}$.  Since $Q$ has nonzero second
+coordinate and $10^2$ does not divide this discriminant, the Nagell--Lutz
+theorem shows that $Q$ has infinite order.
+
+Translate $\phi$ by $-\phi(O)$.  The resulting nonconstant morphism sends
+origins to origins and hence is an isogeny of genus-one curves.  Its value at
+$P$ is $2Q-(-Q)=3Q$, which is non-torsion.  Therefore $P$ has infinite order
+in $C(\Q)$, and the points
+\[
+ P_n=O+n(P-O)\qquad(n\in\mathbf Z)
+\]
+are pairwise distinct.
+
+For $n\ne0$, substitute $P_n=(X_n:Y_n:Z_n)$ in
+\eqref{eq:AP0001}.  None of $X_n,Y_n,Z_n$ can vanish, as observed above;
+$2Y_n^3-X_n^3=0$ would make $2$ a rational cube, while
+$4Y_n^3-3X_n^3=0$ would make $4/3$ one.  Moreover the common difference
+vanishes only when $X_n=Y_n=Z_n$, that is, at $P_n=O$.
+
+The last term $A_4=4Y_n^3-3X_n^3$ is not a rational cube.  Otherwise
+positions $0,1,3,4$ would be four rational cubes in a nonconstant five-term
+AP, contradicting Hajdu--Tengely's bound $P_5(3)=3$.  Choose a positive
+cube-free representative $D_n$ of $[A_4]$.  Then
+$A_4=D_nW_n^3$ for some $W_n\in\Q^*$, and $K_{D_n}$ is genuinely cubic.
+Thus the four displayed positions have colors $0001$.  Theorem
+\ref{thm:main} prevents the remaining position from being a fifth hit.
+
+Finally, distinct projective points of $C(\Q)$ give distinct progressions up
+to common rational scaling.  Indeed, comparison of the nonzero zeroth terms
+makes the scale a rational cube, after which injectivity of cubing on $\Q$
+recovers the same projective coordinates.  Reversal has fibers of size at
+most two, so infinitely many equivalence classes remain after reversal.
+\end{proof}
+
+For the first nonconstant point $P$, formula \eqref{eq:AP0001} gives
+\[
+ (64,1,-62,-125,-188),
+\]
+with common difference $-63$.  If $\alpha^3=188$, its four counted terms are
+$4^3,1^3,(-5)^3,(-\alpha)^3$.  This differs from the lower-bound progression
+in Theorem~\ref{thm:main}: that progression has four consecutive counted
+positions in the orbit $0110$ over $\Q(\sqrt[3]{3})$, while the present one
+omits position 2 and lies in the orbit $0001$ over
+$\Q(\sqrt[3]{188})$.
+
+The construction is an integer-parameter Mordell--Weil family, made explicit
+by the exact chord law in the supplement.  It is not a rational
+$\mathbf P^1$ parametrization, which a smooth genus-one curve cannot admit.
+We prove positive rank but do not claim the exact rank, torsion subgroup, or a
+complete set of generators for $C(\Q)$.
+
+\section{Relation to earlier work and claim boundary}
+
+Darmon--Merel and Hajdu--Tengely provide the two rational-power obstructions
+used in the five-hit proof.  Work on powers in number fields usually asks for
+all terms to be powers of elements of the field: Gonzalez-Jimenez treats
+three cubes over quadratic fields \cite{GJ}, Xarles proves qualitative
+degree-dependent bounds for powers in progressions \cite{Xarles}, and
+Bremner--Siksek exclude five squares over cubic fields \cite{BS}.  Those
+problems do not impose our combination of rational AP entries, one common
+rational scale, partial hits, and one variable pure cubic field.
+
+Accordingly, the precise strengthened claim here is only Theorems
+\ref{thm:main} and \ref{thm:0001}: the exact five-term maximum, exhaustive
+exclusion of all five-hit color classes, and a positive-rank infinite family
+in the single four-hit orbit $0001$.  We make no priority claim and no
+classification claim for the other 30 four-hit models.
 
 \section*{Statements and Declarations}
 
@@ -275,10 +416,11 @@ $\Q(\sqrt[3]{2})$; this is exactly why the superscript $\times$ is necessary.
 \texttt{AUTHOR-CONTRIBUTION STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
 
 \paragraph{Data and code availability.}
-The exact source, tests, and finite certificate will be deposited with the
-accepted release at
-\texttt{PERSISTENT ARCHIVE DOI/URL -- HUMAN AUTHOR INPUT REQUIRED}.  The local
-release candidate is not yet a public archive.
+The exact source, tests, and finite certificate are available in the public
+working repository at \url{https://github.com/lixiang90/vibemath}.  The
+accepted payload must also be deposited at
+\texttt{PERSISTENT ARCHIVE DOI/URL -- HUMAN AUTHOR INPUT REQUIRED}; that
+immutable record has not yet been supplied.
 
 \paragraph{Use of generative AI.}
 Generative AI tools were used during exploratory mathematical research,
@@ -307,5 +449,17 @@ J. Reine Angew. Math. \textbf{490} (1997), 81--100,
 \bibitem{HT} L.~Hajdu and S.~Tengely,
 \emph{Powers in arithmetic progressions}, Ramanujan J. \textbf{55}
 (2021), 965--986, \url{https://doi.org/10.1007/s11139-020-00331-5}.
+\bibitem{GJ} E.~Gonzalez-Jimenez,
+\emph{Three cubes in arithmetic progression over quadratic fields},
+Arch. Math. (Basel) \textbf{95} (2010), 233--241,
+\url{https://doi.org/10.1007/s00013-010-0166-5}.
+\bibitem{Xarles} X.~Xarles,
+\emph{Squares in arithmetic progression over number fields},
+J. Number Theory \textbf{132} (2012), 379--389,
+\url{https://doi.org/10.1016/j.jnt.2011.07.010}.
+\bibitem{BS} A.~Bremner and S.~Siksek,
+\emph{Squares in arithmetic progression over cubic fields},
+Int. J. Number Theory \textbf{12} (2016), 1409--1414,
+\url{https://doi.org/10.1142/S179304211650086X}.
 \end{thebibliography}
 \end{document}

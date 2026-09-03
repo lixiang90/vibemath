@@ -1,8 +1,8 @@
 {
   "archival_url": null,
   "claim_boundary": {
-    "not_proved": "realizability or impossibility of the 23 remaining patterns; R_2(7) is not decided",
-    "proved": "exact finite pattern counts and the mask 77, 89, 102, 108 exclusions documented in the paper"
+    "not_proved": "realizability or impossibility of the 15 remaining patterns; R_2(7) is not decided",
+    "proved": "exact finite pattern counts and the mask 77, 89, 102, 108, 99 exclusions documented in the paper"
   },
   "files": [
     {
@@ -153,36 +153,58 @@
       "sha256": "b5e73be40a7551bc5852c029754a9849303c569fd9b18aa0ac6da1b948c82d0f"
     },
     {
-      "bytes": 3564,
+      "bytes": 6884,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK99.py",
+      "role": "generator_or_analysis_source",
+      "sha256": "be8cdd52c76b9e89db3c6d092b4b9951212c5f036954476010eac0489e0d36c0"
+    },
+    {
+      "bytes": 26995,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK99_CERTIFICATE.json",
+      "role": "exact_certificate",
+      "sha256": "eada4ff78fa4ee947d963a48798105d9418220320d9116a0cb9a8f0432384011"
+    },
+    {
+      "bytes": 2372,
+      "mathematical_evidence_eligible": true,
+      "path": "PAPER_SQUARE_MASK99_test.py",
+      "role": "regression_test",
+      "sha256": "922368c9e1bd8336b668b0eaf784e95705e19259cd3dcd9bab15a824086313f3"
+    },
+    {
+      "bytes": 3794,
       "mathematical_evidence_eligible": true,
       "path": "PAPER_SQUARE_SUPPLEMENT_MANIFEST.py",
       "role": "generator_or_analysis_source",
-      "sha256": "868c9e64b41cf51fc73850ae90f69b19ed5cf25c30416a89acd32a2b9fc4a615"
+      "sha256": "589cb7514587532b194e4b25f7844fd88334c95a3f40852a58b4b874e06106af"
     },
     {
-      "bytes": 1516,
+      "bytes": 1528,
       "mathematical_evidence_eligible": true,
       "path": "PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py",
       "role": "regression_test",
-      "sha256": "e1eb6b9ff200d428a10952d950982abc4e43303a2adf3ae35348eb780d10390e"
+      "sha256": "2c74f648af3c4008251947b84468a9fa0d9aeeaa5c9aebb1e68aa3f8990db397"
     }
   ],
-  "release_id": "paper-square-supplement-v0.5.0",
+  "release_id": "paper-square-supplement-v0.6.0",
   "release_status": "LOCAL_RELEASE_CANDIDATE_NOT_PUBLICLY_ARCHIVED",
   "reproduction_commands": [
     "python PAPER_SQUARE_SAFE_inventory.py",
     "python PAPER_SQUARE_MASK77_analysis.py --bound 1000000",
     "python PAPER_SQUARE_NEXT_GATE.py",
     "python PAPER_SQUARE_MASK108.py",
+    "python PAPER_SQUARE_MASK99.py",
     "python PAPER_SQUARE_SUPPLEMENT_MANIFEST.py",
-    "python -m unittest -v STUDENT_SQUARE_ROUND_02_test_patterns.py STUDENT_SQUARE_ROUND_03_test.py STUDENT_SQUARE_ROUND_04_test.py PAPER_SQUARE_SAFE_test.py PAPER_SQUARE_MASK77_test.py PAPER_SQUARE_NEXT_GATE_test.py PAPER_SQUARE_MASK108_test.py PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py"
+    "python -m unittest -v STUDENT_SQUARE_ROUND_02_test_patterns.py STUDENT_SQUARE_ROUND_03_test.py STUDENT_SQUARE_ROUND_04_test.py PAPER_SQUARE_SAFE_test.py PAPER_SQUARE_MASK77_test.py PAPER_SQUARE_NEXT_GATE_test.py PAPER_SQUARE_MASK108_test.py PAPER_SQUARE_MASK99_test.py PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py"
   ],
   "runtime": {
     "python": "3.14.5",
     "sympy": "1.14.0"
   },
   "schema": "paper-square-supplement-manifest-v1",
-  "semantic_version": "0.5.0",
+  "semantic_version": "0.6.0",
   "source_control_commit": null,
   "source_control_note": "workspace is not a Git repository; SHA-256 entries are the locator"
 }

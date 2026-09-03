@@ -10,9 +10,9 @@ publishable unit is deliberately narrow:
 
 > For an integer `t` with none of `t,...,t+6` zero, if their rational
 > squareclasses have affine rank at most two, then, up to relabelling and
-> reversal, their equality partition belongs to the explicitly listed 23
+> reversal, their equality partition belongs to the explicitly listed 15
 > patterns; the exact necessary-pattern reduction is
-> `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23`.
+> `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15`.
 
 This is a necessary-pattern classification, not a realization theorem and not
 a decision of `R_2(7)`.  Its strongest apparent novelty lies in combining an
@@ -49,7 +49,8 @@ and in the audited `vibemath/.../paper` source.
 | Integral points on mask 77 and `98 -> 54` | `code/PAPER_SQUARE_MASK77_analysis.py`; mask-77 certificate/test | `gcd(A,B)|72` gives 18 squarefree-kernel/sign/factor branches.  Fifteen are excluded by complete finite residue enumeration; the remaining three have verified factor-size contradictions, leaving only branch points and `(6,+/-72)`.  For every affected pattern the code tests the same candidate `t` against all 15 characters; it does not infer compatibility from separate quotient points | Sound.  The bounded search field is marked conjectural and is not used in completeness |
 | `54 -> 35` via mask 102 | `code/PAPER_SQUARE_NEXT_GATE.py`; certificate/test | `A=(t+1)(t+6)`, `B=(t+2)(t+5)`, `B-A=4`, `gcd(A,B)|4`; the two positive squarefree kernels and six middle integers exhaust all integer cases | Sound elementary integral-point theorem |
 | `35 -> 23` via mask 108 | `code/PAPER_SQUARE_MASK108.py`; certificate/test | `A=(t+2)(t+6)`, `B=(t+3)(t+5)=A+3`, `gcd(A,B)|3`; kernels 1 and 3 plus middle integers exhaust all cases.  Exactly 12 occurrence rows are removed | Sound elementary integral-point theorem |
-| Final 23-row table | Round-02 ranked rows plus mask-108 `remaining_pattern_ids` | Independently recomputed each displayed restricted-growth word from the stored partition for IDs `9,12,26,31,33,43,50,59,83,134,188,210,212,214,230,251,257,266,268,271,276,281,283` | Exact. IDs are ordering-dependent; partition words carry the mathematical content |
+| `23 -> 15` via mask 99 | `code/PAPER_SQUARE_MASK99.py`; certificate/test | `A=t(t+6)`, `B=(t+1)(t+5)=A+5`, `gcd(A,B)|5`; kernels 1 and 5 plus the seven middle integers give only degenerate points.  Exactly eight occurrence rows are removed | Sound elementary integral-point theorem; no bounded search |
+| Final 15-row table | mask-99 `remaining_pattern_ids` plus the Round-04 partitions | Independently recomputed all displayed restricted-growth words for IDs `12,31,33,43,59,83,134,214,230,251,257,268,276,281,283` | Exact. IDs are ordering-dependent; partition words carry the mathematical content |
 
 ## Search-to-proof boundary and synthetic-data audit
 
@@ -118,7 +119,7 @@ novel.  Their role is to make the combined finite classification explicit.
 
 These sources confirm that neither the congruent-number model nor the general
 S-integral/Pell strategy is novel.  They do not appear to contain the present
-integer-parameter branch certificate or the 23-pattern conclusion.
+integer-parameter branch certificate or the 15-pattern conclusion.
 
 ## Claims to retain, narrow, or remove
 
@@ -126,7 +127,7 @@ integer-parameter branch certificate or the 23-pattern conclusion.
 
 The summary classification for **integer** `t`, **nonzero** seven-term block,
 **affine** rational squareclass rank at most two, modulo **relabelling and
-reversal**, with the 23 partition words printed in the theorem and exact
+reversal**, with the 15 partition words printed in the theorem and exact
 certificate.  Describe it as an exact necessary-pattern reduction.
 
 ### Retain as supporting lemmas, not novelty headlines
@@ -141,7 +142,7 @@ certificate.  Describe it as an exact necessary-pattern reduction.
 - “first”, “new”, “previously unknown”, or “complete prior-art search”;
 - novelty of subset-product/Kummer curves or of `Y^2=X^3-36X`;
 - a classification of all rational `t` or arbitrary common difference;
-- existence of any of the 23 patterns;
+- existence of any of the 15 patterns;
 - nonexistence of rank-two seven-term progressions or a decision of `R_2(7)`;
 - a claim that the unscaled seven terms are squares in one biquadratic field;
 - any result inferred from simulated rank/point fixtures or unexecuted CAS
@@ -154,7 +155,7 @@ certificate.  Describe it as an exact necessary-pattern reduction.
 
 - Ran the eight mathematical regression modules: **57 tests, all passed**.
 - Recomputed all headline counts and `284*15=4260` occurrences from source.
-- Recomputed the final 23 IDs and checked every partition word printed in the
+- Recomputed the final 15 IDs and checked every partition word printed in the
   table.
 - Checked the mask-77 branch split: 18 total, 15 finite congruence
   obstructions, 3 factor-size closures, 0 unresolved.

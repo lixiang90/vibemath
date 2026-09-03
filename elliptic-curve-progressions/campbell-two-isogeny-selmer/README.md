@@ -7,6 +7,9 @@ For the Campbell Jacobian and two-isogeny models defined in the paper,
 - `Sel^(dual phi)(E'/Q) = <3,5,7>` has dimension 3;
 - `Sel^phi(E/Q) = <4230241,339106321>` has dimension 2;
 - the Mordell--Weil rank is at most 3;
+- an explicit global minimal model is
+  `y^2+x*y=x^3-16441530*x^2+45166889779200*x`, with conductor
+  `301245307115205810` and multiplicative reduction at every bad prime;
 - the stated `Q x K` invariant and the `[35]` projection identities hold;
 - the same-parameter local-solubility and 512-cell local matrix statements hold
   with the precise boundaries recorded in the paper.
@@ -26,3 +29,7 @@ execution transcript, or claimed CAS conclusion is present.
 
 `NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` gives the current claim-by-claim
 correctness, contamination, and prior-art audit.
+
+Draft journal-facing prose is collected in `submission/`; author identity,
+funding, conflicts, venue approval, and an immutable release locator remain
+human-supplied gates.

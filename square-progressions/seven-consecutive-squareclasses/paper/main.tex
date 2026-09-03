@@ -11,7 +11,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \newcommand{\Q}{\mathbf Q}
 \newcommand{\F}{\mathbf F}
-\title{Square-class patterns of seven consecutive integers\\and three elementary integral quartics}
+\title{Square-class patterns of seven consecutive integers\\and four elementary integral quartics}
 \author{\textbf{AUTHOR IDENTITY CONFIRMATION REQUIRED}}
 \date{3 September 2026}
 \begin{document}
@@ -28,8 +28,9 @@ eliminates 186 patterns. We determine all integral points on
 $y^2=t(t+2)(t+3)(t+6)$ by an elementary squarefree-kernel argument and finite
 congruence certificates. Together with an integral reflection, this eliminates
 44 further patterns after a same-parameter check, leaving 54. Two
-constant-difference factorizations exclude another 19 and 12 patterns, leaving
-23 explicitly listed necessary candidates. Every computational count and
+constant-difference factorizations exclude another 19 and 12 patterns. A third
+such factorization excludes eight more, leaving 15 explicitly listed necessary
+candidates. Every computational count and
 congruence certificate is bound by a versioned reproducibility manifest. No
 bounded search or unproved Mordell--Weil computation enters the proof. The
 theorem neither proves that any remaining pattern is realizable nor decides the
@@ -366,16 +367,40 @@ At the five middle integers $-6\leq t\leq-2$, direct substitution gives
 the displayed six points.
 \end{proof}
 
+\section{A sixth-round gate: mask 99}
+Mask 99 has support $\{0,1,5,6\}$ and occurs in eight of the 23 patterns.
+
+\begin{proposition}\label{prop:99}
+The integral points on
+\[
+ y^2=t(t+1)(t+5)(t+6)
+\]
+are exactly
+\[
+ (-6,0),(-5,0),(-3,-6),(-3,6),(-1,0),(0,0).
+\]
+\end{proposition}
+\begin{proof}
+Put $A=t(t+6)$ and $B=(t+1)(t+5)=A+5$.  For $t\leq-7$ or
+$t\geq1$, both are positive and $\gcd(A,B)\mid5$.  If $AB$ is a
+square, their common positive squarefree kernel is $d=1$ or $5$, so
+$A=dU^2,B=dV^2$.  For $d=1$,
+$(V-U)(V+U)=5$, hence $(U,V)=(2,3)$; then $A=4$ gives
+$(t+3)^2=13$, impossible modulo $8$.  For $d=5$,
+$(V-U)(V+U)=1$ forces $U=0$, contradicting $A>0$.
+Direct substitution for $-6\leq t\leq0$ gives the displayed points.
+\end{proof}
+
 \begin{theorem}[Summary classification]\label{thm:summary}
 Let $t\in\mathbf Z\setminus\{-6,-5,\ldots,0\}$.  If the seven nonzero
 classes $[t],\ldots,[t+6]$ have affine rank at most two, then their
-equality partition, modulo relabelling and reversal, is one of the 23
-patterns in Table~\ref{tab:23}.  In particular, the exact reduction chain is
+equality partition, modulo relabelling and reversal, is one of the 15
+patterns in Table~\ref{tab:15}.  In particular, the exact reduction chain is
 \[
 651\longrightarrow343\longrightarrow284\longrightarrow98
-\longrightarrow54\longrightarrow35\longrightarrow23.
+\longrightarrow54\longrightarrow35\longrightarrow23\longrightarrow15.
 \]
-This theorem neither asserts that any of the 23 patterns is realizable nor
+This theorem neither asserts that any of the 15 patterns is realizable nor
 decides $R_2(7)$.
 \end{theorem}
 \begin{proof}
@@ -388,52 +413,51 @@ Lemma~\ref{lem:15} give 284 self-contained packets.  Lemma~\ref{lem:four}
 leaves 98; Theorem~\ref{thm:54} leaves 54;
 Proposition~\ref{prop:102} leaves 35; and Proposition~\ref{prop:108}, whose
 points all have a zero among the seven original terms, eliminates 12 more.
-The exact occurrence audit gives Table~\ref{tab:23}.
+Proposition~\ref{prop:99} eliminates eight of those 23 rows, since all its
+integral points likewise have a zero among the original seven terms. The exact
+occurrence audit gives Table~\ref{tab:15}.
 \end{proof}
 
 \begin{table}[ht]
 \centering
-\caption{Final canonical candidates.  ID is the zero-based index in the
+\caption{Final canonical candidates after the mask-99 gate. ID is the zero-based index in the
 supplement's \texttt{unresolved\_patterns\_ranked}, ordered by its documented
-difficulty score and then by restricted-growth word.}\label{tab:23}
+difficulty score and then by restricted-growth word.}\label{tab:15}
 \begin{tabular}{r@{\quad}l r@{\quad}l r@{\quad}l}
 \toprule
 ID&partition&ID&partition&ID&partition\\ \midrule
-9&0012011&12&0012202&26&0112001\\
-31&0001202&33&0001220&43&0100021\\
-50&0111201&59&0012231&83&0112320\\
-134&0012131&188&0112132&210&0121132\\
-212&0121310&214&0122213&230&0012102\\
-251&0102221&257&0112102&266&0120210\\
-268&0121102&271&0122201&276&0010203\\
-281&0102003&283&0111231&&\\ \bottomrule
+12&0012202&31&0001202&33&0001220\\
+43&0100021&59&0012231&83&0112320\\
+134&0012131&214&0122213&230&0012102\\
+251&0102221&257&0112102&268&0121102\\
+276&0010203&281&0102003&283&0111231\\ \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Supplement and reproducibility}
 The accompanying supplement is identified by release
-\texttt{paper-square-supplement-v0.5.0}.  Its root manifest is
+\texttt{paper-square-supplement-v0.6.0}.  Its root manifest is
 \texttt{PAPER\_SQUARE\_SUPPLEMENT\_MANIFEST.json}; it records SHA-256 and
 byte length for every generator, input/output certificate and regression
 test, together with Python/SymPy versions and clean reproduction commands.
-The manifest SHA-256 is
-\texttt{6004afc5334bbea62969640079cad80764d2938d73b6fd62a85abc2249794588}.
-Its release status is explicitly
-\texttt{LOCAL\_RELEASE\_CANDIDATE\_NOT\_PUBLICLY\_ARCHIVED}; a journal
-submission must replace that status with a frozen archive URL/DOI without
-changing the hashed payload.
-
-The frozen journal-candidate package is separately described by a
-non-self-referential root manifest.  The file is
-\begin{center}
-\texttt{PAPER\_SQUARE\_SUBMISSION\_MANIFEST.json}
+The manifest SHA-256 is the concatenation of the following two lines:
+\begin{center}\small\ttfamily
+3ad3dd167ad349ad6d0720e558e96c65\\
+46797ffcfa26788827be512001b41659
 \end{center}
-and its release identifier is \texttt{paper-square-submission-v0.6.4}.
-It binds this source, the
-bibliography, one reference PDF, the supplement manifest, and all submission
-prose.  The reference PDF is byte-bound as an archived artifact, but PDF
-metadata timestamps mean that an independent rebuild is required to agree in
-mathematical content and diagnostics, not necessarily byte for byte.
+That historical manifest retains its original local-candidate status.  The
+current public working tree, including later audits and submission prose, is
+at \url{https://github.com/lixiang90/vibemath}.  Its project directory is the
+concatenation
+\begin{center}\small\ttfamily
+square-progressions/\\
+seven-consecutive-squareclasses
+\end{center}
+and is bound by the repository-root \texttt{MANIFEST.sha256}.  Before journal
+submission the authors must freeze the exact payload under an immutable release
+URL or preservation DOI and verify the downloaded bytes.  A rebuilt PDF is
+required to agree in mathematical content and diagnostics, not necessarily
+byte for byte, because PDF metadata timestamps may vary.
 
 The full regression command is stored verbatim in the manifest.  The finite
 congruence certificate stores, for each of the 15 excluded mask-77 branches,
@@ -444,7 +468,7 @@ three branches carry symbolic factor identities and thresholds.
 \paragraph{Online Resource 1 (supplementary code and certificates).}
 The supplementary ZIP contains the exact Python generators, regression tests,
 JSON certificates and nested manifest used to audit the finite pattern counts
-and the mask-77, mask-89, mask-102 and mask-108 exclusions.  It contains no
+and the mask-77, mask-89, mask-102, mask-108 and mask-99 exclusions.  It contains no
 additional mathematical claim beyond the theorem and claim boundary stated in
 this article.  Before submission, the file metadata and upload form must add
 the approved article title, journal name, author names, affiliations and
@@ -473,9 +497,11 @@ SHA-256 and store the
 54 remaining identifiers. The fourth-round certificate separately stores
 the mask-102 ranking, proof data, the 19 excluded identifiers and the
 35 intermediate survivors; the mask-108 certificate stores its complete
-point proof data, 12 exclusions and 23 final candidates. An end-to-end test regenerates
+point proof data and 12 exclusions; the mask-99 certificate records its full
+23-pattern occurrence inventory, complete point proof, eight exclusions and
+15 final candidates. An end-to-end test regenerates
 651--343--284 and all $284\cdot15=4260$ characters.
-We do not prove that the final 23 patterns are realized, or that no
+We do not prove that the final 15 patterns are realized, or that no
 seven-term rank-two progression exists. The 2026 papers have additional
 rank and class-number hypotheses; none is inferred from a label here.
 
@@ -507,12 +533,13 @@ disclosure accurately describes the use made, approve the final text and
 accept full responsibility for its integrity.
 
 \paragraph{Data and code availability.}
-The code, certificates and manifests are currently only a local release
-candidate and have not been deposited in a public repository.
+The code, certificates, audits and submission materials are publicly available
+in the working repository at \url{https://github.com/lixiang90/vibemath},
+under \path{square-progressions/seven-consecutive-squareclasses}.
 \textbf{AUTHOR CONFIRMATION REQUIRED.}  Before submission, the human authors
-must approve an immutable public deposit, insert its genuine persistent
-identifier here, and verify the downloaded archive against the published
-SHA-256 manifest.  No DOI or public URL is claimed in this draft.
+must approve an immutable release, insert its genuine persistent identifier,
+and verify the downloaded archive against the published SHA-256 manifest.  No
+preservation DOI is claimed in this draft.
 
 \paragraph{Ethics approval.}
 Not applicable: this mathematical study involved no human participants,

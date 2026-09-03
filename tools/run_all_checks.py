@@ -71,6 +71,7 @@ def square_group() -> tuple[list[tuple[Path, str]], list[str]]:
         "PAPER_SQUARE_MASK77_test",
         "PAPER_SQUARE_NEXT_GATE_test",
         "PAPER_SQUARE_MASK108_test",
+        "PAPER_SQUARE_MASK99_test",
         "PAPER_SQUARE_SUPPLEMENT_MANIFEST_test",
     ]
     return mappings, modules
@@ -94,7 +95,10 @@ def number_field_group() -> tuple[list[tuple[Path, str]], list[str]]:
 
 def cube_group() -> tuple[list[tuple[Path, str]], list[str]]:
     base = ROOT / "powers-in-progressions" / "pure-cubic-five-term" / "code"
-    return all_files(base, "*.py") + all_files(base, "*.json"), ["PAPER_CUBE_KUMMER5_test"]
+    return all_files(base, "*.py") + all_files(base, "*.json"), [
+        "PAPER_CUBE_KUMMER5_test",
+        "PAPER_CUBE_FOURHIT_0001_test",
+    ]
 
 
 def fourth_power_group() -> tuple[list[tuple[Path, str]], list[str]]:
@@ -110,6 +114,7 @@ def c29_group() -> tuple[list[tuple[Path, str]], list[str]]:
 def elliptic_group() -> tuple[Path, list[str]]:
     base = ROOT / "elliptic-curve-progressions" / "campbell-two-isogeny-selmer"
     modules = [
+        "NEXT_ELLIPTIC_ISOMORPHISM_AUDIT_test",
         "PAPER_ELLIPTIC_NEXT_test",
         "PAPER_ELLIPTIC_CAMPBELL_test",
         "PAPER_ELLIPTIC_ROUND_04_test",

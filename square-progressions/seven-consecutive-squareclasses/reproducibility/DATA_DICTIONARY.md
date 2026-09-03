@@ -1,10 +1,10 @@
 # Data dictionary for certificates and manifests
 
-Release described: `paper-square-submission-v0.6.4` with nested mathematical
-supplement `paper-square-supplement-v0.5.0`.  This dictionary documents every
-JSON file in the archive candidate.  It explains representation and claim
-eligibility; it does not enlarge any theorem or turn diagnostic data into
-proof.
+Mathematical release described: `paper-square-supplement-v0.6.0`.  The earlier
+submission root `paper-square-submission-v0.6.4` predates the mask-99 gate and
+does not bind these changed mathematical bytes. This dictionary explains
+representation and claim eligibility; it does not enlarge any theorem or turn
+diagnostic data into proof.
 
 ## Common representations and units
 
@@ -61,7 +61,7 @@ or globally pointless.
 
 Supersession: later certificates add isomorphisms and exclusions but do not
 replace this source enumeration.  Its frozen bytes remain authoritative under
-supplement v0.5.0.
+supplement v0.6.0.
 
 ## `STUDENT_SQUARE_ROUND_03_CERTIFICATE.json`
 
@@ -193,15 +193,38 @@ Claim eligibility: exact evidence for the mask-108 point theorem and the
 35-to-23 exclusion.  It does not assert realizability of any final candidate
 or decide `R_2(7)`.
 
+Supersession: the mask-99 certificate binds this 23-row output and supplies the
+next complete exclusion.
+
+## `PAPER_SQUARE_MASK99_CERTIFICATE.json`
+
+Schema/version: `paper-square-mask99-v1`, semantic version `1.0.0`.
+
+- `input_sha256` binds the mask-108 23-row output and the Round-04 occurrence
+  table.
+- `occurrence_inventory` records all 345 character occurrences, all 55
+  distinct masks, each mask's support/degree/genus/hit IDs, and the exact
+  ranking of genus-one masks with a constant quadratic pairing.
+- `integral_points` stores the mask-99 equation, the `A,B` pairing, gcd bound,
+  squarefree kernels `1,5`, finite middle interval and complete six-point list.
+- `pattern_impact` stores units of 23 input patterns, eight excluded IDs and 15
+  surviving necessary IDs.
+
+Claim eligibility: exact evidence for the mask-99 integral-point theorem and
+the 23-to-15 exclusion. `bounded_search_used=false`; no search range supports
+the theorem. It does not assert realizability of a remaining pattern or decide
+`R_2(7)`.
+
 Supersession: this is the terminal mathematical certificate in supplement
-v0.5.0.  A later release must use a new semantic version and manifest hash.
+v0.6.0. A later mathematical gate must use a new semantic version and manifest
+hash.
 
 ## `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json`
 
 Schema/version: `paper-square-supplement-manifest-v1`, semantic version
-`0.5.0`, release id `paper-square-supplement-v0.5.0`.
+`0.6.0`, release id `paper-square-supplement-v0.6.0`.
 
-- `files` is the exact 23-row mathematical allowlist.  Each row has `path`
+- `files` is the exact 26-row mathematical allowlist.  Each row has `path`
   (`string`), `bytes` (`integer`, bytes), `sha256` (`string`), `role` (`string`)
   and `mathematical_evidence_eligible` (`boolean`).
 - `runtime` records Python and SymPy version strings;
@@ -213,9 +236,8 @@ Schema/version: `paper-square-supplement-manifest-v1`, semantic version
 Claim eligibility: only listed bytes with `mathematical_evidence_eligible=true`
 may support the stated proved boundary, subject to every internal warning.
 
-Supersession: v0.5.0 remains nested in submission root v0.6.4.  It is not
-silently modified; any changed mathematical byte requires a new supplement
-release.
+Supersession: v0.6.0 supersedes v0.5.0 mathematically. It is not yet bound by a
+new submission root; any future external package must bind this manifest hash.
 
 ## `PAPER_SQUARE_SUBMISSION_MANIFEST.json`
 
