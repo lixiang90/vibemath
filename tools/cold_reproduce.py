@@ -39,8 +39,8 @@ WARNING_PATTERNS = (
 EXPECTED_TEST_GROUP_COUNTS = [96, 33, 42, 14, 8, 73]
 EXPECTED_TEST_TOTAL = 266
 EXPECTED_PDF_PAGES = {
-    "squareclasses": 11,
-    "pure_cubic": 9,
+    "squareclasses": 12,
+    "pure_cubic": 10,
     "campbell_selmer": 11,
 }
 

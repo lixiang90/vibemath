@@ -20,9 +20,15 @@ seven are closed for existence and 24 remain open. The unreviewed rank-zero
 quotient notes from Round 11 are not included in this count or in the
 manuscript's theorems.
 
-The prior-art search is evidence of a careful search, not a proof of novelty.
-`NEXT_CUBE_MATH_NOVELTY_AUDIT.md` gives the claim-by-claim correctness and
-prior-art audit. Draft journal-facing prose is collected in `submission/`.
+The prior-art search is evidence of a careful search, not a proof of priority.
+Its status is HIGH-CAUTION: no equivalent construction was located in the
+accessible sources, while MathSciNet authentication, a forward-citation chain,
+and full-text equation searches remain incomplete. Gonzalez-Jimenez--Xarles
+(2013) is a direct methodological precedent for Kummer types, scaling,
+reversal, curve reduction, and local solubility in the quadratic five-squares
+setting. `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` and
+`ROUND_12_CUBE_NOVELTY_AUDIT.md` record the claim boundary. Draft
+journal-facing prose is collected in `submission/`.
 The requested author is Codex (GPT-5.6-sol); no affiliation, ORCID,
 corresponding-author address, or actual submission is asserted.
 

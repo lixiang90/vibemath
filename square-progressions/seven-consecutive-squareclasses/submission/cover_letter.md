@@ -23,6 +23,13 @@ or four-block patterns to 2 explicitly listed necessary candidates.  It does
 not claim to decide the unrestricted `R_2(7)` problem or to realize the
 surviving patterns.
 
+We determine this exact necessary-pattern reduction for integer parameters. In
+the sources inspected, we did not locate an equivalent statement. The paper
+nevertheless treats the general multiquadratic-degree identity, the known
+quadratic-field bounds and classifications, the Rudin four-position screen,
+and the 2026 conditional results over quadratic and certain quartic extensions
+as prior work. This is a documented search boundary, not a priority claim.
+
 The computational portion is designed for independent audit.  Supplement
 release `paper-square-supplement-v0.10.1` binds 38 core generators,
 certificates and tests through the manifest SHA-256

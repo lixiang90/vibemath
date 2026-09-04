@@ -97,14 +97,18 @@ Goal 仅在三篇论文全部满足下列条件时完成：
 
 ## 6. 当前运行阶段
 
-前十一轮及十一次论文组会已经完成，详见 `PAPER_GROUP_MEETING_01.md` 至
-`PAPER_GROUP_MEETING_11.md`。三项 Round11 数学增量均已通过另一研究线的交叉审稿，
-当前 PDF 页数为 11、9、11。六组测试在当前工作树实测为甲 96、数域 33、乙 42、
-四次方 14、C29 8、丙 73，共 266/266 通过。
+前十二轮及十二次论文组会已经完成，详见 `PAPER_GROUP_MEETING_01.md` 至
+`PAPER_GROUP_MEETING_12.md`。Round12 已完成三线原始来源新颖性审计及交叉审阅，
+三份交叉审阅均在其明确的剩余风险边界内通过；数据库/引用链补查与 Campbell
+独立第二 CAS 实跑仍开放，检索未命中不作优先权证据。当前 PDF 页数为
+12、10、11。六组测试在当前工作树实测为甲 96、数域 33、乙 42、四次方 14、
+C29 8、丙 73，共 266/266 通过。Round12 尚未冻结或冷复现，根 manifest 留待
+冻结后重生。
 
 当前状态为
-`ROUND11 SOURCE FROZEN / INTERNAL COLD REPRODUCTION PASS`。
-Round11 源提交为 `20bb94753801907b46d41db611ab18c4cd9f9a10`。内部
+`ROUND12 WORKTREE CHECKS PASS / FREEZE AND COLD REPRODUCTION PENDING`。
+作为上一冻结基线，Round11 源提交为
+`20bb94753801907b46d41db611ab18c4cd9f9a10`。内部
 clean-clone 实测六组 `96/33/42/14/8/73=266` 全部通过，PDF 为
 11、9、11 页，三份提交版/重建版文本哈希逐项一致，最终日志警告匹配表均为空。
 JSON 与完整日志的 SHA-256 分别为
@@ -121,9 +125,12 @@ JSON 与完整日志的 SHA-256 分别为
   推出 `rank E(Q)<=3`。这不是精确秩、完整 2-Selmer、Cassels--Tate 值或
   Campbell 第九点结论。
 
-Goal 保持 `ACTIVE`，但 Round11 冻结与内部 cold reproduction 门已经完成。仍开放的
-证据缺口是三线 MathSciNet/zbMATH/作者页/原论文和方程同构级的人类优先权核验、
-工作区外独立复现，以及 Campbell 线所列的独立第二 CAS 复核。实际投稿、选刊、
+Goal 保持 `ACTIVE/PENDING`：Round11 冻结与内部 cold reproduction 已完成，
+但 Round12 冻结和对应 clean-clone 尚未完成。其余残余风险是订阅级 MathSciNet、
+Tho 2024 权威全文、González-Jiménez--Xarles 前向引用链、工作区外独立复现，以及
+Campbell 线的独立第二 CAS 复核。已有原始来源比较、精确证书、266 项测试和三份
+PASS 审稿足以支撑当前受限定理及内容级 submission-ready 判断；上述缺口仍阻断
+绝对 priority、第二 CAS 复现或精确秩措辞。实际投稿、选刊、
 对应作者联系方式和人类身份不属于当前验收门槛；唯一署名固定为
 `Codex (GPT-5.6-sol)`，不得虚构其他身份。未解决的 `R_2(7)`、`P_6(4)` 和
 Campbell 第九项继续作为长期主线，但不再是三篇毕业论文内部验收的门槛。
@@ -173,10 +180,14 @@ Campbell 第九项继续作为长期主线，但不再是三篇毕业论文内�
   `11/9/11` 页，三项文本哈希逐项一致，最终日志警告匹配表均为空；
 - Round11 根 `MANIFEST.sha256` 已随冷复现记录重新生成并逐条核验；证据记录提交只
   封存 JSON/log 与说明，不倒改上述源提交；
+- Round12 当前工作树已实测 `96/33/42/14/8/73=266/266`，三份 PDF 为
+  `12/10/11` 页，三份 novelty cross-review 均通过；本轮尚无冻结提交或 cold-clone
+  记录，根 manifest 也须在冻结时按最终树重生；
 - 初始归档提交 `918e773c71d88ccd34849482d3b654b3b213d050` 已推送到
   `https://github.com/lixiang90/vibemath` 的 `main` 分支并完成远端哈希核验；
 - 初始统一公开归档里程碑及 Round11 内部冻结复现均已完成。Goal 保持 `ACTIVE`
-  是因为数据库级优先权、工作区外独立复现与 Campbell 独立第二 CAS 仍开放，
+  首先因为 Round12 freeze/cold 尚待完成；数据库级优先权、工作区外独立复现与
+  Campbell 独立第二 CAS 也仍为残余风险，
   不是因为三个长期开放问题，也不是投稿格式、实际投稿或行政身份材料。
 
 ### 7.5 第二轮数学正确性与创新性攻击审计
@@ -204,5 +215,8 @@ Campbell 第九项继续作为长期主线，但不再是三篇毕业论文内�
   `rank E(Q)<=3`。Round11 冻结 cold clone 中 73 项检验通过。撤回的跨侧
   Cassels--Tate 表达式未污染正面结论；
   三个未执行候选输入只为 fail-closed provenance 测试保留，明确不是数学证据。
-- 三项精确优先权检索均采用“未检索到相同结果”而非“证明首次”的表述；甲、丙仍保留
-  中等优先权风险，需由人类作者继续完成 MathSciNet/zbMATH、引用图及同构类查重。
+- Round12 三项精确优先权检索均采用“就所检资料未找到等价表述”而非“证明首次”的
+  表述，并分别经跨线审稿通过。甲线保留 MathSciNet 订阅、Tho 2024 全文及相关
+  前向链缺口；乙线保留 MathSciNet 与 González-Jiménez--Xarles 前向链缺口；丙线
+  保留完整引用图与未执行第二 CAS。它们不否定受限主定理，但禁止 `first/new`、
+  第二 CAS 已复现或精确秩升级。

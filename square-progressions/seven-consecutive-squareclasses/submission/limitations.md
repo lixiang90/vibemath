@@ -21,7 +21,22 @@ The literature audit reports only that specified searches did not locate an
 identical published statement.  It is not proof of priority, and the paper
 must not use “first”, “new”, or “previously unknown” without a stronger human
 bibliographic review.  The 2026 papers on square progressions over quadratic
-and quartic extensions are a particular collision-risk area.
+and quartic extensions are a particular collision-risk area. After common
+rational scaling, the affine-rank-two hypothesis is equivalent to seven
+squares in a multiquadratic field of degree at most four, so comparisons must
+include equivalent biquadratic-field formulations, reversal and square
+scaling. The present result differs by giving a universal necessary equality
+pattern for integer `t`; the cited 2026 results impose field, rank or
+class-number hypotheses and address specified extensions.
+
+Balasubramanian--Luca--Thangadurai (2010) give the general exact
+squareclass-dependency/multiquadratic-degree relation. Xarles (2012),
+Gonzalez-Jimenez--Xarles (2013, 2014), and the two 2026 papers are mandatory
+comparison points. Complete MathSciNet search pages were not stably accessible
+in the audit environment, and an authoritative full text of a 2024 Tho item on
+quadratic extensions of `Q(zeta_8)` was not obtained. A subscription-level
+citation-chain review and theorem-level inspection remain before any priority
+wording could be considered.
 
 The source is in a public GitHub working archive but not yet frozen under an
 immutable release or preservation DOI.  External archival reproducibility

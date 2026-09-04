@@ -80,11 +80,17 @@
 | Round09 | `code/NEXT_ELLIPTIC_ROUND_09.py`; `code/NEXT_ELLIPTIC_ROUND_09_test.py`; `certificates/round09_two_place_gate.json`; `NEXT_ELLIPTIC_ROUND_09_REPORT.md`; `reviews/PAPER_ELLIPTIC_ROUND_09_REVIEW_SQUARE.md` | `PROVED`：`E` 侧两个素数的完整局部分类，与实位相交剩 8 类；只是不充分的局部必要条件 |
 | Round10 | `code/NEXT_ELLIPTIC_ROUND_10.py`; `code/NEXT_ELLIPTIC_ROUND_10_test.py`; `certificates/round10_eprime_two_three_gate.json`; `NEXT_ELLIPTIC_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | `PROVED`：`E'` 侧 `Q_2/Q_3` 两个 iff 及四类交集；最小性只相对于已存七列有限素数矩阵；交叉审稿 PASS |
 | Round11 | `code/NEXT_ELLIPTIC_ROUND_11.py`; `code/NEXT_ELLIPTIC_ROUND_11_test.py`; `certificates/round11_isogeny_selmer_audit.json`; `NEXT_ELLIPTIC_ROUND_11_REPORT.md`; `reviews/ROUND_11_CROSS_REVIEW.md` | `PROVED`：完整支撑与正见证把两侧候选升级为阶 8、4 的精确同源 Selmer 群，严格推出 `rank E(Q)<=3`；不计算精确秩、完整 2-Selmer、CT 或第九点；交叉审稿 PASS |
+| Round12 | `NEXT_ELLIPTIC_ROUND_12_NOVELTY_AND_SECOND_CAS_AUDIT.md`; `notes/independent-second-cas-plan.md`; `reviews/ROUND_12_NOVELTY_CROSS_REVIEW.md` | `DOC/REVIEW`：核对 Campbell article/thesis 先例、参数曲线 `D` 与目标 Jacobian、MR/zb/LMFDB 覆盖；交叉审稿 PASS。Sage/PARI/GP/Magma 仅为未执行协议，不是新数学证据 |
 
 Round11 Campbell Selmer 组在冻结源提交
 `20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 73/73 通过；
 全项目冷复现记录六组 266 项通过，三份 PDF 为 11/9/11 且文本哈希逐项一致。
-当前论文 11 页，唯一署名为 `Codex (GPT-5.6-sol)`；项目只要求达到
+Round12 当前工作树的 Campbell 组仍为 73/73，论文为 11 页；Round12 freeze/cold
+尚未完成。完整 MathSciNet 引用图与独立第二 CAS 仍是残余风险。现有自足局部证明、
+精确证书、测试和跨线 PASS 足以支撑 `rank<=3`，但不支撑优先权、第二 CAS 已复现、
+精确秩或 Campbell 第九点结论。
+
+唯一署名为 `Codex (GPT-5.6-sol)`；项目只要求达到
 submission-ready 水准，不实际投稿，不虚构其他作者、单位、联系方式、ORCID、
 资助、利益冲突、期刊、DOI 或投稿行为。这些增量不产生或排除第九点，不给出
 Cassels--Tate 值、完整 2-Selmer、秩等式或数据库级优先权。

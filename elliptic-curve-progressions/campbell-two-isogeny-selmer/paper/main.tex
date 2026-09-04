@@ -53,6 +53,26 @@ groups; arithmetic progressions; local solubility.
 \noindent\textbf{Mathematics Subject Classification (2020).} Primary 11G05;
 Secondary 11G30, 11Y50.
 
+\section{Prior work and contribution boundary}
+Campbell's article \cite{Campbell2003} constructs the eight-term family used
+below. His dissertation \cite[pp.~69--70]{CampbellThesis1999} also records,
+for curves $y^2=x^3+ax^2+bx$, the standard rational $2$-isogeny, its dual,
+the quartics $z^2=dU^4+aU^2V^2+(b/d)V^4$, the two isogeny Selmer groups,
+and the resulting rank formula. Thus neither rational $2$-isogeny descent nor
+this covering formalism is claimed as new here. Our contribution is the exact
+finite computation for the particular index-$8$ ninth-value Jacobian: the two
+displayed isogeny Selmer groups and the consequent upper bound
+$\operatorname{rank}E(\Q)\le3$, together with the stated certificates and
+arithmetic invariants. Campbell's rank-$2$ computation concerns his parameter
+curve $D$, not this Jacobian.
+
+MathSciNet and zbMATH records and exact invariant searches did not reveal a
+prior computation of these particular groups. This is a coverage-limited
+not-found result, not a claim of priority: the full MathSciNet citation graph
+was unavailable, old zbMATH reference metadata are incomplete, and the target
+large composite conductor lies outside the published complete ranges of
+LMFDB and Cremona's ecdata tables.
+
 \section{The Campbell quartic}
 Campbell \cite[Corollary~2.4 and Theorem~2.5]{Campbell2003} uses the
 parameter change
@@ -746,7 +766,9 @@ the full $2$-Selmer group or any Cassels--Tate value.  No independent second
 elliptic-curve CAS was available; the exact standard-library local proof and
 compatibility test are not represented as an independent external
 reproduction.  In particular, the local theorem does not decide the
-ninth-point problem.
+ninth-point problem. A fully specified Sage \texttt{test\_els} reproduction
+plan is included in the research archive, but Sage, Magma, and PARI/GP were
+not run and no second-CAS result is claimed.
 
 \section*{Statements and Declarations}
 
@@ -797,6 +819,12 @@ G. Campbell,
 ``A note on arithmetic progressions on elliptic curves,''
 \emph{Journal of Integer Sequences} \textbf{6} (2003), Article 03.1.3,
 \url{https://cs.uwaterloo.ca/journals/JIS/VOL6/Campbell/campbell4.html}.
+
+\bibitem{CampbellThesis1999}
+G. Campbell,
+\emph{Finding Elliptic Curves and Families of Elliptic Curves over $\Q$ of
+Large Rank}, Ph.D. dissertation, Rutgers University, 1999,
+\href{https://ctnt-summer.math.uconn.edu/wp-content/uploads/sites/1632/2020/06/Campbell-Finding-elliptic-curves-and-families-of-elliptic-curves-over-Q-of-large-rank.pdf}{public dissertation copy}.
 
 \bibitem{Cassels1991}
 J. W. S. Cassels,

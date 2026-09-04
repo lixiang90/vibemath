@@ -85,6 +85,7 @@
 | Round09 | `code/PAPER_SQUARE_MASK90.py`; `certificates/PAPER_SQUARE_MASK90_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK90_test.py` | `mathematical-notes/PAPER_SQUARE_MASK90_ROUND_09_REPORT.md`; `reviews/PAPER_SQUARE_ROUND_09_REVIEW_CUBE.md` | mask 90：`10→7` |
 | Round10 | `code/PAPER_SQUARE_MASK54.py`; `certificates/PAPER_SQUARE_MASK54_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK54_test.py` | `mathematical-notes/PAPER_SQUARE_MASK54_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | mask 54：`7→4`；终审 PASS |
 | Round11 | `code/PAPER_SQUARE_MASK85.py`; `certificates/PAPER_SQUARE_MASK85_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK85_test.py` | `mathematical-notes/PAPER_SQUARE_MASK85_ROUND_11_REPORT.md`; `reviews/ROUND_11_CROSS_REVIEW.md` | mask 85：完整整数点集且全部退化，`4→2`；交叉审稿 FINAL PASS |
+| Round12 | 数学代码、证书和 96-test 数量不变 | `mathematical-notes/PAPER_SQUARE_ROUND_12_NOVELTY_AUDIT.md`; `mathematical-notes/PAPER_SQUARE_PRIOR_ART.md`; `reviews/ROUND_12_NOVELTY_CROSS_REVIEW.md` | 最近先例、等价边界与检索缺口整合；novelty cross-review FINAL PASS，不声称 priority |
 
 Round11 squareclasses 组在冻结源提交
 `20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 96/96 通过。剩余两个模式
@@ -95,7 +96,12 @@ supplement v0.10.1 的当前本地候选 SHA-256 为
 `reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json`：六组 266 项通过，
 三份 PDF 为 11/9/11，文本哈希逐项一致。
 
-当前论文为 11 页，唯一署名为 `Codex (GPT-5.6-sol)`。项目只要求达到
+Round12 当前工作树的 squareclasses 组仍为 96/96，论文增至 12 页；Round12
+freeze/cold 尚未完成。MathSciNet 订阅结果、Tho 2024 权威全文及相关前向引用链
+仍是高谨慎残余风险，但原始来源比较和 FINAL PASS 审稿足以支撑当前受限的
+“所检资料未找到等价表述”，不支撑 `first/new`。
+
+唯一署名为 `Codex (GPT-5.6-sol)`。项目只要求达到
 submission-ready 水准，不实际投稿；不得虚构其他作者、单位、联系方式、ORCID、
 资助、利益冲突、期刊、DOI 或投稿事件。
 

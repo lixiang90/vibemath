@@ -2,6 +2,10 @@
 
 - The exact result concerns one Jacobian attached to Campbell's eight-term
   cubic family; it is not a classification of long x-coordinate progressions.
+- The standard rational two-isogeny descent, covering quartics, two Selmer
+  groups, and rank formula already appear in Campbell's 1999 dissertation.
+  The contribution is the exact computation for the particular index-8
+  ninth-value Jacobian, not a new descent method.
 - The same-parameter genus-5 fibre product is everywhere locally soluble, but
   no rational point is produced or excluded.
 - On the `E` side, either `Q_59` or `Q_71699` reduces the 32 signed supported
@@ -19,6 +23,9 @@
   implementation. The formulas have exact tests and a direct proof, not an
   independent CAS reproduction.
 - A finite database no-match is not a novelty or rank theorem.
+- MathSciNet's complete citation graph was unavailable, old zbMATH reference
+  metadata are incomplete, and LMFDB/ecdata do not cover this large composite
+  conductor. These are residual priority gaps, not positive evidence.
 - The frozen Magma file is unexecuted and mathematically ineligible.
 - Exact-query searches returned no match for the numerical models or survivor
   sets. This is not proof of novelty; do not use “first”, “new”, or
@@ -27,3 +34,5 @@
   until a release or preservation DOI is created and download-checked.
 - The current manuscript has 11 pages and the current regression suite has 73
   tests; these counts are reproducibility metadata, not mathematical claims.
+- `notes/independent-second-cas-plan.md` is an executable future protocol,
+  not a run transcript. No Sage, Magma, or PARI/GP result is claimed.

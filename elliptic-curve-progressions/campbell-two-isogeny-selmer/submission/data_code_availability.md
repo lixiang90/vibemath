@@ -22,6 +22,14 @@ support and place set, all 84 finite positive primitive witnesses, both exact
 isogeny Selmer groups, and the rank upper bound. They do not prove an exact
 rank, a full 2-Selmer group, a Cassels--Tate value, or a ninth rational point.
 
+Round 12 adds the coverage-limited bibliographic report
+`NEXT_ELLIPTIC_ROUND_12_NOVELTY_AND_SECOND_CAS_AUDIT.md` and executable
+future protocol `notes/independent-second-cas-plan.md`. The latter contains
+a free Sage `test_els` enumeration on both supports, a Sage order check, and
+weaker PARI/GP plus optional locally licensed Magma routes. It is input
+documentation only: no independent CAS was installed or run, and no
+transcript or second-CAS confirmation is asserted.
+
 The complete current regression command, run from `code/`, is:
 
 ```powershell

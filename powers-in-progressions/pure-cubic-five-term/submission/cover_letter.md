@@ -22,8 +22,13 @@ open.
 
 The claim is intentionally narrow. We do not claim a classification of all
 four-hit progressions, arbitrary-Q isomorphism classification of the Round-09
-reuse clusters, or priority for the new formulation. Database-level
-MathSciNet/zbMATH screening of the seventh existence result remains pending.
+reuse clusters, or bibliographic priority. Gonzalez-Jimenez--Xarles (2013)
+already use Kummer types, common scaling, reversal, curve reduction, and local
+solubility for five squares over quadratic fields; our theorem has exponent
+three, pure cubic fields, ternary colors, and a partial-hit condition. The
+accessible-source search located no equivalent construction, but MathSciNet
+authentication, the complete forward-citation chain, and full-text equation
+searches remain unresolved.
 
 Working code and data:
 <https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term>.

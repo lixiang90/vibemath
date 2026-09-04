@@ -60,6 +60,9 @@ numbers $a_i=t+i$, define
  =\dim_{\F_2}\langle [a_i]-[a_0]:1\leq i\leq6\rangle .
 \]
 The parameters $t=-6,\ldots,0$ are excluded.
+A general formula relates square-product dependencies to exact degrees of
+multiquadratic extensions \cite{BLT2010}. The proposition below records the
+affine, common-scaling form needed for this seven-term problem.
 
 For reference, define
 \[
@@ -172,7 +175,7 @@ is $(\sum e_i)c+\phi(\sum e_i\ell_i)=0$. These are all affine linear
 relations.
 \end{proof}
 
-\section{The first 186 exclusions}
+\section{The initial 186 exclusions}
 \begin{lemma}[Four consecutive factors]\label{lem:four}
 If $x\in\mathbf Z$ and $x(x+1)(x+2)(x+3)$ is a rational square, then
 $x\in\{-3,-2,-1,0\}$.
@@ -623,21 +626,42 @@ this article. Any later journal upload may require venue-specific metadata;
 no affiliation, e-mail address or ORCID is invented in this repository.
 
 \section{Prior-art boundary and limitations}
-Work over number fields \cite{XarlesNF,GJXFive,BremnerSiksek,GJ2026,GJTho2026}
-asks for terms that are themselves squares in a prescribed extension.
-Our affine formulation allows Proposition~\ref{prop:scaling}'s common
-rational scaling. Nearby algorithmic work concerns $S$-integral points
+The exact-degree identity of Balasubramanian--Luca--Thangadurai
+\cite{BLT2010} supplies the general Kummer-theoretic relation behind
+Proposition~\ref{prop:scaling}, but does not impose a consecutive block or
+classify equality patterns. Xarles \cite{XarlesNF} gives uniform bounds for
+square progressions over degree-$d$ number fields and determines the quadratic
+case used in Lemma~\ref{lem:R16}. Gonzalez-Jimenez--Xarles classify five
+squares over quadratic fields \cite{GJXFive}, while their work on Rudin's
+problem \cite{GJXRudin} supplies the exceptional four-position sets used in
+our finite screen. Those results do not state an affine-rank-two equality
+partition for seven consecutive rational integers.
+
+Recent work over quadratic extensions and certain non-primitive quartic fields
+\cite{GJ2026,GJTho2026} is especially close after allowing
+Proposition~\ref{prop:scaling}'s common rational scaling and reversal. Its
+classification statements have additional field, rank, or class-number
+hypotheses and concern progressions properly defined over specified
+extensions. We determine instead a universal necessary-pattern reduction for
+integer $t$; we do not classify arbitrary rational starting points or all
+square progressions over quartic fields. Work over cubic fields
+\cite{BremnerSiksek} is separate in extension degree.
+
+Nearby algorithmic work concerns $S$-integral points
 \cite{PethoEtAl}, simultaneous Pell equations \cite{MasserRickert},
 and integral points in progression on congruent-number curves \cite{BST}.
 There is also a substantial literature on square products of selected terms
 or blocks in progressions and on the associated hyperelliptic curves over
-short intervals \cite{SaradhaProducts,GranvilleSelfridge,BuiPrattZaharescu}.
-Those works do not, as far as our search found, state the affine-rank-two
+short intervals
+\cite{ErdosTurk,SaradhaProducts,GranvilleSelfridge,BBGH,BuiPrattZaharescu}.
+In the sources inspected, we did not locate an equivalent affine-rank-two
 equality-pattern classification or carry out the simultaneous 15-character,
 same-parameter audit used here. We did not locate the combined seven-term
 reduction of Theorem~\ref{thm:summary}. This is a \emph{not found} report,
 not proof of novelty; in particular, the elementary quartic point lists are
-not claimed to be independently new.
+not positioned as independent contributions. The complete MathSciNet search
+interface and one 2024 item attributed to Nguyen Xuan Tho were not available
+for theorem-level comparison, so the bibliographic coverage is not complete.
 
 The manifest and nested certificates bind SAFE and Round-04 inputs by
 SHA-256 and store the

@@ -12,17 +12,33 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | A closed theorem rather than a bounded experiment | PASS: integer seven-term necessary-pattern theorem | PASS: exact maximum `R^times_(3,1)(5)=4` | PASS: exact two-isogeny Selmer groups and rank upper bound |
 | Claim boundary states what is not proved | PASS | PASS | PASS |
 | Proof and finite computation checked adversarially | PASS: `NEXT_SQUARE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` |
-| Cross-review by another project member | PASS: `reviews/` | PASS: `reviews/` | PASS: `reviews/` |
-| Repository-level reproduction | PASS: 96 tests in frozen clean clone | PASS: 42 tests in the same clone | PASS: 73 tests in the same clone |
+| Cross-review by another project member | PASS: Round12 novelty review FINAL PASS | PASS: Round12 novelty review PASS | PASS: Round12 novelty/second-CAS review PASS |
+| Repository-level reproduction | PASS in Round12 working tree: 96; Round12 cold clone PENDING | PASS in working tree: 42; cold clone PENDING | PASS in working tree: 73; cold clone PENDING |
 | Code, structured certificates, tests, schema/data dictionary | PASS | PASS | PASS |
-| LaTeX source and readable PDF | PASS working-tree render: 11 pages | PASS working-tree render: 9 pages | PASS working-tree render: 11 pages |
-| Exact comparison with accessible primary literature | PASS with residual priority risk | PASS with residual priority risk | PASS with medium residual priority risk |
-| MathSciNet/zbMATH and equation-isomorphism priority audit | OPEN: human/database follow-up | OPEN: human/database follow-up | PARTIAL: exact minimal model/conductor searched; human database/citation-graph follow-up remains |
+| LaTeX source and readable PDF | PASS Round12 working-tree render: 12 pages | PASS Round12 working-tree render: 10 pages | PASS Round12 working-tree render: 11 pages |
+| Exact comparison with accessible primary literature | PASS, Round12 FINAL PASS with high-caution residual risk | PASS, Round12 PASS with high-caution residual risk | PASS, Round12 PASS with medium residual risk |
+| MathSciNet/zbMATH and equation-isomorphism priority audit | PARTIAL: accessible sources checked; subscription MathSciNet and Tho 2024 full text remain | PARTIAL: accessible sources checked; MathSciNet and GJX forward chain remain | PARTIAL: MR/zb/LMFDB bounded search checked; complete citation graph remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
-| Internal clean-clone reproduction of a committed tree | PASS at Round11 source commit `20bb94753801` | PASS at the same commit | PASS at the same commit |
+| Internal clean-clone reproduction of a committed tree | PASS at Round11 commit `20bb94753801`; Round12 PENDING | PASS at Round11; Round12 PENDING | PASS at Round11; Round12 PENDING |
 | Public source location and repository integrity manifest | PASS locally: GitHub source location plus regenerated root `MANIFEST.sha256`; no push claimed | PASS: same | PASS: same |
 | Author identity and nonfabrication boundary | PASS: sole named author `Codex (GPT-5.6-sol)`; no other identity fields invented | PASS: same | PASS: same |
 | Actual journal submission, venue and transmission authorization | OUT OF SCOPE: submission-ready research is sufficient | OUT OF SCOPE | OUT OF SCOPE |
+
+The Round12 working tree adds a primary-source novelty audit and a cross-review
+for each paper. All three cross-reviews pass within their documented
+residual-risk boundaries. Each submission directory contains an abstract,
+cover letter, mathematical-fit journal shortlist, author-contribution record,
+data/code statement, and explicit limitations. The sole named author is
+`Codex (GPT-5.6-sol)`; actual submission is out of scope and no affiliation,
+contact, ORCID, funding, venue selection, DOI, or submission event is invented.
+
+The authoritative command `python -B tools/run_all_checks.py` was rerun on the
+Round12 working tree and passed `96/33/42/14/8/73=266/266`. Direct `pdfinfo`
+inspection gives current page counts `12/10/11`. Subscription database and
+citation-chain follow-up and the Campbell independent second-CAS run remain
+open. Round12 is not yet frozen or cold reproduced, and the root manifest
+remains pending regeneration at the freeze; the Goal therefore stays
+**ACTIVE/PENDING**.
 
 The public all-project command is `python tools/run_all_checks.py`. Round11
 source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` passed the internal
@@ -141,15 +157,20 @@ evidence and is not used by a positive theorem.
    two-isogeny descent in Sage/Magma/PARI, then seek certified lower-rank or
    full-2-Selmer information. Do not upgrade `rank<=3` to equality or infer a
    ninth point without a global argument.
-4. Preserve source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`, its
-   Round11 JSON/log evidence, and the regenerated root manifest. Continue human
-   database/citation-graph priority checks without turning a not-found report
-   into an absolute claim.
+4. Preserve source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` and its
+   Round11 JSON/log evidence. After the Round12 tree stabilizes, regenerate the
+   root manifest, freeze a new commit, and cold-reproduce that exact commit;
+   until then the Round12 status remains pending.
+5. Continue subscription MathSciNet, Tho 2024 full-text, GJX forward-citation,
+   and equation-level checks without turning a not-found report into an
+   absolute novelty claim.
 
-The Goal remains `ACTIVE`: all three Round11 mathematical increments have
-passed cross-review and the Round11 source is frozen and cold reproduced, but
-database-level priority checks, external independent reproduction, and the
-Campbell independent second-CAS audit remain open. The current completion
+The Goal remains `ACTIVE/PENDING`: all three Round12 novelty cross-reviews and
+the current 266-test/PDF gates pass, but Round12 source freeze and cold
+reproduction are not yet recorded. Database-level priority follow-up, external
+independent reproduction, and the Campbell independent second-CAS run remain
+residual risks. They do not invalidate the bounded theorem statements, but they
+forbid absolute priority or second-CAS claims. The current completion
 standard is submission-ready research only;
 no actual journal submission, human author substitute, affiliation, contact,
 ORCID, venue, DOI or transmission authorization is required. The sole named

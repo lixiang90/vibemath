@@ -1,6 +1,6 @@
 # Prior-art audit for the square-class-pattern paper
 
-Search date: 2026-09-03.  This note records a reproducible literature audit; it
+Search dates: 2026-09-03 and Round 12 refresh on 2026-09-04. This note records a reproducible literature audit; it
 does **not** claim novelty from absence of a search hit.
 
 ## 1. Objects searched
@@ -55,6 +55,7 @@ the proof.
 
 The finite screens and collision-risk audit used the following primary papers:
 
+- Balasubramanian--Luca--Thangadurai, [On the exact degree of Q(sqrt(a1),...,sqrt(a_l)) over Q](https://doi.org/10.1090/S0002-9939-10-10331-1), Proc. AMS 138 (2010), 2283--2288. This is the general exact squareclass-dependency/multiquadratic-degree theorem; it does not classify a consecutive block.
 - González-Jiménez--Xarles, [On a conjecture of Rudin on squares in arithmetic progressions](https://arxiv.org/abs/1301.5122).
 - Xarles, [Squares in arithmetic progression over number fields](https://arxiv.org/abs/0909.1642).
 - González-Jiménez--Xarles, [Five squares in arithmetic progression over quadratic fields](https://arxiv.org/abs/0909.1663).
@@ -70,6 +71,13 @@ common rational scaling and proves two integral-quartic exclusions.  The audit
 found no theorem in those papers that obviously subsumes these finite pattern
 counts, but the introduction must say “we did not locate” rather than “first”.
 
+The precise equivalence relevant to that risk is: affine rank at most two if
+and only if a common rational scaling makes all seven terms squares in a
+multiquadratic field of degree at most four. Exact rank two permits a
+biquadratic field. This does not say that the unscaled terms are squares in one
+such field, and the integer-`t` theorem does not extend automatically to a
+general rational normalized starting point.
+
 ## 5. Products of subsets of intervals and progressions
 
 This audit originally underweighted the literature closest to the character
@@ -78,6 +86,8 @@ intervals or arithmetic progressions:
 
 - N. Saradha, [Squares in products with terms in an arithmetic progression](https://doi.org/10.4064/aa-86-1-27-43), Acta Arith. 86 (1998), 27--43. Its principal theorem treats products of complete arithmetic-progression blocks (and related almost-square equations), rather than affine squareclass rank of a fixed seven-term interval.
 - Granville--Selfridge, [Product of integers in an interval, modulo squares](https://doi.org/10.37236/1549), Electron. J. Combin. 8 (2001), R5. It studies when an interval contains a subproduct in a prescribed squareclass.
+- Erdos--Turk, [Products of integers in short intervals](https://doi.org/10.4064/aa-44-2-147-174), Acta Arith. 44 (1984), 147--174.
+- Bennett--Bruin--Gyory--Hajdu, [Powers from products of consecutive terms in arithmetic progression](https://doi.org/10.1112/S0024611505015625), Proc. LMS 92 (2006), 273--306.
 - Bui--Pratt--Zaharescu, [A problem of Erdős--Graham--Granville--Selfridge on integral points on hyperelliptic curves](https://doi.org/10.1017/S0305004123000488), Math. Proc. Camb. Phil. Soc. 176 (2024), 309--323. It connects interval subproducts to integral points on curves such as $y^2=x\prod(x+j_i)$ and proves distributional results for the least endpoint.
 
 These are genuine conceptual predecessors for the character quotients
@@ -95,3 +105,14 @@ locate the seven-term affine-squareclass classification and simultaneous
 same-parameter reductions stated here.” The elementary quartic point lists
 should not be advertised as independently new. Forbidden without a stronger bibliographic review:
 “new”, “first”, “previously unknown”, or “complete prior-art search”.
+
+## 7. Round 12 coverage boundary
+
+The detailed transformation audit, DOI/MR table, OEIS comparison and graded
+risk register are in `PAPER_SQUARE_ROUND_12_NOVELTY_AUDIT.md`. Direct, stable
+access to complete MathSciNet search-result pages was unavailable. A 2024
+ResearchGate-only record attributed to Nguyen Xuan Tho and concerning
+quadratic extensions of `Q(zeta_8)` could not be checked against an
+authoritative full text. These are explicit coverage gaps. They prevent a
+priority claim and should be closed by a human subscription search and
+theorem-level inspection before any external submission.

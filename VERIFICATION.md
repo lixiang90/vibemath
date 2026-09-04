@@ -39,19 +39,27 @@ The entry point uses temporary directories for historical flat-layout programs
 and runs the Campbell checks directly against their organized public paths.
 It creates no build product in the repository.
 
-These working-tree checks are also covered by the completed Round11 clean-clone
-reproduction of source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`.
-The repository-root `MANIFEST.sha256` was regenerated after adding the durable
-JSON/log evidence. Its 270 unique rows were then re-read; every path exists,
-every SHA-256 matches, and the listed path set equals the repository file set.
-The source commit,
-not this later evidence-recording commit, is the tree tested by the cold clone.
+These working-tree checks extend the completed Round11 clean-clone reproduction
+of source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`.  At the Round11
+evidence-recording freeze, the repository-root `MANIFEST.sha256` was
+regenerated after adding the durable JSON/log evidence. Its 270 unique rows
+were then re-read; every path existed, every SHA-256 matched, and the listed
+path set equalled the frozen repository file set. The source commit, not the
+later evidence-recording commit, is the tree tested by that cold clone.
+
+The current Round12 working tree adds primary-source novelty audits and
+cross-reviews for all three papers.  Each cross-review passes under its stated
+claim boundary: database and citation-chain gaps remain disclosed, no search
+non-hit is used as priority evidence, and the Campbell independent second-CAS
+protocol remains unexecuted.  Round12 is not yet frozen or cold-reproduced;
+the root manifest is therefore intentionally pending regeneration at the
+Round12 freeze.
 
 The current squareclasses, pure-cubic, and Campbell PDF files have respectively
-11, 9, and 11 pages, with file SHA-256 values
-`4ac177cf47c80eaf38c9ae7a0fcc5d1d22930b122615cbe02875c045217aaea4`,
-`b0062b625231cb6f15c3792eab41c57cdb803020d87b5ba3e0f0a941c616ca71`, and
-`9296c024822d7cd3670e1d04cccfb328da26ea4198dd2aac8e0f0e99e9024e1f`.
+12, 10, and 11 pages, with file SHA-256 values
+`0312007e2125fe27b6ab358c0b4f81b15d0f689e05e62743de61b47b945b0ac1`,
+`253f2403c26d13d62b7f758dc9188ce5577cfe82d54d425beffe26404684cb4f`, and
+`1b27cc0331736af6b2078d4b0ddb21d2e21e3dc97403eb8235a2ae1f9a2a40f3`.
 All three PDF metadata records name `Codex (GPT-5.6-sol)` as author.
 
 ## Clean-clone reproduction

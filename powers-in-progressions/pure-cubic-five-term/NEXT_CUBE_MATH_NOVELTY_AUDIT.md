@@ -2,7 +2,8 @@
 
 Date: 2026-09-04
 Audited tree: `vibemath/powers-in-progressions/pure-cubic-five-term/`
-Decision: **mathematics ACCEPT; novelty wording ACCEPT only in the narrow form stated in Section 4 below.**
+Decision: **mathematics ACCEPT; bibliographic clearance HIGH-CAUTION; only
+the descriptive claim in Section 4 is supported.**
 
 This is an adversarial audit of the mathematical claim, not a submission-format
 review.  The documents in the audited tree were treated as claims to check, not
@@ -270,9 +271,19 @@ certificate has SHA-256
 Searches used the exact three diagonal-cubic equations, the phrases “common
 rational scaling,” “pure cubic field,” “five-term arithmetic progression,”
 and the Kummer/color formulation, together with broader citation searches.
-No accessible paper through 2026-09-03 was found that states the present
-five-term maximum or its 25-orbit/60-model reduction.  This is evidence from
-search, not a proof of novelty.
+No equivalent statement or construction was located in the accessible
+sources searched through 2026-09-04. This is a search result, not a proof of
+priority. The complete Round-12 record is
+ROUND_12_CUBE_NOVELTY_AUDIT.md.
+
+The closest methodological predecessor is Gonzalez-Jimenez--Xarles,
+*Five squares in arithmetic progression over quadratic fields* (2013), DOI
+<https://doi.org/10.4171/RMI/754>. It already uses Kummer types, common
+scaling, reversal, curves over Q, and local-solubility analysis. The exponent,
+field, binary-versus-ternary encoding, and all-five-versus-partial-hit
+condition differ. Therefore the general type/color strategy is not claimed
+as an original method; the supported contribution is the cubic-specific
+theorem and its exact reductions.
 
 The closest primary literature treats materially different problems:
 
@@ -313,8 +324,8 @@ The narrow claim supported by both the proof and the search is:
 > also exhaust all five-hit Kummer color classes by a 25-orbit reduction and
 > 60 certified finite-field obstructions.
 
-Use “we determine,” not “for the first time,” “the first result,” or “complete
-classification of maximizers.”  The paper classifies and excludes all
+Use “we determine” and make no priority assertion or complete-classification
+claim. The paper classifies and excludes all
 **five-hit color/position classes**.  Of the initial 31 four-hit
 arithmetic-point models, six distinct orbits have positive-rank infinite
 families, one further orbit has strict existence, and 24 remain open.
@@ -329,10 +340,13 @@ common-rational-scale restrictions are central.
 
 The remaining risk is bibliographic, not mathematical: the exact formulation
 could occur under different notation in a thesis, non-English source, or an
-unindexed computation.  Before any priority assertion, an independent researcher should run
-equation-level and citation-forward searches in MathSciNet and zbMATH and ask
-a specialist in perfect powers in progressions.  Pending that check, the
-narrow descriptive sentence above is publishable; any priority claim is not.
+unindexed computation. zbMATH Open was checked at metadata level, including
+the normalized explicit witness, but that does not search all equations in
+full text. MathSciNet redirected to institutional authentication, so its
+records and citation graph were not reviewed. The complete forward-citation
+chain of Gonzalez-Jimenez--Xarles (2013) and a full-text search of expanded or
+permuted source equations also remain open. Pending those checks, the narrow
+descriptive sentence above is usable; any priority assertion is unsupported.
 
 ## 5. Final verdict
 
@@ -340,8 +354,9 @@ narrow descriptive sentence above is publishable; any priority claim is not.
 - **External theorem applicability:** accept; hypotheses match after the
   explicit denominator-clearing/primitivity/reversal reductions.
 - **Finite computation:** accept as exhaustive and reproducible, not heuristic.
-- **Novelty:** plausibly distinct from accessible prior art, but only the
-  narrowly defined exact maximum and exhaustive five-hit color-class
+- **Novelty:** no equivalent construction was located in accessible sources,
+  but clearance remains HIGH-CAUTION; only the narrowly defined exact maximum
+  and exhaustive five-hit color-class
   elimination, together with the six explicitly proved positive-rank
   four-hit orbits and strict existence in the seventh orbit, should be
   claimed.

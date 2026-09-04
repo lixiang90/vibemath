@@ -25,8 +25,13 @@
 - A theorem for six or more positions, zero-counting variants, arbitrary
   cubic fields, or algebraic-integer rather than field cubes.
 - A formal proof-assistant development.
-- Exhaustiveness of the bibliographic search. MathSciNet/zbMATH screening of
-  the seventh existence result remains pending, so no priority claim is made.
+- Exhaustiveness of the bibliographic search. zbMATH Open was screened at
+  metadata level, but MathSciNet redirected to institutional authentication.
+  The Gonzalez-Jimenez--Xarles (2013) forward-citation chain and full-text
+  formula variants remain unchecked, so no priority claim is made.
+- Originality of the general Kummer-type method. Gonzalez-Jimenez--Xarles
+  (2013) already use type encoding, common scaling, reversal, curve reduction,
+  and local solubility for five squares over quadratic fields.
 
 The five-hit finite-field certificate permits zero coordinates while excluding
 a projective model modulo p. This strengthens rather than weakens that local

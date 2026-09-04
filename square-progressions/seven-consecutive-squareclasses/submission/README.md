@@ -8,6 +8,10 @@ the squareclasses suite has 96 tests. Supplement release
 `paper-square-supplement-v0.10.1` is bound by SHA-256
 `deb3eade7c9f25c6e0c8da019f21f7a0943bdd50fcf263f7add6ed8b3ed0309e`.
 Realizability of every survivor and `R_2(7)` remain open.
+The Round 12 novelty audit compares the theorem after common-scaling,
+reversal, translation and quartic-isomorphism normalization. It records a
+medium-high collision risk with equivalent biquadratic-field formulations and
+does not infer priority from a negative search.
 
 The mathematics lives in
 the sibling `paper/`, `code/`, `certificates/`, `mathematical-notes/`,
@@ -16,9 +20,9 @@ contains only editable submission prose.
 
 The current public working copy is
 <https://github.com/lixiang90/vibemath/tree/main/square-progressions/seven-consecutive-squareclasses>.
-The repository-root `MANIFEST.sha256` still records the Round10 tree and is not
-the current Round11 byte inventory.  It must be regenerated only when the
-Round11 payload is frozen.  The paper-specific supplement manifest currently
+The repository-root `MANIFEST.sha256` is regenerated from the final Round12
+source tree as part of the repository freeze and binds those committed payload
+bytes.  The paper-specific supplement manifest currently
 binds the 38 core mathematical artifacts through mask 85, but it is not a
 self-updating description of every later review or submission file.
 

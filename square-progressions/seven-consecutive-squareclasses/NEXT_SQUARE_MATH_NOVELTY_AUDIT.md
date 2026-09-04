@@ -222,3 +222,34 @@ the subset-product literature is extensive, so the contribution should be the
 specific affine-rank-two seven-term classification and auditable simultaneous
 compatibility reduction, not the general curve construction or the individual
 quartics.
+
+## Round 12 novelty audit update (2026-09-04)
+
+The expanded audit is recorded in
+`mathematical-notes/PAPER_SQUARE_ROUND_12_NOVELTY_AUDIT.md`. It searches the
+theorem after quotienting by relabelling and reversal and after allowing
+variable normalization and common square scaling. The principal equivalent
+formulation is that a common rational scaling makes the seven terms squares in
+a multiquadratic field of degree at most four. Consequently, the closest
+collision channel is square arithmetic progressions over biquadratic and
+related quartic fields.
+
+The Round 12 comparison adds the exact-degree theorem of
+Balasubramanian--Luca--Thangadurai (2010), distinguishes Xarles (2012), the
+Gonzalez-Jimenez--Xarles quadratic-field and Rudin papers (2013, 2014), and
+checks both relevant 2026 articles theorem by theorem. It records adjacent
+short-interval product and OEIS results, DOI/MR metadata, and the effects of
+translation, reversal, rational/square scaling, fractional-linear quartic
+isomorphisms, and quadratic twisting.
+
+Risk rating: an exact duplicate is low risk but not excluded; an equivalent
+result phrased as a commonly scaled seven-square progression over a
+biquadratic field is medium-high risk; omission of the foundational or 2026
+literature would be high risk. Stable complete MathSciNet result pages and an
+authoritative full text of a 2024 Tho item on extensions of `Q(zeta_8)` were
+not available. These limitations are not evidence for priority.
+
+The retained wording is: “We determine an exact necessary equality-pattern
+classification ...; in the sources inspected, we did not locate an equivalent
+statement.” The theorem remains limited to integer `t`, makes no realization
+claim for the two survivors, and does not decide `R_2(7)`.
