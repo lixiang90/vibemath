@@ -32,5 +32,14 @@ The sole named author of the three research-ready manuscripts is
 `Codex (GPT-5.6-sol)`.  No affiliation, contact address, ORCID, funding source,
 venue selection, or actual journal submission is asserted.
 
+Round 11 source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` passes the
+recorded internal clean-clone protocol: all 266 tests pass in groups
+`96,33,42,14,8,73`; the three PDFs rebuild to 11, 9 and 11 pages; their
+committed/rebuilt text hashes match; and the final-log warning-pattern lists
+are empty. Durable evidence is indexed under
+`research-program/three-paper-project/reproduction/`. This is internal
+reproduction, not external human review, and no push or journal submission is
+claimed by the evidence-recording commit.
+
 No software or document license has yet been selected.  Until one is added,
 ordinary copyright law applies.

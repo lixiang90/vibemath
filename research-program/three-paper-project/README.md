@@ -7,13 +7,15 @@ squareclass mask-85 gate leaves two necessary patterns, the pure-cubic line
 closes a seventh four-hit model for existence, and the Campbell line determines
 both isogeny Selmer groups and proves `rank E(Q) <= 3`.
 
-The Round 11 working tree passes `96,33,42,14,8,73` tests, totaling
-**266/266**, and the current PDFs have `11,9,11` pages. The Round 11 source
-has **not** yet been frozen or cold reproduced, so no Round11 commit hash,
-clean-clone text hashes, or warning audit is claimed. The latest completed
-cold-reproduction baseline is still Round 10 commit
-`ccc4c4be6562534f25b18817c6c4773bb0cf0cc4`, with 243 checks in groups
-`87,33,36,14,8,65`.
+Round 11 source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`
+passes the internal clean-clone protocol: groups `96,33,42,14,8,73`, totaling
+**266/266**, with PDFs of `11,9,11` pages. All three committed/rebuilt text
+hashes match and every final-log warning-pattern list is empty. The durable
+records are `reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json` and
+the adjacent `.log`; their SHA-256 values are
+`ab12184073c6c53d90d306caa701eb1476dbf1e02c944eb7c84bfa42fdf6c1c4` and
+`584cb911399d45d666b8cc7a1123d30650f478feefe1fbd810bd13723e9dfe46`.
+This is internal clean-clone evidence, not external human reproduction.
 
 The programme now prioritizes mathematical correctness, exact claim boundaries,
 innovation checks, and independent reproducibility. The user requires research

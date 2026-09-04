@@ -56,8 +56,10 @@
 
 当前结论为原 31 个四命中模型中 6 个具有严格无穷族，第 7 个仅有一个合法非退化
 AP 的存在性闭合，24 个仍开；不声称第 7 个源曲线有无穷点、精确秩、完整
-Mordell--Weil 基或完整极值分类。Round11 pure-cubic 组在当前工作树 42/42 通过；
-冻结提交和 cold reproduction 为 PENDING。当前论文 9 页，唯一署名为
+Mordell--Weil 基或完整极值分类。Round11 pure-cubic 组在冻结源提交
+`20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 42/42 通过；
+全项目冷复现记录六组 266 项通过，三份 PDF 为 11/9/11 且文本哈希逐项一致。
+当前论文 9 页，唯一署名为
 `Codex (GPT-5.6-sol)`；只要求 submission-ready，不实际投稿，不虚构其他身份字段。
 
 ## 长期线建议一：P6 四次幂问题（独立 paper 目录）

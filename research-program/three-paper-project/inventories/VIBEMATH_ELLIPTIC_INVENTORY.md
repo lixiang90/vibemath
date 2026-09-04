@@ -81,8 +81,10 @@
 | Round10 | `code/NEXT_ELLIPTIC_ROUND_10.py`; `code/NEXT_ELLIPTIC_ROUND_10_test.py`; `certificates/round10_eprime_two_three_gate.json`; `NEXT_ELLIPTIC_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | `PROVED`：`E'` 侧 `Q_2/Q_3` 两个 iff 及四类交集；最小性只相对于已存七列有限素数矩阵；交叉审稿 PASS |
 | Round11 | `code/NEXT_ELLIPTIC_ROUND_11.py`; `code/NEXT_ELLIPTIC_ROUND_11_test.py`; `certificates/round11_isogeny_selmer_audit.json`; `NEXT_ELLIPTIC_ROUND_11_REPORT.md`; `reviews/ROUND_11_CROSS_REVIEW.md` | `PROVED`：完整支撑与正见证把两侧候选升级为阶 8、4 的精确同源 Selmer 群，严格推出 `rank E(Q)<=3`；不计算精确秩、完整 2-Selmer、CT 或第九点；交叉审稿 PASS |
 
-Round11 Campbell Selmer 组在当前工作树 73/73 通过。冻结提交与 cold reproduction
-为 PENDING。当前论文 11 页，唯一署名为 `Codex (GPT-5.6-sol)`；项目只要求达到
+Round11 Campbell Selmer 组在冻结源提交
+`20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 73/73 通过；
+全项目冷复现记录六组 266 项通过，三份 PDF 为 11/9/11 且文本哈希逐项一致。
+当前论文 11 页，唯一署名为 `Codex (GPT-5.6-sol)`；项目只要求达到
 submission-ready 水准，不实际投稿，不虚构其他作者、单位、联系方式、ORCID、
 资助、利益冲突、期刊、DOI 或投稿行为。这些增量不产生或排除第九点，不给出
 Cassels--Tate 值、完整 2-Selmer、秩等式或数据库级优先权。

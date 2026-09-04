@@ -13,25 +13,24 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Claim boundary states what is not proved | PASS | PASS | PASS |
 | Proof and finite computation checked adversarially | PASS: `NEXT_SQUARE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` |
 | Cross-review by another project member | PASS: `reviews/` | PASS: `reviews/` | PASS: `reviews/` |
-| Repository-level reproduction | PASS local worktree: 96 tests; PENDING frozen cold clone | PASS local worktree: 42 tests; PENDING frozen cold clone | PASS local worktree: 73 tests; PENDING frozen cold clone |
+| Repository-level reproduction | PASS: 96 tests in frozen clean clone | PASS: 42 tests in the same clone | PASS: 73 tests in the same clone |
 | Code, structured certificates, tests, schema/data dictionary | PASS | PASS | PASS |
 | LaTeX source and readable PDF | PASS working-tree render: 11 pages | PASS working-tree render: 9 pages | PASS working-tree render: 11 pages |
 | Exact comparison with accessible primary literature | PASS with residual priority risk | PASS with residual priority risk | PASS with medium residual priority risk |
 | MathSciNet/zbMATH and equation-isomorphism priority audit | OPEN: human/database follow-up | OPEN: human/database follow-up | PARTIAL: exact minimal model/conductor searched; human database/citation-graph follow-up remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
-| Internal clean-clone reproduction of a committed tree | PASS at commit `ccc4c4be6562` | PASS at the same commit | PASS at the same commit |
-| Public source location and repository integrity manifest | PARTIAL: GitHub `main`; root `MANIFEST.sha256` still records Round10 bytes and awaits the Round11 freeze | PARTIAL: same | PARTIAL: same |
+| Internal clean-clone reproduction of a committed tree | PASS at Round11 source commit `20bb94753801` | PASS at the same commit | PASS at the same commit |
+| Public source location and repository integrity manifest | PASS locally: GitHub source location plus regenerated root `MANIFEST.sha256`; no push claimed | PASS: same | PASS: same |
 | Author identity and nonfabrication boundary | PASS: sole named author `Codex (GPT-5.6-sol)`; no other identity fields invented | PASS: same | PASS: same |
 | Actual journal submission, venue and transmission authorization | OUT OF SCOPE: submission-ready research is sufficient | OUT OF SCOPE | OUT OF SCOPE |
 
-The public all-project command is `python tools/run_all_checks.py`. After the
-Round11 square supplement manifest was synchronized, the current working tree
-passed groups `96,33,42,14,8,73`, totaling **266/266** checks. This audit
-still does **not** record a Round11 commit hash or Round11 cold reproduction.
-The latest completed frozen baseline remains the Round10 clean clone with 243 tests and groups
-`87,33,36,14,8,65`. The repository-wide `MANIFEST.sha256` still describes
-that Round10 snapshot and is not a hash index for the current Round11 bytes.
-These facts establish internal reproducibility only for the frozen baseline;
+The public all-project command is `python tools/run_all_checks.py`. Round11
+source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` passed the internal
+clean-clone protocol with groups `96,33,42,14,8,73`, totaling **266/266**
+checks. The PDFs rebuilt to 11, 9 and 11 pages; all three committed/rebuilt
+text hashes match, and every final-log warning-pattern list is empty. The
+repository-wide SHA-256 index is `MANIFEST.sha256`. These facts establish
+internal reproducibility for the frozen source;
 they do not establish external peer review, priority, or the unresolved
 long-term problems.
 
@@ -69,6 +68,21 @@ The exact records are
 `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_ccc4c4be6562.json`
 and the adjacent `.log`; the combined log SHA-256 is
 `72486507e0ebfafe8ba4b4a2415bcb19056a4e23d392d223548629bab6e59645`.
+This remains internal clean-clone evidence, not external human reproduction.
+
+The same protocol then passed on the clean Round11 source commit
+`20bb94753801907b46d41db611ab18c4cd9f9a10`: source clean, all 266 tests in
+groups `96,33,42,14,8,73`, PDF page counts 11, 9 and 11, identical
+committed/rebuilt `pdftotext` SHA-256 values for each paper, and empty final-log
+warning lists. The text hashes are, respectively,
+`5aca3c9cc84f52121a501a3f08640d1aa806a0154e2bb1429cd0e977e6659f9d`,
+`59cdb61632ddc7273a3733f562206a23e6bec2ddca0dbfd2ffc3e200effb9fbe`, and
+`7616879662139ea87f2fc1d992aa5e7fafff45ea7057dc79d6ad4181a9752b23`.
+The exact records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json`
+and the adjacent `.log`. Their SHA-256 values are, respectively,
+`ab12184073c6c53d90d306caa701eb1476dbf1e02c944eb7c84bfa42fdf6c1c4` and
+`584cb911399d45d666b8cc7a1123d30650f478feefe1fbd810bd13723e9dfe46`.
 This remains internal clean-clone evidence, not external human reproduction.
 
 ## Current mathematical status
@@ -127,15 +141,16 @@ evidence and is not used by a positive theorem.
    two-isogeny descent in Sage/Magma/PARI, then seek certified lower-rank or
    full-2-Selmer information. Do not upgrade `rank<=3` to equality or infer a
    ninth point without a global argument.
-4. The Round11 manifests are synchronized and all 266 registered checks pass
-   locally. Next freeze an exact source commit and run the internal clean-clone
-   protocol before declaring Round11 reproducible. Continue human
+4. Preserve source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`, its
+   Round11 JSON/log evidence, and the regenerated root manifest. Continue human
    database/citation-graph priority checks without turning a not-found report
    into an absolute claim.
 
-The Goal therefore remains `ACTIVE`: all three Round11 mathematical increments
-have passed cross-review, but the Round11 tree is not yet frozen and cold
-reproduced. The current completion standard is submission-ready research only;
+The Goal remains `ACTIVE`: all three Round11 mathematical increments have
+passed cross-review and the Round11 source is frozen and cold reproduced, but
+database-level priority checks, external independent reproduction, and the
+Campbell independent second-CAS audit remain open. The current completion
+standard is submission-ready research only;
 no actual journal submission, human author substitute, affiliation, contact,
 ORCID, venue, DOI or transmission authorization is required. The sole named
 author is `Codex (GPT-5.6-sol)`, and no missing identity field may be invented.

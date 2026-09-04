@@ -39,12 +39,13 @@ The entry point uses temporary directories for historical flat-layout programs
 and runs the Campbell checks directly against their organized public paths.
 It creates no build product in the repository.
 
-These are the final Round11 pre-commit working-tree checks, not a clean-clone
-reproduction.  The repository-root `MANIFEST.sha256` was regenerated with
-`tools/build_manifest.py`; its 268 unique entries were then re-read and every
-path and SHA-256 value was independently verified against the working tree.
-The latest completed clean-clone reproduction remains the Round10 record
-preserved below until a later post-commit reproduction is performed.
+These working-tree checks are also covered by the completed Round11 clean-clone
+reproduction of source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`.
+The repository-root `MANIFEST.sha256` was regenerated after adding the durable
+JSON/log evidence. Its 270 unique rows were then re-read; every path exists,
+every SHA-256 matches, and the listed path set equals the repository file set.
+The source commit,
+not this later evidence-recording commit, is the tree tested by the cold clone.
 
 The current squareclasses, pure-cubic, and Campbell PDF files have respectively
 11, 9, and 11 pages, with file SHA-256 values
@@ -110,6 +111,25 @@ The Round10 records are
 `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_ccc4c4be6562.json`
 and the adjacent `.log`; the combined log SHA-256 is
 `72486507e0ebfafe8ba4b4a2415bcb19056a4e23d392d223548629bab6e59645`.
+
+The protocol then succeeded on the clean Round11 source commit
+`20bb94753801907b46d41db611ab18c4cd9f9a10`. The source was clean; all 266
+tests passed in groups `96,33,42,14,8,73`; the PDFs had 11, 9 and 11 pages;
+every final-log warning-pattern list was empty; and each committed/rebuilt
+`pdftotext` SHA-256 pair was identical:
+
+| paper | committed text SHA-256 | rebuilt text SHA-256 |
+|---|---|---|
+| squareclasses | `5aca3c9cc84f52121a501a3f08640d1aa806a0154e2bb1429cd0e977e6659f9d` | `5aca3c9cc84f52121a501a3f08640d1aa806a0154e2bb1429cd0e977e6659f9d` |
+| pure cubic | `59cdb61632ddc7273a3733f562206a23e6bec2ddca0dbfd2ffc3e200effb9fbe` | `59cdb61632ddc7273a3733f562206a23e6bec2ddca0dbfd2ffc3e200effb9fbe` |
+| Campbell Selmer | `7616879662139ea87f2fc1d992aa5e7fafff45ea7057dc79d6ad4181a9752b23` | `7616879662139ea87f2fc1d992aa5e7fafff45ea7057dc79d6ad4181a9752b23` |
+
+The Round11 records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json`
+and the adjacent `.log`. The JSON SHA-256 is
+`ab12184073c6c53d90d306caa701eb1476dbf1e02c944eb7c84bfa42fdf6c1c4`;
+the combined log SHA-256 is
+`584cb911399d45d666b8cc7a1123d30650f478feefe1fbd810bd13723e9dfe46`.
 
 This is an internal clean-environment check, not an external independent
 reproduction or a substitute for human review of the proofs.

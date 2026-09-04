@@ -62,7 +62,7 @@
 |---|---|---|---|
 | `PAPER_SQUARE_TEX/README.md` | `reproducibility/BUILD.md` | 论文的本地 LaTeX 构建命令与工具说明 | 否（构建说明） |
 | `PAPER_SQUARE_SUBMISSION/data_dictionary.md` | `reproducibility/DATA_DICTIONARY.md` | 逐 JSON 字段说明类型、单位、claim eligibility 和 supersession；从投稿目录抽取但内容属于数学数据语义 | 否（解释层） |
-| `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json` | `reproducibility/SUPPLEMENT_MANIFEST.json` | Round11 数学 supplement v0.10.1 的 38 个文件哈希、角色和 claim boundary；当前本地候选已同步，仓库冻结仍待完成 | 否（本地完整性锚点；冻结 PENDING） |
+| `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json` | `reproducibility/SUPPLEMENT_MANIFEST.json` | Round11 数学 supplement v0.10.1 的 38 个文件哈希、角色和 claim boundary；已收入 Round11 冻结源提交 | 否（完整性锚点） |
 | `PAPER_SQUARE_SUPPLEMENT_MANIFEST.py` | `reproducibility/SUPPLEMENT_MANIFEST.py` | 重生成/校验 supplement manifest 的实现 | 否（完整性工具） |
 | `PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py` | `reproducibility/tests/PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py` | 对 supplement 闭包和篡改拒绝的回归测试 | 否（验证层） |
 | `STUDENT_SQUARE_ROUND_02_test_patterns.py` | `reproducibility/tests/STUDENT_SQUARE_ROUND_02_test_patterns.py` | 651/343/284 与字符商生成器回归测试 | 否（验证证据文件，不单独证明定理） |
@@ -86,12 +86,14 @@
 | Round10 | `code/PAPER_SQUARE_MASK54.py`; `certificates/PAPER_SQUARE_MASK54_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK54_test.py` | `mathematical-notes/PAPER_SQUARE_MASK54_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | mask 54：`7→4`；终审 PASS |
 | Round11 | `code/PAPER_SQUARE_MASK85.py`; `certificates/PAPER_SQUARE_MASK85_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK85_test.py` | `mathematical-notes/PAPER_SQUARE_MASK85_ROUND_11_REPORT.md`; `reviews/ROUND_11_CROSS_REVIEW.md` | mask 85：完整整数点集且全部退化，`4→2`；交叉审稿 FINAL PASS |
 
-Round11 squareclasses 组在当前工作树 96/96 通过。剩余两个模式
+Round11 squareclasses 组在冻结源提交
+`20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 96/96 通过。剩余两个模式
 `12:0012202`、`134:0012131` 只具必要性；可实现性与 `R_2(7)` 均未决。
 supplement v0.10.1 的当前本地候选 SHA-256 为
 `deb3eade7c9f25c6e0c8da019f21f7a0943bdd50fcf263f7add6ed8b3ed0309e`；
-这是已同步的 nested manifest，不是尚未形成的 Round11 仓库冻结提交或其
-clean-clone 证据。冻结与冷复现仍为 PENDING。
+这是已同步并随源提交冷复现的 nested manifest。全项目 Round11 证据见
+`reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json`：六组 266 项通过，
+三份 PDF 为 11/9/11，文本哈希逐项一致。
 
 当前论文为 11 页，唯一署名为 `Codex (GPT-5.6-sol)`。项目只要求达到
 submission-ready 水准，不实际投稿；不得虚构其他作者、单位、联系方式、ORCID、

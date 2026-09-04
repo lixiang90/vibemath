@@ -7,9 +7,9 @@
 结论：三条论文线各得到一个严格的新定理，三项 Round11 交叉审稿均为
 **PASS**。当前工作树的六组测试已实测为
 `96/33/42/14/8/73`，合计 **266/266 PASS**；三份当前 PDF 已核为
-**11/9/11** 页。Round11 尚未形成冻结提交，也尚未运行该提交的内部
-clean-clone 冷复现，因此源树冻结哈希、重建 PDF 文本一致性与冷复现警告表仍标为
-**PENDING**，不得借用 Round10 冷复现结果替代。
+**11/9/11** 页。Round11 源树已冻结为提交
+`20bb94753801907b46d41db611ab18c4cd9f9a10`，并通过针对该提交的内部
+clean-clone 冷复现。以下证据只证明内部干净环境复现，不替代外部真人审稿。
 
 ## 1. 研究生甲：mask 85 将必要模式从 4 降至 2
 
@@ -143,20 +143,28 @@ Selmer 11，可见作者行均为 `Codex (GPT-5.6-sol)`。square supplement 的�
 得到六组 `96/33/42/14/8/73` 全部通过，合计 **266/266**，入口退出码为 0。
 这是本地工作树验证，不是冻结提交的 clean-clone 证据。
 
-## 6. 冻结与冷复现门：PENDING
+## 6. 冻结与冷复现门：PASS
 
-Round10 的提交 `ccc4c4be6562534f25b18817c6c4773bb0cf0cc4` 及其 243 项
-clean-clone 记录仍是有效历史基线，但不能证明 Round11 工作树。Round11 必须依次：
+Round11 源提交为
+`20bb94753801907b46d41db611ab18c4cd9f9a10`。`tools/cold_reproduce.py`
+以无 hardlink 的临时 clone 检出该提交；记录显示源状态干净
+(`source_worktree_dirty_during_run=false`)、`failure=null`、`success=true`。
 
-1. 三线文件与 square nested manifest 已同步；
-2. 当前工作树六组 `96/33/42/14/8/73=266` 已全绿；
-3. 三份当前 PDF 页数已核为 `11/9/11`；
-4. 下一步形成明确的 Round11 冻结提交；
-5. 随后对该提交运行 `tools/cold_reproduce.py`，记录干净源状态、六组计数、PDF 页数、
-   文本哈希和警告表。
+- 六组测试为 `96/33/42/14/8/73`，合计 **266/266**；
+- 三份重建 PDF 页数为 squareclasses 11、pure cubic 9、Campbell Selmer 11；
+- 三份提交版/重建版 `pdftotext` SHA-256 分别逐项一致：
+  - squareclasses：`5aca3c9cc84f52121a501a3f08640d1aa806a0154e2bb1429cd0e977e6659f9d`；
+  - pure cubic：`59cdb61632ddc7273a3733f562206a23e6bec2ddca0dbfd2ffc3e200effb9fbe`；
+  - Campbell Selmer：`7616879662139ea87f2fc1d992aa5e7fafff45ea7057dc79d6ad4181a9752b23`；
+- 三个最终 LaTeX 日志的警告匹配表均为空；
+- JSON 记录为
+  `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json`，
+  SHA-256 为 `ab12184073c6c53d90d306caa701eb1476dbf1e02c944eb7c84bfa42fdf6c1c4`；
+- 相邻完整日志 SHA-256 为
+  `584cb911399d45d666b8cc7a1123d30650f478feefe1fbd810bd13723e9dfe46`。
 
-这些步骤完成前，Round11 的 freeze、manifest 总锚点和 clean-clone reproduction
-均为 **PENDING**。
+因此 Round11 源冻结与内部 clean-clone reproduction 均为 **PASS**。这一结论不
+声称工作区外的真人独立理解或复现，也不授权实际投稿。
 
 ## 7. 统一作者与投稿标准
 
@@ -166,9 +174,9 @@ clean-clone 记录仍是有效历史基线，但不能证明 Round11 工作树�
 或未发生的外部提交。
 
 因此，缺少真实期刊模板、编辑姓名、对应作者联系方式或归档 DOI 不阻断当前研究
-验收；它们仅在用户以后明确授权实际投稿时重新进入范围。当前仍必须完成的是数学
-正确性、交叉审稿、测试、可编译论文、严格 claim boundary、Round11 冻结与内部
-clean-clone 冷复现。
+验收；它们仅在用户以后明确授权实际投稿时重新进入范围。本轮数学正确性、交叉
+审稿、测试、可编译论文、严格 claim boundary、源冻结与内部 clean-clone 冷复现
+均已形成可核查记录。
 
 ## 8. Round12 建议
 
@@ -183,6 +191,5 @@ clean-clone 冷复现。
    精确秩或 Campbell 第九点结论。
 4. 三线继续进行 MathSciNet/zbMATH、引用图和方程同构级的人类优先权核验；
    “未检索到”始终不是“首次”。
-5. 项目层已完成 Round11 manifest 同步与 266 项本地绿跑；下一步形成冻结提交并
-   做 cold reproduction。不得因三项交叉审稿及本地测试已 PASS 而提前把本轮标为
-   冻结复现完成。
+5. 项目层保留 Round11 源提交、冷复现 JSON/log 和根 manifest 的逐条校验；后续
+   数学增量必须另起冻结点，不得覆盖或倒改本轮证据。实际投稿仍不在当前范围。
