@@ -47,13 +47,13 @@ were then re-read; every path existed, every SHA-256 matched, and the listed
 path set equalled the frozen repository file set. The source commit, not the
 later evidence-recording commit, is the tree tested by that cold clone.
 
-The current Round12 working tree adds primary-source novelty audits and
-cross-reviews for all three papers.  Each cross-review passes under its stated
-claim boundary: database and citation-chain gaps remain disclosed, no search
-non-hit is used as priority evidence, and the Campbell independent second-CAS
-protocol remains unexecuted.  Round12 is not yet frozen or cold-reproduced;
-the root manifest is therefore intentionally pending regeneration at the
-Round12 freeze.
+Round12 adds primary-source novelty audits and cross-reviews for all three
+papers. Each cross-review passes under its stated claim boundary: database and
+citation-chain gaps remain disclosed, no search non-hit is used as priority
+evidence, and the Campbell independent second-CAS protocol remains unexecuted.
+The source tree was frozen as commit
+`29019a1b844d3db570029eab315477c5f6c46fe3` and successfully cold reproduced;
+the submission-ready milestone is **COMPLETE**.
 
 The current squareclasses, pure-cubic, and Campbell PDF files have respectively
 12, 10, and 11 pages, with file SHA-256 values
@@ -138,6 +138,35 @@ and the adjacent `.log`. The JSON SHA-256 is
 `ab12184073c6c53d90d306caa701eb1476dbf1e02c944eb7c84bfa42fdf6c1c4`;
 the combined log SHA-256 is
 `584cb911399d45d666b8cc7a1123d30650f478feefe1fbd810bd13723e9dfe46`.
+
+The protocol then succeeded on the clean Round12 source commit
+`29019a1b844d3db570029eab315477c5f6c46fe3`. The source worktree stayed clean;
+all 266 tests passed in groups `96,33,42,14,8,73`; the PDFs had 12, 10 and 11
+pages; and every final-log warning-pattern list was empty. Each committed and
+rebuilt `pdftotext` SHA-256 pair was identical:
+
+| paper | committed text SHA-256 | rebuilt text SHA-256 |
+|---|---|---|
+| squareclasses | `aa31abfe701256176428bf7dae2353f21bee7d5ca588f5e2c9393449e7e5175b` | `aa31abfe701256176428bf7dae2353f21bee7d5ca588f5e2c9393449e7e5175b` |
+| pure cubic | `7c6663afe703196f5c16d2e71e327f999704a4fbca74227e5e8008f142d57f1e` | `7c6663afe703196f5c16d2e71e327f999704a4fbca74227e5e8008f142d57f1e` |
+| Campbell Selmer | `5988c0aa3947a6cbe9cac0925c1e0394c3bf9555512979e1670d01014152c883` | `5988c0aa3947a6cbe9cac0925c1e0394c3bf9555512979e1670d01014152c883` |
+
+The Round12 records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_29019a1b844d.json`
+and the adjacent `.log`. The JSON SHA-256 is
+`e49cb775dc43991611acc746b69c3cb862f9181d59c739c744cbcd440e4b9848`;
+the combined log SHA-256 is
+`9fbcecb02c8ce7b0187fcb3c36027e18ea90cb78b546a4c77e21b82b47f25e66`.
+
+After adding these evidence and milestone records, the root `MANIFEST.sha256`
+was regenerated with 280 unique rows. An independent reread confirmed that
+every listed path exists, every SHA-256 matches, and the listed path set equals
+the complete eligible repository file set.
+
+This completes the internal submission-ready reproduction gate. It does not
+prove absolute novelty, external human reproduction, exact Campbell rank, or
+any of the long-term `R_2(7)`, `P_20(3)`, and ninth-point problems. Actual
+journal submission is outside the requested scope.
 
 This is an internal clean-environment check, not an external independent
 reproduction or a substitute for human review of the proofs.

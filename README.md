@@ -41,8 +41,16 @@ and Campbell PDFs have 12, 10, and 11 pages, with SHA-256 values
 `0312007e2125fe27b6ab358c0b4f81b15d0f689e05e62743de61b47b945b0ac1`,
 `253f2403c26d13d62b7f758dc9188ce5577cfe82d54d425beffe26404684cb4f`,
 and `1b27cc0331736af6b2078d4b0ddb21d2e21e3dc97403eb8235a2ae1f9a2a40f3`.
-Round12 has not yet been frozen or cold-reproduced, and the root manifest is
-intentionally left for regeneration after that freeze.
+Round12 source commit `29019a1b844d3db570029eab315477c5f6c46fe3` has now been
+frozen and internally cold reproduced. All 266 tests pass in groups
+`96,33,42,14,8,73`; the three PDFs rebuild to 12, 10 and 11 pages; committed
+and rebuilt text hashes agree; and every final-log warning-pattern list is
+empty. The durable JSON/log SHA-256 values are
+`e49cb775dc43991611acc746b69c3cb862f9181d59c739c744cbcd440e4b9848` and
+`9fbcecb02c8ce7b0187fcb3c36027e18ea90cb78b546a4c77e21b82b47f25e66`.
+The three-paper submission-ready milestone is **COMPLETE**. This neither
+asserts absolute novelty nor closes `R_2(7)`, `P_20(3)`, or the ninth-point
+problem; actual journal submission remains out of scope.
 
 Round 11 source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` passes the
 recorded internal clean-clone protocol: all 266 tests pass in groups

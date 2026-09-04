@@ -96,8 +96,10 @@ supplement v0.10.1 的当前本地候选 SHA-256 为
 `reproduction/INTERNAL_COLD_REPRODUCTION_20bb94753801.json`：六组 266 项通过，
 三份 PDF 为 11/9/11，文本哈希逐项一致。
 
-Round12 当前工作树的 squareclasses 组仍为 96/96，论文增至 12 页；Round12
-freeze/cold 尚未完成。MathSciNet 订阅结果、Tho 2024 权威全文及相关前向引用链
+Round12 source commit `29019a1b844d3db570029eab315477c5f6c46fe3` 的 clean clone
+中 squareclasses 组为 96/96，论文为 12 页，提交版/重建版文本 SHA-256 同为
+`aa31abfe701256176428bf7dae2353f21bee7d5ca588f5e2c9393449e7e5175b`。
+MathSciNet 订阅结果、Tho 2024 权威全文及相关前向引用链
 仍是高谨慎残余风险，但原始来源比较和 FINAL PASS 审稿足以支撑当前受限的
 “所检资料未找到等价表述”，不支撑 `first/new`。
 

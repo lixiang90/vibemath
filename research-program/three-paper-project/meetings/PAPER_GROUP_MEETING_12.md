@@ -1,17 +1,19 @@
-# 第十二次论文组会：新颖性边界、投稿材料与冻结前逐项验收
+# 第十二次论文组会：新颖性边界、投稿材料与冻结逐项验收
 
 日期：2026-09-04
 
 主持：导师（root）
 
-总状态：**ACTIVE / ROUND12 FREEZE AND COLD REPRODUCTION PENDING**。
+总状态：**COMPLETE / ROUND12 SOURCE FROZEN / INTERNAL COLD REPRODUCTION PASS**。
 
 Round12 没有改写三篇主定理，而是把可访问文献中的最近先例、等价关系和检索缺口
 纳入正文、参考文献、投稿说明与独立交叉审稿。三份 novelty cross-review 均为
 **PASS**（甲为 FINAL PASS）。权威根入口本轮实测
 `96/33/42/14/8/73=266/266`，三份当前 PDF 直接读取为 `12/10/11` 页。
-以上是当前工作树证据；Round12 源冻结与 clean-clone 冷复现仍待执行，不得沿用
-Round11 冷复现来宣称 Round12 已冻结。
+Round12 源提交已冻结为
+`29019a1b844d3db570029eab315477c5f6c46fe3`。无 hardlink 临时 clone 对该提交
+重跑同一入口，得到相同的 `266/266` 与 `12/10/11`；三份提交版/重建版 PDF
+文本哈希逐项一致，最终日志警告匹配表均为空，运行中源工作树保持干净。
 
 ## 1. 三篇主定理与证明边界
 
@@ -47,8 +49,8 @@ sources inspected` 一类受限措辞，不使用 `first/new` 证明优先权。
 | 新颖性核查及最近先例比较 | PASS，高谨慎 | PASS，高谨慎 | PASS，中等残余风险 | 三份 Round12 交叉审稿通过；不是绝对 priority certificate |
 | 同构、平移、反转、幂缩放/参数边界 | PASS | PASS | PASS | 未把单项等价误写成同参数全局等价 |
 | 代码、结构化证书、测试、数据字典 | PASS，96 | PASS，42 | PASS，73 | 根入口同时通过其余 `33/14/8`，总计 266/266 |
-| 独立审稿与复现 | Round12 FINAL PASS | Round12 PASS | Round12 PASS | 交叉审稿完成；Round12 clean-clone 仍 PENDING |
-| LaTeX/PDF | PASS，12 页 | PASS，10 页 | PASS，11 页 | 当前工作树可读；冻结重建仍 PENDING |
+| 独立审稿与复现 | Round12 FINAL PASS | Round12 PASS | Round12 PASS | 交叉审稿完成；Round12 internal clean-clone PASS |
+| LaTeX/PDF | PASS，12 页 | PASS，10 页 | PASS，11 页 | 冻结提交重建页数与文本均核验一致 |
 | 摘要、投稿信、期刊建议 | PASS | PASS | PASS | 均已存在；只作数学适配建议，不代表选择/联系/投稿 |
 | 作者贡献、代码/数据声明 | PASS | PASS | PASS | 唯一署名 `Codex (GPT-5.6-sol)`；不虚构单位、邮箱、ORCID、资助 |
 | 未证声明与 limitation | PASS | PASS | PASS | 开放问题和未运行 CAS 均 fail-closed |
@@ -67,19 +69,29 @@ sources inspected` 一类受限措辞，不使用 `first/new` 证明优先权。
 3. **独立第二 CAS：不阻断丙线现有自足证明和 `rank<=3` 上界，但阻断“第二 CAS 已
    复现”及任何精确秩升级。** 现有结论由精确 Python/符号恒等式、73 项测试和跨线
    审稿支撑；Sage/PARI/GP/Magma 计划明确未运行，无 transcript 或输出被当作证据。
-4. **Round12 freeze/cold：阻断本轮项目冻结完成。** 当前 266 项与 12/10/11 页只
-   属工作树；必须在树稳定后生成 manifest、提交冻结点并对该提交 clean-clone 重跑，
-   才能把总状态从 ACTIVE/PENDING 提升为 Round12 frozen/reproduced。
+4. **Round12 freeze/cold：已解除。** 提交 `29019a1b844d3db570029eab315477c5f6c46fe3`
+   的 clean clone 已通过 266 项测试，重建 PDF 为 12/10/11 页且文本哈希逐项一致。
+   这只证明内部干净环境复现，不替代外部真人理解或审稿。
 
-## 5. 冻结前结论与下一步
+## 5. 冻结结论与里程碑
 
 - 保留三篇当前主定理和严格未证边界，不因文献无命中增加 priority 语言。
-- 冻结前同步根 manifest，并核对只含 Round12 文献整合、三份交叉审稿、组会和项目
-  状态文档；清理构建缓存。
-- 冻结后在无 hardlink 临时 clone 中运行权威根入口、重建三 PDF、比对文本哈希并
-  扫描最终 LaTeX 日志；结果未产生前总状态保持 **ACTIVE/PENDING**。
+- Round12 source commit 已通过无 hardlink clean-clone 的测试、PDF 重建、文本哈希
+  和日志扫描。持久记录为
+  `reproduction/INTERNAL_COLD_REPRODUCTION_29019a1b844d.json` 及相邻 `.log`。
+- 三份文本 SHA-256 依次为
+  `aa31abfe701256176428bf7dae2353f21bee7d5ca588f5e2c9393449e7e5175b`、
+  `7c6663afe703196f5c16d2e71e327f999704a4fbca74227e5e8008f142d57f1e`、
+  `5988c0aa3947a6cbe9cac0925c1e0394c3bf9555512979e1670d01014152c883`。
+- JSON SHA-256 为 `e49cb775dc43991611acc746b69c3cb862f9181d59c739c744cbcd440e4b9848`；
+  log SHA-256 为 `9fbcecb02c8ce7b0187fcb3c36027e18ea90cb78b546a4c77e21b82b47f25e66`。
+- 根 `MANIFEST.sha256` 重生为 280 条唯一记录；逐条复算确认路径全集相等且全部
+  SHA-256 匹配。
 - MathSciNet 订阅检索、Tho 2024 全文、GJX 前向引用链和第二 CAS 继续列为建议性
   外部风险闭合项。它们不授权实际投稿，也不允许虚构作者或行政信息。
+
+据逐项审计，三篇论文的当前 **submission-ready milestone 为 COMPLETE**。
+这不表示绝对新颖性已证明，也不关闭长期 `R_2(7)`、`P_20(3)` 或 Campbell 第九点。
 
 本轮唯一作者口径为 `Codex (GPT-5.6-sol)`。没有选择或联系期刊，没有传送稿件，
 没有生成 DOI，也没有虚构单位、邮箱、邮寄地址、ORCID、资助或利益冲突声明。

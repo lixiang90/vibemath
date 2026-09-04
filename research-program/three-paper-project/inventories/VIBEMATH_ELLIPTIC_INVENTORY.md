@@ -85,8 +85,10 @@
 Round11 Campbell Selmer 组在冻结源提交
 `20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 73/73 通过；
 全项目冷复现记录六组 266 项通过，三份 PDF 为 11/9/11 且文本哈希逐项一致。
-Round12 当前工作树的 Campbell 组仍为 73/73，论文为 11 页；Round12 freeze/cold
-尚未完成。完整 MathSciNet 引用图与独立第二 CAS 仍是残余风险。现有自足局部证明、
+Round12 source commit `29019a1b844d3db570029eab315477c5f6c46fe3` 的 clean clone
+中 Campbell 组为 73/73，论文为 11 页，提交版/重建版文本 SHA-256 同为
+`5988c0aa3947a6cbe9cac0925c1e0394c3bf9555512979e1670d01014152c883`。
+完整 MathSciNet 引用图与独立第二 CAS 仍是残余风险。现有自足局部证明、
 精确证书、测试和跨线 PASS 足以支撑 `rank<=3`，但不支撑优先权、第二 CAS 已复现、
 精确秩或 Campbell 第九点结论。
 

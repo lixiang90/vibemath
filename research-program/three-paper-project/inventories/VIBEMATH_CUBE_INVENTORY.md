@@ -60,8 +60,10 @@ AP 的存在性闭合，24 个仍开；不声称第 7 个源曲线有无穷点�
 Mordell--Weil 基或完整极值分类。Round11 pure-cubic 组在冻结源提交
 `20bb94753801907b46d41db611ab18c4cd9f9a10` 的 clean clone 中 42/42 通过；
 全项目冷复现记录六组 266 项通过，三份 PDF 为 11/9/11 且文本哈希逐项一致。
-Round12 当前工作树的 pure-cubic 组仍为 42/42，论文增至 10 页；Round12
-freeze/cold 尚未完成。订阅级 MathSciNet、González-Jiménez--Xarles 完整前向
+Round12 source commit `29019a1b844d3db570029eab315477c5f6c46fe3` 的 clean clone
+中 pure-cubic 组为 42/42，论文为 10 页，提交版/重建版文本 SHA-256 同为
+`7c6663afe703196f5c16d2e71e327f999704a4fbca74227e5e8008f142d57f1e`。
+订阅级 MathSciNet、González-Jiménez--Xarles 完整前向
 引用链和扩展全文方程检索仍是高谨慎残余风险；它们不否定当前精确定理，但禁止把
 检索无命中写成 `first/new`。
 

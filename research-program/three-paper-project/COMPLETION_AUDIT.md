@@ -13,13 +13,13 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Claim boundary states what is not proved | PASS | PASS | PASS |
 | Proof and finite computation checked adversarially | PASS: `NEXT_SQUARE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` |
 | Cross-review by another project member | PASS: Round12 novelty review FINAL PASS | PASS: Round12 novelty review PASS | PASS: Round12 novelty/second-CAS review PASS |
-| Repository-level reproduction | PASS in Round12 working tree: 96; Round12 cold clone PENDING | PASS in working tree: 42; cold clone PENDING | PASS in working tree: 73; cold clone PENDING |
+| Repository-level reproduction | PASS in Round12 cold clone: 96 | PASS in the same clone: 42 | PASS in the same clone: 73 |
 | Code, structured certificates, tests, schema/data dictionary | PASS | PASS | PASS |
-| LaTeX source and readable PDF | PASS Round12 working-tree render: 12 pages | PASS Round12 working-tree render: 10 pages | PASS Round12 working-tree render: 11 pages |
+| LaTeX source and readable PDF | PASS Round12 frozen/rebuilt render: 12 pages | PASS Round12 frozen/rebuilt render: 10 pages | PASS Round12 frozen/rebuilt render: 11 pages |
 | Exact comparison with accessible primary literature | PASS, Round12 FINAL PASS with high-caution residual risk | PASS, Round12 PASS with high-caution residual risk | PASS, Round12 PASS with medium residual risk |
 | MathSciNet/zbMATH and equation-isomorphism priority audit | PARTIAL: accessible sources checked; subscription MathSciNet and Tho 2024 full text remain | PARTIAL: accessible sources checked; MathSciNet and GJX forward chain remain | PARTIAL: MR/zb/LMFDB bounded search checked; complete citation graph remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
-| Internal clean-clone reproduction of a committed tree | PASS at Round11 commit `20bb94753801`; Round12 PENDING | PASS at Round11; Round12 PENDING | PASS at Round11; Round12 PENDING |
+| Internal clean-clone reproduction of a committed tree | PASS at Round12 commit `29019a1b844d` | PASS at the same commit | PASS at the same commit |
 | Public source location and repository integrity manifest | PASS locally: GitHub source location plus regenerated root `MANIFEST.sha256`; no push claimed | PASS: same | PASS: same |
 | Author identity and nonfabrication boundary | PASS: sole named author `Codex (GPT-5.6-sol)`; no other identity fields invented | PASS: same | PASS: same |
 | Actual journal submission, venue and transmission authorization | OUT OF SCOPE: submission-ready research is sufficient | OUT OF SCOPE | OUT OF SCOPE |
@@ -32,13 +32,14 @@ data/code statement, and explicit limitations. The sole named author is
 `Codex (GPT-5.6-sol)`; actual submission is out of scope and no affiliation,
 contact, ORCID, funding, venue selection, DOI, or submission event is invented.
 
-The authoritative command `python -B tools/run_all_checks.py` was rerun on the
-Round12 working tree and passed `96/33/42/14/8/73=266/266`. Direct `pdfinfo`
-inspection gives current page counts `12/10/11`. Subscription database and
-citation-chain follow-up and the Campbell independent second-CAS run remain
-open. Round12 is not yet frozen or cold reproduced, and the root manifest
-remains pending regeneration at the freeze; the Goal therefore stays
-**ACTIVE/PENDING**.
+The authoritative command `python -B tools/run_all_checks.py` passed in a clean
+clone of Round12 source commit
+`29019a1b844d3db570029eab315477c5f6c46fe3` with
+`96/33/42/14/8/73=266/266`. The rebuilt PDFs have `12/10/11` pages, every
+committed/rebuilt text hash agrees, and every final-log warning list is empty.
+The submission-ready milestone is therefore **COMPLETE**. Subscription
+database/citation-chain follow-up and the Campbell independent second-CAS run
+remain disclosed risks, not evidence of absolute novelty.
 
 The public all-project command is `python tools/run_all_checks.py`. Round11
 source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` passed the internal
@@ -101,6 +102,22 @@ and the adjacent `.log`. Their SHA-256 values are, respectively,
 `584cb911399d45d666b8cc7a1123d30650f478feefe1fbd810bd13723e9dfe46`.
 This remains internal clean-clone evidence, not external human reproduction.
 
+The same protocol then passed on clean Round12 source commit
+`29019a1b844d3db570029eab315477c5f6c46fe3`: the source stayed clean, all 266
+tests passed in groups `96,33,42,14,8,73`, PDF page counts were 12, 10 and 11,
+and all committed/rebuilt `pdftotext` SHA-256 values agreed. The text hashes
+are, respectively,
+`aa31abfe701256176428bf7dae2353f21bee7d5ca588f5e2c9393449e7e5175b`,
+`7c6663afe703196f5c16d2e71e327f999704a4fbca74227e5e8008f142d57f1e`, and
+`5988c0aa3947a6cbe9cac0925c1e0394c3bf9555512979e1670d01014152c883`.
+The exact records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_29019a1b844d.json`
+and the adjacent `.log`. Their SHA-256 values are, respectively,
+`e49cb775dc43991611acc746b69c3cb862f9181d59c739c744cbcd440e4b9848` and
+`9fbcecb02c8ce7b0187fcb3c36027e18ea90cb78b546a4c77e21b82b47f25e66`.
+This is internal clean-clone evidence, not external human reproduction or a
+proof of absolute novelty.
+
 ## Current mathematical status
 
 ### Squareclasses
@@ -157,20 +174,20 @@ evidence and is not used by a positive theorem.
    two-isogeny descent in Sage/Magma/PARI, then seek certified lower-rank or
    full-2-Selmer information. Do not upgrade `rank<=3` to equality or infer a
    ninth point without a global argument.
-4. Preserve source commit `20bb94753801907b46d41db611ab18c4cd9f9a10` and its
-   Round11 JSON/log evidence. After the Round12 tree stabilizes, regenerate the
-   root manifest, freeze a new commit, and cold-reproduce that exact commit;
-   until then the Round12 status remains pending.
+4. Preserve Round12 source commit
+   `29019a1b844d3db570029eab315477c5f6c46fe3`, its JSON/log evidence, and the
+   regenerated root manifest without rewriting the source commit.
 5. Continue subscription MathSciNet, Tho 2024 full-text, GJX forward-citation,
    and equation-level checks without turning a not-found report into an
    absolute novelty claim.
 
-The Goal remains `ACTIVE/PENDING`: all three Round12 novelty cross-reviews and
-the current 266-test/PDF gates pass, but Round12 source freeze and cold
-reproduction are not yet recorded. Database-level priority follow-up, external
-independent reproduction, and the Campbell independent second-CAS run remain
-residual risks. They do not invalidate the bounded theorem statements, but they
-forbid absolute priority or second-CAS claims. The current completion
+The submission-ready Goal milestone is `COMPLETE`: all three Round12 novelty
+cross-reviews pass and the frozen source passes the 266-test/PDF clean-clone
+gate. Database-level priority follow-up, external independent reproduction, and
+the Campbell independent second-CAS run remain residual risks. They do not
+invalidate the bounded theorem statements, but they forbid absolute priority
+or second-CAS claims. Long-term `R_2(7)`, `P_20(3)`, and Campbell ninth-point
+questions remain open. The current completion
 standard is submission-ready research only;
 no actual journal submission, human author substitute, affiliation, contact,
 ORCID, venue, DOI or transmission authorization is required. The sole named

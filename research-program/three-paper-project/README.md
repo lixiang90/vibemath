@@ -11,10 +11,11 @@ Round 12 integrates a coverage-limited novelty audit for each theorem and a
 second-CAS protocol for the Campbell computation. All three Round 12 novelty
 cross-reviews pass, while explicitly refusing to infer priority from a search
 non-match. The current working tree passes groups `96,33,42,14,8,73`, totaling
-**266/266**, and its PDFs have `12,10,11` pages. Round 12 has not yet been
-frozen or cold reproduced, so the programme remains **ACTIVE/PENDING**; the
-Round 11 frozen evidence below must not be presented as a Round 12 clean-clone
-result.
+**266/266**, and its PDFs have `12,10,11` pages. Round 12 source commit
+`29019a1b844d3db570029eab315477c5f6c46fe3` passes the internal clean-clone
+protocol with the same six test counts and PDF pages, identical committed and
+rebuilt PDF text hashes, and empty final-log warning-pattern lists. The
+submission-ready milestone is therefore **COMPLETE**.
 
 Round 11 source commit `20bb94753801907b46d41db611ab18c4cd9f9a10`
 passes the internal clean-clone protocol: groups `96,33,42,14,8,73`, totaling
@@ -41,5 +42,13 @@ computational recommendation is an independently executed Sage/PARI/GP/Magma
 check of the Campbell descent. These do not invalidate the current bounded
 claims because the primary-source comparisons, exact certificates, tests and
 cross-reviews pass and every gap is disclosed; they do block priority wording
-or any claim of second-CAS reproduction. Round 12 source freeze and cold
-reproduction remain the blocking project-close gates.
+or any claim of second-CAS reproduction. They remain disclosed risks rather
+than proof of absolute novelty. Actual submission is out of scope, and the
+long-term `R_2(7)`, `P_20(3)`, and Campbell ninth-point problems remain open.
+
+The durable Round12 records are
+`reproduction/INTERNAL_COLD_REPRODUCTION_29019a1b844d.json` and the adjacent
+`.log`; their SHA-256 values are
+`e49cb775dc43991611acc746b69c3cb862f9181d59c739c744cbcd440e4b9848` and
+`9fbcecb02c8ce7b0187fcb3c36027e18ea90cb78b546a4c77e21b82b47f25e66`.
+This is internal clean-clone evidence, not external human reproduction.
