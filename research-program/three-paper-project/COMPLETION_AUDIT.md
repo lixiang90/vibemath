@@ -19,15 +19,14 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Exact comparison with accessible primary literature | PASS with residual priority risk | PASS with residual priority risk | PASS with medium residual priority risk |
 | MathSciNet/zbMATH and equation-isomorphism priority audit | OPEN: human/database follow-up | OPEN: human/database follow-up | PARTIAL: exact minimal model/conductor searched; human database/citation-graph follow-up remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
-| Internal clean-clone reproduction of a committed tree | PASS at commit `85eb55b49f9f` | PASS at the same commit | PASS at the same commit |
+| Internal clean-clone reproduction of a committed tree | PASS at commit `ccc4c4be6562` | PASS at the same commit | PASS at the same commit |
 | Public source location and repository integrity manifest | PASS: GitHub `main` plus root `MANIFEST.sha256` | PASS | PASS |
 | Human author identity, affiliation, contributions, funding and conflicts | OPEN: author-supplied facts required | OPEN: author-supplied facts required | OPEN: author-supplied facts required |
 | Final journal choice and submission authorization | OPEN | OPEN | OPEN |
 
 The public all-project command is `python tools/run_all_checks.py`; on the
-Round10 working tree it ran 243 tests with zero failures in groups
-`87,33,36,14,8,65`.  This is a working-tree result, not a committed clean-clone
-record.  The repository-wide SHA-256 index
+Round10 working tree and the later clean clone it ran 243 tests with zero
+failures in groups `87,33,36,14,8,65`.  The repository-wide SHA-256 index
 is `MANIFEST.sha256`.  These facts establish internal reproducibility of the
 asserted symbolic identities and finite certificates, not external peer
 review, priority, or the unresolved long-term problems.
@@ -54,9 +53,19 @@ and `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTIO
 `6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00`.
 This remains internal clean-clone evidence, not external human reproduction.
 
-No Round10 commit or clean-clone hash is recorded yet.  The Round10 working
-tree has current PDF page counts 11, 8 and 11, but the latest committed-tree
-reproduction evidence remains the Round09 record above.
+The same protocol then passed on the clean Round10 commit
+`ccc4c4be6562534f25b18817c6c4773bb0cf0cc4`: source clean, all 243 tests in
+groups `87,33,36,14,8,65`, PDF page counts 11, 8 and 11, identical
+committed/rebuilt `pdftotext` SHA-256 values for each paper, and empty final-log
+warning lists.  The text hashes are, respectively,
+`97b9dc6242ebecc2e3a0a987c0265cd97eaf7a69f5620b7f9e64590d7892992e`,
+`5619e94f4f937b31f7a778f18862e1aa2024adf4a2ccebb10658c6c858250bb1`, and
+`18a684b57169564f314ffeedaffb4da15ad9be3344a8be792f7da54a6502aa8d`.
+The exact records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_ccc4c4be6562.json`
+and the adjacent `.log`; the combined log SHA-256 is
+`72486507e0ebfafe8ba4b4a2415bcb19056a4e23d392d223548629bab6e59645`.
+This remains internal clean-clone evidence, not external human reproduction.
 
 ## Current mathematical status
 

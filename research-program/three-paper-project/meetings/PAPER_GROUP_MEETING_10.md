@@ -6,8 +6,8 @@
 
 结论：三条论文线各得到一个严格、可复核且边界明确的增量。当前工作树六组共
 **243/243** 项回归通过，比 Round09 增加 25 项。三项交叉审稿最终均为
-**PASS**。Round10 尚未冻结为提交，也尚未运行 clean-clone；本纪要因此不记录
-Round10 提交哈希。最近的已冻结内部复现证据仍是 Round09 记录。
+**PASS**。随后冻结的 Round10 源提交
+`ccc4c4be6562534f25b18817c6c4773bb0cf0cc4` 已通过内部 clean-clone 复现。
 
 ## 1. 研究生甲：mask 54 将必要模式从 7 降至 4
 
@@ -118,10 +118,21 @@ Round09 的第二个 `3+1` 簇中两个模型
 | Campbell Selmer | 56 | 65 | +9 |
 | **合计** | **218** | **243** | **+25** |
 
-全部通过。当前三份 PDF 页数依次为 11、8、11。`tools/cold_reproduce.py`
-的预期计数和页数已同步为 `[87,33,36,14,8,65]` 与 `11,8,11`，但只有在
-Round10 工作树冻结为提交后实际运行，才能形成新的 committed-tree clean-clone
-证据。本轮不虚构该提交、复现记录或哈希。
+全部通过。随后在干净提交
+`ccc4c4be6562534f25b18817c6c4773bb0cf0cc4` 上实际运行
+`tools/cold_reproduce.py`：源状态干净，六组仍为 `[87,33,36,14,8,65]`，共
+243 项；三份 PDF 页数为 11、8、11，最终日志的警告匹配表均为空。提交版与重建版
+的 `pdftotext` SHA-256 分别逐项相等：
+
+- squareclasses: `97b9dc6242ebecc2e3a0a987c0265cd97eaf7a69f5620b7f9e64590d7892992e`;
+- pure cubic: `5619e94f4f937b31f7a778f18862e1aa2024adf4a2ccebb10658c6c858250bb1`;
+- Campbell Selmer: `18a684b57169564f314ffeedaffb4da15ad9be3344a8be792f7da54a6502aa8d`.
+
+证据文件为
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_ccc4c4be6562.json`
+与相邻 `.log`；combined log SHA-256 为
+`72486507e0ebfafe8ba4b4a2415bcb19056a4e23d392d223548629bab6e59645`。
+这仍只是内部 clean-clone 证据，不是工作区外真人独立复现。
 
 ## 6. 开放边界与 Round11 建议
 

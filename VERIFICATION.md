@@ -36,8 +36,8 @@ The entry point uses temporary directories for historical flat-layout programs
 and runs the Campbell checks directly against their organized public paths.
 It creates no build product in the repository.
 
-These counts describe the Round10 working tree, not a committed clean-clone
-run.  The current squareclasses, pure-cubic, and Campbell PDFs have respectively
+These counts were also reproduced from the clean Round10 commit identified
+below.  The squareclasses, pure-cubic, and Campbell PDFs have respectively
 11, 8, and 11 pages, with SHA-256 values
 `6b047417bd4003dcf49e2ce5c577a703ac022bcad6a2326620a6feee09c66c27`,
 `2a942dc9ba688e192c31aaeb61675b63ee6abfe563f2056fad6bcc8a8652f11`, and
@@ -83,6 +83,23 @@ The Round09 records are
 `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.json`
 and `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_85eb55b49f9f.log`; the combined log SHA-256 is
 `6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00`.
+
+Finally, the protocol succeeded on the clean Round10 commit
+`ccc4c4be6562534f25b18817c6c4773bb0cf0cc4`.  The source was clean; all 243
+tests passed in groups `87,33,36,14,8,65`; the PDFs had 11, 8 and 11 pages;
+every final-log warning list was empty; and each committed/rebuilt
+`pdftotext` SHA-256 pair was identical:
+
+| paper | committed text SHA-256 | rebuilt text SHA-256 |
+|---|---|---|
+| squareclasses | `97b9dc6242ebecc2e3a0a987c0265cd97eaf7a69f5620b7f9e64590d7892992e` | `97b9dc6242ebecc2e3a0a987c0265cd97eaf7a69f5620b7f9e64590d7892992e` |
+| pure cubic | `5619e94f4f937b31f7a778f18862e1aa2024adf4a2ccebb10658c6c858250bb1` | `5619e94f4f937b31f7a778f18862e1aa2024adf4a2ccebb10658c6c858250bb1` |
+| Campbell Selmer | `18a684b57169564f314ffeedaffb4da15ad9be3344a8be792f7da54a6502aa8d` | `18a684b57169564f314ffeedaffb4da15ad9be3344a8be792f7da54a6502aa8d` |
+
+The Round10 records are
+`research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTION_ccc4c4be6562.json`
+and the adjacent `.log`; the combined log SHA-256 is
+`72486507e0ebfafe8ba4b4a2415bcb19056a4e23d392d223548629bab6e59645`.
 
 This is an internal clean-environment check, not an external independent
 reproduction or a substitute for human review of the proofs.
