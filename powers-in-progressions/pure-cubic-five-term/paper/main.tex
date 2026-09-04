@@ -32,10 +32,11 @@ progression $(-3,-1,1,3,5)$ supplies four counted terms over
 $\Q(\sqrt[3]{3})$.  Thus $R^{\times}_{(3,1)}(5)=4$.  This finite
 classification excludes every five-hit color pattern but does not classify
 all rational progressions attaining four hits.  As a first strengthening, we
-prove that one positive-rank genus-one curve supplies infinite families in
-four distinct four-hit orbits.  Besides $((0,1,3,4),0001)$ and
-$((0,1,2,3),0010)$, these are $((0,1,2,3),0100)$ and
-$((0,1,2,4),0111)$.  Explicit first members are displayed below.
+prove that two positive-rank genus-one curves supply infinite families in
+six distinct four-hit orbits.  Four arise from
+$2X^3-3Y^3+Z^3=0$; the two further orbits
+$((0,1,2,4),0010)$ and $((0,1,3,4),0010)$ arise from
+$3X^3-4Y^3+Z^3=0$.  Explicit first members are displayed below.
 \end{abstract}
 
 \noindent\textbf{Keywords:} arithmetic progression; pure cubic field;
@@ -259,18 +260,20 @@ $-\alpha,-1,1,\alpha$.
 \end{proof}
 
 The theorem includes a complete classification and exclusion of every
-\emph{five-hit color/position class}.  The next section settles four of the 31
+\emph{five-hit color/position class}.  The next section settles six of the 31
 four-hit models left by the orbit sieve; it does not classify every rational
-progression attaining four hits.  The other 27 models remain distinct
+progression attaining four hits.  The other 25 models remain distinct
 Diophantine problems, and we do not replace their rational-point
 classification by a bounded search.
 
 If zero were counted, $-2,-1,0,1,2$ would give five hits in
 $\Q(\sqrt[3]{2})$; this is exactly why the superscript $\times$ is necessary.
 
-\section{Four four-hit branches on a positive-rank cubic}
+\section{Six four-hit branches on two positive-rank cubics}
 
-We now strengthen Theorem~\ref{thm:main} in exactly four of the 31
+\subsection{The first diagonal-cubic cluster}
+
+We first strengthen Theorem~\ref{thm:main} in four of the 31
 four-hit color/position models left open above.  Begin with positions
 $0,1,3$ rational cubes.  Writing them as $X^3,Y^3,Z^3$, respectively, the
 AP identity $A_3=3A_1-2A_0$ gives the smooth plane cubic
@@ -435,6 +438,111 @@ $\mathbf P^1$ parametrization, which a smooth genus-one curve cannot admit.
 We prove positive rank but do not claim the exact rank, torsion subgroup, or a
 complete set of generators for $C(\Q)$.
 
+\subsection{The second diagonal-cubic cluster}
+
+The remaining two $3+1$ models have repeated-color positions $0,1,4$.
+Writing these entries as $X^3,Y^3,Z^3$, respectively, gives
+\begin{equation}\label{eq:Csecond}
+ C':\qquad 3X^3-4Y^3+Z^3=0
+\end{equation}
+and the progression
+\begin{equation}\label{eq:APsecond}
+ (X^3,Y^3,2Y^3-X^3,3Y^3-2X^3,Z^3).
+\end{equation}
+The partial derivatives $9X^2,-12Y^2,3Z^2$ show that $C'$ is smooth.
+Use $O'=(1:1:1)$ as origin.
+
+\begin{theorem}\label{thm:second3plus1}
+The curve \eqref{eq:Csecond} has positive Mordell--Weil rank.  Consequently
+each of
+\[
+ ((0,1,2,4),0010),\qquad ((0,1,3,4),0010)
+\]
+contains infinitely many inequivalent nonconstant rational five-term
+arithmetic progressions, with no zero term, having exactly four counted
+positions in a nontrivial pure cubic field.
+\end{theorem}
+
+\begin{proof}
+For $(X:Y:Z)\in C'$, put
+\[
+\begin{aligned}
+ N'&=12X^3Y^3+4Y^3Z^3-3Z^3X^3,\\
+ T'&=(3X^3+4Y^3)(-4Y^3-Z^3)(Z^3-3X^3).
+\end{aligned}
+\]
+On $XYZ\ne0$ define
+\[
+ \phi'(X:Y:Z)=
+ \left(\frac{N'}{X^2Y^2Z^2},
+       -\frac{T'}{2X^3Y^3Z^3}\right)=(u,v).
+\]
+The exact symbolic certificate verifies
+\[
+ (T')^2-4(N')^3+3888X^6Y^6Z^6
+ =(3X^3-4Y^3+Z^3)H'(X,Y,Z).
+\]
+Thus $\phi'$ maps to
+\[
+ E':\quad v^2=u^3-972.
+\]
+There is no rational point of $C'$ with $XYZ=0$, since such a point would
+make one of $4,-3,4/3$ a rational cube.  The displayed rational map therefore
+has no rational exceptional point; more generally it extends from the smooth
+projective curve $C'$ to the proper curve $E'$.
+
+Let
+\[
+ P'=(5:2:-7)\in C'(\Q),\qquad Q'=(13,35)\in E'(\Q).
+\]
+Exact substitution and the tangent law on $E'$ give
+\[
+ \phi'(O')=(13,-35)=-Q',\qquad
+ \phi'(P')=
+ \left(\frac{129649}{4900},-\frac{45441143}{343000}\right)=2Q'.
+\]
+The integral equation for $E'$ has discriminant
+\[
+ -16\cdot27\cdot972^2=-2^8 3^{13}.
+\]
+Because $35^2\nmid -2^8 3^{13}$, Nagell--Lutz shows that $Q'$ has infinite
+order.  Translating $\phi'$ by $-\phi'(O')$ gives a nonconstant morphism
+sending origins to origins, hence an isogeny.  It sends $P'-O'$ to
+$2Q'-(-Q')=3Q'$, so $P'-O'$ is non-torsion.
+
+Put $P'_n=O'+n(P'-O')=(X_n:Y_n:Z_n)$.  These points are pairwise distinct.
+For $n\ne0$, \eqref{eq:APsecond} is nonconstant.  Its three rational-cube
+entries are nonzero because $C'(\Q)$ has no point with $XYZ=0$; its two
+middle entries are nonzero because their vanishing would make $2$ or $3/2$
+a rational cube.  Neither middle entry is a rational cube, since that would
+produce four rational cubes in a five-term rational AP, contrary to
+$P_5(3)=3$.
+
+Choose positive cube-free representatives $D_{2,n}$ and $D_{3,n}$ of the
+classes of the entries in positions 2 and 3.  The Kummer-kernel lemma shows
+that over $\Q(\sqrt[3]{D_{2,n}})$ the positions $0,1,2,4$ have colors
+$0010$, while over $\Q(\sqrt[3]{D_{3,n}})$ the positions $0,1,3,4$ have
+colors $0010$.  Both fields are nontrivial.  Theorem~\ref{thm:main} excludes
+a fifth hit in either field.
+
+Finally, proportional progressions from \eqref{eq:APsecond} make the common
+scale a rational cube by comparison at position 0; comparison at positions
+1 and 4 then recovers the same projective point of $C'$.  Reversal has fibers
+of size at most two, so infinitely many equivalence classes remain.
+\end{proof}
+
+The point $P'$ gives
+\[
+ (125,8,-109,-226,-343).
+\]
+Over $\Q(\sqrt[3]{109})$ this realizes $((0,1,2,4),0010)$, and over
+$\Q(\sqrt[3]{226})$ it realizes $((0,1,3,4),0010)$.  The exact supplement
+checks the two cube-class vectors
+\[
+ (0,0,1,\ast,0),\qquad (0,0,\ast,1,0),
+\]
+where $\ast$ denotes a non-hit.
+
 \section{Relation to earlier work and claim boundary}
 
 Darmon--Merel and Hajdu--Tengely provide the two rational-power obstructions
@@ -447,10 +555,11 @@ problems do not impose our combination of rational AP entries, one common
 rational scale, partial hits, and one variable pure cubic field.
 
 Accordingly, the precise strengthened claim here is only Theorems
-\ref{thm:main} and \ref{thm:0001}: the exact five-term maximum, exhaustive
+\ref{thm:main}, \ref{thm:0001}, and \ref{thm:second3plus1}: the exact
+five-term maximum, exhaustive
 exclusion of all five-hit color classes, and positive-rank infinite families
-in the four stated four-hit orbits.  We make no priority claim and no
-classification claim for the other 27 four-hit models.  The supplement also
+in the six stated four-hit orbits.  We make no priority claim and no
+classification claim for the other 25 four-hit models.  The supplement also
 reconstructs those models as four plane cubics, nine genus-$4$ bidegree
 curves, and sixteen genus-$4$ cyclic covers; its coordinate-permutation
 clusters are not asserted to be complete $\Q$-isomorphism classes.

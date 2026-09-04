@@ -11,8 +11,11 @@ the ninth-value quartic's Jacobian. It also gives a rank upper bound and an
 explicit cubic-algebra coordinate, global minimal model and conductor. A
 closed local argument shows that, on the E side, either of the primes 59 and
 71699 cuts the 32 signed support classes to the same 16, and the real
-condition leaves exactly eight. The 10-page manuscript is backed by 56
-regression tests. The claim boundary is deliberately narrow: the paper does
+condition leaves exactly eight. A complementary uniform argument proves that
+the E'-side covers are soluble over `Q_2` exactly for `d=1 mod 8` and over
+`Q_3` exactly for `v_3(d)=0, d=1 mod 3`; their intersection is precisely the
+four stated Selmer classes. The 11-page manuscript is backed by 65 regression
+tests. The claim boundary is deliberately narrow: the paper does
 not assert a rational ninth point, nonexistence of one, a full 2-Selmer
 computation, or a Cassels--Tate value. No independent second elliptic-curve
 CAS reproduction was available, and database non-matches are not offered as
@@ -23,7 +26,7 @@ The historical mathematical supplement is identified by
 `paper-elliptic-campbell-supplement-v0.6.1`. The current working source is
 <https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer>.
 Neither that historical manifest nor the current repository-root manifest
-binds the Round-09 additions or the current PDF. They must be included in a
+binds the Round-10 additions or the current PDF. They must be included in a
 newly frozen release before submission.
 At submission insert the verified immutable
 persistent record here: <<PUBLIC ARCHIVE DOI/URL>>.

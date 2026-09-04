@@ -12,7 +12,7 @@ import sympy
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "PAPER_SQUARE_SUPPLEMENT_MANIFEST.json"
-RELEASE_ID = "paper-square-supplement-v0.8.0"
+RELEASE_ID = "paper-square-supplement-v0.9.0"
 
 ARTIFACTS = [
     "STUDENT_SQUARE_ROUND_02_patterns.py",
@@ -45,6 +45,9 @@ ARTIFACTS = [
     "PAPER_SQUARE_MASK90.py",
     "PAPER_SQUARE_MASK90_CERTIFICATE.json",
     "PAPER_SQUARE_MASK90_test.py",
+    "PAPER_SQUARE_MASK54.py",
+    "PAPER_SQUARE_MASK54_CERTIFICATE.json",
+    "PAPER_SQUARE_MASK54_test.py",
     "PAPER_SQUARE_SUPPLEMENT_MANIFEST.py",
     "PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py",
 ]
@@ -76,12 +79,12 @@ def build_manifest() -> dict[str, object]:
         })
     return {
         "schema": "paper-square-supplement-manifest-v1",
-        "semantic_version": "0.8.0",
+        "semantic_version": "0.9.0",
         "release_id": RELEASE_ID,
         "release_status": "LOCAL_RELEASE_CANDIDATE_NOT_PUBLICLY_ARCHIVED",
         "archival_url": None,
         "source_control_commit": None,
-        "source_control_note": "workspace is not a Git repository; SHA-256 entries are the locator",
+        "source_control_note": "this nested manifest is commit-agnostic; its file SHA-256 values are bound externally by the repository commit and root manifest",
         "runtime": {
             "python": platform.python_version(),
             "sympy": sympy.__version__,
@@ -95,12 +98,13 @@ def build_manifest() -> dict[str, object]:
             "python PAPER_SQUARE_MASK99.py",
             "python PAPER_SQUARE_MASK51.py",
             "python PAPER_SQUARE_MASK90.py",
+            "python PAPER_SQUARE_MASK54.py",
             "python PAPER_SQUARE_SUPPLEMENT_MANIFEST.py",
-            "python -m unittest -v STUDENT_SQUARE_ROUND_02_test_patterns.py STUDENT_SQUARE_ROUND_03_test.py STUDENT_SQUARE_ROUND_04_test.py PAPER_SQUARE_SAFE_test.py PAPER_SQUARE_MASK77_test.py PAPER_SQUARE_NEXT_GATE_test.py PAPER_SQUARE_MASK108_test.py PAPER_SQUARE_MASK99_test.py PAPER_SQUARE_MASK51_test.py PAPER_SQUARE_MASK90_test.py PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py",
+            "python -m unittest -v STUDENT_SQUARE_ROUND_02_test_patterns.py STUDENT_SQUARE_ROUND_03_test.py STUDENT_SQUARE_ROUND_04_test.py PAPER_SQUARE_SAFE_test.py PAPER_SQUARE_MASK77_test.py PAPER_SQUARE_NEXT_GATE_test.py PAPER_SQUARE_MASK108_test.py PAPER_SQUARE_MASK99_test.py PAPER_SQUARE_MASK51_test.py PAPER_SQUARE_MASK90_test.py PAPER_SQUARE_MASK54_test.py PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py",
         ],
         "claim_boundary": {
-            "proved": "exact finite pattern counts and the mask 77, 89, 102, 108, 99, 51, 90 exclusions documented in the paper",
-            "not_proved": "realizability or impossibility of the 7 remaining patterns; R_2(7) is not decided",
+            "proved": "exact finite pattern counts and the mask 77, 89, 102, 108, 99, 51, 90, 54 exclusions documented in the paper",
+            "not_proved": "realizability or impossibility of the 4 remaining patterns; R_2(7) is not decided",
         },
     }
 

@@ -10,7 +10,7 @@ Official page: <https://link.springer.com/journal/40993>
 The journal describes its scope as number theory and arithmetic geometry and
 publishes original articles in traditional areas. The Kummer kernel,
 Diophantine progression theorem and explicit local obstructions fit directly.
-The main risk is that the present manuscript is only four pages; a human
+The main risk is that the present manuscript is only eight pages; a human
 author should decide whether to expand motivation, related work and certificate
 exposition before submission. Verify the then-current AI and supplement policy.
 

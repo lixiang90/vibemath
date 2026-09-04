@@ -8,7 +8,7 @@
    corresponding-author email and postal address.
 3. Independently verify every proof, the exact role of both cited papers, all
    60 certificate entries and the English manuscript.
-4. Decide whether the current seven-page research note is sufficiently
+4. Decide whether the current eight-page research note is sufficiently
    contextualized for the chosen venue or needs a fuller introduction.
 5. Deposit the exact bundle and root manifest in a persistent archive; replace
    `<<ARCHIVE DOI / URL>>` only after deposit.
@@ -28,8 +28,8 @@
 
 ## Deliberately unresolved
 
-Do not state that all four-hit maximizers are classified. Four of the 31
-models are solved by positive-rank arguments; the other 27 need not be solved
+Do not state that all four-hit maximizers are classified. Six of the 31
+models are solved by positive-rank arguments; the other 25 need not be solved
 before submitting the exact-maximum theorem.  Likewise, do not describe the
 25 Round-09 reuse clusters as an arbitrary-`Q`-isomorphism classification:
 they are certified only under the explicitly recorded coordinate and factor

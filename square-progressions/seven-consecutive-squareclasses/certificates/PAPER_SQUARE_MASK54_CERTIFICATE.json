@@ -1,0 +1,465 @@
+{
+  "claim_boundary": {
+    "not_proved": "realizability or impossibility of any of the four survivors; R_2(7) is not decided",
+    "proved": "the complete integer-point set for mask 54 and the resulting 7-to-4 necessary-pattern exclusion"
+  },
+  "input_sha256": {
+    "PAPER_SQUARE_MASK108_CERTIFICATE.json": "bb04a152389eaf93f5293714cfae2eda557e3c2dabdcfd65efcc3365cfc27595",
+    "PAPER_SQUARE_MASK90_CERTIFICATE.json": "2d07dcf9c1b237001e7e25cf2af0e6e3baa7f3b7fee3662fb6568e5caffa5c28",
+    "STUDENT_SQUARE_ROUND_02_certificate.json": "ef179671912c3896d43f9f7ece1f2aaf4f69ae5ff7d83217c9df0caa2fb664d7",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "integral_points": {
+    "A": "(t+1)(t+5)",
+    "B": "(t+2)(t+4)",
+    "B_minus_A": 3,
+    "bounded_search_used": false,
+    "branches": [
+      {
+        "conclusion": "impossible",
+        "d": 1,
+        "equation": "V^2-U^2=3",
+        "forced_A": 1,
+        "forced_U_V": [
+          1,
+          2
+        ],
+        "method": "impossible modulo 8",
+        "positive_same_parity_factor_pairs": [
+          [
+            1,
+            3
+          ]
+        ],
+        "squares_mod_8": [
+          0,
+          1,
+          4
+        ],
+        "transformed_equation": "(t+3)^2=A+4=5"
+      },
+      {
+        "conclusion": "U=0 contradicts A>0",
+        "d": 3,
+        "equation": "V^2-U^2=1",
+        "forced_U_V": [
+          0,
+          1
+        ],
+        "nonnegative_factor_pairs": [
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "common_positive_squarefree_kernels": [
+      1,
+      3
+    ],
+    "curve": "y^2=(t+1)(t+2)(t+4)(t+5)",
+    "degeneracy_in_original_seven_term_block": [
+      {
+        "point": [
+          -5,
+          0
+        ],
+        "zero_position_in_original_block": 5
+      },
+      {
+        "point": [
+          -4,
+          0
+        ],
+        "zero_position_in_original_block": 4
+      },
+      {
+        "point": [
+          -3,
+          -2
+        ],
+        "zero_position_in_original_block": 3
+      },
+      {
+        "point": [
+          -3,
+          2
+        ],
+        "zero_position_in_original_block": 3
+      },
+      {
+        "point": [
+          -2,
+          0
+        ],
+        "zero_position_in_original_block": 2
+      },
+      {
+        "point": [
+          -1,
+          0
+        ],
+        "zero_position_in_original_block": 1
+      }
+    ],
+    "gcd_identity": "gcd(A,B)=gcd(A,3), hence gcd(A,B) divides 3",
+    "kernel_equation": "d(V^2-U^2)=3",
+    "mask": 54,
+    "middle_interval_exact_check": [
+      {
+        "rhs": 0,
+        "t": -5,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": -4,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 4,
+        "t": -3,
+        "ys": [
+          -2,
+          2
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": -2,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": -1,
+        "ys": [
+          0
+        ]
+      }
+    ],
+    "mordell_weil_used": false,
+    "nondegenerate_integral_points": [],
+    "positive_regions": [
+      "t<=-6",
+      "t>=0"
+    ],
+    "proved_integral_points": [
+      [
+        -5,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        -3,
+        -2
+      ],
+      [
+        -3,
+        2
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "rational_y_is_integral_note": "an integer which is a rational square is an integer square",
+    "status": "PROVED_COMPLETE_BY_INTEGER_TRANSLATION_AND_INDEPENDENT_SQUAREFREE_KERNELS",
+    "support": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "translation_to_mask108": {
+      "factorwise_identity": "(s+2,s+3,s+5,s+6)=(t+1,t+2,t+4,t+5) when s=t-1",
+      "forward_map_source_to_target": "(s,Y) -> (t,y)=(s+1,Y)",
+      "inverse_map_target_to_source": "(t,y) -> (s,Y)=(t-1,y)",
+      "mapped_target_points": [
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "parameter_domains": "Z bijectively maps to Z; y is unchanged",
+      "source_certificate_sha256": "bb04a152389eaf93f5293714cfae2eda557e3c2dabdcfd65efcc3365cfc27595",
+      "source_curve": "Y^2=(s+2)(s+3)(s+5)(s+6)",
+      "source_mask": 108,
+      "source_points": [
+        [
+          -6,
+          0
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4,
+          -2
+        ],
+        [
+          -4,
+          2
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ],
+      "target_curve": "y^2=(t+1)(t+2)(t+4)(t+5)",
+      "target_mask": 54
+    }
+  },
+  "occurrence_inventory": {
+    "authoritative_input_pattern_ids": [
+      12,
+      31,
+      59,
+      134,
+      214,
+      230,
+      276
+    ],
+    "characters_per_pattern": 15,
+    "distinct_genus1_masks": 22,
+    "distinct_masks": 41,
+    "input_pattern_count": 7,
+    "pairable_genus1_ranking": [
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            1,
+            5
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gcd_bound": 3,
+        "mask": 54,
+        "pattern_ids": [
+          59,
+          214,
+          230
+        ],
+        "patterns_hit": 3,
+        "support": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "gcd_bound": 3,
+        "mask": 27,
+        "pattern_ids": [
+          12,
+          59
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            2,
+            3
+          ]
+        },
+        "gcd_bound": 6,
+        "mask": 45,
+        "pattern_ids": [
+          59,
+          134
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 8,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gcd_bound": 8,
+        "mask": 85,
+        "pattern_ids": [
+          31,
+          276
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          2,
+          4,
+          6
+        ]
+      }
+    ],
+    "selected_curve": "y^2=(t+1)(t+2)(t+4)(t+5)",
+    "selected_mask": 54,
+    "selected_occurrences": [
+      {
+        "character_mask_m": 54,
+        "class_id": 2,
+        "finite_constraint": "0*U_m+(1)*Z_m != 0",
+        "genus": 1,
+        "mobius_matrix_rep_to_occurrence": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "nonbranch_constraint": "nonbranch: t not in {0,-1,-2,-3,-4,-5,-6}",
+        "occurrence_id": "P59:m54",
+        "representative_mask": 27,
+        "same_t_map": "t=(1*U_m+(-1)*Z_m)/(0*U_m+(1)*Z_m)"
+      },
+      {
+        "character_mask_m": 54,
+        "class_id": 2,
+        "finite_constraint": "0*U_m+(1)*Z_m != 0",
+        "genus": 1,
+        "mobius_matrix_rep_to_occurrence": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "nonbranch_constraint": "nonbranch: t not in {0,-1,-2,-3,-4,-5,-6}",
+        "occurrence_id": "P214:m54",
+        "representative_mask": 27,
+        "same_t_map": "t=(1*U_m+(-1)*Z_m)/(0*U_m+(1)*Z_m)"
+      },
+      {
+        "character_mask_m": 54,
+        "class_id": 2,
+        "finite_constraint": "0*U_m+(1)*Z_m != 0",
+        "genus": 1,
+        "mobius_matrix_rep_to_occurrence": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "nonbranch_constraint": "nonbranch: t not in {0,-1,-2,-3,-4,-5,-6}",
+        "occurrence_id": "P230:m54",
+        "representative_mask": 27,
+        "same_t_map": "t=(1*U_m+(-1)*Z_m)/(0*U_m+(1)*Z_m)"
+      }
+    ],
+    "selected_support": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "selection_note": "mask 54 uniquely maximizes affected patterns among the remaining pairable genus-one masks",
+    "total_character_occurrences": 105
+  },
+  "pattern_impact": {
+    "affected_partitions": [
+      "0012231",
+      "0122213",
+      "0012102"
+    ],
+    "affected_pattern_ids": [
+      59,
+      214,
+      230
+    ],
+    "input_remaining_count": 7,
+    "reason": "mask 54 has no nondegenerate integral parameter",
+    "remaining_count": 4,
+    "remaining_partitions": [
+      "0012202",
+      "0001202",
+      "0012131",
+      "0010203"
+    ],
+    "remaining_pattern_ids": [
+      12,
+      31,
+      134,
+      276
+    ],
+    "same_parameter_reason": "each listed row contains mask 54 at its original normalized parameter t; the curve has no nondegenerate integral t",
+    "selected_mask": 54,
+    "strictly_excluded": 3
+  },
+  "schema": "paper-square-mask54-v1",
+  "semantic_version": "1.0.0"
+}

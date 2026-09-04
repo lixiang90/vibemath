@@ -3,15 +3,16 @@
 Audit date: 2026-09-04
 Audited tree: `vibemath/square-progressions/seven-consecutive-squareclasses/`
 
-## Round-9 status addendum
+## Round-10 status addendum
 
-The claim trace below originally stopped at 23 patterns. Three later elementary
-gates are now proved and certificate-bound: mask 99 gives `23 -> 15`, and mask
-51 gives 15 -> 10, and mask 90 gives 10 -> 7. The current headline theorem
+The claim trace below originally stopped at 23 patterns. Four later elementary
+gates are now proved and certificate-bound: mask 99 gives `23 -> 15`, mask
+51 gives `15 -> 10`, mask 90 gives `10 -> 7`, and mask 54 gives `7 -> 4`.
+The current headline theorem
 is therefore the necessary
 classification
 
-`651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7`.
+`651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7 -> 4`.
 
 For mask 51, all 15 input packets were re-read from the mask-99 certificate:
 225 occurrences contain 53 distinct masks and 26 genus-one four-factor masks.
@@ -27,7 +28,14 @@ For mask 90, the exact pairing `A=(t+1)(t+6)`, `B=(t+3)(t+4)` gives
 branch points, so IDs `43,251,281` are excluded. The remaining IDs are
 `12,31,59,134,214,230,276`. The same novelty boundary remains in force:
 this is a necessary finite classification and does not decide `R_2(7)` or
-realize any of the seven survivors.
+realize any survivor.
+
+For mask 54, `s=t-1` gives a point-by-point integral bijection with the already
+proved mask-108 curve. Independently, `A=(t+1)(t+5)` and
+`B=(t+2)(t+4)=A+3` reduce the positive regions to the two squarefree kernels
+`d in {1,3}`; the five complementary integers give the same six points. Every
+point has a zero in the original seven-term block. The exact occurrence audit
+therefore excludes IDs `59,214,230`, leaving `12,31,134,276`.
 
 ## Verdict
 
@@ -36,9 +44,9 @@ publishable unit is deliberately narrow:
 
 > For an integer `t` with none of `t,...,t+6` zero, if their rational
 > squareclasses have affine rank at most two, then, up to relabelling and
-> reversal, their equality partition belongs to the explicitly listed seven
+> reversal, their equality partition belongs to the explicitly listed four
 > patterns; the exact necessary-pattern reduction is
-> `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7`.
+> `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7 -> 4`.
 
 This is a necessary-pattern classification, not a realization theorem and not
 a decision of `R_2(7)`.  Its strongest apparent novelty lies in combining an
@@ -78,7 +86,8 @@ and in the audited `vibemath/.../paper` source.
 | `23 -> 15` via mask 99 | `code/PAPER_SQUARE_MASK99.py`; certificate/test | Complete squarefree-kernel branches give the stated integral points and remove exactly eight occurrence rows | Sound elementary integral-point theorem |
 | `15 -> 10` via mask 51 | `code/PAPER_SQUARE_MASK51.py`; certificate/test | The integer translate to mask 102 and an independent `gcd(A,B)|4` proof agree; exactly five patterns are removed | Sound elementary integral-point theorem |
 | `10 -> 7` via mask 90 | `code/PAPER_SQUARE_MASK90.py`; certificate/test | `B-A=6`, `gcd(A,B)|6`; the kernels `1,2,3,6` plus the six middle integers leave only four degenerate branch points. Exactly IDs `43,251,281` are removed | Sound elementary integral-point theorem |
-| Final 7-row table | Mask-90 `remaining_pattern_ids` and the upstream ranked rows | Independently checked the seven IDs and partition words `12:0012202`, `31:0001202`, `59:0012231`, `134:0012131`, `214:0122213`, `230:0012102`, `276:0010203` | Exact. IDs are ordering-dependent; partition words carry the mathematical content |
+| `7 -> 4` via mask 54 | `code/PAPER_SQUARE_MASK54.py`; certificate/test | The integer point bijection `s=t-1` with mask 108 and an independent `B-A=3`, `gcd(A,B)|3` proof agree; exactly IDs `59,214,230` are removed at the same parameter | Sound elementary integral-point theorem |
+| Final 4-row table | Mask-54 `remaining_pattern_ids` and the upstream ranked rows | Independently checked the four IDs and partition words `12:0012202`, `31:0001202`, `134:0012131`, `276:0010203` | Exact. IDs are ordering-dependent; partition words carry the mathematical content |
 
 ## Search-to-proof boundary and synthetic-data audit
 
@@ -91,7 +100,7 @@ fixtures, and its certificate contains a warning about them.  This is a real
 audit hazard because a casual reader could conflate the parser demonstration
 with arithmetic evidence.  However, the present theorem chain reads only the
 exact `pattern_occurrences`, character masks, transforms and invariant fields
-constructed before those fixtures.  The six gate programs read the Round-04
+constructed before those fixtures.  The seven gate programs read the Round-04
 occurrence table and their predecessor exact certificates; none reads
 `STUDENT_SQUARE_ROUND_04_SIMULATED_*`, Round-05 synthetic output, a claimed
 Mordell--Weil rank, or an unexecuted CAS transcript.  Thus no current theorem
@@ -147,7 +156,7 @@ novel.  Their role is to make the combined finite classification explicit.
 
 These sources confirm that neither the congruent-number model nor the general
 S-integral/Pell strategy is novel.  They do not appear to contain the present
-integer-parameter branch certificates or the seven-pattern conclusion.
+integer-parameter branch certificates or the four-pattern conclusion.
 
 ## Claims to retain, narrow, or remove
 
@@ -155,14 +164,14 @@ integer-parameter branch certificates or the seven-pattern conclusion.
 
 The summary classification for **integer** `t`, **nonzero** seven-term block,
 **affine** rational squareclass rank at most two, modulo **relabelling and
-reversal**, with the seven partition words printed in the theorem and exact
+reversal**, with the four partition words printed in the theorem and exact
 certificate.  Describe it as an exact necessary-pattern reduction.
 
 ### Retain as supporting lemmas, not novelty headlines
 
 - the common-scaling/Kummer kernel equivalence;
 - the exact finite counts and fifteen-character construction;
-- the complete integral-point gates for masks 77/89, 102, 108, 99, 51 and 90;
+- the complete integral-point gates for masks 77/89, 102, 108, 99, 51, 90 and 54;
 - the same-parameter compatibility checks.
 
 ### Must remain downgraded or explicitly disclaimed
@@ -170,7 +179,7 @@ certificate.  Describe it as an exact necessary-pattern reduction.
 - “first”, “new”, “previously unknown”, or “complete prior-art search”;
 - novelty of subset-product/Kummer curves or of `Y^2=X^3-36X`;
 - a classification of all rational `t` or arbitrary common difference;
-- existence of any of the seven patterns;
+- existence of any of the four patterns;
 - nonexistence of rank-two seven-term progressions or a decision of `R_2(7)`;
 - a claim that the unscaled seven terms are squares in one biquadratic field;
 - any result inferred from simulated rank/point fixtures or unexecuted CAS
@@ -181,16 +190,16 @@ certificate.  Describe it as an exact necessary-pattern reduction.
 
 ## Verification performed
 
-- Ran the eleven squareclasses regression modules: **78 tests, all passed**.
+- Ran the twelve squareclasses regression modules: **87 tests, all passed**.
 - Recomputed all headline counts and `284*15=4260` occurrences from source.
-- Recomputed the final seven IDs and checked every partition word printed in
+- Recomputed the final four IDs and checked every partition word printed in
   the table.
 - Checked the mask-77 branch split: 18 total, 15 finite congruence
   obstructions, 3 factor-size closures, 0 unresolved.
-- Rechecked the mask-99, mask-51 and mask-90 pattern impacts and complete
+- Rechecked the mask-99, mask-51, mask-90 and mask-54 pattern impacts and complete
   squarefree-kernel branches.
-- Verified that supplement v0.8.0 and SHA-256
-  `29ee9fe4a34a01f4066c017912130f3c02dcd55a031fb9f19dc7046d8854eb54`
+- Verified that supplement v0.9.0 and SHA-256
+  `e218f10e116ec7732c9d369384bc06156195ea4cc62165cd3107583b03546c6d`
   match the mathematical supplement manifest used by the working tree.
 - Rebuilt the revised paper with the full BibTeX/LaTeX chain; the final log has
   no undefined citation/reference, overfull/underfull box, or LaTeX warning.

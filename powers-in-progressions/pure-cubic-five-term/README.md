@@ -14,8 +14,8 @@ obstructions for all 60 local models.  The lower bound is witnessed by
 paper.
 
 The result does not classify all four-hit progressions.  Of the original 31
-open colour/position models, four branches described below are now proved to
-have positive rank; the other 27 remain open.  The prior-art search is
+open colour/position models, six branches described below are now proved to
+have positive rank; the other 25 remain open.  The prior-art search is
 evidence of a careful search, not a proof of novelty.
 `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` gives the claim-by-claim correctness and
 prior-art audit of the exact maximum.
@@ -26,7 +26,8 @@ human-supplied gates.
 
 ## Four-hit extension
 
-Four of the original 31 four-hit models are now proved to have positive rank:
+Six of the original 31 four-hit models are now proved to have positive rank.
+The first four are
 `((0,1,3,4),0001)`, `((0,1,2,3),0010)`, `((0,1,2,3),0100)`, and
 `((0,1,2,4),0111)`.  All arise from the smooth diagonal cubic
 `2X^3-3Y^3+Z^3=0`, which supplies infinitely many inequivalent four-hit
@@ -37,9 +38,13 @@ progressions in each model.  The earlier displayed AP
 `Q(cuberoot(62))` and `Q(cuberoot(127))`.  See
 `PAPER_CUBE_FOURHIT_0001_ROUND_07.md` and
 `PAPER_CUBE_FOURHIT_0010_ROUND_08.md`, together with the Round09 report; the
-other 27 models remain open.
+second positive-rank cubic `3X^3-4Y^3+Z^3=0` supplies the two further models
+`((0,1,2,4),0010)` and `((0,1,3,4),0010)`.  Its first AP is
+`(125,8,-109,-226,-343)`, over `Q(cuberoot(109))` and
+`Q(cuberoot(226))`, respectively.  See
+`PAPER_CUBE_FOURHIT_3PLUS1_ROUND_10.md`; the other 25 models remain open.
 
-Complete mathematical check (29 tests):
+Complete mathematical check (36 tests):
 
 ```powershell
 python -m unittest discover -s code -p "*_test.py" -v

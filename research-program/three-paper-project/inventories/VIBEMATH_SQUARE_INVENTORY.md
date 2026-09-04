@@ -6,7 +6,7 @@
 
 | 源路径 | 目标相对路径 | 理由 | 数学证据 |
 |---|---|---|---|
-| `PAPER_SQUARE_TEX/main.tex` | `paper/main.tex` | 冻结论文源；自足陈述 Kummer 归约、`651→343→284→98→54→35→23` 和三个整数点门 | 是（主要证明文本） |
+| `PAPER_SQUARE_TEX/main.tex` | `paper/main.tex` | 当前论文源；自足陈述 Kummer 归约、`651→343→284→98→54→35→23→15→10→7→4` 和七个整数点门 | 是（主要证明文本） |
 | `PAPER_SQUARE_TEX/references.bib` | `paper/references.bib` | 论文引用的可定位书目；与 prior-art 核查配套 | 否（书目元数据） |
 | `PAPER_SQUARE_TEX/main.pdf` | `paper/main.pdf` | 唯一保留的最终渲染 PDF；便于 GitHub 直接阅读 | 是（`main.tex` 的冻结渲染，不是独立证据） |
 
@@ -62,7 +62,7 @@
 |---|---|---|---|
 | `PAPER_SQUARE_TEX/README.md` | `reproducibility/BUILD.md` | 论文的本地 LaTeX 构建命令与工具说明 | 否（构建说明） |
 | `PAPER_SQUARE_SUBMISSION/data_dictionary.md` | `reproducibility/DATA_DICTIONARY.md` | 逐 JSON 字段说明类型、单位、claim eligibility 和 supersession；从投稿目录抽取但内容属于数学数据语义 | 否（解释层） |
-| `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json` | `reproducibility/SUPPLEMENT_MANIFEST.json` | 冻结数学 supplement v0.5.0 的文件哈希、角色和 claim boundary | 否（完整性锚点） |
+| `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json` | `reproducibility/SUPPLEMENT_MANIFEST.json` | 当前数学 supplement v0.9.0 的 35 个文件哈希、角色和 claim boundary | 否（完整性锚点） |
 | `PAPER_SQUARE_SUPPLEMENT_MANIFEST.py` | `reproducibility/SUPPLEMENT_MANIFEST.py` | 重生成/校验 supplement manifest 的实现 | 否（完整性工具） |
 | `PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py` | `reproducibility/tests/PAPER_SQUARE_SUPPLEMENT_MANIFEST_test.py` | 对 supplement 闭包和篡改拒绝的回归测试 | 否（验证层） |
 | `STUDENT_SQUARE_ROUND_02_test_patterns.py` | `reproducibility/tests/STUDENT_SQUARE_ROUND_02_test_patterns.py` | 651/343/284 与字符商生成器回归测试 | 否（验证证据文件，不单独证明定理） |
@@ -72,6 +72,22 @@
 | `PAPER_SQUARE_MASK77_test.py` | `reproducibility/tests/PAPER_SQUARE_MASK77_test.py` | mask 77/89 分支完备性、模证书和模式排除测试 | 否（验证层） |
 | `PAPER_SQUARE_NEXT_GATE_test.py` | `reproducibility/tests/PAPER_SQUARE_NEXT_GATE_test.py` | mask 102 整数点门与 `54→35` 重算测试 | 否（验证层） |
 | `PAPER_SQUARE_MASK108_test.py` | `reproducibility/tests/PAPER_SQUARE_MASK108_test.py` | mask 108 整数点门与 `35→23` 重算测试 | 否（验证层） |
+
+## Round07--Round10 严格增量
+
+下列文件把上述初始冻结点从 23 个必要模式继续推进到 4 个；它们是当前权威闭包
+的一部分，而不是有界搜索记录。
+
+| 轮次 | 生成器 / 证书 / 测试 | 人读报告与审稿 | 严格增量 |
+|---|---|---|---|
+| Round07 | `code/PAPER_SQUARE_MASK99.py`; `certificates/PAPER_SQUARE_MASK99_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK99_test.py` | `mathematical-notes/PAPER_SQUARE_MASK99_REPORT.md` | mask 99：`23→15` |
+| Round08 | `code/PAPER_SQUARE_MASK51.py`; `certificates/PAPER_SQUARE_MASK51_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK51_test.py` | `mathematical-notes/PAPER_SQUARE_MASK51_REPORT.md`; `reviews/PAPER_SQUARE_ROUND_08_REVIEW_ELLIPTIC.md` | mask 51 与 mask 102 整数平移：`15→10` |
+| Round09 | `code/PAPER_SQUARE_MASK90.py`; `certificates/PAPER_SQUARE_MASK90_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK90_test.py` | `mathematical-notes/PAPER_SQUARE_MASK90_ROUND_09_REPORT.md`; `reviews/PAPER_SQUARE_ROUND_09_REVIEW_CUBE.md` | mask 90：`10→7` |
+| Round10 | `code/PAPER_SQUARE_MASK54.py`; `certificates/PAPER_SQUARE_MASK54_CERTIFICATE.json`; `reproducibility/tests/PAPER_SQUARE_MASK54_test.py` | `mathematical-notes/PAPER_SQUARE_MASK54_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | mask 54：`7→4`；终审 PASS |
+
+当前 squareclasses 组为 87 项测试。剩余四个模式只具必要性；可实现性与
+`R_2(7)` 均未决。supplement v0.9.0 manifest SHA-256 为
+`e218f10e116ec7732c9d369384bc06156195ea4cc62165cd3107583b03546c6d`。
 
 ## 明确不纳入
 
@@ -88,4 +104,3 @@
 | `PAPER_SQUARE_FEASIBILITY.md`、`PAPER_SQUARE_reconstruct.py`、`PAPER_SQUARE_CERTIFICATE.json`、`PAPER_SQUARE_test.py` | — | 已转向的早期曲线可行性包，不是七项平方类最终定理链 | 否 |
 | `PAPER_SQUARE_SAFE_REPORT.md`、`PAPER_SQUARE_ROUND_04_REPORT.md`、`STUDENT_SQUARE_ROUND_0*_REPORT.md` | — | 已被最终分类、三个门报告和 Round 05 汇总报告取代的过程报告 | 否 |
 | `GROUP_MEETING_*`、`RELATED_RESEARCH_DIRECTIONS.md`、毕业备选题与跨线审稿文件 | — | 研究管理、选题或其他课题材料，不属于本仓库子项目的最终证据闭包 | 否 |
-

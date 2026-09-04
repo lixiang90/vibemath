@@ -11,9 +11,9 @@
 \newtheorem{remark}[theorem]{Remark}
 \newcommand{\Q}{\mathbf Q}
 \newcommand{\F}{\mathbf F}
-\title{Square-class patterns of seven consecutive integers\\and six elementary integral quartics}
+\title{Square-class patterns of seven consecutive integers\\and seven elementary integral quartics}
 \author{\textbf{AUTHOR IDENTITY CONFIRMATION REQUIRED}}
-\date{3 September 2026}
+\date{4 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -29,9 +29,9 @@ $y^2=t(t+2)(t+3)(t+6)$ by an elementary squarefree-kernel argument and finite
 congruence certificates. Together with an integral reflection, this eliminates
 44 further patterns after a same-parameter check, leaving 54. Two
 constant-difference factorizations exclude another 19 and 12 patterns. A third
-such factorization excludes eight more. An integral translate excludes five
-further patterns, and a final constant-difference factorization excludes three
-more, leaving seven explicitly listed necessary candidates.
+such factorization excludes eight more. Two integral translates and a final
+constant-difference factorization exclude five, three and three further
+patterns, respectively, leaving four explicitly listed necessary candidates.
 Every computational count and
 congruence certificate is bound by a versioned reproducibility manifest. No
 bounded search or unproved Mordell--Weil computation enters the proof. The
@@ -452,17 +452,55 @@ At the six remaining integers $-6\leq t\leq-1$, the right sides are
 $0,-8,0,0,-8,0$, giving precisely the displayed points.
 \end{proof}
 
+\section{A ninth-round gate: mask 54}
+Mask 54 has support $\{1,2,4,5\}$ and occurs in three of the seven patterns
+left by Proposition~\ref{prop:90}.
+
+\begin{proposition}\label{prop:54}
+The integral points on
+\[
+ y^2=(t+1)(t+2)(t+4)(t+5)
+\]
+are exactly
+\[
+ (-5,0),(-4,0),(-3,-2),(-3,2),(-2,0),(-1,0).
+\]
+\end{proposition}
+\begin{proof}
+The substitution $s=t-1$, with $Y=y$, gives the factorwise identity
+\[
+ (s+2)(s+3)(s+5)(s+6)=(t+1)(t+2)(t+4)(t+5).
+\]
+It is a bijection on integral parameters, with inverse $t=s+1$, so the result
+also follows point by point from Proposition~\ref{prop:108}.
+
+For an independent complete check, put
+\[
+ A=(t+1)(t+5),\qquad B=(t+2)(t+4)=A+3.
+\]
+For $t\leq-6$ or $t\geq0$, both are positive and
+$\gcd(A,B)=\gcd(A,3)$. If $AB$ is a square, their common positive
+squarefree kernel is $d\in\{1,3\}$, so $A=dU^2$, $B=dV^2$ and
+$d(V^2-U^2)=3$. For $d=1$, the only positive factorization
+$(V-U)(V+U)=3$ gives $(U,V)=(1,2)$ and $A=1$; then
+$(t+3)^2=A+4=5$, impossible modulo $8$. For $d=3$,
+$(V-U)(V+U)=1$ gives $U=0$, contrary to $A>0$.
+At the five remaining integers $-5\leq t\leq-1$, the right sides are
+$0,0,4,0,0$, giving precisely the displayed points. As before, rational $y$
+is automatically integral.
+\end{proof}
+
 \begin{theorem}[Summary classification]\label{thm:summary}
 Let $t\in\mathbf Z\setminus\{-6,-5,\ldots,0\}$.  If the seven nonzero
 classes $[t],\ldots,[t+6]$ have affine rank at most two, then their
-equality partition, modulo relabelling and reversal, is one of the seven
-patterns in Table~\ref{tab:7}.  In particular, the exact reduction chain is
+equality partition, modulo relabelling and reversal, is one of the four
+patterns in Table~\ref{tab:4}.  In particular, the exact reduction chain is
 \[
 651\longrightarrow343\longrightarrow284\longrightarrow98
 \longrightarrow54\longrightarrow35\longrightarrow23\longrightarrow15
-\longrightarrow10\longrightarrow7.
+\longrightarrow10\longrightarrow7\longrightarrow4.
 \]
-This theorem neither asserts that any of the seven patterns is realizable nor
+This theorem neither asserts that any of the four patterns is realizable nor
 decides $R_2(7)$.
 \end{theorem}
 \begin{proof}
@@ -480,33 +518,35 @@ integral points likewise have a zero among the original seven terms. The
 integral points of Proposition~\ref{prop:51} are also degenerate and its mask
 occurs in five of the 15 remaining rows. Finally, Proposition~\ref{prop:90}
 has only degenerate points, and mask 90 occurs in three of the 10 remaining
-rows. The exact occurrence audit gives Table~\ref{tab:7}.
+rows.
+Proposition~\ref{prop:54} has only points with a zero among the original seven
+terms, and mask 54 occurs in three of those seven rows. The remaining exact
+occurrence audit gives Table~\ref{tab:4}.
 \end{proof}
 
 \begin{table}[ht]
 \centering
-\caption{Final canonical candidates after the mask-90 gate. ID is the zero-based index in the
+\caption{Final canonical candidates after the mask-54 gate. ID is the zero-based index in the
 supplement's \texttt{unresolved\_patterns\_ranked}, ordered by its documented
-difficulty score and then by restricted-growth word.}\label{tab:7}
+difficulty score and then by restricted-growth word.}\label{tab:4}
 \begin{tabular}{r@{\quad}l r@{\quad}l r@{\quad}l}
 \toprule
 ID&partition&ID&partition&ID&partition\\ \midrule
-12&0012202&31&0001202&59&0012231\\
-134&0012131&214&0122213&230&0012102\\
+12&0012202&31&0001202&134&0012131\\
 276&0010203&&&&\\ \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Supplement and reproducibility}
 The accompanying supplement is identified by release
-\texttt{paper-square-supplement-v0.8.0}.  Its root manifest is
+\texttt{paper-square-supplement-v0.9.0}.  Its root manifest is
 \texttt{PAPER\_SQUARE\_SUPPLEMENT\_MANIFEST.json}; it records SHA-256 and
 byte length for every generator, input/output certificate and regression
 test, together with Python/SymPy versions and clean reproduction commands.
 The manifest SHA-256 is the concatenation of the following two lines:
 \begin{center}\small\ttfamily
-29ee9fe4a34a01f4066c017912130f3c\\
-02dcd55a031fb9f19dc7046d8854eb54
+e218f10e116ec7732c9d369384bc0615\\
+6195ea4cc62165cd3107583b03546c6d
 \end{center}
 That manifest retains its explicit local-candidate status.  The
 current public working tree, including later audits and submission prose, is
@@ -531,7 +571,7 @@ three branches carry symbolic factor identities and thresholds.
 \paragraph{Online Resource 1 (supplementary code and certificates).}
 The supplementary ZIP contains the exact Python generators, regression tests,
 JSON certificates and nested manifest used to audit the finite pattern counts
-and the mask-77, mask-89, mask-102, mask-108, mask-99, mask-51 and mask-90 exclusions.  It contains no
+and the mask-77, mask-89, mask-102, mask-108, mask-99, mask-51, mask-90 and mask-54 exclusions.  It contains no
 additional mathematical claim beyond the theorem and claim boundary stated in
 this article.  Before submission, the file metadata and upload form must add
 the approved article title, journal name, author names, affiliations and
@@ -564,11 +604,13 @@ point proof data and 12 exclusions; the mask-99 certificate records its full
 23-pattern occurrence inventory, complete point proof, eight exclusions and
 15 intermediate candidates; the mask-51 certificate records the complete
 genus-one inventory, point proof, five exclusions and 10 intermediate
-candidates; and the mask-90 certificate records all four squarefree-kernel
-branches, its complete point proof, three exclusions and seven final
+candidates; the mask-90 certificate records all four squarefree-kernel
+branches, its complete point proof, three exclusions and seven intermediate
+candidates; and the mask-54 certificate records its integer-point bijection
+with mask 108, independent two-kernel proof, three exclusions and four final
 candidates. An end-to-end test regenerates 651--343--284 and all
 $284\cdot15=4260$ characters.
-We do not prove that the final seven patterns are realized, or that no
+We do not prove that the final four patterns are realized, or that no
 seven-term rank-two progression exists. The 2026 papers have additional
 rank and class-number hypotheses; none is inferred from a label here.
 

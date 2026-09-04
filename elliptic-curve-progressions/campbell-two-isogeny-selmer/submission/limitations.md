@@ -8,6 +8,10 @@
   covering classes to the same 16, and the real place reduces their
   intersection to eight. This is a complete local theorem only; it is not a
   global obstruction and does not decide the ninth-point problem.
+- On the `E'` side, `Q_2` solubility is equivalent to `d=1 mod 8` and `Q_3`
+  solubility is equivalent to `v_3(d)=0, d=1 mod 3`; their intersection is
+  the four displayed Selmer classes. This is likewise a local theorem, not a
+  global ninth-point result.
 - The full 2-Selmer group, Mordell-Weil rank equality, Cassels--Tate pairing,
   and rational-point set of `C_H` are unknown here.
 - The exact global minimal model and conductor identify the isomorphism class,
@@ -21,5 +25,5 @@
   “previously unknown” without a human bibliographic audit.
 - The source is public, but immutable archival reproducibility is incomplete
   until a release or preservation DOI is created and download-checked.
-- The current manuscript has 10 pages and the current regression suite has 56
+- The current manuscript has 11 pages and the current regression suite has 65
   tests; these counts are reproducibility metadata, not mathematical claims.

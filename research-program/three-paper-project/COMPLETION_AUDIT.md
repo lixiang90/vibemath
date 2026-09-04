@@ -13,9 +13,9 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Claim boundary states what is not proved | PASS | PASS | PASS |
 | Proof and finite computation checked adversarially | PASS: `NEXT_SQUARE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_CUBE_MATH_NOVELTY_AUDIT.md` | PASS: `NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` |
 | Cross-review by another project member | PASS: `reviews/` | PASS: `reviews/` | PASS: `reviews/` |
-| Repository-level reproduction | PASS: 78 tests | PASS: 29 tests | PASS: 56 tests |
+| Repository-level reproduction | PASS: 87 tests | PASS: 36 tests | PASS: 65 tests |
 | Code, structured certificates, tests, schema/data dictionary | PASS | PASS | PASS |
-| LaTeX source and readable PDF | PASS: 10 pages | PASS: 7 pages | PASS: 10 pages |
+| LaTeX source and readable PDF | PASS: 11 pages | PASS: 8 pages | PASS: 11 pages |
 | Exact comparison with accessible primary literature | PASS with residual priority risk | PASS with residual priority risk | PASS with medium residual priority risk |
 | MathSciNet/zbMATH and equation-isomorphism priority audit | OPEN: human/database follow-up | OPEN: human/database follow-up | PARTIAL: exact minimal model/conductor searched; human database/citation-graph follow-up remains |
 | External independent reproduction outside this workspace | OPEN | OPEN | OPEN |
@@ -24,8 +24,10 @@ the requirement; `OPEN` means that stronger evidence or human input remains.
 | Human author identity, affiliation, contributions, funding and conflicts | OPEN: author-supplied facts required | OPEN: author-supplied facts required | OPEN: author-supplied facts required |
 | Final journal choice and submission authorization | OPEN | OPEN | OPEN |
 
-The public all-project command is `python tools/run_all_checks.py`; after the
-ninth-round extensions it ran 218 tests with zero failures.  The repository-wide SHA-256 index
+The public all-project command is `python tools/run_all_checks.py`; on the
+Round10 working tree it ran 243 tests with zero failures in groups
+`87,33,36,14,8,65`.  This is a working-tree result, not a committed clean-clone
+record.  The repository-wide SHA-256 index
 is `MANIFEST.sha256`.  These facts establish internal reproducibility of the
 asserted symbolic identities and finite certificates, not external peer
 review, priority, or the unresolved long-term problems.
@@ -52,13 +54,17 @@ and `research-program/three-paper-project/reproduction/INTERNAL_COLD_REPRODUCTIO
 `6bf7915a75983763fa8a98d096e8fbd2f6a7ee258a57575f0864912b56be0c00`.
 This remains internal clean-clone evidence, not external human reproduction.
 
+No Round10 commit or clean-clone hash is recorded yet.  The Round10 working
+tree has current PDF page counts 11, 8 and 11, but the latest committed-tree
+reproduction evidence remains the Round09 record above.
+
 ## Current mathematical status
 
 ### Squareclasses
 
 The defensible theorem is for an integer `t` with the seven entries
 `t,...,t+6` nonzero.  If their rational squareclasses have affine rank at most
-two, their equality partition is one of 7 displayed necessary patterns.  The
+two, their equality partition is one of 4 displayed necessary patterns.  The
 paper does not decide `R_2(7)`, does not prove that a remaining pattern is
 realizable, and does not solve the three-by-three magic square of squares.
 
@@ -69,27 +75,34 @@ common rational scale, and one nontrivial pure cubic field, the exact maximum
 number of cubes is four.  The proof exhausts all five-hit color classes.  It
 does not classify all four-hit progressions.  One of the 31 arithmetic-point
 models is now proved to have positive rank and supplies infinitely many
-inequivalent maximizers; three further distinct orbits now have the same property, so four models are
-settled and the other 27 models remain open.
+inequivalent maximizers; five further distinct orbits now have the same
+property, so six models are settled and the other 25 models remain open.
 
 ### Campbell descent
 
 The exact finite result concerns the index-8 quartic attached to Campbell's
 family: its two rational 2-isogeny Selmer groups, `rank E(Q) <= 3`, the
 `Q x K` cubic-algebra invariant and `[35]` projection, and an everywhere-local
-same-parameter fiber product.  Round09 additionally proves that the real place together with either `p=59` or `p=71699` leaves exactly eight `E`-side support classes.  This is only an `E`-side necessary condition.  It neither supplies the ninth point nor decides
+same-parameter fiber product.  Round09 additionally proves that the real place
+together with either `p=59` or `p=71699` leaves exactly eight `E`-side support
+classes.  Round10 proves on the `E'` side that `Q_2` solubility is equivalent
+to `d=1 mod 8`, while `Q_3` solubility is equivalent to `v_3(d)=0` and
+`d=1 mod 3`; their intersection is exactly four classes.  These are local
+necessary conditions.  They neither supply the ninth point nor decide
 the rational points on `C_H`.  The former opposite-side Cassels--Tate formula
 is rejected negative evidence and is not used by a positive theorem.
 
 ## Next gates
 
-1. Attempt a further exact exclusion among the 7 squareclass patterns using a
-   new character mask; stop fail-closed at the first genuinely global curve.
-2. Use the positive-rank `0001` four-hit branch as a template to triage the
-   remaining 27 pure-cubic models; require an exact map or local obstruction.
-3. Independently reproduce the now-explicit Campbell global minimal model and
-   conductor in Sage/Magma/PARI when available, and finish the human citation-
-   graph/database check before making any absolute priority claim.
+1. Attempt a complete mask-85 integral-point gate: on the 4 survivors it is
+   the only constant-pairable genus-one mask hitting two rows (IDs 31 and 276).
+   Stop fail-closed at the first genuinely global curve.
+2. Use the two proved positive-rank diagonal cubics as templates to triage the
+   remaining 25 pure-cubic models; require an exact map or local obstruction.
+3. Analyze same-parameter compatibility for the four `E'`-side local survivor
+   classes.  Independently reproduce the global minimal model and conductor in
+   Sage/Magma/PARI when available, and finish the human citation-graph/database
+   check before making any absolute priority claim.
 4. Freeze the final payload as an immutable GitHub release or preservation DOI;
    the ordinary public `main` branch is already linked but is not immutable.
    Human identity and disclosure placeholders must remain until supplied and

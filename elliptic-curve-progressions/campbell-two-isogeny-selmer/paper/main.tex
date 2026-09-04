@@ -32,7 +32,10 @@ minimal semistable model of conductor $301245307115205810$.  We also compute the
 representative of the binary-quartic cubic invariant and its rational
 $2$-torsion projection.  A versioned supplement records the $512$ local
 cells, common-parameter local witnesses, exact generators, certificates, and
-regression tests.  The same-parameter genus-$5$ fibre product is everywhere
+regression tests.  Uniform valuation arguments show that the $E'$-side
+classes surviving both $\Q_2$ and $\Q_3$ are exactly the four Selmer
+classes; together with the analogous $E$-side two-place gate, this replaces
+the decisive portions of the local table by proofs.  The same-parameter genus-$5$ fibre product is everywhere
 locally soluble.  Our calculation is deliberately narrower than the original
 extension problem: it neither produces nor excludes a ninth rational point
 on Campbell's family, claims no full $2$-Selmer group or Mordell--Weil rank
@@ -413,6 +416,112 @@ $(U,V)$.  Intersecting the two classifications gives the eight positive
 odd divisors of $105$.
 \end{proof}
 
+\begin{proposition}[two-place $E'$-side gate]\label{prop:eprime-two-place-gate}
+Put
+\[
+ A'=1183790142,\qquad B'=116194618458722241=3^4D,
+ \qquad q=339106321.
+\]
+For the $32$ signed squarefree classes $d$ supported on
+$\{3,59,71699,q\}$, write
+\[
+ C'_d:\quad N^2=dU^4+A'U^2V^2+(B'/d)V^4.
+\]
+Then
+\[
+ C'_d(\mathbf Q_2)\ne\varnothing
+ \quad\Longleftrightarrow\quad d\equiv1\pmod8,
+\]
+and its eight solutions among the supported classes are
+\[
+ \{1,q\}\{1,3\cdot59,3\cdot71699,59\cdot71699\}.
+\]
+Moreover
+\[
+ C'_d(\mathbf Q_3)\ne\varnothing
+ \quad\Longleftrightarrow\quad v_3(d)=0\ \hbox{ and }\ d\equiv1\pmod3,
+\]
+and the corresponding eight classes are
+\[
+ \{1,q\}\{1,59\cdot71699,-59,-71699\}.
+\]
+Consequently simultaneous solubility at $2$ and $3$ leaves exactly
+\[
+ \{1,4230241,339106321,D\}.
+\]
+No single finite place in the stored eight-place matrix leaves only these
+four classes; thus two is the minimum number of finite places that recovers
+this four-class set from that matrix.  The only other minimal pair is
+$\{2,5\}$.
+\end{proposition}
+\begin{proof}
+Write $A'=2c$, so $c=591895071\equiv7\pmod8$.  Direct integer
+factorization gives
+\[
+ B'=3^4\cdot59\cdot71699\cdot q\equiv1\pmod8,
+ \qquad (A')^2-4B'=2^{22}k,
+\]
+where $k=223298222175$ is odd.  If $F'_d$ denotes the quartic on the
+right of the equation for $C'_d$, coefficient comparison gives
+\[
+ 4dF'_d=(2dU^2+A'V^2)^2-((A')^2-4B')V^4.
+\]
+Thus every point satisfies
+\begin{equation}\label{eq:eprime-two-identity}
+ dN^2=T^2-2^{20}kV^4,\qquad T=dU^2+cV^2.
+\end{equation}
+
+Normalize a putative $2$-adic point so that $U,V\in\mathbf Z_2$ are
+primitive.  Suppose $d\not\equiv1\pmod8$.  When $U,V$ have opposite
+parity, $T$ is odd.  When both are odd, their squares are $1$ modulo $8$,
+and $T\equiv d+7\pmod8$; hence
+\[
+ v_2(T)=1,2,1\quad\hbox{as}\quad d\equiv3,5,7\pmod8.
+\]
+In every case $v_2(T)\le2$, and therefore
+\[
+ v_2\left(2^{20}kV^4/T^2\right)\ge16.
+\]
+Every element of $1+8\mathbf Z_2$ is a square (equivalently, apply the
+strengthened Hensel criterion at the approximate square root $1$).
+Equation~\eqref{eq:eprime-two-identity} consequently makes $dN^2$ a
+nonzero square in $\mathbf Q_2$, forcing $d$ itself to be a square, a
+contradiction.  Conversely, if $d\equiv1\pmod8$, then $d$ is a square in
+$\mathbf Q_2$: for $f(X)=X^2-d$, one has
+$v_2(f(1))\ge3>2v_2(f'(1))=2$.  The point
+$(U:V:N)=(1:0:\sqrt d)$ proves sufficiency.
+
+For the $3$-adic assertion, note that $v_3(A')=2$,
+$A'/9\equiv1\pmod3$, and $B'/3^4=D\equiv1\pmod3$.  Again normalize
+$U,V\in\mathbf Z_3$ to be primitive.  If $v_3(d)=1$, then the three
+terms of $F'_d$ show that $v_3(F'_d)=1$ when $U$ is a unit.  If $3\mid U$,
+then $V$ is a unit and the last term is the unique term of least valuation,
+giving $v_3(F'_d)=3$.  Neither valuation can occur for a square.
+
+Now let $v_3(d)=0$.  If $U$ is a unit, reduction modulo $3$ gives
+$F'_d\equiv dU^4$, so solubility requires $d\equiv1\pmod3$.  If
+$U=3^ru$ with $r\ge1$ and $u,V$ units, divide by $3^4$.  For $r\ge2$ the
+result is congruent to $(D/d)V^4\equiv d^{-1}\pmod3$.  For $r=1$ it is
+congruent to
+\[
+ du^4+(A'/9)u^2V^2+(D/d)V^4\equiv d+1+d^{-1}\pmod3.
+\]
+When $d\equiv-1\pmod3$, both displayed units are $-1$, so no square is
+possible.  Conversely $d\equiv1\pmod3$ is a square in $\mathbf Q_3$ by
+ordinary Hensel lifting of the root $1$ of $X^2-d$ modulo $3$, and the
+same point $(1:0:\sqrt d)$ works.
+
+Finally $59\equiv71699\equiv3\pmod8$, $q\equiv1\pmod8$, while
+$59\equiv71699\equiv-1\pmod3$ and $q\equiv1\pmod3$.  These residues give
+the two factored eight-class lists and their four-class intersection.
+The last minimality statement is an exact comparison with all seven finite
+place columns of the $512$-cell certificate: the smallest one-place survivor
+count is eight, and precisely the pairs $\{2,3\}$ and $\{2,5\}$ have the
+displayed four-class intersection.  This comparison is independently
+recomputed by the standard-library regression script; the local
+classification itself is proved above without using the table.
+\end{proof}
+
 \begin{lemma}[good primes]\label{lem:good}
 Fix a supported squarefree $d$.  If a finite prime $p$ does not divide
 $2b(a^2-4b)$, then the smooth projective model of $C_d$ has a $\Q_p$-point.
@@ -437,7 +546,9 @@ The only places required on either side are
 \]
 Lemma~\ref{lem:support} gives $32$ signed candidates on each side, and
 Lemma~\ref{lem:good} proves that no unlisted place can remove one.  The
-certificate contains all $64\times8=512$ local cells.  A YES cell contains
+certificate contains all $64\times8=512$ local cells.  Propositions
+\ref{prop:two-place-gate} and \ref{prop:eprime-two-place-gate} now give
+uniform proofs for the decisive $E$- and $E'$-side reductions.  A YES cell contains
 an exact squareclass witness; a NO cell is either an exhaustive
 weighted-projective computation modulo the displayed prime power or the
 valuation-normalized double-root obstruction.  All $56$ cells that had
@@ -499,9 +610,12 @@ Their $\F_2$-dimensions are respectively $3$ and $2$.
 \end{theorem}
 \begin{proof}
 The two support lists are exhaustive by Lemma~\ref{lem:support}; all good
-places are automatic by Lemma~\ref{lem:good}.  The certificate checks the
-remaining finite and real places and yields exactly the survivor sets in
-Table~\ref{tab:local-classification}.  Direct squareclass multiplication
+places are automatic by Lemma~\ref{lem:good}.  Proposition
+\ref{prop:two-place-gate} removes every $E$-side class outside the first
+displayed group, and Proposition~\ref{prop:eprime-two-place-gate} does the
+same on the $E'$ side.  The exact witnesses in the certificate verify that
+every displayed class is soluble at the remaining bad places, yielding
+exactly the survivor sets in Table~\ref{tab:local-classification}.  Direct squareclass multiplication
 verifies that the two sets are
 the groups generated as displayed.
 \end{proof}
@@ -626,7 +740,11 @@ This is a finite, certificate-backed theorem.  Exact-coefficient searches did
 not locate a published computation of these particular Selmer groups; that is
 a not-found report, not proof of novelty or priority.  The theorem neither
 asserts the existence or nonexistence of a rational ninth point nor computes
-the full $2$-Selmer group or any Cassels--Tate value.
+the full $2$-Selmer group or any Cassels--Tate value.  No independent second
+elliptic-curve CAS was available; the exact standard-library local proof and
+compatibility test are not represented as an independent external
+reproduction.  In particular, the local theorem does not decide the
+ninth-point problem.
 
 \section*{Statements and Declarations}
 

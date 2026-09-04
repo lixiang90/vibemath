@@ -10,7 +10,7 @@
 
 | 源文件 | 目标文件 | 理由 | 证据资格 |
 |---|---|---|---|
-| `PAPER_ELLIPTIC_TEX.tex` | `paper/main.tex` | 最终数学正文：Campbell 重建、same-m、512 格、精确二同源 Selmer、`Q x K/[35]` 与 CT 纠错 | `PROVED`，受正文边界约束 |
+| `PAPER_ELLIPTIC_TEX.tex` | `paper/main.tex` | 当前数学正文：Campbell 重建、same-m、512 格、精确二同源 Selmer、`Q x K/[35]`、CT 纠错、全局极小模型及 Round09/10 局部门 | `PROVED`，受正文边界约束 |
 | `PAPER_ELLIPTIC_TEX.pdf` | `paper/main.pdf` | 当前 TeX 的最终参考渲染 | `DOC`；证明权威仍是源文件与证书 |
 
 ## code
@@ -71,6 +71,17 @@
 | `PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.json` | `reproducibility/supplement-manifest-v0.6.1.json` | 冻结数学文件 SHA、角色、资格、claim boundary 和 45-test accounting | `DOC/PROVENANCE` |
 | `PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.py` | `reproducibility/build_supplement_manifest.py` | manifest 生成器 | `PROVED` 仅限发布完整性 |
 | `PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST_test.py` | `reproducibility/test_supplement_manifest.py` | 哈希、隔离重建和 ineligible-Magma 负测 | `PROVED` 仅限发布完整性 |
+
+## Round08--Round10 严格增量
+
+| 轮次 | 代码 / 证书 / 报告 / 审稿 | 证据资格与严格边界 |
+|---|---|---|
+| Round08 | `code/NEXT_ELLIPTIC_ISOMORPHISM_AUDIT.py`; `code/NEXT_ELLIPTIC_ISOMORPHISM_AUDIT_test.py`; `certificates/minimal_model_identity.json` | `PROVED`：显式 `Q`-同构、全局极小模型、判别式与导子；仍无独立第二 CAS |
+| Round09 | `code/NEXT_ELLIPTIC_ROUND_09.py`; `code/NEXT_ELLIPTIC_ROUND_09_test.py`; `certificates/round09_two_place_gate.json`; `NEXT_ELLIPTIC_ROUND_09_REPORT.md`; `reviews/PAPER_ELLIPTIC_ROUND_09_REVIEW_SQUARE.md` | `PROVED`：`E` 侧两个素数的完整局部分类，与实位相交剩 8 类；只是不充分的局部必要条件 |
+| Round10 | `code/NEXT_ELLIPTIC_ROUND_10.py`; `code/NEXT_ELLIPTIC_ROUND_10_test.py`; `certificates/round10_eprime_two_three_gate.json`; `NEXT_ELLIPTIC_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | `PROVED`：`E'` 侧 `Q_2/Q_3` 两个 iff 及四类交集；最小性只相对于已存七列有限素数矩阵；交叉审稿 PASS |
+
+Campbell Selmer 组当前 65 项测试通过。这些增量不产生或排除第九点，不给出
+Cassels--Tate 值、完整 2-Selmer、秩等式或数据库级优先权。
 
 ## candidate-input（仅保留历史输入时）
 

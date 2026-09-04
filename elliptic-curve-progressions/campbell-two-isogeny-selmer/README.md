@@ -11,6 +11,9 @@ For the Campbell Jacobian and two-isogeny models defined in the paper,
   `y^2+x*y=x^3-16441530*x^2+45166889779200*x`, with conductor
   `301245307115205810` and multiplicative reduction at every bad prime;
 - the stated `Q x K` invariant and the `[35]` projection identities hold;
+- on the `E'` side, `Q_2` solubility is equivalent to `d=1 mod 8`,
+  `Q_3` solubility is equivalent to `v_3(d)=0` and `d=1 mod 3`, and their
+  intersection is exactly `{1,4230241,339106321,1434501462453361}`;
 - the same-parameter local-solubility and 512-cell local matrix statements hold
   with the precise boundaries recorded in the paper.
 
@@ -21,6 +24,9 @@ Cassels--Tate value, or rank equality is claimed.  The earlier cross-isogeny
 Hilbert-symbol expression was invalid.  Its rejection is preserved in
 `notes/ct-pairing-correction.md` and `certificates/ct_formula_rejection.json`;
 those files are negative evidence, not a pairing computation.
+No independent second elliptic-curve CAS is available; the exact standard-
+library proof and its compatibility test are not described as independent
+external reproduction.
 
 Three unexecuted Magma/audit input texts are retained under
 `notes/candidate-input/` solely so that the fail-closed provenance tests are

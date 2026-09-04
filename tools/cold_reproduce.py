@@ -36,6 +36,13 @@ WARNING_PATTERNS = (
     r"undefined references",
     r"undefined citations",
 )
+EXPECTED_TEST_GROUP_COUNTS = [87, 33, 36, 14, 8, 65]
+EXPECTED_TEST_TOTAL = 243
+EXPECTED_PDF_PAGES = {
+    "squareclasses": 11,
+    "pure_cubic": 8,
+    "campbell_selmer": 11,
+}
 
 
 def sha256(data: bytes) -> str:
@@ -178,11 +185,14 @@ def main() -> None:
                 environment=environment,
             )
             counts = [int(value) for value in re.findall(r"Ran (\d+) tests", test_result.stdout)]
-            if counts != [78, 33, 29, 14, 8, 56]:
+            if counts != EXPECTED_TEST_GROUP_COUNTS:
                 raise RuntimeError(f"unexpected test group counts: {counts}")
+            total = sum(counts)
+            if total != EXPECTED_TEST_TOTAL:
+                raise RuntimeError(f"unexpected total test count: {total}")
             report["tests"] = {
                 "group_counts": counts,
-                "total": sum(counts),
+                "total": total,
                 "all_passed": "All archived mathematical checks passed." in test_result.stdout,
             }
 
@@ -209,8 +219,14 @@ def main() -> None:
                     raise RuntimeError(f"{name} final LaTeX log warnings: {warnings}")
                 if rebuilt_text_hash != committed_text_hash:
                     raise RuntimeError(f"{name} rebuilt PDF text differs from committed PDF")
+                pages = pdf_pages(recorder, pdf)
+                if pages != EXPECTED_PDF_PAGES[name]:
+                    raise RuntimeError(
+                        f"{name} page count {pages} differs from "
+                        f"expected {EXPECTED_PDF_PAGES[name]}"
+                    )
                 paper_results[name] = {
-                    "pages": pdf_pages(recorder, pdf),
+                    "pages": pages,
                     "committed_pdf_text_sha256": committed_text_hash,
                     "rebuilt_pdf_text_sha256": rebuilt_text_hash,
                     "text_identical": True,

@@ -2,10 +2,10 @@
 
 Status: draft prose, not authorized for submission.
 
-Current mathematical snapshot: the mask-90 gate leaves 7 necessary patterns;
-the squareclasses suite has 78 tests. Supplement release
-`paper-square-supplement-v0.8.0` is bound by SHA-256
-`29ee9fe4a34a01f4066c017912130f3c02dcd55a031fb9f19dc7046d8854eb54`.
+Current mathematical snapshot: the mask-54 gate leaves 4 necessary patterns;
+the squareclasses suite has 87 tests. Supplement release
+`paper-square-supplement-v0.9.0` is bound by SHA-256
+`e218f10e116ec7732c9d369384bc06156195ea4cc62165cd3107583b03546c6d`.
 Realizability of every survivor and `R_2(7)` remain open.
 
 The mathematics lives in

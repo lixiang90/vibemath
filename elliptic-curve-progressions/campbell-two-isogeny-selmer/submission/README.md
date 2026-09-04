@@ -6,7 +6,7 @@ this directory contains only editable submission prose.
 
 The current public working copy is
 <https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer>.
-The root `MANIFEST.sha256` is a pre-Round-09 snapshot, not the current byte
+The root `MANIFEST.sha256` predates the Round-10 working bytes, not the current byte
 inventory.  A new manifest, frozen release, and preservation DOI remain
 pre-submission tasks.
 
@@ -19,11 +19,14 @@ support classes to the same 16, and the real condition leaves eight.  It does
 not provide a global point or obstruction.  The audited host had no
 independent second elliptic-curve CAS, and database non-matches are not
 novelty evidence.
+The Round-10 theorem gives independent valuation/residue/Hensel proofs that
+the E'-side `Q_2` and `Q_3` conditions intersect in exactly the four Selmer
+classes; it does not decide a rational ninth point.
 
-Current synchronized artifact status: 10-page `../paper/main.pdf`, 56 passing
+Current synchronized artifact status: 11-page `../paper/main.pdf`, 65 passing
 regression tests, and PDF SHA-256
-`5509F6763F92416DDD37A318A2F46F1971E34BA31DC54784A61F037B6DE57B36`.
-The historical v0.6.1 supplement manifest predates the Round-09 files; a new
+`0AEBC7230B952A256741A2EE985F69F3F5153852CA5258FF27BAD8C8CCEE4044`.
+The historical v0.6.1 supplement manifest predates the Round-10 files; a new
 manifest/release freeze remains necessary before submission.
 
 Contents: `abstract.txt`, `cover_letter.md`, `journal_shortlist.md`,

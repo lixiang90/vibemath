@@ -4,13 +4,17 @@ All code and finite certificate data needed for the theorem are in the public
 working archive at
 <https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term>.
 The existing repository-root `MANIFEST.sha256` describes the last frozen
-payload.  The Round-09 extension and this synchronized submission prose still
+payload.  The Round-10 extension and this synchronized submission prose still
 require a newly generated root manifest before release.  No preservation
 service DOI or frozen GitHub release has yet been assigned.
 
-The current Round-09 extension is reproduced by 29 tests and includes the
+The current Round-10 extension is reproduced by 36 tests and includes the
 29-model reconstruction, the 25 explicit coordinate-permutation clusters,
-and four closed positive-rank orbits, leaving 27 models open.  Its corrected
+and six closed positive-rank orbits, leaving 25 models open.  The new exact
+certificate
+`code/PAPER_CUBE_FOURHIT_3PLUS1_ROUND10_CERTIFICATE.json` has SHA-256
+`1bdadc0c5afa58d69d1d8803a4e23149f0140af5fee1d52a1a1f028ff8963687`.
+The corrected Round-09
 certificate
 `code/PAPER_CUBE_FOURHIT_CLUSTER_ROUND09_CERTIFICATE.json` has SHA-256
 `4217f170ce6cd27d488811119289dd1cccb480b47c536c23bd10be99b1193662`.

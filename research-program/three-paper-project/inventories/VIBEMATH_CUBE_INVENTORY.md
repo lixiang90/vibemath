@@ -7,8 +7,8 @@
 
 | 源文件 | 目标文件 | 证据角色 |
 |---|---|---|
-| `PAPER_CUBE_KUMMER5_TEX.tex` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/PAPER_CUBE_KUMMER5_TEX.tex` | 权威论文源；包含 Kummer kernel、25 轨道、60 个好素数模障碍、下界见证及精确 claim boundary。 |
-| `PAPER_CUBE_KUMMER5_TEX.pdf` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/PAPER_CUBE_KUMMER5_TEX.pdf` | 与上述 TeX 对应的最终四页可读快照；供数学内容和版面复核，不作为源码替代。 |
+| `PAPER_CUBE_KUMMER5_TEX.tex` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/main.tex` | 权威论文源；包含 Kummer kernel、25 轨道、60 个好素数模障碍、下界见证、六个正秩四命中模型及精确 claim boundary。 |
+| `PAPER_CUBE_KUMMER5_TEX.pdf` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/main.pdf` | 与上述 TeX 对应的当前八页可读快照；供数学内容和版面复核，不作为源码替代。 |
 
 ## 代码：code
 
@@ -43,6 +43,18 @@
 |---|---|---|
 | `PAPER_CUBE_KUMMER5_SUBMISSION/data_dictionary.md` | `vibemath/powers-in-progressions/pure-cubic-five-term/reproducibility/CERTIFICATE_SCHEMA.md` | 逐字段解释证书顶层、60 条局部记录、`p^2-1` 扫描恒等式和 good-prime 布尔量。 |
 | `PAPER_CUBE_KUMMER5_ROUND_06_REPORT.md` 的第 8 节 + `PAPER_CUBE_KUMMER5_test.py` | `vibemath/powers-in-progressions/pure-cubic-five-term/reproducibility/REPRODUCE.md` | 形成 GitHub 布局下的最小复现入口：运行同目录九项测试、重生成证书、双编译 TeX；只抽取数学命令，不继承旧投稿 ZIP/manifest 拓扑。 |
+
+## Round07--Round10 四命中严格增量
+
+| 轮次 | 当前文件 | 严格结论与边界 |
+|---|---|---|
+| Round07 | `PAPER_CUBE_FOURHIT_0001_ROUND_07.md`; `code/PAPER_CUBE_FOURHIT_0001.py`; 对应 test/certificate | 第一正秩四命中模型给出无穷族 |
+| Round08 | `PAPER_CUBE_FOURHIT_0010_ROUND_08.md`; `code/PAPER_CUBE_FOURHIT_0010.py`; 对应 test/certificate | 第二模型闭合，并经显式对称得到后续可复用分支 |
+| Round09 | `PAPER_CUBE_FOURHIT_CLUSTER_ROUND_09.md`; `code/PAPER_CUBE_FOURHIT_CLUSTER_ROUND09.py`; 对应 test/certificate | 29 个待处理模型在明确置换作用下聚成 25 类；这不是任意 `Q`-同构分类 |
+| Round10 | `PAPER_CUBE_FOURHIT_3PLUS1_ROUND_10.md`; `code/PAPER_CUBE_FOURHIT_3PLUS1_ROUND10.py`; 对应 test/certificate；`reviews/ROUND_10_CROSS_REVIEW.md` | `3X^3-4Y^3+Z^3=0` 正秩，闭合两个新模型；交叉审稿 PASS |
+
+当前结论为原 31 个四命中模型中 6 个具有正秩无穷族，25 个仍开；不声称精确
+秩、完整 Mordell--Weil 基或完整极值分类。pure-cubic 组当前 36 项测试通过。
 
 ## 长期线建议一：P6 四次幂问题（独立 paper 目录）
 

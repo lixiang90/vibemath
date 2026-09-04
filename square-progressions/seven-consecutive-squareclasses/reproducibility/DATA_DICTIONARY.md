@@ -1,6 +1,6 @@
 # Data dictionary for certificates and manifests
 
-Mathematical release described: `paper-square-supplement-v0.8.0`.  The earlier
+Mathematical release described: `paper-square-supplement-v0.9.0`.  The earlier
 submission root `paper-square-submission-v0.6.4` predates the mask-99 gate and
 does not bind these changed mathematical bytes. This dictionary explains
 representation and claim eligibility; it does not enlarge any theorem or turn
@@ -61,7 +61,7 @@ or globally pointless.
 
 Supersession: later certificates add isomorphisms and exclusions but do not
 replace this source enumeration.  Its frozen bytes remain authoritative under
-supplement v0.8.0.
+supplement v0.9.0.
 
 ## `STUDENT_SQUARE_ROUND_03_CERTIFICATE.json`
 
@@ -261,14 +261,43 @@ Claim eligibility: exact evidence for the complete mask-90 integral-point
 theorem and the 10-to-7 exclusion.  It does not assert realizability of a
 remaining pattern or decide `R_2(7)`.
 
+Supersession: the mask-54 certificate binds this seven-row output and supplies
+the next complete exclusion.
+
+## `PAPER_SQUARE_MASK54_CERTIFICATE.json`
+
+Schema/version: `paper-square-mask54-v1`, semantic version `1.0.0`.
+
+- `input_sha256` binds the mask-90 seven-row output, the already proved
+  mask-108 certificate, the Round-04 occurrence table and the Round-02
+  canonical partition table.
+- `occurrence_inventory` independently reconstructs 105 character
+  occurrences, 41 masks, 22 genus-one masks, the complete remaining
+  constant-pairable ranking and the three exact mask-54 occurrence records.
+- `integral_points.translation_to_mask108` stores the factorwise identity,
+  mutually inverse integer translations and point-by-point bijection with the
+  certified mask-108 list.
+- The rest of `integral_points` is an independent constant-three pairing
+  proof: both squarefree kernels, the exhaustive five-integer sign-complement
+  interval, the six-point list and the zero position in the original block.
+- `pattern_impact` stores seven input patterns, IDs `59,214,230` excluded at
+  the same normalized parameter, and the four surviving canonical partitions.
+- `bounded_search_used=false` and `mordell_weil_used=false` are explicit
+  claim-boundary flags.
+
+Claim eligibility: exact evidence for the complete mask-54 integral-point
+theorem and the 7-to-4 exclusion.  It does not assert realizability of a
+remaining pattern or decide `R_2(7)`.
+
 Supersession: this is the terminal mathematical certificate in supplement
-v0.8.0. A later gate must use a new semantic version and manifest hash.
+v0.9.0. A later gate must use a new semantic version and manifest hash.
+
 ## `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json`
 
 Schema/version: `paper-square-supplement-manifest-v1`, semantic version
-`0.8.0`, release id `paper-square-supplement-v0.8.0`.
+`0.9.0`, release id `paper-square-supplement-v0.9.0`.
 
-- `files` is the exact 32-row mathematical allowlist.  Each row has `path`
+- `files` is the exact 35-row mathematical allowlist.  Each row has `path`
   (`string`), `bytes` (`integer`, bytes), `sha256` (`string`), `role` (`string`)
   and `mathematical_evidence_eligible` (`boolean`).
 - `runtime` records Python and SymPy version strings;
@@ -280,8 +309,8 @@ Schema/version: `paper-square-supplement-manifest-v1`, semantic version
 Claim eligibility: only listed bytes with `mathematical_evidence_eligible=true`
 may support the stated proved boundary, subject to every internal warning.
 
-Supersession: v0.8.0 supersedes v0.7.0 mathematically by adding the complete
-mask-90 gate and its 10-to-7 exclusion. It is not yet bound by a
+Supersession: v0.9.0 supersedes v0.8.0 mathematically by adding the complete
+mask-54 gate and its 7-to-4 exclusion. It is not yet bound by a
 new submission root; any future external package must bind this manifest hash.
 
 ## `PAPER_SQUARE_SUBMISSION_MANIFEST.json`

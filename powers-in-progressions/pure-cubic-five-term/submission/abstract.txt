@@ -13,9 +13,10 @@ p^2-1 nonzero parameter pairs. The progression (-3,-1,1,3,5) supplies four
 counted terms over Q(cuberoot(3)). Thus R^times_(3,1)(5)=4. This finite
 classification excludes every five-hit color pattern but does not classify all
 rational progressions attaining four hits.  As a partial classification, we
-prove that four distinct four-hit color/position orbits are obtained from the
-positive-rank smooth plane cubic 2X^3-3Y^3+Z^3=0.  Consequently each orbit
-supplies infinitely many inequivalent maximizers; 27 of the 31 rational-point
-models remain open.  For the 29 models entering the latest structural audit,
+prove that six distinct four-hit color/position orbits are obtained from the
+positive-rank smooth plane cubics 2X^3-3Y^3+Z^3=0 and
+3X^3-4Y^3+Z^3=0.  Consequently each orbit supplies infinitely many
+inequivalent maximizers; 25 of the 31 rational-point models remain open.
+For the 29 models entering the structural audit,
 explicit coordinate permutations give 25 reuse clusters; this is not asserted
 to be a complete classification under arbitrary Q-isomorphisms.

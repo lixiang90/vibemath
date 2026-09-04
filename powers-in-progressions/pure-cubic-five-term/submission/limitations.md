@@ -7,7 +7,7 @@
 - Complete enumeration of all 25 five-hit affine-color/reversal orbits.
 - Complete good-prime local exclusion of the 60 remaining five-hit models.
 - A nonzero four-hit witness over `Q(cuberoot(3))`.
-- Four distinct four-hit color/position orbits of positive rank, each yielding
+- Six distinct four-hit color/position orbits of positive rank, each yielding
   infinitely many inequivalent maximizers.
 - Reconstruction of all 29 models entering Round 09 and their partition into
   25 clusters under the explicitly recorded coordinate/factor permutations.
@@ -17,7 +17,7 @@
 - A classification of every rational AP attaining four hits. There are 38
   color/position orbits at the combinatorial level; seven are eliminated by
   cited theorems and 31 rational-point problems remain at the initial gate;
-  four are solved here and 27 remain open.
+  six are solved here and 25 remain open.
 - A complete classification of those models under arbitrary `Q`-isomorphism.
   The 25 certified clusters prove only the displayed coordinate-permutation
   identifications; distinct canonical keys are not claimed non-isomorphic.

@@ -5,16 +5,17 @@ Date: 2026-09-04
 The organized public source tree was checked again after the mathematical and
 novelty audit.
 
-- 78 tests passed for the seven-consecutive-squareclass project, including the
-  exact mask-99, mask-51, and mask-90 integral-point gates.
+- 87 tests passed for the seven-consecutive-squareclass project, including the
+  exact mask-99, mask-51, mask-90, and mask-54 integral-point gates.
 - 33 tests passed for the number-field magic-square project.
-- 29 tests passed for the pure-cubic five-term project, including the exact
-  Round09 clustering and four distinct positive-rank four-hit branches.
+- 36 tests passed for the pure-cubic five-term project, including the exact
+  Round09 clustering and six distinct positive-rank four-hit models.
 - 14 tests passed for the six-term fourth-power project.
 - 8 tests passed for the C29 simultaneous-torsion project.
-- 56 tests passed for the Campbell two-isogeny Selmer project, including the
-  exact minimal-model/conductor audit and Round09 two-place local gate.
-- Total: 218 passing tests, 0 failures.
+- 65 tests passed for the Campbell two-isogeny Selmer project, including the
+  exact minimal-model/conductor audit, the Round09 `E`-side two-place local
+  gate, and the Round10 `E'`-side `Q_2`/`Q_3` gate.
+- Total: 243 passing tests, 0 failures.
 - The public tree contained no LaTeX auxiliaries, caches, temporary build
   directories, archive ZIPs, or duplicate build-output directories.
 - A targeted scan found no environment files, private-key files, GitHub tokens,
@@ -34,6 +35,13 @@ python tools/run_all_checks.py
 The entry point uses temporary directories for historical flat-layout programs
 and runs the Campbell checks directly against their organized public paths.
 It creates no build product in the repository.
+
+These counts describe the Round10 working tree, not a committed clean-clone
+run.  The current squareclasses, pure-cubic, and Campbell PDFs have respectively
+11, 8, and 11 pages, with SHA-256 values
+`6b047417bd4003dcf49e2ce5c577a703ac022bcad6a2326620a6feee09c66c27`,
+`2a942dc9ba688e192c31aaeb61675b63ee6abfe563f2056fad6bcc8a8652f11`, and
+`0aebc7230b952a256741a2ee985f69f3f5153852ca5258ff27bad8c8ccee4044`.
 
 ## Clean-clone reproduction
 

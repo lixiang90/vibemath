@@ -74,6 +74,7 @@ def square_group() -> tuple[list[tuple[Path, str]], list[str]]:
         "PAPER_SQUARE_MASK99_test",
         "PAPER_SQUARE_MASK51_test",
         "PAPER_SQUARE_MASK90_test",
+        "PAPER_SQUARE_MASK54_test",
         "PAPER_SQUARE_SUPPLEMENT_MANIFEST_test",
     ]
     return mappings, modules
@@ -102,6 +103,7 @@ def cube_group() -> tuple[list[tuple[Path, str]], list[str]]:
         "PAPER_CUBE_FOURHIT_0001_test",
         "PAPER_CUBE_FOURHIT_0010_test",
         "PAPER_CUBE_FOURHIT_CLUSTER_ROUND09_test",
+        "PAPER_CUBE_FOURHIT_3PLUS1_ROUND10_test",
     ]
 
 
@@ -126,6 +128,7 @@ def elliptic_group() -> tuple[Path, list[str]]:
         "PAPER_ELLIPTIC_ROUND_06_test",
         "test_same_m_local",
         "NEXT_ELLIPTIC_ROUND_09_test",
+        "NEXT_ELLIPTIC_ROUND_10_test",
     ]
     return base / "code", modules
 

@@ -4,7 +4,7 @@ Current public working archive:
 
 <https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer>
 
-The repository-root `MANIFEST.sha256` is a pre-Round-09 snapshot and does not
+The repository-root `MANIFEST.sha256` predates the Round-10 working bytes and does not
 bind the current working bytes.  The historical
 `reproducibility/supplement-manifest-v0.6.1.json` identifies the original
 finite evidence release; it must not be interpreted as claiming that the
@@ -21,11 +21,17 @@ local reduction from 32 signed support classes to the same 16 classes at
 either `Q_59` or `Q_71699`, and to eight after imposing the real condition.
 These later bytes are not bound by the historical v0.6.1 supplement manifest;
 a new release manifest must bind them before submission.
+The Round-10 addition consists of
+`code/NEXT_ELLIPTIC_ROUND_10.py`,
+`code/NEXT_ELLIPTIC_ROUND_10_test.py`,
+`certificates/round10_eprime_two_three_gate.json`, and the corresponding
+report. It proves the uniform E'-side `Q_2` and `Q_3` equivalences and their
+four-class intersection without using the 512-cell enumeration as proof.
 
 Proposed statement after a new immutable release or preservation deposit:
 
 The exact generators, JSON certificates, and regression tests are identified
-by `<<NEW ROUND-09 MANIFEST NAME>>`, release `<<NEW RELEASE TAG>>`. The
+by `<<NEW ROUND-10 MANIFEST NAME>>`, release `<<NEW RELEASE TAG>>`. The
 manifest records each file's byte length, SHA-256, role, evidence eligibility,
 runtime, and reproduction commands. Public archive: <<DOI/URL>>.
 
@@ -39,9 +45,9 @@ reproduction of the minimal-model or conductor calculation.
 The complete current regression command, run from `code/`, is
 
 ```powershell
-python -W error -m unittest -q PAPER_ELLIPTIC_NEXT_test.py PAPER_ELLIPTIC_CAMPBELL_test.py PAPER_ELLIPTIC_ROUND_04_test.py PAPER_ELLIPTIC_ROUND_05_test.py PAPER_ELLIPTIC_ROUND_06_test.py test_same_m_local.py NEXT_ELLIPTIC_ISOMORPHISM_AUDIT_test.py NEXT_ELLIPTIC_ROUND_09_test.py
+python -W error -m unittest -q PAPER_ELLIPTIC_NEXT_test.py PAPER_ELLIPTIC_CAMPBELL_test.py PAPER_ELLIPTIC_ROUND_04_test.py PAPER_ELLIPTIC_ROUND_05_test.py PAPER_ELLIPTIC_ROUND_06_test.py test_same_m_local.py NEXT_ELLIPTIC_ISOMORPHISM_AUDIT_test.py NEXT_ELLIPTIC_ROUND_09_test.py NEXT_ELLIPTIC_ROUND_10_test.py
 ```
 
-It passes 56 tests.  The current 10-page reference PDF has SHA-256
-`5509F6763F92416DDD37A318A2F46F1971E34BA31DC54784A61F037B6DE57B36`.
+It passes 65 tests.  The current 11-page reference PDF has SHA-256
+`0AEBC7230B952A256741A2EE985F69F3F5153852CA5258FF27BAD8C8CCEE4044`.
 Neither a database non-match nor this artifact hash establishes novelty.
