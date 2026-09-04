@@ -10,9 +10,9 @@ Official page: <https://link.springer.com/journal/40993>
 The journal describes its scope as number theory and arithmetic geometry and
 publishes original articles in traditional areas. The Kummer kernel,
 Diophantine progression theorem and explicit local obstructions fit directly.
-The main risk is that the present manuscript is only eight pages; a human
-author should decide whether to expand motivation, related work and certificate
-exposition before submission. Verify the then-current AI and supplement policy.
+The main risk is note length. If actual submission is later contemplated,
+motivation, related work, authorship eligibility, and the then-current AI and
+supplement policies must all be rechecked.
 
 ## 2. Journal of Number Theory — ambitious backup
 
@@ -30,9 +30,9 @@ Official policy: <https://www.combinatorics.org/ojs/index.php/eljc/about>
 The exact 25-orbit classification and 60-cell finite certificate provide a
 genuine combinatorial component. The journal states high standards and expects
 substantial discrete-mathematics content, so this is conditional on foregrounding
-the orbit action and finite classification. Its 2026 AI policy allows assistance
-but puts full checking and attribution responsibility on human authors, which is
-compatible only after the checklist is completed.
+the orbit action and finite classification. Its 2026 AI policy discussion assumed accountable human authors. The requested
+sole AI authorship may therefore be ineligible and must be rechecked before any
+submission is contemplated.
 
 ## Explicitly excluded under the current policy: INTEGERS
 
@@ -43,4 +43,5 @@ other content. That conflicts with this project's accurate disclosure. Do not
 submit there unless the policy changes materially; do not misdescribe the role
 of AI to obtain eligibility.
 
-Target journal remains `<<TARGET JOURNAL — USER DECISION>>`.
+No target journal is selected because no actual submission is requested. These
+scope notes are retained only as future-facing research materials.

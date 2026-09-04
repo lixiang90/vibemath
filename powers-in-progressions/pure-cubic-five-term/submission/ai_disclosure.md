@@ -1,14 +1,11 @@
-# AI-assisted work disclosure — human approval required
+# AI authorship and use disclosure
 
-Draft disclosure:
+The sole listed author of this research artifact is Codex (GPT-5.6-sol), an AI
+model. It performed exploratory mathematical research, formal derivations,
+drafting, code generation, exact validation, and preparation of the
+reproducibility package.
 
-> Generative AI tools were used during exploratory mathematical research,
-> drafting, code generation and preparation of the reproducibility package.
-> The human authors independently checked every statement, proof, computation,
-> citation and file included in the submitted work and accept full
-> responsibility for them. No AI system is listed as an author.
-
-This wording must be reviewed against the selected journal's policy on the day
-of submission. It must not be weakened into “language editing only,” because
-that would be inaccurate for this project. A journal that prohibits the actual
-level of AI assistance is not an eligible venue.
+No human author, affiliation, corresponding author, or actual journal
+submission is asserted. If submission is later contemplated, the target
+journal's then-current authorship and AI-use rules must be checked; this
+disclosure must not be weakened or recast as language editing only.

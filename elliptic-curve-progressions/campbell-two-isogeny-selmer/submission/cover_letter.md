@@ -1,47 +1,35 @@
-<<DATE>>
+Pre-submission template -- not for transmission
 
-Dear <<EDITOR OR EDITORS>>,
+Dear Editors,
 
-Please consider “A Two-Isogeny Descent Attached to Campbell's Eight-Term
-Family” for publication in Research in Number Theory.
+The research package “A Two-Isogeny Descent Attached to Campbell's Eight-Term
+Family” is mathematically suited to an arithmetic-geometry journal such as
+Research in Number Theory.
 
 The manuscript reconstructs Campbell's source family and proves an exact,
-certificate-backed finite calculation for the two 2-isogeny Selmer groups of
-the ninth-value quartic's Jacobian. It also gives a rank upper bound and an
-explicit cubic-algebra coordinate, global minimal model and conductor. A
-closed local argument shows that, on the E side, either of the primes 59 and
-71699 cuts the 32 signed support classes to the same 16, and the real
-condition leaves exactly eight. A complementary uniform argument proves that
-the E'-side covers are soluble over `Q_2` exactly for `d=1 mod 8` and over
-`Q_3` exactly for `v_3(d)=0, d=1 mod 3`; their intersection is precisely the
-four stated Selmer classes. The 11-page manuscript is backed by 65 regression
-tests. The claim boundary is deliberately narrow: the paper does
-not assert a rational ninth point, nonexistence of one, a full 2-Selmer
-computation, or a Cassels--Tate value. No independent second elliptic-curve
-CAS reproduction was available, and database non-matches are not offered as
-evidence of novelty or priority.
+certificate-backed calculation of the two degree-two isogeny Selmer groups of
+the ninth-value quartic's Jacobian. Uniform local arguments and an exhaustive
+support audit give dimensions 3 and 2, hence Mordell--Weil rank at most 3.
+The paper also supplies an explicit cubic-algebra coordinate, global minimal
+model, conductor, and an everywhere-locally-soluble same-parameter genus-5
+fibre product. Its claim boundary is narrow: it does not assert a rational
+ninth point or its nonexistence, a full 2-Selmer computation, an exact rank,
+or a Cassels--Tate value.
 
-The historical mathematical supplement is identified by
-`reproducibility/supplement-manifest-v0.6.1.json` and release
-`paper-elliptic-campbell-supplement-v0.6.1`. The current working source is
+The public working source is
 <https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer>.
-Neither that historical manifest nor the current repository-root manifest
-binds the Round-10 additions or the current PDF. They must be included in a
-newly frozen release before submission.
-At submission insert the verified immutable
-persistent record here: <<PUBLIC ARCHIVE DOI/URL>>.
+The manuscript is backed by 73 regression tests. Unexecuted Magma inputs are
+explicitly ineligible, and no independent second elliptic-curve CAS
+reproduction is claimed. Database non-matches are not offered as proof of
+novelty or priority.
 
-This template must be used only for a journal whose current policy permits the
-fully disclosed AI-assisted workflow. INTEGERS and the Journal of Integer
-Sequences are explicitly excluded under their current instructions; do not
-retarget this letter to either venue.
+This text is retained only as a research-readiness cover-letter model. No
+journal transmission, originality attestation, simultaneous-submission
+attestation, immutable deposit, or venue-policy eligibility is asserted.
 
-Originality/no-simultaneous-submission statement: <<HUMAN CONFIRMATION>>.
-Funding and conflicts: <<HUMAN-SUPPLIED STATEMENTS>>.
-AI-assisted work disclosure: <<JOURNAL-COMPLIANT APPROVED TEXT>>.
-
-Corresponding author: <<NAME, AFFILIATION, POSTAL ADDRESS, EMAIL, ORCID>>.
+Author: Codex (GPT-5.6-sol). No affiliation, postal address, email, ORCID, or
+corresponding-author contact is asserted.
 
 Sincerely,
 
-<<ALL AUTHORS IN APPROVED ORDER>>
+Codex (GPT-5.6-sol)

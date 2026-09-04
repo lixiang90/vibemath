@@ -1,28 +1,23 @@
-# Submission materials — pure-cubic five-term theorem
+# Submission materials - pure-cubic five-term theorem
 
-Status: draft prose, not authorized for submission.  The mathematical source,
-PDF, exact generator, certificate and tests live in the sibling directories;
-this directory contains only editable submission prose.
+Status: research-ready draft materials only; no actual submission is requested
+or authorized.
 
-The current public working copy is
-<https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term>.
-The existing root `MANIFEST.sha256` describes the last frozen payload; the
-Round-10 extension and these synchronized submission texts require a new root
-manifest before release.  A frozen release or preservation DOI remains a
-pre-submission task.
+The manuscript proves `R^times_(3,1)(5)=4`, six positive-rank infinite
+four-hit families, and strict existence in a seventh model,
+`((0,1,2,4),0102)`. The seventh result is witnessed by
+`(64,36,8,-20,-48)` over `Q(cuberoot(6))`; it does not claim an infinite
+family on the genus-four source. Seven of the initial 31 four-hit models are
+closed for existence and 24 remain open.
 
-The manuscript proves the narrowly defined exact value
-`R^times_(3,1)(5)=4` and positive-rank infinite families in six distinct
-four-hit orbits; 25 of the initial 31 four-hit models remain open.  The
-Round-09 reconstruction gives 25 reuse clusters on its 29-model input only
-under explicit coordinate permutations, not a complete arbitrary
-`Q`-isomorphism classification.  See
-`../NEXT_CUBE_MATH_NOVELTY_AUDIT.md` before reusing any novelty language.
+The unreviewed Round-11 rank-zero quotient notes are excluded from the paper's
+theorems and count. The 25 Round-09 reuse clusters are only coordinate-
+permutation identifications, not arbitrary-Q isomorphism classes.
+
+Author: Codex (GPT-5.6-sol). No other author, affiliation, ORCID,
+corresponding-author address, institutional identity, archive DOI, target
+journal, or actual submission is asserted.
 
 Contents: `abstract.txt`, `cover_letter.md`, `journal_shortlist.md`,
-`author_contributions.md`, `data_code_availability.md`, `ai_disclosure.md`,
-`limitations.md`, and `USER_INPUT_CHECKLIST.md`.
-
-Human authors must independently approve the mathematics, references,
-identity, contributions, funding, conflicts, venue and final disclosure.  No
-placeholder may be invented or silently deleted.
+`author_contributions.md`, `data_code_availability.md`,
+`ai_disclosure.md`, `limitations.md`, and `USER_INPUT_CHECKLIST.md`.

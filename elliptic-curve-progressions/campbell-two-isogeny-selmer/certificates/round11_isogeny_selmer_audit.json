@@ -1,0 +1,153 @@
+{
+  "claim_boundary": {
+    "not_proved": [
+      "the exact Mordell-Weil rank or generators",
+      "the full 2-Selmer group or a Cassels-Tate value",
+      "existence or nonexistence of a rational ninth point",
+      "an independent second-CAS reproduction"
+    ],
+    "proved": [
+      "the E-side 16 real-soluble classes reduce to eight at Q_59",
+      "the E-side eight and E-prime-side four classes are exact isogeny Selmer groups",
+      "the two Selmer dimensions are 3 and 2",
+      "rank E(Q) is at most 3"
+    ]
+  },
+  "local_to_selmer": {
+    "E_prime_side": {
+      "F2_dimension": 2,
+      "classes": [
+        1,
+        4230241,
+        339106321,
+        1434501462453361
+      ],
+      "classes_after_Q2_and_Q3": [
+        1,
+        4230241,
+        339106321,
+        1434501462453361
+      ],
+      "conventional_name": "Sel^phi(E/Q)",
+      "generators": [
+        4230241,
+        339106321
+      ]
+    },
+    "E_side": {
+      "F2_dimension": 3,
+      "classes": [
+        1,
+        3,
+        5,
+        7,
+        15,
+        21,
+        35,
+        105
+      ],
+      "conventional_name": "Sel^(dual_phi)(E'/Q)",
+      "generators": [
+        3,
+        5,
+        7
+      ],
+      "real_survivors_before_finite_gate": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        6,
+        10,
+        14,
+        15,
+        21,
+        35,
+        30,
+        42,
+        70,
+        105,
+        210
+      ],
+      "rejected_at_Q_59": [
+        2,
+        6,
+        10,
+        14,
+        30,
+        42,
+        70,
+        210
+      ]
+    },
+    "conclusion": "the two displayed sets are the exact isogeny Selmer groups",
+    "every_other_supported_class_has_a_uniform_proved_obstruction": true,
+    "every_surviving_class_everywhere_locally_soluble": true,
+    "finite_positive_witnesses_revalidated": 84,
+    "matrix_path": "certificates/local_matrix_512.json",
+    "matrix_sha256": "fff2f35f398c2d14227d9b032d205e24d5332a39346487c76180cdf805ba32c9",
+    "round09_path": "certificates/round09_two_place_gate.json",
+    "round09_sha256": "68f00a435d7ecf7a127746f4fe668fad791c6dab1ac295a8c8f16c05677cc75f",
+    "round10_path": "certificates/round10_eprime_two_three_gate.json",
+    "round10_sha256": "9e1e4c0a0c0c56e63d47be039efebe203a29b1d664b5ab2740135ebd98a18fe0",
+    "surviving_rows_checked_at_infinity": 12
+  },
+  "mapping_conventions": {
+    "E": "y^2=x^3+a*x^2+b*x",
+    "E_prime": "Y^2=X^3-2*a*X^2+(a^2-4*b)*X",
+    "Kummer_convention": "alpha(O)=1, alpha((0,0))=[b], alpha((x,y))=[x] for x!=0",
+    "composition_x_coordinate_equals_doubling": true,
+    "cover": "N^2=d*U^4+a*U^2*V^2+(b/d)*V^4",
+    "cover_map_identity": true,
+    "cover_to_same_side_affine": "x=d*(U/V)^2; y=d*U*N/V^3",
+    "dual_phi": "(X,Y)->(Y^2/(4*X^2), Y*((a^2-4*b)-X^2)/(8*X^2))",
+    "phi": "(x,y)->(y^2/x^2, y*(b-x^2)/x^2)"
+  },
+  "rank_bound": {
+    "Selmer_size_product": 32,
+    "exact_rank_claimed": false,
+    "exact_sequence_identity": "2^rank = |E'(Q)/phi E(Q)|*|E(Q)/dual_phi E'(Q)| / (|E(Q)[phi]|*|E'(Q)[dual_phi]|)",
+    "kernel_orders": [
+      2,
+      2
+    ],
+    "quotient_injections": [
+      "E'(Q)/phi E(Q) injects into Sel^phi(E/Q)",
+      "E(Q)/dual_phi E'(Q) injects into Sel^(dual_phi)(E'/Q)"
+    ],
+    "rank_power_upper_bound": 8,
+    "rank_upper_bound": 3
+  },
+  "schema": "campbell-round11-isogeny-selmer-audit-v1",
+  "source_sha256": {
+    "NEXT_ELLIPTIC_ROUND_11.py": "08cfb787f3ff4b318204bc569125b99f42e7ebd393d6a5a0698183b48c7dfdbc"
+  },
+  "support_and_places": {
+    "E_b_factorization": {
+      "2": 18,
+      "3": 12,
+      "5": 2,
+      "7": 5
+    },
+    "E_prime_b_factorization": {
+      "3": 4,
+      "339106321": 1,
+      "59": 1,
+      "71699": 1
+    },
+    "all_other_finite_places_automatic": true,
+    "finite_places_requiring_checks": [
+      2,
+      3,
+      5,
+      7,
+      59,
+      71699,
+      339106321
+    ],
+    "good_prime_bridge": "For p outside the displayed set the quartic discriminant 16*b*(a^2-4*b)^2 is a p-adic unit. The smooth proper genus-one reduction has an F_p-point by Hasse and it lifts by Hensel.",
+    "real_place_required": true,
+    "support_lemma": "A Selmer squareclass has a signed squarefree representative supported on b: if p does not divide b and v_p(d)=1, a primitive local solution is impossible by the unique odd-valuation term argument."
+  }
+}

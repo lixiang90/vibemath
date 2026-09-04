@@ -1,0 +1,366 @@
+{
+  "claim_boundary": {
+    "not_proved": "realizability or impossibility of either survivor; R_2(7) is not decided",
+    "proved": "the complete integer-point set for mask 85 and the resulting 4-to-2 necessary-pattern exclusion"
+  },
+  "input_sha256": {
+    "PAPER_SQUARE_MASK54_CERTIFICATE.json": "90d33bed3609712cb985170b60b6fb06264577b76dca6b7578606b42e9f585b9",
+    "STUDENT_SQUARE_ROUND_02_certificate.json": "ef179671912c3896d43f9f7ece1f2aaf4f69ae5ff7d83217c9df0caa2fb664d7",
+    "STUDENT_SQUARE_ROUND_04_CERTIFICATE.json": "0c07cf72ee1c048faad57fe91c5efcd92bb1d39948cda387f1cea836b5ea7519"
+  },
+  "integral_points": {
+    "A": "x^2-9",
+    "B": "x^2-1",
+    "B_minus_A": 8,
+    "bounded_search_used": false,
+    "branches": [
+      {
+        "conclusion": "impossible",
+        "d": 1,
+        "equation": "V^2-U^2=8",
+        "forced_A": 1,
+        "forced_U_V": [
+          1,
+          3
+        ],
+        "method": "impossible modulo 8",
+        "positive_same_parity_factor_pairs": [
+          [
+            2,
+            4
+          ]
+        ],
+        "squares_mod_8": [
+          0,
+          1,
+          4
+        ],
+        "transformed_equation": "x^2=A+9=10"
+      },
+      {
+        "conclusion": "U=0 contradicts A>0",
+        "d": 2,
+        "equation": "V^2-U^2=4",
+        "forced_U_V": [
+          0,
+          2
+        ],
+        "nonnegative_same_parity_factor_pairs": [
+          [
+            2,
+            2
+          ]
+        ]
+      }
+    ],
+    "centered_identity": "t(t+2)(t+4)(t+6)=(x^2-9)(x^2-1)",
+    "centered_variable": "x=t+3",
+    "common_positive_squarefree_kernels": [
+      1,
+      2
+    ],
+    "curve": "y^2=t(t+2)(t+4)(t+6)",
+    "degeneracy_in_original_seven_term_block": [
+      {
+        "point": [
+          -6,
+          0
+        ],
+        "zero_position_in_original_block": 6
+      },
+      {
+        "point": [
+          -4,
+          0
+        ],
+        "zero_position_in_original_block": 4
+      },
+      {
+        "point": [
+          -3,
+          -3
+        ],
+        "zero_position_in_original_block": 3
+      },
+      {
+        "point": [
+          -3,
+          3
+        ],
+        "zero_position_in_original_block": 3
+      },
+      {
+        "point": [
+          -2,
+          0
+        ],
+        "zero_position_in_original_block": 2
+      },
+      {
+        "point": [
+          0,
+          0
+        ],
+        "zero_position_in_original_block": 0
+      }
+    ],
+    "gcd_identity": "gcd(A,B)=gcd(A,8), hence gcd(A,B) divides 8",
+    "kernel_equation": "d(V^2-U^2)=8",
+    "mask": 85,
+    "middle_interval_exact_check": [
+      {
+        "rhs": 0,
+        "t": -6,
+        "x": -3,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": -15,
+        "t": -5,
+        "x": -2,
+        "ys": []
+      },
+      {
+        "rhs": 0,
+        "t": -4,
+        "x": -1,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": 9,
+        "t": -3,
+        "x": 0,
+        "ys": [
+          -3,
+          3
+        ]
+      },
+      {
+        "rhs": 0,
+        "t": -2,
+        "x": 1,
+        "ys": [
+          0
+        ]
+      },
+      {
+        "rhs": -15,
+        "t": -1,
+        "x": 2,
+        "ys": []
+      },
+      {
+        "rhs": 0,
+        "t": 0,
+        "x": 3,
+        "ys": [
+          0
+        ]
+      }
+    ],
+    "mordell_weil_used": false,
+    "nondegenerate_integral_points": [],
+    "positive_regions": [
+      "t<=-7 (x<=-4)",
+      "t>=1 (x>=4)"
+    ],
+    "proved_integral_points": [
+      [
+        -6,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        -3,
+        -3
+      ],
+      [
+        -3,
+        3
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_y_is_integral_note": "an integer which is a rational square is an integer square",
+    "status": "PROVED_COMPLETE_BY_CENTERED_FACTORIZATION_AND_SQUAREFREE_KERNELS",
+    "support": [
+      0,
+      2,
+      4,
+      6
+    ]
+  },
+  "occurrence_inventory": {
+    "authoritative_input_pattern_ids": [
+      12,
+      31,
+      134,
+      276
+    ],
+    "characters_per_pattern": 15,
+    "distinct_genus1_masks": 19,
+    "distinct_masks": 37,
+    "input_pattern_count": 4,
+    "pairable_genus1_ranking": [
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 8,
+          "left": [
+            0,
+            6
+          ],
+          "right": [
+            2,
+            4
+          ]
+        },
+        "gcd_bound": 8,
+        "mask": 85,
+        "pattern_ids": [
+          31,
+          276
+        ],
+        "patterns_hit": 2,
+        "support": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 3,
+          "left": [
+            0,
+            4
+          ],
+          "right": [
+            1,
+            3
+          ]
+        },
+        "gcd_bound": 3,
+        "mask": 27,
+        "pattern_ids": [
+          12
+        ],
+        "patterns_hit": 1,
+        "support": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "constant_pairing": {
+          "difference_right_minus_left": 6,
+          "left": [
+            0,
+            5
+          ],
+          "right": [
+            2,
+            3
+          ]
+        },
+        "gcd_bound": 6,
+        "mask": 45,
+        "pattern_ids": [
+          134
+        ],
+        "patterns_hit": 1,
+        "support": [
+          0,
+          2,
+          3,
+          5
+        ]
+      }
+    ],
+    "selected_curve": "y^2=t(t+2)(t+4)(t+6)",
+    "selected_mask": 85,
+    "selected_occurrences": [
+      {
+        "character_mask_m": 85,
+        "class_id": 0,
+        "finite_constraint": "0*U_m+(1)*Z_m != 0",
+        "genus": 1,
+        "mobius_matrix_rep_to_occurrence": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "nonbranch_constraint": "nonbranch: t not in {0,-1,-2,-3,-4,-5,-6}",
+        "occurrence_id": "P31:m85",
+        "representative_mask": 15,
+        "same_t_map": "t=(2*U_m+(0)*Z_m)/(0*U_m+(1)*Z_m)"
+      },
+      {
+        "character_mask_m": 85,
+        "class_id": 0,
+        "finite_constraint": "0*U_m+(1)*Z_m != 0",
+        "genus": 1,
+        "mobius_matrix_rep_to_occurrence": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "nonbranch_constraint": "nonbranch: t not in {0,-1,-2,-3,-4,-5,-6}",
+        "occurrence_id": "P276:m85",
+        "representative_mask": 15,
+        "same_t_map": "t=(2*U_m+(0)*Z_m)/(0*U_m+(1)*Z_m)"
+      }
+    ],
+    "selected_support": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "selection_note": "mask 85 uniquely maximizes affected patterns among the remaining pairable genus-one masks",
+    "total_character_occurrences": 60
+  },
+  "pattern_impact": {
+    "affected_partitions": [
+      "0001202",
+      "0010203"
+    ],
+    "affected_pattern_ids": [
+      31,
+      276
+    ],
+    "input_remaining_count": 4,
+    "reason": "mask 85 has no nondegenerate integral parameter",
+    "remaining_count": 2,
+    "remaining_partitions": [
+      "0012202",
+      "0012131"
+    ],
+    "remaining_pattern_ids": [
+      12,
+      134
+    ],
+    "same_parameter_reason": "each listed row contains mask 85 at its original normalized integer parameter t; the direct character curve has no nondegenerate integral t",
+    "selected_mask": 85,
+    "strictly_excluded": 2
+  },
+  "schema": "paper-square-mask85-v1",
+  "semantic_version": "1.0.0"
+}

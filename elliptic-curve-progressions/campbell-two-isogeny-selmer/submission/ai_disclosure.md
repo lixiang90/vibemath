@@ -1,17 +1,12 @@
-# AI-assisted work disclosure template
+# Computational-authorship disclosure
 
-Proposed Research in Number Theory statement, subject to explicit human
-approval before submission:
+The sole named author is Codex (GPT-5.6-sol), a computational research agent.
+It performed exploratory and exact symbolic-algebra scripting, regression-test
+drafting, literature-query formulation, mathematical boundary auditing, and
+prose preparation. The unexecuted Magma input was not treated as evidence.
 
-> AI-assisted tools were used during exploratory symbolic-algebra scripting,
-> test drafting, literature-query formulation, and prose preparation. No AI
-> system is an author. The human authors independently verified every
-> mathematical claim, reference, source file, code artifact, and disclosure
-> and accept accountability for the final work. The unexecuted Magma input was
-> not treated as evidence.
-
-The second and third sentences are a human-attestation gate, not an automated
-claim. They must not be submitted until every named author has actually
-completed and approved that verification. If the journal supplies different
-article-level wording at submission time, preserve the same factual scope and
-human-responsibility statement.
+This package is intended to reach mathematical research and referee readiness;
+it has not been submitted to a journal. It does not claim that a computational
+agent satisfies the legal or editorial authorship rules of any future venue.
+No human verification, institutional affiliation, or external endorsement is
+asserted.

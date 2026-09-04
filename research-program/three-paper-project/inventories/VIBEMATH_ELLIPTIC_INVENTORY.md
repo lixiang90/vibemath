@@ -10,7 +10,7 @@
 
 | 源文件 | 目标文件 | 理由 | 证据资格 |
 |---|---|---|---|
-| `PAPER_ELLIPTIC_TEX.tex` | `paper/main.tex` | 当前数学正文：Campbell 重建、same-m、512 格、精确二同源 Selmer、`Q x K/[35]`、CT 纠错、全局极小模型及 Round09/10 局部门 | `PROVED`，受正文边界约束 |
+| `PAPER_ELLIPTIC_TEX.tex` | `paper/main.tex` | 当前数学正文：Campbell 重建、same-m、512 格、`Q x K/[35]`、CT 纠错、全局极小模型、Round09/10 局部门及 Round11 两侧精确二同源 Selmer 群与 `rank<=3` | `PROVED`，受正文边界约束 |
 | `PAPER_ELLIPTIC_TEX.pdf` | `paper/main.pdf` | 当前 TeX 的最终参考渲染 | `DOC`；证明权威仍是源文件与证书 |
 
 ## code
@@ -72,15 +72,19 @@
 | `PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST.py` | `reproducibility/build_supplement_manifest.py` | manifest 生成器 | `PROVED` 仅限发布完整性 |
 | `PAPER_ELLIPTIC_SUPPLEMENT_MANIFEST_test.py` | `reproducibility/test_supplement_manifest.py` | 哈希、隔离重建和 ineligible-Magma 负测 | `PROVED` 仅限发布完整性 |
 
-## Round08--Round10 严格增量
+## Round08--Round11 严格增量
 
 | 轮次 | 代码 / 证书 / 报告 / 审稿 | 证据资格与严格边界 |
 |---|---|---|
 | Round08 | `code/NEXT_ELLIPTIC_ISOMORPHISM_AUDIT.py`; `code/NEXT_ELLIPTIC_ISOMORPHISM_AUDIT_test.py`; `certificates/minimal_model_identity.json` | `PROVED`：显式 `Q`-同构、全局极小模型、判别式与导子；仍无独立第二 CAS |
 | Round09 | `code/NEXT_ELLIPTIC_ROUND_09.py`; `code/NEXT_ELLIPTIC_ROUND_09_test.py`; `certificates/round09_two_place_gate.json`; `NEXT_ELLIPTIC_ROUND_09_REPORT.md`; `reviews/PAPER_ELLIPTIC_ROUND_09_REVIEW_SQUARE.md` | `PROVED`：`E` 侧两个素数的完整局部分类，与实位相交剩 8 类；只是不充分的局部必要条件 |
 | Round10 | `code/NEXT_ELLIPTIC_ROUND_10.py`; `code/NEXT_ELLIPTIC_ROUND_10_test.py`; `certificates/round10_eprime_two_three_gate.json`; `NEXT_ELLIPTIC_ROUND_10_REPORT.md`; `reviews/ROUND_10_CROSS_REVIEW.md` | `PROVED`：`E'` 侧 `Q_2/Q_3` 两个 iff 及四类交集；最小性只相对于已存七列有限素数矩阵；交叉审稿 PASS |
+| Round11 | `code/NEXT_ELLIPTIC_ROUND_11.py`; `code/NEXT_ELLIPTIC_ROUND_11_test.py`; `certificates/round11_isogeny_selmer_audit.json`; `NEXT_ELLIPTIC_ROUND_11_REPORT.md`; `reviews/ROUND_11_CROSS_REVIEW.md` | `PROVED`：完整支撑与正见证把两侧候选升级为阶 8、4 的精确同源 Selmer 群，严格推出 `rank E(Q)<=3`；不计算精确秩、完整 2-Selmer、CT 或第九点；交叉审稿 PASS |
 
-Campbell Selmer 组当前 65 项测试通过。这些增量不产生或排除第九点，不给出
+Round11 Campbell Selmer 组在当前工作树 73/73 通过。冻结提交与 cold reproduction
+为 PENDING。当前论文 11 页，唯一署名为 `Codex (GPT-5.6-sol)`；项目只要求达到
+submission-ready 水准，不实际投稿，不虚构其他作者、单位、联系方式、ORCID、
+资助、利益冲突、期刊、DOI 或投稿行为。这些增量不产生或排除第九点，不给出
 Cassels--Tate 值、完整 2-Selmer、秩等式或数据库级优先权。
 
 ## candidate-input（仅保留历史输入时）

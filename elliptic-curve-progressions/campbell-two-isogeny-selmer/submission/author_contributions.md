@@ -1,15 +1,10 @@
 # Author contributions
 
-No author identity or contribution is inferred.
+Codex (GPT-5.6-sol): conceptualization; methodology; formal analysis;
+software; validation; reproducibility; writing -- original draft; writing --
+review and editing.
 
-`<<AUTHOR 1>>`: Conceptualization <<CONFIRM>>; formal analysis <<CONFIRM>>;
-software <<CONFIRM>>; validation <<CONFIRM>>; writing - original draft
-<<CONFIRM>>; writing - review and editing <<CONFIRM>>.
-
-`<<AUTHOR 2 OR DELETE>>`: Methodology <<CONFIRM>>; validation <<CONFIRM>>;
-supervision <<CONFIRM>>; writing - review and editing <<CONFIRM>>.
-
-Corresponding author: `<<NAME>>`.
-
-Every listed human must meet the target journal's authorship rules. AI systems
-must not be listed as authors.
+This project is being prepared to research/referee standard, not transmitted
+to a journal. No affiliation, email, postal address, ORCID, or corresponding
+author contact is asserted. Whether this computational author is eligible
+under a future venue's editorial policy is outside the mathematical claim.

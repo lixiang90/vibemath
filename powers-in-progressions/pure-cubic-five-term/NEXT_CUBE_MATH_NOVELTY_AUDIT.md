@@ -191,7 +191,7 @@ has its first four nonzero terms equal to
 field.  This proves the lower bound 4, while Sections 2.1--2.5 prove the upper
 bound 4.
 
-### 2.7 Four-hit extension through Round 09
+### 2.7 Four-hit extension through Round 11
 
 The four-hit gate starts with 31 color/position models.  Four pairwise
 distinct affine-color/reversal orbits are now proved to contain infinitely
@@ -214,8 +214,18 @@ lands on \(v^2=u^3-972\); \(O=(1:1:1)\) maps to \(-(13,35)\), while
 has \(35^2\nmid -2^8 3^{13}\), Nagell--Lutz proves it non-torsion.  This is
 a proof of positive rank, not a heuristic rank computation.  The first AP is
 \((125,8,-109,-226,-343)\), which realizes the two models over
-\(\Q(\sqrt[3]{109})\) and \(\Q(\sqrt[3]{226})\).  Thus six of the initial
-31 rational-point models are closed and 25 remain open.
+\(\Q(\sqrt[3]{109})\) and \(\Q(\sqrt[3]{226})\).  Round 11 closes one further model for existence only:
+
+    ((0,1,2,4),0102).
+
+The genus-four curve
+\((X^3+Y^3)(2Y^3-X^3)=2W^3\) has the exact point \((2:1:-3)\), yielding
+\((64,36,8,-20,-48)\) over \(\Q(\sqrt[3]{6})\). Its quotient point
+\((6,15)\) on \(v^2=u^3+9\) is non-torsion by Nagell--Lutz, but quotient
+positive rank is not claimed to give infinitely many rational lifts. Thus
+seven of the initial 31 models are closed for existence and 24 remain open.
+The separate, unreviewed rank-zero quotient notes are not counted or included
+in a manuscript theorem.
 
 After removing the two models closed before Round 09, the generator
 reconstructs all 29 inputs as 4 diagonal cubics, 9 bidegree \((3,3)\) curves,
@@ -233,14 +243,16 @@ Command run from the repository root:
 python -m unittest discover -s vibemath/powers-in-progressions/pure-cubic-five-term/code -p "*_test.py" -v
 ```
 
-Result after Round 10: **36/36 tests passed**.  They cover the kernel elimination, radicand
+Result after the strict Round 11 existence update: **42/42 tests passed**.  They cover the kernel elimination, radicand
 normalization, all color orbits and their partition, Burnside counts, all 60
 good-prime obstructions, Jacobian minors, the lower witness, certificate/live
 equality, the fail-closed four-hit-classification boundary, the first two
 positive-rank constructions, the complete 29-model reconstruction, all 25
 explicit permutation clusters, the two Round-09 positive-rank lifts, and the
 second \(3+1\) curve's exact map, Nagell--Lutz certificate, chord multiples,
-two model memberships, and two explicit pure-cubic class vectors.
+two model memberships, two explicit pure-cubic class vectors, and the
+seventh model's source identity, field degree, four cube witnesses,
+omitted-term valuation obstruction, quotient identity, and non-torsion point.
 
 Round-09 cross-review found a deterministic metadata error in the 0100
 boundary record: its two zero checks had interchanged variables although the
@@ -305,7 +317,9 @@ Use “we determine,” not “for the first time,” “the first result,” or
 classification of maximizers.”  The paper classifies and excludes all
 **five-hit color/position classes**.  Of the initial 31 four-hit
 arithmetic-point models, six distinct orbits have positive-rank infinite
-families and 25 remain open.  The 25 Round-09 clusters on the 29-model input
+families, one further orbit has strict existence, and 24 remain open.
+The seventh orbit is not advertised as an infinite family. The 25 Round-09
+clusters on the 29-model input
 are proved only under explicit coordinate permutations and are not an
 arbitrary-\(\Q\)-isomorphism classification.  The work must not be advertised as a
 general theorem about cubes in cubic fields, because the rational-entry and
@@ -315,7 +329,7 @@ common-rational-scale restrictions are central.
 
 The remaining risk is bibliographic, not mathematical: the exact formulation
 could occur under different notation in a thesis, non-English source, or an
-unindexed computation.  Before asserting novelty, a human author should run
+unindexed computation.  Before any priority assertion, an independent researcher should run
 equation-level and citation-forward searches in MathSciNet and zbMATH and ask
 a specialist in perfect powers in progressions.  Pending that check, the
 narrow descriptive sentence above is publishable; any priority claim is not.
@@ -329,8 +343,10 @@ narrow descriptive sentence above is publishable; any priority claim is not.
 - **Novelty:** plausibly distinct from accessible prior art, but only the
   narrowly defined exact maximum and exhaustive five-hit color-class
   elimination, together with the six explicitly proved positive-rank
-  four-hit orbits, should be claimed.
-- **Four-hit boundary:** six of 31 models are closed and 25 remain open; the
+  four-hit orbits and strict existence in the seventh orbit, should be
+  claimed.
+- **Four-hit boundary:** seven of 31 models are closed for existence and
+  24 remain open; the seventh is not an infinite-family result, and the
   25 permutation clusters are a strict reuse result, not a complete
   \(\Q\)-isomorphism classification.
 - **Cross-review repair:** the 0100 certificate metadata was corrected and

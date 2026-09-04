@@ -1,0 +1,77 @@
+{
+  "schema": "paper-cube-fourhit-existence-round11-v1",
+  "model": {
+    "indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "canonical_word": "0102"
+  },
+  "source_curve": {
+    "weighted_projective_space": "P(1,1,2)",
+    "equation": "(X^3+Y^3)(2Y^3-X^3)=2W^3",
+    "expanded_coefficients_X6_X3Y3_Y6_W3": [
+      -2,
+      2,
+      4,
+      -4
+    ],
+    "genus": 4,
+    "point": [
+      "2",
+      "1",
+      "-3"
+    ]
+  },
+  "progression": {
+    "field": "Q(alpha), alpha^3=6",
+    "degree": 3,
+    "degree_proof": "x^3-6 is Eisenstein at 2",
+    "integer_AP": [
+      64,
+      36,
+      8,
+      -20,
+      -48
+    ],
+    "common_difference": -28,
+    "cube_witnesses": {
+      "A0": "4",
+      "A1": "alpha^2",
+      "A2": "2",
+      "A4": "-2*alpha"
+    },
+    "omitted_index": 3,
+    "omitted_value": -20,
+    "omitted_v5_mod_3": 1,
+    "omitted_exclusion": "the Kummer kernel is <6> in Q*/Q*^3; its classes have v_5=0 mod 3, but v_5(-20)=1"
+  },
+  "colors": {
+    "raw_mod_<6>": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "canonical_via_c_to_2c": [
+      0,
+      1,
+      0,
+      2
+    ]
+  },
+  "elliptic_quotient": {
+    "curve": "v^2=u^3+9",
+    "point": [
+      6,
+      15
+    ],
+    "discriminant": -34992,
+    "y_squared": 225,
+    "y_squared_divides_discriminant": false,
+    "conclusion": "non-torsion by Nagell--Lutz"
+  },
+  "claim_boundary": "This closes existence for one model and proves its elliptic quotient has positive rank. It does not prove infinitely many rational points on the genus-four source curve."
+}

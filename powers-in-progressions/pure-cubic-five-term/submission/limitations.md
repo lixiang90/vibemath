@@ -2,33 +2,32 @@
 
 ## Proved
 
-- The exact nonzero maximum `R^times_(3,1)(5)=4` under the definition in the manuscript.
-- The kernel `ker(Q*/Q*3 -> K_D*/K_D*3)=<D>` for a nontrivial pure cubic field.
-- Complete enumeration of all 25 five-hit affine-color/reversal orbits.
-- Complete good-prime local exclusion of the 60 remaining five-hit models.
-- A nonzero four-hit witness over `Q(cuberoot(3))`.
-- Six distinct four-hit color/position orbits of positive rank, each yielding
-  infinitely many inequivalent maximizers.
-- Reconstruction of all 29 models entering Round 09 and their partition into
-  25 clusters under the explicitly recorded coordinate/factor permutations.
+- The exact nonzero maximum `R^times_(3,1)(5)=4`.
+- The Kummer kernel `ker(Q*/Q*3 -> K_D*/K_D*3)=<D>`.
+- Complete enumeration and good-prime exclusion of all five-hit models.
+- Six distinct four-hit models with positive-rank infinite families.
+- Strict existence in the seventh model `((0,1,2,4),0102)`, witnessed by
+  `(64,36,8,-20,-48)` over `Q(cuberoot(6))`.
+- Non-torsion of the seventh model's quotient image `(6,15)` on
+  `y^2=x^3+9`.
+- Reconstruction of the 29 Round-09 inputs and their 25 clusters under the
+  explicitly recorded coordinate/factor permutations.
 
 ## Not proved or claimed
 
-- A classification of every rational AP attaining four hits. There are 38
-  color/position orbits at the combinatorial level; seven are eliminated by
-  cited theorems and 31 rational-point problems remain at the initial gate;
-  six are solved here and 25 remain open.
-- A complete classification of those models under arbitrary `Q`-isomorphism.
-  The 25 certified clusters prove only the displayed coordinate-permutation
-  identifications; distinct canonical keys are not claimed non-isomorphic.
-- Any theorem for six or more positions, for zero-counting variants, for
-  arbitrary cubic fields, or for algebraic-integer rather than field cubes.
-- A formal-machine proof. The Python/SymPy certificate is independently
-  reproducible exact arithmetic, not a proof-assistant development.
-- Exhaustiveness of the bibliographic search. The dated search returned no
-  exact match, which is evidence for editorial screening only and not a proof
-  of novelty.
+- Infinitely many rational points on the seventh model's genus-four source.
+  Positive rank of a quotient does not imply infinitely many rational lifts.
+- A classification of every rational AP attaining four hits. Seven of the 31
+  initial rational-point models are closed for existence and 24 remain open.
+- Any manuscript theorem from the unreviewed Round-11 rank-zero quotient
+  notes.
+- A complete classification under arbitrary `Q`-isomorphism.
+- A theorem for six or more positions, zero-counting variants, arbitrary
+  cubic fields, or algebraic-integer rather than field cubes.
+- A formal proof-assistant development.
+- Exhaustiveness of the bibliographic search. MathSciNet/zbMATH screening of
+  the seventh existence result remains pending, so no priority claim is made.
 
-The current certificate allows zero coordinates when excluding a projective
-model modulo `p`, even though zero terms are not counted in the theorem. This
-strengthens rather than weakens each local obstruction.
+The five-hit finite-field certificate permits zero coordinates while excluding
+a projective model modulo p. This strengthens rather than weakens that local
+obstruction.

@@ -5,17 +5,20 @@ Date: 2026-09-04
 The organized public source tree was checked again after the mathematical and
 novelty audit.
 
-- 87 tests passed for the seven-consecutive-squareclass project, including the
-  exact mask-99, mask-51, mask-90, and mask-54 integral-point gates.
+- 96 tests passed for the seven-consecutive-squareclass project, including the
+  exact mask-99, mask-51, mask-90, mask-54, and Round11 mask-85
+  integral-point gates.
 - 33 tests passed for the number-field magic-square project.
-- 36 tests passed for the pure-cubic five-term project, including the exact
-  Round09 clustering and six distinct positive-rank four-hit models.
+- 42 tests passed for the pure-cubic five-term project, including the exact
+  Round09 clustering, six distinct positive-rank four-hit models, and the
+  Round11 strict-existence certificate for a seventh model.
 - 14 tests passed for the six-term fourth-power project.
 - 8 tests passed for the C29 simultaneous-torsion project.
-- 65 tests passed for the Campbell two-isogeny Selmer project, including the
+- 73 tests passed for the Campbell two-isogeny Selmer project, including the
   exact minimal-model/conductor audit, the Round09 `E`-side two-place local
-  gate, and the Round10 `E'`-side `Q_2`/`Q_3` gate.
-- Total: 243 passing tests, 0 failures.
+  gate, the Round10 `E'`-side `Q_2`/`Q_3` gate, and the Round11 support/place
+  bridge proving both exact isogeny Selmer groups and only `rank <= 3`.
+- Total: 266 passing tests, 0 failures.
 - The public tree contained no LaTeX auxiliaries, caches, temporary build
   directories, archive ZIPs, or duplicate build-output directories.
 - A targeted scan found no environment files, private-key files, GitHub tokens,
@@ -36,12 +39,19 @@ The entry point uses temporary directories for historical flat-layout programs
 and runs the Campbell checks directly against their organized public paths.
 It creates no build product in the repository.
 
-These counts were also reproduced from the clean Round10 commit identified
-below.  The squareclasses, pure-cubic, and Campbell PDFs have respectively
-11, 8, and 11 pages, with SHA-256 values
-`6b047417bd4003dcf49e2ce5c577a703ac022bcad6a2326620a6feee09c66c27`,
-`2a942dc9ba688e192c31aaeb61675b63ee6abfe563f2056fad6bcc8a8652f11`, and
-`0aebc7230b952a256741a2ee985f69f3f5153852ca5258ff27bad8c8ccee4044`.
+These are the final Round11 pre-commit working-tree checks, not a clean-clone
+reproduction.  The repository-root `MANIFEST.sha256` was regenerated with
+`tools/build_manifest.py`; its 268 unique entries were then re-read and every
+path and SHA-256 value was independently verified against the working tree.
+The latest completed clean-clone reproduction remains the Round10 record
+preserved below until a later post-commit reproduction is performed.
+
+The current squareclasses, pure-cubic, and Campbell PDF files have respectively
+11, 9, and 11 pages, with file SHA-256 values
+`4ac177cf47c80eaf38c9ae7a0fcc5d1d22930b122615cbe02875c045217aaea4`,
+`b0062b625231cb6f15c3792eab41c57cdb803020d87b5ba3e0f0a941c616ca71`, and
+`9296c024822d7cd3670e1d04cccfb328da26ea4198dd2aac8e0f0e99e9024e1f`.
+All three PDF metadata records name `Codex (GPT-5.6-sol)` as author.
 
 ## Clean-clone reproduction
 

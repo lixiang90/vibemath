@@ -15,7 +15,7 @@ every bad prime and its conductor is 301245307115205810. We also compute the
 full Q times K representative of the binary-quartic cubic invariant and its
 rational 2-torsion projection. A versioned supplement records the 512 local
 cells, common-parameter local witnesses, exact generators, certificates, and
-65 regression tests. The same-parameter genus-5 fibre product is everywhere
+73 regression tests. The same-parameter genus-5 fibre product is everywhere
 locally soluble. Our calculation is deliberately narrower than the original
 extension problem: it neither produces nor excludes a ninth rational point
 on Campbell's family, claims no full 2-Selmer group or Mordell-Weil rank

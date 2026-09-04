@@ -25,7 +25,7 @@ Theory](https://link.springer.com/journal/40993).
 The official scope covers number theory and arithmetic geometry.  The paper's
 finite squareclass classification, explicit genus-one quartics, integral-point
 proofs and reproducible descent-style reductions fit that scope.  A submission
-should explain why reducing the canonical universe to 4 necessary patterns is
+should explain why reducing the canonical universe to 2 necessary patterns is
 a standalone advance even though the paper does not decide `R_2(7)`.
 
 ## Backup 1: Journal of Number Theory

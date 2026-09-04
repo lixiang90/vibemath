@@ -9,42 +9,52 @@ common nontrivial pure cubic field is exactly four:
 `R^times_(3,1)(5) = 4`.
 
 The upper bound uses the Kummer kernel, 25 colour orbits, and finite-field
-obstructions for all 60 local models.  The lower bound is witnessed by
+obstructions for all 60 local models. The lower bound is witnessed by
 `(-3,-1,1,3,5)` over `Q(cuberoot(3))` with the normalization stated in the
 paper.
 
-The result does not classify all four-hit progressions.  Of the original 31
-open colour/position models, six branches described below are now proved to
-have positive rank; the other 25 remain open.  The prior-art search is
-evidence of a careful search, not a proof of novelty.
-`NEXT_CUBE_MATH_NOVELTY_AUDIT.md` gives the claim-by-claim correctness and
-prior-art audit of the exact maximum.
+The result does not classify all four-hit progressions. Of the original 31
+open colour/position models, six have proved positive-rank infinite families
+and one further model has a rigorously verified nondegenerate point. Thus
+seven are closed for existence and 24 remain open. The unreviewed rank-zero
+quotient notes from Round 11 are not included in this count or in the
+manuscript's theorems.
 
-Draft journal-facing prose is collected in `submission/`; author identity,
-funding, conflicts, venue approval, and an immutable release locator remain
-human-supplied gates.
+The prior-art search is evidence of a careful search, not a proof of novelty.
+`NEXT_CUBE_MATH_NOVELTY_AUDIT.md` gives the claim-by-claim correctness and
+prior-art audit. Draft journal-facing prose is collected in `submission/`.
+The requested author is Codex (GPT-5.6-sol); no affiliation, ORCID,
+corresponding-author address, or actual submission is asserted.
 
 ## Four-hit extension
 
-Six of the original 31 four-hit models are now proved to have positive rank.
-The first four are
-`((0,1,3,4),0001)`, `((0,1,2,3),0010)`, `((0,1,2,3),0100)`, and
-`((0,1,2,4),0111)`.  All arise from the smooth diagonal cubic
-`2X^3-3Y^3+Z^3=0`, which supplies infinitely many inequivalent four-hit
-progressions in each model.  The earlier displayed AP
-`(64,1,-62,-125,-188)` realizes them over `Q(cuberoot(188))` and
-`Q(cuberoot(62))` for the first two.  The reversed pair
-`(-125,-62,1,64,127)` and `(127,64,1,-62,-125)` realizes the latter two over
-`Q(cuberoot(62))` and `Q(cuberoot(127))`.  See
-`PAPER_CUBE_FOURHIT_0001_ROUND_07.md` and
-`PAPER_CUBE_FOURHIT_0010_ROUND_08.md`, together with the Round09 report; the
-second positive-rank cubic `3X^3-4Y^3+Z^3=0` supplies the two further models
-`((0,1,2,4),0010)` and `((0,1,3,4),0010)`.  Its first AP is
-`(125,8,-109,-226,-343)`, over `Q(cuberoot(109))` and
-`Q(cuberoot(226))`, respectively.  See
-`PAPER_CUBE_FOURHIT_3PLUS1_ROUND_10.md`; the other 25 models remain open.
+The first six closed models have infinite families. Four arise from
+`2X^3-3Y^3+Z^3=0`:
 
-Complete mathematical check (36 tests):
+- `((0,1,3,4),0001)`;
+- `((0,1,2,3),0010)`;
+- `((0,1,2,3),0100)`;
+- `((0,1,2,4),0111)`.
+
+The second positive-rank cubic `3X^3-4Y^3+Z^3=0` supplies
+
+- `((0,1,2,4),0010)`;
+- `((0,1,3,4),0010)`.
+
+The seventh existence closure is `((0,1,2,4),0102)`. Its genus-four curve is
+
+`(X^3+Y^3)(2Y^3-X^3)=2W^3`.
+
+The point `(X:Y:W)=(2:1:-3)` yields the integer AP
+`(64,36,8,-20,-48)` over `Q(cuberoot(6))`. The natural quotient
+`v^2=u^3+9` contains the certified non-torsion image `(6,15)`. This proves
+existence in the seventh model, not infinitely many rational points on the
+genus-four source.
+
+See `PAPER_CUBE_FOURHIT_EXISTENCE_ROUND_11.md` and the exact script,
+certificate, and independent test in `code/`.
+
+Complete mathematical check (42 tests):
 
 ```powershell
 python -m unittest discover -s code -p "*_test.py" -v

@@ -2,7 +2,7 @@
 
 Search date: 2026-09-03. Result status: **exact formulation not found in the
 accessible search results**. This is not a proof of novelty and does not replace
-MathSciNet/zbMATH review by a human author or referee.
+MathSciNet/zbMATH review by an independent researcher or referee.
 
 ## Target formulation searched
 
@@ -69,3 +69,14 @@ citations forward/backward in MathSciNet and zbMATH, inspect theses and
 non-English literature, and ask a specialist in Diophantine equations or
 arithmetic progressions of powers. The manuscript currently avoids “first,”
 “new,” and exhaustive-prior-art language.
+
+
+## Round-11 existence-result boundary
+
+The exact model \(((0,1,2,4),0102)\), its curve
+\((X^3+Y^3)(2Y^3-X^3)=2W^3\), and the progression
+\((64,36,8,-20,-48)\) over \(\mathbf Q(\sqrt[3]{6})\) were not the subject
+of a completed MathSciNet or zbMATH search in this round. They are therefore
+stated as a verified existence result with no priority language. The
+unreviewed rank-zero quotient notes are not incorporated into the manuscript
+theorem or novelty claim.

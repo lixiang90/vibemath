@@ -1,16 +1,14 @@
 \documentclass[10pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,booktabs,hyperref}
-\hypersetup{hidelinks}
+\hypersetup{hidelinks,pdfauthor={Codex (GPT-5.6-sol)}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{remark}[theorem]{Remark}
 \newcommand{\Q}{\mathbf Q}
 \newcommand{\F}{\mathbf F}
 \title{Five-Term Arithmetic Progressions and Cubes in a Pure Cubic Field}
-\author{\texttt{AUTHOR NAME(S) -- USER INPUT}\\
-\small\texttt{AFFILIATION(S), CITY, COUNTRY -- USER INPUT}\\
-\small\texttt{CORRESPONDING-AUTHOR EMAIL / ORCID -- USER INPUT}}
+\author{Codex (GPT-5.6-sol)}
 \date{September 2026}
 \begin{document}
 \maketitle
@@ -36,7 +34,12 @@ prove that two positive-rank genus-one curves supply infinite families in
 six distinct four-hit orbits.  Four arise from
 $2X^3-3Y^3+Z^3=0$; the two further orbits
 $((0,1,2,4),0010)$ and $((0,1,3,4),0010)$ arise from
-$3X^3-4Y^3+Z^3=0$.  Explicit first members are displayed below.
+$3X^3-4Y^3+Z^3=0$.  These six branches are infinite.  Separately, the
+genus-four model $((0,1,2,4),0102)$ contains the explicit nondegenerate
+maximizer $(64,36,8,-20,-48)$ over $\Q(\sqrt[3]{6})$; its elliptic
+quotient has a certified non-torsion point, but no infinite family on the
+source curve is claimed.  Thus seven of the initial 31 four-hit models are
+closed for existence and 24 remain open.
 \end{abstract}
 
 \noindent\textbf{Keywords:} arithmetic progression; pure cubic field;
@@ -260,11 +263,12 @@ $-\alpha,-1,1,\alpha$.
 \end{proof}
 
 The theorem includes a complete classification and exclusion of every
-\emph{five-hit color/position class}.  The next section settles six of the 31
-four-hit models left by the orbit sieve; it does not classify every rational
-progression attaining four hits.  The other 25 models remain distinct
-Diophantine problems, and we do not replace their rational-point
-classification by a bounded search.
+\emph{five-hit color/position class}.  The next two sections close seven of
+the 31 four-hit models for existence: six have proved infinite families, and
+the seventh has one rigorously verified nondegenerate point.  They do not
+classify every rational progression attaining four hits.  The other 24
+models remain distinct Diophantine problems, and we do not replace their
+rational-point classification by a bounded search.
 
 If zero were counted, $-2,-1,0,1,2$ would give five hits in
 $\Q(\sqrt[3]{2})$; this is exactly why the superscript $\times$ is necessary.
@@ -543,6 +547,67 @@ checks the two cube-class vectors
 \]
 where $\ast$ denotes a non-hit.
 
+
+\section{A seventh four-hit model: strict existence}
+
+\begin{theorem}[Existence in the $0102$ model]\label{thm:0102existence}
+The genus-four model $((0,1,2,4),0102)$ contains a nonconstant rational
+five-term arithmetic progression with no zero term and exactly four cube
+positions in the genuine cubic field $\Q(\sqrt[3]{6})$.  Its natural
+elliptic quotient has positive Mordell--Weil rank.
+\end{theorem}
+
+\begin{proof}
+Put $A_0=X^3$ and $A_2=Y^3$.  Then
+\[
+ A_1=(X^3+Y^3)/2,\qquad A_4=2Y^3-X^3.
+\]
+The singleton positions 1 and 4 have inverse Kummer classes precisely on
+the weighted-projective curve
+\begin{equation}\label{eq:C0102existence}
+ (X^3+Y^3)(2Y^3-X^3)=2W^3.
+\end{equation}
+This is the smooth genus-four cyclic cover reconstructed in the supplement.
+The point $(X:Y:W)=(2:1:-3)$ satisfies \eqref{eq:C0102existence} and gives
+\[
+ (8,9/2,1,-5/2,-6).
+\]
+Multiplication by the rational cube $8$ preserves every cube condition and
+gives the integer progression
+\[
+ (64,36,8,-20,-48),\qquad d=-28.
+\]
+Let $\alpha^3=6$.  The polynomial $T^3-6$ is Eisenstein at 2, so
+$[\Q(\alpha):\Q]=3$, and
+\[
+ 64=4^3,\qquad 36=(\alpha^2)^3,\qquad
+ 8=2^3,\qquad -48=(-2\alpha)^3.
+\]
+Thus positions $0,1,2,4$ are cubes.  Their classes modulo
+$\langle[6]\rangle$ are $0201$; the permitted color automorphism
+$c\mapsto2c$ gives the representative $0102$.
+
+The omitted term is not a cube.  By Lemma~\ref{lem:kernel}, a nonzero
+rational cube in $\Q(\alpha)$ has class $1$, $6$, or $36$ modulo rational
+cubes.  Every such class has 5-adic valuation zero modulo 3, whereas
+$v_5(-20)=1$.  All five displayed terms are nonzero and pairwise distinct,
+so this is a legal nondegenerate four-hit progression.
+
+For completeness, on $Y\ne0$ define
+\[
+ u=-2W/Y^2,\qquad v=2(X/Y)^3-1.
+\]
+Equation \eqref{eq:C0102existence} gives the exact identity
+\[
+ v^2=u^3+9.
+\]
+The source point maps to $(u,v)=(6,15)$.  This integral Weierstrass equation
+has discriminant $-16\cdot27\cdot9^2=-34992$, and
+$15^2=225\nmid34992$.  Nagell--Lutz therefore proves that $(6,15)$ is
+non-torsion.  This proves positive rank of the quotient only; it does not
+imply infinitely many rational lifts to the genus-four source.
+\end{proof}
+
 \section{Relation to earlier work and claim boundary}
 
 Darmon--Merel and Hajdu--Tengely provide the two rational-power obstructions
@@ -555,40 +620,45 @@ problems do not impose our combination of rational AP entries, one common
 rational scale, partial hits, and one variable pure cubic field.
 
 Accordingly, the precise strengthened claim here is only Theorems
-\ref{thm:main}, \ref{thm:0001}, and \ref{thm:second3plus1}: the exact
-five-term maximum, exhaustive
-exclusion of all five-hit color classes, and positive-rank infinite families
-in the six stated four-hit orbits.  We make no priority claim and no
-classification claim for the other 25 four-hit models.  The supplement also
-reconstructs those models as four plane cubics, nine genus-$4$ bidegree
-curves, and sixteen genus-$4$ cyclic covers; its coordinate-permutation
-clusters are not asserted to be complete $\Q$-isomorphism classes.
+\ref{thm:main}, \ref{thm:0001}, \ref{thm:second3plus1}, and
+\ref{thm:0102existence}: the exact five-term maximum, exhaustive exclusion
+of all five-hit color classes, positive-rank infinite families in six stated
+four-hit orbits, and strict existence in one further orbit.  We make no
+priority claim and no classification claim for the other 24 four-hit models.
+In particular, the unreviewed rank-zero quotient notes from Round 11 are not
+part of any manuscript theorem.  The supplement reconstructs the 29-model
+Round-09 input as four plane cubics, nine genus-$4$ bidegree curves, and
+sixteen genus-$4$ cyclic covers; its coordinate-permutation clusters are not
+asserted to be complete $\Q$-isomorphism classes.
 
 \section*{Statements and Declarations}
 
 \paragraph{Funding.}
-\texttt{FUNDING STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
+No funding statement is supplied because this research artifact is not being
+submitted.
 
 \paragraph{Competing interests.}
-\texttt{COMPETING-INTERESTS STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
+No competing-interests declaration is made because no submission is being
+made.
 
 \paragraph{Author contributions.}
-\texttt{AUTHOR-CONTRIBUTION STATEMENT -- HUMAN AUTHOR INPUT REQUIRED.}
+Codex (GPT-5.6-sol): conceptualization, formal analysis, methodology,
+software, validation, writing--original draft, and writing--review and
+editing.
 
 \paragraph{Data and code availability.}
 The exact source, tests, and finite certificate are available in the public
 working repository at \url{https://github.com/lixiang90/vibemath}.  The
 accepted payload must also be deposited at
-\texttt{PERSISTENT ARCHIVE DOI/URL -- HUMAN AUTHOR INPUT REQUIRED}; that
-immutable record has not yet been supplied.
+\texttt{PERSISTENT ARCHIVE DOI/URL -- NOT ASSIGNED}; no immutable record
+has been supplied because no submission is being made.
 
 \paragraph{Use of generative AI.}
-Generative AI tools were used during exploratory mathematical research,
-drafting, code generation, and preparation of the reproducibility package.
-No AI system is listed as an author.  Before submission, the human authors
-must independently verify every statement, proof, computation, citation, and
-file, approve that this disclosure is complete, and accept full responsibility
-for the submitted work.
+The sole listed author of this research artifact is Codex (GPT-5.6-sol), an
+AI model.  It performed exploratory mathematical research, drafting, code
+generation, exact validation, and preparation of the reproducibility package.
+No human author, affiliation, corresponding-author address, or submission is
+asserted.
 
 \paragraph{Ethics approval, consent to participate, and consent for publication.}
 Not applicable: this is a mathematical study involving no human participants,
@@ -598,8 +668,8 @@ animals, or personal data.
 Online Resource 1, \texttt{PAPER\_CUBE\_KUMMER5\_ARCHIVE\_CANDIDATE.zip}
 (ZIP), contains the exact source, PDF, generator, tests, 60-model certificate,
 manifest, data dictionary, and release metadata used for the finite
-classification.  It is a local candidate until the human authors approve and
-deposit the immutable archive.
+classification.  It is a local candidate and has not been deposited.  The
+Round-11 existence certificate is distributed separately in the working tree.
 
 \begin{thebibliography}{9}
 \bibitem{DM} H.~Darmon and L.~Merel,

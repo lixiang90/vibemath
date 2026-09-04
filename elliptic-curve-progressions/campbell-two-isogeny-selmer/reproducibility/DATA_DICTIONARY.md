@@ -216,7 +216,22 @@ File/schema: `PAPER_ELLIPTIC_RELEASE_MANIFEST.json`,
   rebuild, page/text checks and machine-checkable RNT metadata. This is an
   execution record, not mathematical evidence beyond the tests it identifies.
 
-## 7. Eligibility and supersession quick reference
+## 7. Round-11 exact isogeny-Selmer audit
+
+Certificate: ../certificates/round11_isogeny_selmer_audit.json
+Generator: ../code/NEXT_ELLIPTIC_ROUND_11.py
+Regression test: ../code/NEXT_ELLIPTIC_ROUND_11_test.py
+
+This certificate checks the two isogeny maps and covering identity
+symbolically, proves the union of required places, binds the Round-09 and
+Round-10 uniform local gates by SHA-256, revalidates all 84 finite positive
+primitive witnesses for the twelve surviving classes, checks both survivor
+sets are squareclass subgroups, and records Selmer dimensions 3 and 2. Its
+rank field stores only rank_upper_bound=3 and exact_rank_claimed=false. It is
+not evidence for a full 2-Selmer group, exact rank, Cassels--Tate value, or
+ninth point.
+
+## 8. Eligibility and supersession quick reference
 
 | Object | May support | Must not support |
 |---|---|---|

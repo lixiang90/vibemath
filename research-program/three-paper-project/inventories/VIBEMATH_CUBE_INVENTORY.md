@@ -7,8 +7,8 @@
 
 | 源文件 | 目标文件 | 证据角色 |
 |---|---|---|
-| `PAPER_CUBE_KUMMER5_TEX.tex` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/main.tex` | 权威论文源；包含 Kummer kernel、25 轨道、60 个好素数模障碍、下界见证、六个正秩四命中模型及精确 claim boundary。 |
-| `PAPER_CUBE_KUMMER5_TEX.pdf` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/main.pdf` | 与上述 TeX 对应的当前八页可读快照；供数学内容和版面复核，不作为源码替代。 |
+| `PAPER_CUBE_KUMMER5_TEX.tex` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/main.tex` | 权威论文源；包含 Kummer kernel、25 轨道、60 个好素数模障碍、下界见证、六个正秩无穷族模型、一个额外存在性模型及精确 claim boundary。 |
+| `PAPER_CUBE_KUMMER5_TEX.pdf` | `vibemath/powers-in-progressions/pure-cubic-five-term/paper/main.pdf` | 与上述 TeX 对应的当前九页可读快照；供数学内容和版面复核，不作为源码替代。 |
 
 ## 代码：code
 
@@ -44,7 +44,7 @@
 | `PAPER_CUBE_KUMMER5_SUBMISSION/data_dictionary.md` | `vibemath/powers-in-progressions/pure-cubic-five-term/reproducibility/CERTIFICATE_SCHEMA.md` | 逐字段解释证书顶层、60 条局部记录、`p^2-1` 扫描恒等式和 good-prime 布尔量。 |
 | `PAPER_CUBE_KUMMER5_ROUND_06_REPORT.md` 的第 8 节 + `PAPER_CUBE_KUMMER5_test.py` | `vibemath/powers-in-progressions/pure-cubic-five-term/reproducibility/REPRODUCE.md` | 形成 GitHub 布局下的最小复现入口：运行同目录九项测试、重生成证书、双编译 TeX；只抽取数学命令，不继承旧投稿 ZIP/manifest 拓扑。 |
 
-## Round07--Round10 四命中严格增量
+## Round07--Round11 四命中严格增量
 
 | 轮次 | 当前文件 | 严格结论与边界 |
 |---|---|---|
@@ -52,9 +52,13 @@
 | Round08 | `PAPER_CUBE_FOURHIT_0010_ROUND_08.md`; `code/PAPER_CUBE_FOURHIT_0010.py`; 对应 test/certificate | 第二模型闭合，并经显式对称得到后续可复用分支 |
 | Round09 | `PAPER_CUBE_FOURHIT_CLUSTER_ROUND_09.md`; `code/PAPER_CUBE_FOURHIT_CLUSTER_ROUND09.py`; 对应 test/certificate | 29 个待处理模型在明确置换作用下聚成 25 类；这不是任意 `Q`-同构分类 |
 | Round10 | `PAPER_CUBE_FOURHIT_3PLUS1_ROUND_10.md`; `code/PAPER_CUBE_FOURHIT_3PLUS1_ROUND10.py`; 对应 test/certificate；`reviews/ROUND_10_CROSS_REVIEW.md` | `3X^3-4Y^3+Z^3=0` 正秩，闭合两个新模型；交叉审稿 PASS |
+| Round11 | `PAPER_CUBE_FOURHIT_EXISTENCE_ROUND_11.md`; `code/PAPER_CUBE_FOURHIT_EXISTENCE_ROUND11.py`; `code/PAPER_CUBE_FOURHIT_EXISTENCE_ROUND11_CERTIFICATE.json`; `code/PAPER_CUBE_FOURHIT_EXISTENCE_ROUND11_test.py`; `reviews/ROUND_11_CROSS_REVIEW.md` | `((0,1,2,4),0102)` 由 `(64,36,8,-20,-48)` 在 `Q(cuberoot(6))` 中严格作存在性闭合；椭圆商正秩，但不推出亏格 4 源曲线无穷族；交叉审稿 PASS |
 
-当前结论为原 31 个四命中模型中 6 个具有正秩无穷族，25 个仍开；不声称精确
-秩、完整 Mordell--Weil 基或完整极值分类。pure-cubic 组当前 36 项测试通过。
+当前结论为原 31 个四命中模型中 6 个具有严格无穷族，第 7 个仅有一个合法非退化
+AP 的存在性闭合，24 个仍开；不声称第 7 个源曲线有无穷点、精确秩、完整
+Mordell--Weil 基或完整极值分类。Round11 pure-cubic 组在当前工作树 42/42 通过；
+冻结提交和 cold reproduction 为 PENDING。当前论文 9 页，唯一署名为
+`Codex (GPT-5.6-sol)`；只要求 submission-ready，不实际投稿，不虚构其他身份字段。
 
 ## 长期线建议一：P6 四次幂问题（独立 paper 目录）
 
@@ -94,4 +98,5 @@
 | `PAPER_CUBE_C29_rank_points.m`, `PAPER_CUBE_C29_isomorphism_gate.m`, `PAPER_CUBE_P6_elliptic_quotients.m`, `STUDENT_CUBE_ROUND_0*_rank*.m`, `STUDENT_CUBE_ROUND_05_magma*.m` | 未执行或未获信任的 CAS 输入，无可提升的数学输出。 |
 | `STUDENT_CUBE_ROUND_04_SYNTHETIC_*`, `STUDENT_CUBE_ROUND_04_pipeline.py`, `STUDENT_CUBE_ROUND_05_promote.py` 及 fake-Magma fixtures | synthetic/promotion 工程，不是数学证据。 |
 | `STUDENT_CUBE_ROUND_02_*` 至 `STUDENT_CUBE_ROUND_05_*` 的 N=20 困难模式流水线 | 早期长期主线实验，未形成本文 Kummer5 定理的必要证据。 |
+| `code/PAPER_CUBE_FOURHIT_RANKZERO_ROUND11.py` 及任何未交叉审稿的秩零商簇草稿 | 搜索/整理材料尚未给出完整源曲线点分类或严格排除；不得混入 Round11 主定理或闭合计数。 |
 | `PAPER_CUBE_KUMMER5_MANUSCRIPT_REVIEW_SQUARE_06.md`, `PAPER_CUBE_KUMMER5_FINAL_REPAIR_06.md`, `PAPER_CUBE_KUMMER5_FINAL_RELEASE_HYGIENE_06.md`, `PAPER_CUBE_KUMMER5_EXTERNAL_REVIEW_ELLIPTIC_07.md` | 已被最终数学审稿取代，或主要审计投稿包/归档拓扑；不进入纯数学 GitHub 树。 |

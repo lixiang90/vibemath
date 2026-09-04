@@ -1,36 +1,24 @@
-# Human inputs and approvals required before submission
+# Optional inputs if actual submission is later requested
 
-## Blocking
+No actual submission is requested in the present project. Author identity is
+fixed as Codex (GPT-5.6-sol). No affiliation, ORCID, corresponding-author
+address, or institutional identity may be invented.
 
-1. Select the target journal and recheck its current scope, template,
-   supplementary-file and AI-use rules.
-2. Supply the approved author order, names, affiliations, ORCIDs if desired,
-   corresponding-author email and postal address.
-3. Independently verify every proof, the exact role of both cited papers, all
-   60 certificate entries and the English manuscript.
-4. Decide whether the current eight-page research note is sufficiently
-   contextualized for the chosen venue or needs a fuller introduction.
-5. Deposit the exact bundle and root manifest in a persistent archive; replace
-   `<<ARCHIVE DOI / URL>>` only after deposit.
-6. Approve funding, acknowledgements, conflicts, data/code and AI-use
-   declarations. Explicitly confirm “none” where appropriate.
-7. Confirm originality, author consent and that the manuscript is not under
-   consideration elsewhere.
+If an actual submission is later contemplated:
 
-## Journal-dependent
+1. Select a target journal and recheck its authorship, AI-use, template, and
+   supplementary-file rules.
+2. Determine whether that journal permits the stated AI authorship. Do not
+   substitute a human author or weaken the disclosure.
+3. Independently recheck the proofs, external theorem use, 60-cell
+   certificate, and Round-11 existence certificate.
+4. Complete MathSciNet/zbMATH screening and citation-forward/backward review.
+5. Deposit an exact release under an immutable DOI or URL and regenerate all
+   hashes.
+6. Supply only truthful funding, competing-interest, correspondence, licence,
+   and archive information.
 
-- Apply the journal's current LaTeX class and bibliography style.
-- Choose MSC codes and keywords; suggested starting points are 11B25, 11D41,
-  11R16, 11Y50 and “arithmetic progression, pure cubic field, Kummer class,
-  perfect cube, local obstruction.” Human authors must check suitability.
-- Enter suggested/opposed reviewers only with conflict checks and honest reasons.
-- Select licence/open-access options and verify any funding constraints.
-
-## Deliberately unresolved
-
-Do not state that all four-hit maximizers are classified. Six of the 31
-models are solved by positive-rank arguments; the other 25 need not be solved
-before submitting the exact-maximum theorem.  Likewise, do not describe the
-25 Round-09 reuse clusters as an arbitrary-`Q`-isomorphism classification:
-they are certified only under the explicitly recorded coordinate and factor
-permutations.
+Do not state that all four-hit maximizers are classified. Six models have
+positive-rank infinite families; one further model is closed only for
+existence; 24 remain open. Do not incorporate the unreviewed rank-zero
+quotient notes into a theorem or count.

@@ -13,9 +13,9 @@ over journal-specific formatting.
 
 | Theme / paper | Status | Main result or current boundary |
 |---|---|---|
-| `square-progressions/seven-consecutive-squareclasses` | internally accepted + Round10 gate | For integer `t`, the equality patterns of the nonzero block `t,...,t+6` with affine rational squareclass rank at most two are reduced through the exact chain `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7 -> 4`.  Realizability or impossibility of the final 4 patterns, and therefore `R_2(7)`, remain open. |
-| `powers-in-progressions/pure-cubic-five-term` | internally accepted + Round10 extension | `R^times_(3,1)(5)=4`; six of the 31 four-hit models now yield infinite families.  The Round09 reconstruction groups its 29-model input into 25 clusters under the explicitly stated permutation action, and 25 models remain open after the Round10 extension. |
-| `elliptic-curve-progressions/campbell-two-isogeny-selmer` | internally accepted + Round10 local gate | Exact two-isogeny Selmer groups and `rank <= 3`; an explicit global minimal model has conductor `301245307115205810`.  Round09 reduces the 32 `E`-side support classes to 8 necessary classes using the real place and either `p=59` or `71699`; Round10 proves that the `E'`-side `Q_2` and `Q_3` conditions intersect in exactly 4 classes.  No ninth rational point, global obstruction, full 2-Selmer group, Cassels--Tate value, or rank equality is claimed. |
+| `square-progressions/seven-consecutive-squareclasses` | internally accepted + Round11 gate | For integer `t`, the equality patterns of the nonzero block `t,...,t+6` with affine rational squareclass rank at most two are reduced through the exact chain `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7 -> 4 -> 2`.  Realizability or impossibility of the final 2 patterns, and therefore `R_2(7)`, remain open. |
+| `powers-in-progressions/pure-cubic-five-term` | internally accepted + Round11 existence extension | `R^times_(3,1)(5)=4`; six of the initial 31 four-hit models yield infinite families, and a seventh has a rigorously verified nondegenerate point.  The Round09 reconstruction groups its 29-model input into 25 clusters under the explicitly stated permutation action.  Seven models are closed for existence and 24 remain open; no infinite family is claimed for the seventh genus-four source. |
+| `elliptic-curve-progressions/campbell-two-isogeny-selmer` | internally accepted + Round11 exact descent | The two exact isogeny Selmer groups have dimensions 3 and 2, giving only `rank <= 3`; an explicit global minimal model has conductor `301245307115205810`.  The exact support/place bridge incorporates the Round09 `E`-side and Round10 `E'`-side local theorems and revalidates every surviving bad-place witness.  No ninth rational point, global obstruction, full 2-Selmer group, Cassels--Tate value, or rank equality is claimed. |
 | `square-progressions/magic-squares-over-number-fields` | active long-term project | Searches and reductions for order-three magic squares of squares over low-degree number fields; exploratory outputs are not promoted to theorems. |
 | `powers-in-progressions/fourth-powers-six-term` | active long-term project | Exact reductions and quotient maps for the six-term fourth-power problem; `P_6(4)` remains open. |
 | `powers-in-progressions/elliptic-simultaneous-torsion-c29` | active long-term project | Explicit genus-two model and birational-map audit; rank and complete rational-point set remain open. |
@@ -27,6 +27,10 @@ and unexecuted CAS outputs are not.
 The three internally accepted projects each contain a `NEXT_*_MATH_NOVELTY_AUDIT.md`
 report.  A bibliographic “not found” result is treated as priority-risk
 evidence, never as proof that a result is first.
+
+The sole named author of the three research-ready manuscripts is
+`Codex (GPT-5.6-sol)`.  No affiliation, contact address, ORCID, funding source,
+venue selection, or actual journal submission is asserted.
 
 No software or document license has yet been selected.  Until one is added,
 ordinary copyright law applies.

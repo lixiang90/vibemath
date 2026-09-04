@@ -1,36 +1,22 @@
 # Data and code availability
 
-All code and finite certificate data needed for the theorem are in the public
-working archive at
+All code and finite certificate data are in the public working repository:
 <https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term>.
-The existing repository-root `MANIFEST.sha256` describes the last frozen
-payload.  The Round-10 extension and this synchronized submission prose still
-require a newly generated root manifest before release.  No preservation
-service DOI or frozen GitHub release has yet been assigned.
 
-The current Round-10 extension is reproduced by 36 tests and includes the
-29-model reconstruction, the 25 explicit coordinate-permutation clusters,
-and six closed positive-rank orbits, leaving 25 models open.  The new exact
-certificate
-`code/PAPER_CUBE_FOURHIT_3PLUS1_ROUND10_CERTIFICATE.json` has SHA-256
-`1bdadc0c5afa58d69d1d8803a4e23149f0140af5fee1d52a1a1f028ff8963687`.
-The corrected Round-09
-certificate
-`code/PAPER_CUBE_FOURHIT_CLUSTER_ROUND09_CERTIFICATE.json` has SHA-256
-`4217f170ce6cd27d488811119289dd1cccb480b47c536c23bd10be99b1193662`.
-Cross-review found and repaired a metadata-only variable interchange in the
-`0100` zero-boundary record; the generator and test now check the underlying
-polynomial identities rather than comparing descriptive strings alone.
+The complete cube test suite currently has 42 tests. The Round-11 existence
+closure has a primary exact implementation, an independent implementation
+test, and the frozen certificate
+`code/PAPER_CUBE_FOURHIT_EXISTENCE_ROUND11_CERTIFICATE.json`, SHA-256
+`ae840c1ad7b332322da97bd4d59d20222411a26c506b4701bbbb40fddd41035c`.
+It proves one legal AP in the model ((0,1,2,4),0102), increasing the
+existence-closed count from six to seven and leaving 24 models open.
 
-Persistent archive DOI: `<<ARCHIVE DOI — USER INPUT>>`
+The unreviewed rank-zero quotient notes from Round 11 are not part of the
+paper's theorem, closed count, or release claim. The historical supplement
+manifest must not be silently rewritten. No preservation DOI, frozen release,
+or immutable archive has been assigned because no actual submission is being
+made.
 
-Persistent archive URL: `<<IMMUTABLE RELEASE URL — USER INPUT>>`
-
-The historical supplement manifest describes its original local release and
-must not be silently rewritten.  Before submission, freeze the current public
-payload under an immutable release URL or DOI and verify the download against
-the root hash manifest.  If any file changes, issue a new semantic release and
-regenerate all hashes rather than reusing the old locator.
-
-Suggested final wording after deposit: “The exact source, tests, certificate,
-manifest and manuscript for this release are archived at <<DOI/URL>>.”
+Suggested wording after a future deposit: “The exact source, tests,
+certificates, manifest, and manuscript for this release are archived at
+<<DOI/URL>>.”

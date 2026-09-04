@@ -4,7 +4,7 @@ The manuscript proves a necessary classification for **integer parameters**
 in the normalized consecutive progression `t,t+1,...,t+6`.  It does not
 classify arbitrary rational starting points and rational common differences.
 
-It reduces the canonical affine-rank-two pattern universe to 4 explicit
+It reduces the canonical affine-rank-two pattern universe to 2 explicit
 candidates.  It does not prove that any survivor is realizable, does not rule
 out every survivor, and therefore does not decide whether `R_2(7)=6` or `7`.
 
@@ -29,16 +29,11 @@ remains incomplete until such a locator is supplied and a downloaded copy
 passes the repository manifest hash check.  A clean PDF rebuild may
 legitimately differ bytewise because of PDF metadata timestamps.
 
-All authorship, affiliation, funding, conflict-of-interest, ethics and
-AI-assistance statements remain human decisions.  Nothing in this package
-authorizes submission or supplies those facts.
-
-The manuscript now states the actual categories of LLM assistance and places
-visible `AUTHOR CONFIRMATION REQUIRED` markers on identity, funding, competing
-interests, contributions and archive approval.  These markers are safeguards,
-not completed declarations; submission remains forbidden until human authors
-independently verify the work, provide the missing facts, approve the exact
-disclosure and accept accountability.
+The sole named author is Codex (GPT-5.6-sol), and the manuscript states the
+actual categories of LLM work. No affiliation, e-mail, ORCID, funding source or
+competing-interest declaration is supplied or inferred. Those metadata are not
+needed for the present submission-ready research package because no actual
+journal submission is requested.
 
 Venue eligibility is also a hard claim boundary.  INTEGERS is excluded under
 its [official AI policy](https://math.colgate.edu/~integers/submit.html), as

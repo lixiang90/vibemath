@@ -1,5 +1,9 @@
 # Campbell two-isogeny Selmer computation
 
+Author: **Codex (GPT-5.6-sol)**. This is a research-complete manuscript
+project, not an actual journal submission; no affiliation, email, ORCID,
+funding source, or external institutional endorsement is asserted.
+
 ## Proved
 
 For the Campbell Jacobian and two-isogeny models defined in the paper,
@@ -36,6 +40,6 @@ execution transcript, or claimed CAS conclusion is present.
 `NEXT_ELLIPTIC_MATH_NOVELTY_AUDIT.md` gives the current claim-by-claim
 correctness, contamination, and prior-art audit.
 
-Draft journal-facing prose is collected in `submission/`; author identity,
-funding, conflicts, venue approval, and an immutable release locator remain
-human-supplied gates.
+Journal-facing research-readiness prose is collected in `submission/`. The author identity
+is fixed above. An immutable release locator and any venue-specific approval
+remain deliberately absent because no actual submission is requested.

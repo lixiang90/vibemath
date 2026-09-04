@@ -289,15 +289,40 @@ Claim eligibility: exact evidence for the complete mask-54 integral-point
 theorem and the 7-to-4 exclusion.  It does not assert realizability of a
 remaining pattern or decide `R_2(7)`.
 
+Supersession: the mask-85 certificate binds this four-row output and supplies
+the next complete exclusion.
+
+## `PAPER_SQUARE_MASK85_CERTIFICATE.json`
+
+Schema/version: `paper-square-mask85-v1`, semantic version `1.0.0`.
+
+- `input_sha256` binds the mask-54 four-row output, the Round-04 occurrence
+  table and the Round-02 canonical partition table.
+- `occurrence_inventory` independently reconstructs 60 character occurrences,
+  37 masks, 19 genus-one masks, the complete remaining constant-pairable
+  ranking and the two exact mask-85 occurrence records.
+- `integral_points` stores the centered variable `x=t+3`, the identity
+  `(x^2-9)(x^2-1)`, the constant-eight pairing, both squarefree kernels, the
+  exhaustive seven-integer sign-complement interval, the complete six-point
+  list and the zero position in the original block.
+- `pattern_impact` stores four input patterns, IDs `31,276` excluded at the
+  same normalized parameter, and the two surviving canonical partitions.
+- `bounded_search_used=false` and `mordell_weil_used=false` are explicit
+  claim-boundary flags.
+
+Claim eligibility: exact evidence for the complete mask-85 integral-point
+theorem and the 4-to-2 exclusion.  It does not assert realizability of either
+remaining pattern or decide `R_2(7)`.
+
 Supersession: this is the terminal mathematical certificate in supplement
-v0.9.0. A later gate must use a new semantic version and manifest hash.
+v0.10.1. A later gate must use a new semantic version and manifest hash.
 
 ## `PAPER_SQUARE_SUPPLEMENT_MANIFEST.json`
 
 Schema/version: `paper-square-supplement-manifest-v1`, semantic version
-`0.9.0`, release id `paper-square-supplement-v0.9.0`.
+`0.10.1`, release id `paper-square-supplement-v0.10.1`.
 
-- `files` is the exact 35-row mathematical allowlist.  Each row has `path`
+- `files` is the exact 38-row mathematical allowlist.  Each row has `path`
   (`string`), `bytes` (`integer`, bytes), `sha256` (`string`), `role` (`string`)
   and `mathematical_evidence_eligible` (`boolean`).
 - `runtime` records Python and SymPy version strings;
@@ -309,9 +334,11 @@ Schema/version: `paper-square-supplement-manifest-v1`, semantic version
 Claim eligibility: only listed bytes with `mathematical_evidence_eligible=true`
 may support the stated proved boundary, subject to every internal warning.
 
-Supersession: v0.9.0 supersedes v0.8.0 mathematically by adding the complete
-mask-54 gate and its 7-to-4 exclusion. It is not yet bound by a
-new submission root; any future external package must bind this manifest hash.
+Supersession: v0.10.1 preserves the v0.10.0 mathematics and strengthens the
+independent occurrence/impact regression checks.  Version v0.10.0 superseded
+v0.9.0 mathematically by adding the complete mask-85 gate and its 4-to-2
+exclusion.  The patch release is not yet bound by a new submission root; any
+future external package must bind this manifest hash.
 
 ## `PAPER_SQUARE_SUBMISSION_MANIFEST.json`
 

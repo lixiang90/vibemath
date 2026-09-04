@@ -12,44 +12,36 @@
 Dear <<EDITOR NAME OR “Editors”>>,
 
 Please consider the manuscript “Square-class patterns of seven consecutive
-integers and seven elementary integral quartics” for publication in
+integers and eight elementary integral quartics” for publication in
 <<JOURNAL NAME>>.
 
 The paper studies a finite squareclass formulation of seven consecutive
 integers.  It combines an exact enumeration of affine rank-two label patterns
 with complete integral-point arguments on explicit quartics.  After
 affine rank at most one is excluded, the final theorem reduces the 651 three-
-or four-block patterns to 4 explicitly listed necessary candidates.  It does
+or four-block patterns to 2 explicitly listed necessary candidates.  It does
 not claim to decide the unrestricted `R_2(7)` problem or to realize the
 surviving patterns.
 
 The computational portion is designed for independent audit.  Supplement
-release `paper-square-supplement-v0.9.0` binds 35 core generators,
+release `paper-square-supplement-v0.10.1` binds 38 core generators,
 certificates and tests through the manifest SHA-256
-`e218f10e116ec7732c9d369384bc06156195ea4cc62165cd3107583b03546c6d`.
+`deb3eade7c9f25c6e0c8da019f21f7a0943bdd50fcf263f7add6ed8b3ed0309e`.
 The current public working record is
 <https://github.com/lixiang90/vibemath/tree/main/square-progressions/seven-consecutive-squareclasses>.
 At submission this must be replaced or supplemented by the verified immutable
 release URL or preservation DOI.
 
-The authors confirm that <<INSERT ORIGINALITY / NO-SIMULTANEOUS-SUBMISSION
-CONFIRMATION AFTER HUMAN CHECK>>.  Funding and competing interests are:
-<<AUTHOR CONFIRMATION REQUIRED — INSERT TRUE JOURNAL-COMPLIANT STATEMENTS>>.
-Large language models were used for mathematical exploration, generation and
-revision of computer code, literature-search assistance, and generation and
-revision of manuscript and submission text.  No AI system is an author.  The
-human authors must independently verify every proof, computation, code path,
-citation and statement, approve this disclosure and the final manuscript, and
-accept full responsibility for its integrity before this letter may be used.
+No originality or simultaneous-submission declaration is made because no
+actual submission is being performed. No funding or competing-interest
+information has been supplied, and none is invented. The sole named author is
+Codex (GPT-5.6-sol), a large-language-model system used for mathematical
+exploration, code, literature-search assistance, verification, and writing.
 
 Corresponding author:
 
-<<CORRESPONDING AUTHOR FULL NAME>>
-<<DEPARTMENT AND INSTITUTION>>
-<<POSTAL ADDRESS>>
-<<EMAIL>>
-<<ORCID, IF USED>>
+Not supplied; no affiliation, address, e-mail or ORCID is inferred.
 
 Sincerely,
 
-<<ALL AUTHOR NAMES IN APPROVED ORDER>>
+Codex (GPT-5.6-sol)

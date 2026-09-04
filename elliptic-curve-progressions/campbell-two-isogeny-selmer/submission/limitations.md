@@ -25,5 +25,5 @@
   “previously unknown” without a human bibliographic audit.
 - The source is public, but immutable archival reproducibility is incomplete
   until a release or preservation DOI is created and download-checked.
-- The current manuscript has 11 pages and the current regression suite has 65
+- The current manuscript has 11 pages and the current regression suite has 73
   tests; these counts are reproducibility metadata, not mathematical claims.

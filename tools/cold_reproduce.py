@@ -36,11 +36,11 @@ WARNING_PATTERNS = (
     r"undefined references",
     r"undefined citations",
 )
-EXPECTED_TEST_GROUP_COUNTS = [87, 33, 36, 14, 8, 65]
-EXPECTED_TEST_TOTAL = 243
+EXPECTED_TEST_GROUP_COUNTS = [96, 33, 42, 14, 8, 73]
+EXPECTED_TEST_TOTAL = 266
 EXPECTED_PDF_PAGES = {
     "squareclasses": 11,
-    "pure_cubic": 8,
+    "pure_cubic": 9,
     "campbell_selmer": 11,
 }
 

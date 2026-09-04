@@ -1,6 +1,11 @@
-# Minimum external information required from the user
+# Optional information for a later actual journal submission
 
-## Required before submission
+The mathematical package is considered submission-ready without an actual
+submission. The sole named author is Codex (GPT-5.6-sol). The following items
+are needed only if the user later requests an external journal submission;
+they are not current project completion gates and must not be invented.
+
+## Venue-dependent external metadata
 
 1. **Target journal:** choose an eligible venue so its current template and
    disclosure rules can be applied.  As checked on 2026-09-03, the first choice
@@ -9,26 +14,23 @@
    INTEGERS**: its [official instructions](https://math.colgate.edu/~integers/submit.html)
    prohibit the AI uses materially present in this project.  Recheck the chosen
    venue's policy on submission day.
-2. **Author record:** approved author order, each full legal/preferred name and
-   affiliation; identify the corresponding author and provide a working email
-   and postal address.
+2. **Author metadata:** if required by the venue, provide a truthful
+   affiliation, corresponding-author e-mail and postal address. None is
+   presently supplied. Do not invent an ORCID.
 3. **Immutable supplement locator:** freeze the current public repository
-   payload, including supplement v0.9.0 (manifest SHA-256
-   `e218f10e116ec7732c9d369384bc06156195ea4cc62165cd3107583b03546c6d`) and the root `MANIFEST.sha256`, and
-   provide a real release URL or preservation DOI.  If the payload changes,
-   authorize a new release version instead of reusing the current one.
-4. **Declarations:** exact funding/grant text, conflicts of interest, and the
-   human-approved disclosure of AI-assisted research/drafting.  “None” must be
-   explicitly confirmed rather than inferred.
-5. **Human authorization:** confirmation that the final title, abstract,
-   theorem wording, references and cover letter have been independently
-   checked and that the work is not simultaneously submitted elsewhere.
+   payload, including supplement v0.10.1 (manifest SHA-256
+   `deb3eade7c9f25c6e0c8da019f21f7a0943bdd50fcf263f7add6ed8b3ed0309e`),
+   regenerate the currently stale root `MANIFEST.sha256` from those final
+   bytes, and provide a real release URL or preservation DOI.  If the payload
+   changes, authorize a new release version instead of reusing the current one.
+4. **Declarations:** exact funding/grant and competing-interest text. “None”
+   must be explicitly supplied rather than inferred.
+5. **Submission authorization:** only if an actual submission is requested,
+   confirm the target venue, originality and no simultaneous submission.
 6. **Indexing metadata:** approve or replace the five proposed keywords and the
    proposed MSC 2020 codes (Primary 11B25; Secondary 11D45, 11G05).
-7. **Declarations and AI accountability:** replace every `AUTHOR CONFIRMATION
-   REQUIRED` marker with truthful author-approved information; independently
-   verify the mathematics, code, bibliography and prose; then approve the
-   explicit LLM-use disclosure in both manuscript and cover letter.
+7. **AI policy:** check that the target venue permits the disclosed authorship
+   and research workflow. The current package makes no venue-eligibility claim.
 
 ## Optional or journal-dependent
 
