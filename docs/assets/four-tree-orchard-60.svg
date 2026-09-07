@@ -1,216 +1,210 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
   <title id="title">The n=60 four-supporting-line configuration</title>
-  <desc id="desc">All 60 points and all 129 certified four-point lines, shown after an affine rescaling. The four point families have sizes 13, 13, 17, and 17.</desc>
+  <desc id="desc">All 60 points and all 129 certified four-point lines, spread out by an exact projective transformation followed by an affine rescaling. The four point families have sizes 13, 13, 17, and 17.</desc>
   <style>
     .frame { fill: #081523; stroke: #31475b; stroke-width: 1; }
-    .grid { fill: none; stroke: #193044; stroke-width: 1; }
-    .support { fill: none; stroke: #7e94a8; stroke-width: 1.4; stroke-dasharray: 6 6; }
-    .four-line { fill: none; stroke: #ffcb66; stroke-width: .85; stroke-opacity: .17; }
-    .four-line.highlighted { stroke-width: 2.3; stroke-opacity: .95; }
-    .point { stroke: #07111f; stroke-width: 1; }
+    .support { fill: none; stroke: #7e94a8; stroke-width: 1.25; stroke-dasharray: 7 7; stroke-opacity: .82; }
+    .four-line { fill: none; stroke: #ffcb66; stroke-width: .62; stroke-opacity: .095; }
+    .four-line.highlighted { stroke-width: 2.2; stroke-opacity: .92; }
+    .point { stroke: #07111f; stroke-width: 1.15; }
     .family-a { fill: #79c8ff; } .family-b { fill: #73e0b0; }
     .family-c { fill: #ffcb66; } .family-d { fill: #f49aaf; }
   </style>
   <rect class="frame" x="1" y="1" width="758" height="618" rx="16" />
-  <g class="grid">
-    <path d="M64 174H724M64 305H724M64 437H724" />
-    <path d="M229 42V568M394 42V568M559 42V568" />
+  <g class="support">    <path d="M64 78.276L724 78.276" />
+    <path d="M394 42L394 568" />
+    <path d="M395.93 42L367.947 568" />
+    <path d="M392.07 42L420.053 568" />
   </g>
-  <g class="support">
-    <path d="M64 384.512H724" />
-    <path d="M64 42V568" />
-    <path d="M64 384.512L724 201.023" />
-    <path d="M64 384.512L724 568" />
+  <g>    <path class="four-line" d="M361.895 42L445.842 568" />
+    <path class="four-line" d="M362.246 42L441.105 568" />
+    <path class="four-line" d="M362.596 42L436.368 568" />
+    <path class="four-line" d="M362.947 42L431.632 568" />
+    <path class="four-line" d="M363.298 42L426.895 568" />
+    <path class="four-line" d="M354.331 42L463.152 568" />
+    <path class="four-line" d="M354.76 42L457.363 568" />
+    <path class="four-line" d="M355.189 42L451.573 568" />
+    <path class="four-line" d="M355.618 42L445.784 568" />
+    <path class="four-line" d="M356.047 42L439.994 568" />
+    <path class="four-line" d="M356.476 42L434.205 568" />
+    <path class="four-line" d="M356.904 42L428.415 568" />
+    <path class="four-line" d="M342.446 42L490.353 568" />
+    <path class="four-line" d="M342.997 42L482.91 568" />
+    <path class="four-line" d="M343.549 42L475.466 568" />
+    <path class="four-line" d="M344.1 42L468.023 568" />
+    <path class="four-line" d="M344.652 42L460.579 568" />
+    <path class="four-line" d="M345.203 42L453.135 568" />
+    <path class="four-line" d="M345.754 42L445.692 568" />
+    <path class="four-line" d="M346.306 42L438.248 568" />
+    <path class="four-line" d="M346.857 42L430.805 568" />
+    <path class="four-line" d="M321.053 42L539.316 568" />
+    <path class="four-line" d="M321.825 42L528.895 568" />
+    <path class="four-line" d="M322.596 42L518.474 568" />
+    <path class="four-line" d="M323.368 42L508.053 568" />
+    <path class="four-line" d="M324.14 42L497.632 568" />
+    <path class="four-line" d="M324.912 42L487.211 568" />
+    <path class="four-line" d="M325.684 42L476.789 568" />
+    <path class="four-line" d="M326.456 42L466.368 568" />
+    <path class="four-line" d="M327.228 42L455.947 568" />
+    <path class="four-line" d="M328 42L445.526 568" />
+    <path class="four-line" d="M328.772 42L435.105 568" />
+    <path class="four-line" d="M271.135 42L653.561 568" />
+    <path class="four-line" d="M272.421 42L636.193 568" />
+    <path class="four-line" d="M273.708 42L618.825 568" />
+    <path class="four-line" d="M274.994 42L601.456 568" />
+    <path class="four-line" d="M276.281 42L584.088 568" />
+    <path class="four-line" d="M277.567 42L566.719 568" />
+    <path class="four-line" d="M278.854 42L549.351 568" />
+    <path class="four-line" d="M280.14 42L531.982 568" />
+    <path class="four-line" d="M281.427 42L514.614 568" />
+    <path class="four-line" d="M282.713 42L497.246 568" />
+    <path class="four-line" d="M284 42L479.877 568" />
+    <path class="four-line" d="M285.287 42L462.509 568" />
+    <path class="four-line" d="M286.573 42L445.14 568" />
+    <path class="four-line" d="M64 59.696L724 362.289" />
+    <path class="four-line" d="M64 58.743L724 376.854" />
+    <path class="four-line" d="M64 57.687L724 392.993" />
+    <path class="four-line" d="M64 56.51L724 410.977" />
+    <path class="four-line" d="M64 55.191L724 431.141" />
+    <path class="four-line" d="M64 53.702L724 453.907" />
+    <path class="four-line" d="M64 52.007L724 479.812" />
+    <path class="four-line" d="M64 50.061L724 509.556" />
+    <path class="four-line" d="M64 47.804L724 544.058" />
+    <path class="four-line" d="M64 45.154L703.737 568" />
+    <path class="four-line" d="M64 42L651.632 568" />
+    <path class="four-line" d="M67.86 42L599.526 568" />
+    <path class="four-line" d="M71.719 42L547.421 568" />
+    <path class="four-line" d="M64 362.289L724 59.696" />
+    <path class="four-line" d="M64 376.854L724 58.743" />
+    <path class="four-line" d="M64 392.993L724 57.687" />
+    <path class="four-line" d="M64 410.977L724 56.51" />
+    <path class="four-line" d="M64 431.141L724 55.191" />
+    <path class="four-line" d="M64 453.907L724 53.702" />
+    <path class="four-line highlighted" d="M64 479.812L724 52.007" />
+    <path class="four-line" d="M64 509.556L724 50.061" />
+    <path class="four-line" d="M64 544.058L724 47.804" />
+    <path class="four-line" d="M724 45.154L84.263 568" />
+    <path class="four-line" d="M724 42L136.368 568" />
+    <path class="four-line" d="M720.14 42L188.474 568" />
+    <path class="four-line" d="M716.281 42L240.579 568" />
+    <path class="four-line" d="M516.865 42L134.439 568" />
+    <path class="four-line" d="M515.579 42L151.807 568" />
+    <path class="four-line" d="M514.292 42L169.175 568" />
+    <path class="four-line" d="M513.006 42L186.544 568" />
+    <path class="four-line" d="M511.719 42L203.912 568" />
+    <path class="four-line" d="M510.433 42L221.281 568" />
+    <path class="four-line" d="M509.146 42L238.649 568" />
+    <path class="four-line" d="M507.86 42L256.018 568" />
+    <path class="four-line" d="M506.573 42L273.386 568" />
+    <path class="four-line" d="M505.287 42L290.754 568" />
+    <path class="four-line" d="M504 42L308.123 568" />
+    <path class="four-line" d="M502.713 42L325.491 568" />
+    <path class="four-line" d="M501.427 42L342.86 568" />
+    <path class="four-line" d="M467.719 42L238.263 568" />
+    <path class="four-line" d="M466.947 42L248.684 568" />
+    <path class="four-line" d="M466.175 42L259.105 568" />
+    <path class="four-line" d="M465.404 42L269.526 568" />
+    <path class="four-line" d="M464.632 42L279.947 568" />
+    <path class="four-line" d="M463.86 42L290.368 568" />
+    <path class="four-line" d="M463.088 42L300.789 568" />
+    <path class="four-line" d="M462.316 42L311.211 568" />
+    <path class="four-line" d="M461.544 42L321.632 568" />
+    <path class="four-line" d="M460.772 42L332.053 568" />
+    <path class="four-line" d="M460 42L342.474 568" />
+    <path class="four-line" d="M459.228 42L352.895 568" />
+    <path class="four-line" d="M458.456 42L363.316 568" />
+    <path class="four-line" d="M446.105 42L290.203 568" />
+    <path class="four-line" d="M445.554 42L297.647 568" />
+    <path class="four-line" d="M445.003 42L305.09 568" />
+    <path class="four-line" d="M444.451 42L312.534 568" />
+    <path class="four-line" d="M443.9 42L319.977 568" />
+    <path class="four-line" d="M443.348 42L327.421 568" />
+    <path class="four-line" d="M442.797 42L334.865 568" />
+    <path class="four-line" d="M442.246 42L342.308 568" />
+    <path class="four-line" d="M441.694 42L349.752 568" />
+    <path class="four-line" d="M441.143 42L357.195 568" />
+    <path class="four-line" d="M440.591 42L364.639 568" />
+    <path class="four-line" d="M434.097 42L319.058 568" />
+    <path class="four-line" d="M433.669 42L324.848 568" />
+    <path class="four-line" d="M433.24 42L330.637 568" />
+    <path class="four-line" d="M432.811 42L336.427 568" />
+    <path class="four-line" d="M432.382 42L342.216 568" />
+    <path class="four-line" d="M431.953 42L348.006 568" />
+    <path class="four-line" d="M431.524 42L353.795 568" />
+    <path class="four-line" d="M431.096 42L359.585 568" />
+    <path class="four-line" d="M430.667 42L365.374 568" />
+    <path class="four-line" d="M426.456 42L337.421 568" />
+    <path class="four-line" d="M426.105 42L342.158 568" />
+    <path class="four-line" d="M425.754 42L346.895 568" />
+    <path class="four-line" d="M425.404 42L351.632 568" />
+    <path class="four-line" d="M425.053 42L356.368 568" />
+    <path class="four-line" d="M424.702 42L361.105 568" />
+    <path class="four-line" d="M424.351 42L365.842 568" />
+    <path class="four-line" d="M421.166 42L350.134 568" />
+    <path class="four-line" d="M420.869 42L354.142 568" />
+    <path class="four-line" d="M420.572 42L358.15 568" />
+    <path class="four-line" d="M420.275 42L362.158 568" />
+    <path class="four-line" d="M419.978 42L366.166 568" />
   </g>
-  <g>    <path class="four-line" d="M64 92.598L643.31 545.567" />
-    <path class="four-line" d="M64 97.089L648.348 546.968" />
-    <path class="four-line" d="M64 101.444L653.474 548.393" />
-    <path class="four-line" d="M64 105.669L658.69 549.843" />
-    <path class="four-line" d="M64 109.77L664 551.319" />
-    <path class="four-line" d="M64 87.965L633.492 542.837" />
-    <path class="four-line" d="M64 92.598L638.359 544.191" />
-    <path class="four-line" d="M64 97.089L643.31 545.567" />
-    <path class="four-line" d="M64 101.444L648.348 546.968" />
-    <path class="four-line" d="M64 105.669L653.474 548.393" />
-    <path class="four-line" d="M64 109.77L658.69 549.843" />
-    <path class="four-line" d="M64 113.751L664 551.319" />
-    <path class="four-line" d="M64 83.182L624 540.199" />
-    <path class="four-line" d="M64 87.965L628.706 541.507" />
-    <path class="four-line" d="M64 92.598L633.492 542.837" />
-    <path class="four-line" d="M64 97.089L638.359 544.191" />
-    <path class="four-line" d="M64 101.444L643.31 545.567" />
-    <path class="four-line" d="M64 105.669L648.348 546.968" />
-    <path class="four-line" d="M64 109.77L653.474 548.393" />
-    <path class="four-line" d="M64 113.751L658.69 549.843" />
-    <path class="four-line" d="M64 117.619L664 551.319" />
-    <path class="four-line" d="M64 78.242L614.82 537.646" />
-    <path class="four-line" d="M64 83.182L619.372 538.912" />
-    <path class="four-line" d="M64 87.965L624 540.199" />
-    <path class="four-line" d="M64 92.598L628.706 541.507" />
-    <path class="four-line" d="M64 97.089L633.492 542.837" />
-    <path class="four-line" d="M64 101.444L638.359 544.191" />
-    <path class="four-line" d="M64 105.669L643.31 545.567" />
-    <path class="four-line" d="M64 109.77L648.348 546.968" />
-    <path class="four-line" d="M64 113.751L653.474 548.393" />
-    <path class="four-line" d="M64 117.619L658.69 549.843" />
-    <path class="four-line" d="M64 121.378L664 551.319" />
-    <path class="four-line" d="M64 73.137L605.935 535.177" />
-    <path class="four-line" d="M64 78.242L610.341 536.401" />
-    <path class="four-line" d="M64 83.182L614.82 537.646" />
-    <path class="four-line" d="M64 87.965L619.372 538.912" />
-    <path class="four-line" d="M64 92.598L624 540.199" />
-    <path class="four-line" d="M64 97.089L628.706 541.507" />
-    <path class="four-line" d="M64 101.444L633.492 542.837" />
-    <path class="four-line" d="M64 105.669L638.359 544.191" />
-    <path class="four-line" d="M64 109.77L643.31 545.567" />
-    <path class="four-line" d="M64 113.751L648.348 546.968" />
-    <path class="four-line" d="M64 117.619L653.474 548.393" />
-    <path class="four-line" d="M64 121.378L658.69 549.843" />
-    <path class="four-line" d="M64 125.033L664 551.319" />
-    <path class="four-line" d="M64 73.137L601.6 533.971" />
-    <path class="four-line" d="M64 78.242L605.935 535.177" />
-    <path class="four-line" d="M64 83.182L610.341 536.401" />
-    <path class="four-line" d="M64 87.965L614.82 537.646" />
-    <path class="four-line" d="M64 92.598L619.372 538.912" />
-    <path class="four-line" d="M64 97.089L624 540.199" />
-    <path class="four-line" d="M64 101.444L628.706 541.507" />
-    <path class="four-line" d="M64 105.669L633.492 542.837" />
-    <path class="four-line" d="M64 109.77L638.359 544.191" />
-    <path class="four-line" d="M64 113.751L643.31 545.567" />
-    <path class="four-line" d="M64 117.619L648.348 546.968" />
-    <path class="four-line" d="M64 121.378L653.474 548.393" />
-    <path class="four-line" d="M64 125.033L658.69 549.843" />
-    <path class="four-line" d="M64 73.137L597.333 532.785" />
-    <path class="four-line" d="M64 78.242L601.6 533.971" />
-    <path class="four-line" d="M64 83.182L605.935 535.177" />
-    <path class="four-line" d="M64 87.965L610.341 536.401" />
-    <path class="four-line" d="M64 92.598L614.82 537.646" />
-    <path class="four-line" d="M64 97.089L619.372 538.912" />
-    <path class="four-line highlighted" d="M64 101.444L624 540.199" />
-    <path class="four-line" d="M64 105.669L628.706 541.507" />
-    <path class="four-line" d="M64 109.77L633.492 542.837" />
-    <path class="four-line" d="M64 113.751L638.359 544.191" />
-    <path class="four-line" d="M64 117.619L643.31 545.567" />
-    <path class="four-line" d="M64 121.378L648.348 546.968" />
-    <path class="four-line" d="M64 125.033L653.474 548.393" />
-    <path class="four-line" d="M64 73.137L593.134 531.618" />
-    <path class="four-line" d="M64 78.242L597.333 532.785" />
-    <path class="four-line" d="M64 83.182L601.6 533.971" />
-    <path class="four-line" d="M64 87.965L605.935 535.177" />
-    <path class="four-line" d="M64 92.598L610.341 536.401" />
-    <path class="four-line" d="M64 97.089L614.82 537.646" />
-    <path class="four-line" d="M64 101.444L619.372 538.912" />
-    <path class="four-line" d="M64 105.669L624 540.199" />
-    <path class="four-line" d="M64 109.77L628.706 541.507" />
-    <path class="four-line" d="M64 113.751L633.492 542.837" />
-    <path class="four-line" d="M64 117.619L638.359 544.191" />
-    <path class="four-line" d="M64 121.378L643.31 545.567" />
-    <path class="four-line" d="M64 125.033L648.348 546.968" />
-    <path class="four-line" d="M64 73.137L589 530.468" />
-    <path class="four-line" d="M64 78.242L593.134 531.618" />
-    <path class="four-line" d="M64 83.182L597.333 532.785" />
-    <path class="four-line" d="M64 87.965L601.6 533.971" />
-    <path class="four-line" d="M64 92.598L605.935 535.177" />
-    <path class="four-line" d="M64 97.089L610.341 536.401" />
-    <path class="four-line" d="M64 101.444L614.82 537.646" />
-    <path class="four-line" d="M64 105.669L619.372 538.912" />
-    <path class="four-line" d="M64 109.77L624 540.199" />
-    <path class="four-line" d="M64 113.751L628.706 541.507" />
-    <path class="four-line" d="M64 117.619L633.492 542.837" />
-    <path class="four-line" d="M64 121.378L638.359 544.191" />
-    <path class="four-line" d="M64 125.033L643.31 545.567" />
-    <path class="four-line" d="M64 78.242L589 530.468" />
-    <path class="four-line" d="M64 83.182L593.134 531.618" />
-    <path class="four-line" d="M64 87.965L597.333 532.785" />
-    <path class="four-line" d="M64 92.598L601.6 533.971" />
-    <path class="four-line" d="M64 97.089L605.935 535.177" />
-    <path class="four-line" d="M64 101.444L610.341 536.401" />
-    <path class="four-line" d="M64 105.669L614.82 537.646" />
-    <path class="four-line" d="M64 109.77L619.372 538.912" />
-    <path class="four-line" d="M64 113.751L624 540.199" />
-    <path class="four-line" d="M64 117.619L628.706 541.507" />
-    <path class="four-line" d="M64 121.378L633.492 542.837" />
-    <path class="four-line" d="M64 83.182L589 530.468" />
-    <path class="four-line" d="M64 87.965L593.134 531.618" />
-    <path class="four-line" d="M64 92.598L597.333 532.785" />
-    <path class="four-line" d="M64 97.089L601.6 533.971" />
-    <path class="four-line" d="M64 101.444L605.935 535.177" />
-    <path class="four-line" d="M64 105.669L610.341 536.401" />
-    <path class="four-line" d="M64 109.77L614.82 537.646" />
-    <path class="four-line" d="M64 113.751L619.372 538.912" />
-    <path class="four-line" d="M64 117.619L624 540.199" />
-    <path class="four-line" d="M64 87.965L589 530.468" />
-    <path class="four-line" d="M64 92.598L593.134 531.618" />
-    <path class="four-line" d="M64 97.089L597.333 532.785" />
-    <path class="four-line" d="M64 101.444L601.6 533.971" />
-    <path class="four-line" d="M64 105.669L605.935 535.177" />
-    <path class="four-line" d="M64 109.77L610.341 536.401" />
-    <path class="four-line" d="M64 113.751L614.82 537.646" />
-    <path class="four-line" d="M64 92.598L589 530.468" />
-    <path class="four-line" d="M64 97.089L593.134 531.618" />
-    <path class="four-line" d="M64 101.444L597.333 532.785" />
-    <path class="four-line" d="M64 105.669L601.6 533.971" />
-    <path class="four-line" d="M64 109.77L605.935 535.177" />
-  </g>
-  <g>    <circle class="point family-a" cx="437.333" cy="384.512" r="3" />
-    <circle class="point family-a" cx="435.271" cy="384.512" r="3" />
-    <circle class="point family-a" cx="433.231" cy="384.512" r="3" />
-    <circle class="point family-a" cx="431.213" cy="384.512" r="3" />
-    <circle class="point family-a" cx="429.217" cy="384.512" r="3" />
-    <circle class="point family-a" cx="427.243" cy="384.512" r="3" />
-    <circle class="point family-a" cx="425.29" cy="384.512" r="3" />
-    <circle class="point family-a" cx="423.358" cy="384.512" r="3" />
-    <circle class="point family-a" cx="421.447" cy="384.512" r="3" />
-    <circle class="point family-a" cx="419.556" cy="384.512" r="3" />
-    <circle class="point family-a" cx="417.684" cy="384.512" r="3" />
-    <circle class="point family-a" cx="415.832" cy="384.512" r="3" />
-    <circle class="point family-a" cx="414" cy="384.512" r="3" />
-    <circle class="point family-b" cx="64" cy="73.137" r="3" />
-    <circle class="point family-b" cx="64" cy="78.242" r="3" />
-    <circle class="point family-b" cx="64" cy="83.182" r="3" />
-    <circle class="point family-b" cx="64" cy="87.965" r="3" />
-    <circle class="point family-b" cx="64" cy="92.598" r="3" />
-    <circle class="point family-b" cx="64" cy="97.089" r="3" />
-    <circle class="point family-b" cx="64" cy="101.444" r="3" />
-    <circle class="point family-b" cx="64" cy="105.669" r="3" />
-    <circle class="point family-b" cx="64" cy="109.77" r="3" />
-    <circle class="point family-b" cx="64" cy="113.751" r="3" />
-    <circle class="point family-b" cx="64" cy="117.619" r="3" />
-    <circle class="point family-b" cx="64" cy="121.378" r="3" />
-    <circle class="point family-b" cx="64" cy="125.033" r="3" />
-    <circle class="point family-c" cx="339.41" cy="307.944" r="3" />
-    <circle class="point family-c" cx="338.286" cy="308.257" r="3" />
-    <circle class="point family-c" cx="337.171" cy="308.567" r="3" />
-    <circle class="point family-c" cx="336.065" cy="308.874" r="3" />
-    <circle class="point family-c" cx="334.968" cy="309.179" r="3" />
-    <circle class="point family-c" cx="333.88" cy="309.482" r="3" />
-    <circle class="point family-c" cx="332.8" cy="309.782" r="3" />
-    <circle class="point family-c" cx="331.729" cy="310.08" r="3" />
-    <circle class="point family-c" cx="330.667" cy="310.375" r="3" />
-    <circle class="point family-c" cx="329.613" cy="310.668" r="3" />
-    <circle class="point family-c" cx="328.567" cy="310.959" r="3" />
-    <circle class="point family-c" cx="327.529" cy="311.247" r="3" />
-    <circle class="point family-c" cx="326.5" cy="311.533" r="3" />
-    <circle class="point family-c" cx="325.479" cy="311.817" r="3" />
-    <circle class="point family-c" cx="324.465" cy="312.099" r="3" />
-    <circle class="point family-c" cx="323.459" cy="312.379" r="3" />
-    <circle class="point family-c" cx="322.462" cy="312.656" r="3" />
-    <circle class="point family-d" cx="664" cy="551.319" r="3" />
-    <circle class="point family-d" cx="658.69" cy="549.843" r="3" />
-    <circle class="point family-d" cx="653.474" cy="548.393" r="3" />
-    <circle class="point family-d" cx="648.348" cy="546.968" r="3" />
-    <circle class="point family-d" cx="643.31" cy="545.567" r="3" />
-    <circle class="point family-d" cx="638.359" cy="544.191" r="3" />
-    <circle class="point family-d" cx="633.492" cy="542.837" r="3" />
-    <circle class="point family-d" cx="628.706" cy="541.507" r="3" />
-    <circle class="point family-d" cx="624" cy="540.199" r="3" />
-    <circle class="point family-d" cx="619.372" cy="538.912" r="3" />
-    <circle class="point family-d" cx="614.82" cy="537.646" r="3" />
-    <circle class="point family-d" cx="610.341" cy="536.401" r="3" />
-    <circle class="point family-d" cx="605.935" cy="535.177" r="3" />
-    <circle class="point family-d" cx="601.6" cy="533.971" r="3" />
-    <circle class="point family-d" cx="597.333" cy="532.785" r="3" />
-    <circle class="point family-d" cx="593.134" cy="531.618" r="3" />
-    <circle class="point family-d" cx="589" cy="530.468" r="3" />
+  <g>    <circle class="point family-a" cx="367.684" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="361.836" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="352.647" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="336.105" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="297.509" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="104.526" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="683.474" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="490.491" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="451.895" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="435.353" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="426.164" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="420.316" cy="78.276" r="3.4" />
+    <circle class="point family-a" cx="416.267" cy="78.276" r="3.4" />
+    <circle class="point family-b" cx="394" cy="210.992" r="3.4" />
+    <circle class="point family-b" cx="394" cy="217.798" r="3.4" />
+    <circle class="point family-b" cx="394" cy="225.34" r="3.4" />
+    <circle class="point family-b" cx="394" cy="233.744" r="3.4" />
+    <circle class="point family-b" cx="394" cy="243.166" r="3.4" />
+    <circle class="point family-b" cx="394" cy="253.804" r="3.4" />
+    <circle class="point family-b" cx="394" cy="265.91" r="3.4" />
+    <circle class="point family-b" cx="394" cy="279.808" r="3.4" />
+    <circle class="point family-b" cx="394" cy="295.931" r="3.4" />
+    <circle class="point family-b" cx="394" cy="314.858" r="3.4" />
+    <circle class="point family-b" cx="394" cy="337.389" r="3.4" />
+    <circle class="point family-b" cx="394" cy="364.664" r="3.4" />
+    <circle class="point family-b" cx="394" cy="398.357" r="3.4" />
+    <circle class="point family-c" cx="387.421" cy="201.944" r="3.4" />
+    <circle class="point family-c" cx="387.108" cy="207.833" r="3.4" />
+    <circle class="point family-c" cx="386.763" cy="214.31" r="3.4" />
+    <circle class="point family-c" cx="386.382" cy="221.47" r="3.4" />
+    <circle class="point family-c" cx="385.959" cy="229.425" r="3.4" />
+    <circle class="point family-c" cx="385.486" cy="238.316" r="3.4" />
+    <circle class="point family-c" cx="384.954" cy="248.319" r="3.4" />
+    <circle class="point family-c" cx="384.351" cy="259.655" r="3.4" />
+    <circle class="point family-c" cx="383.662" cy="272.611" r="3.4" />
+    <circle class="point family-c" cx="382.866" cy="287.56" r="3.4" />
+    <circle class="point family-c" cx="381.939" cy="305" r="3.4" />
+    <circle class="point family-c" cx="380.842" cy="325.611" r="3.4" />
+    <circle class="point family-c" cx="379.526" cy="350.345" r="3.4" />
+    <circle class="point family-c" cx="377.918" cy="380.575" r="3.4" />
+    <circle class="point family-c" cx="375.908" cy="418.362" r="3.4" />
+    <circle class="point family-c" cx="373.323" cy="466.946" r="3.4" />
+    <circle class="point family-c" cx="369.877" cy="531.724" r="3.4" />
+    <circle class="point family-d" cx="414.677" cy="466.946" r="3.4" />
+    <circle class="point family-d" cx="412.092" cy="418.362" r="3.4" />
+    <circle class="point family-d" cx="410.082" cy="380.575" r="3.4" />
+    <circle class="point family-d" cx="408.474" cy="350.345" r="3.4" />
+    <circle class="point family-d" cx="407.158" cy="325.611" r="3.4" />
+    <circle class="point family-d" cx="406.061" cy="305" r="3.4" />
+    <circle class="point family-d" cx="405.134" cy="287.56" r="3.4" />
+    <circle class="point family-d" cx="404.338" cy="272.611" r="3.4" />
+    <circle class="point family-d" cx="403.649" cy="259.655" r="3.4" />
+    <circle class="point family-d" cx="403.046" cy="248.319" r="3.4" />
+    <circle class="point family-d" cx="402.514" cy="238.316" r="3.4" />
+    <circle class="point family-d" cx="402.041" cy="229.425" r="3.4" />
+    <circle class="point family-d" cx="401.618" cy="221.47" r="3.4" />
+    <circle class="point family-d" cx="401.237" cy="214.31" r="3.4" />
+    <circle class="point family-d" cx="400.892" cy="207.833" r="3.4" />
+    <circle class="point family-d" cx="400.579" cy="201.944" r="3.4" />
+    <circle class="point family-d" cx="400.293" cy="196.567" r="3.4" />
   </g>
 </svg>

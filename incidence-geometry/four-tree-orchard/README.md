@@ -47,3 +47,9 @@ xelatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/ma
 The residue-class reduction in the paper is the proof of the closed count.
 The executable checks are independent regression evidence and are not
 presented as a replacement for that proof.
+
+For legibility, the SVG renderer applies the projective map
+`[X:Y:Z] = [x:y:1-alpha*x-beta*y]` before an affine fit to the canvas.
+Projective transformations preserve lines and incidences, so the displayed
+four-point relations are the exact relations of the original rational
+configuration, not a schematic approximation.
