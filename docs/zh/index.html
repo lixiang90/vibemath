@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vibemath：开放的数学研究、精确证书，以及 OEIS A172992 的新四点共线构造。" />
+    <meta name="theme-color" content="#07111f" />
+    <title>Vibemath — 精确数学，开放核验</title>
+    <link rel="canonical" href="https://lixiang90.github.io/vibemath/zh/" />
+    <link rel="alternate" hreflang="en" href="https://lixiang90.github.io/vibemath/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://lixiang90.github.io/vibemath/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://lixiang90.github.io/vibemath/" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Vibemath 首页"><span class="brand-mark" aria-hidden="true">V</span><span>vibemath</span></a>
+      <div class="header-actions">
+        <nav aria-label="主导航">
+          <a href="#result">重点成果</a>
+          <a href="#research">研究地图</a>
+          <a class="nav-github" href="https://github.com/lixiang90/vibemath" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+        <a class="language-switch" href="../" lang="en" hreflang="en" aria-label="Switch to English">English</a>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>重点成果</span> · 关联几何</p>
+          <h1 id="hero-title">四条支撑线，<br />收获二次级增长。</h1>
+          <p class="hero-lede">对每个整数 <span class="math">n ≥ 28</span>，一个显式的 <span class="math">n</span> 点整数坐标构造保证</p>
+          <div class="formula" aria-label="A172992 的 n 项不小于 n 平方加十二除以二十八的下取整">
+            <span class="math-name">A172992(n)</span><span class="formula-sign">≥</span><span class="floor">⌊</span><span class="fraction"><span>n² + 12</span><span>28</span></span><span class="floor">⌋</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="../papers/a172992-construction-zh.pdf">阅读中文论文</a>
+            <a class="button button-secondary" href="../papers/a172992-construction.pdf">English paper</a>
+          </div>
+        </div>
+
+        <figure class="construction-card" aria-labelledby="construction-caption">
+          <div class="diagram-header"><span>一条经验证的四点线</span><span class="diagram-index">n = 60</span></div>
+          <svg viewBox="0 0 520 430" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">四条支撑线与一条四点截线</title>
+            <desc id="diagram-desc">点 P、Q、R、S 分别落在横轴、纵轴和两条对角线上；一条金色直线穿过这四点。</desc>
+            <g class="grid-lines" aria-hidden="true">
+              <path d="M40 80H500M40 150H500M40 220H500M40 290H500M40 360H500" />
+              <path d="M80 32V404M160 32V404M240 32V404M320 32V404M400 32V404M480 32V404" />
+            </g>
+            <g class="supports" aria-hidden="true">
+              <path d="M52 280H496" /><path d="M180 28V408" /><path d="M58 375L490 39" /><path d="M58 185L350 412" />
+            </g>
+            <g class="support-labels" aria-hidden="true">
+              <text x="457" y="271">Y = 0</text><text x="190" y="48">X = 0</text><text x="432" y="70">Y = X</text><text x="294" y="406">Y = −X</text>
+            </g>
+            <path class="four-line" d="M153 0L342 430" aria-hidden="true" />
+            <g class="points">
+              <circle cx="276" cy="280" r="7" /><circle cx="180" cy="61" r="7" /><circle cx="251" cy="224" r="7" /><circle cx="325" cy="393" r="7" />
+            </g>
+            <g class="point-labels" aria-hidden="true">
+              <text x="287" y="274">P</text><text x="194" y="62">Q</text><text x="264" y="218">R</text><text x="338" y="391">S</text>
+            </g>
+          </svg>
+          <figcaption id="construction-caption"><span class="legend-line" aria-hidden="true"></span>条件 <span class="math">z = x + y</span> 与 <span class="math">w = x − y</span> 强制四点共线。</figcaption>
+        </figure>
+      </section>
+
+      <section class="result-section" id="result" aria-labelledby="result-title">
+        <div class="section-heading">
+          <p class="eyebrow">这个构造</p>
+          <h2 id="result-title">一个简短、边界精确的证明</h2>
+          <p>在四条固定直线上放置有理点。每一对合格指标各从四个点族中选出一点，再以同一个公倍数缩放整个构型，便得到整数坐标。</p>
+        </div>
+        <div class="result-grid">
+          <article class="proof-card">
+            <span class="step">01</span><h3>选取四个点族</h3>
+            <p>分别在 <span class="math">Y=0</span>、<span class="math">X=0</span>、<span class="math">Y=X</span> 与 <span class="math">Y=−X</span> 上放置带指标的点；四族大小之和恰为 <span class="math">n</span>。</p>
+          </article>
+          <article class="proof-card">
+            <span class="step">02</span><h3>强制四点落在同一直线上</h3>
+            <p>过两个轴上点的直线为 <span class="equation">(3n+x)X + (n+y)Y = 1</span>。两个对角线点恰在此直线上，当且仅当 <span class="math">z=x+y</span> 且 <span class="math">w=x−y</span>。</p>
+          </article>
+          <article class="proof-card proof-card-accent">
+            <span class="step">03</span><h3>计数，并保留关键修正</h3>
+            <p>按模 28 分类的整数计数给出闭式。关键参数是 <span class="equation">v = ⌈(s−d−1)/2⌉</span>：若把 <span class="math">d</span> 误写成 <span class="math">c</span>，在 <span class="math">n=29</span> 时便会少一条线。</p>
+          </article>
+        </div>
+
+        <div class="milestones" aria-label="新的下界">
+          <div class="milestone-copy">
+            <p class="eyebrow">两个直接改进</p>
+            <h3>该构造提高了目前记录的最佳已知值。</h3>
+            <p>这里给出的是严格下界，并非最优性断言；更大的构型仍可能存在。</p>
+          </div>
+          <div class="milestone-stat"><span class="stat-label">n = 59</span><strong>124</strong><span>此前记录：123</span></div>
+          <div class="milestone-stat"><span class="stat-label">n = 60</span><strong>129</strong><span>此前记录：126</span></div>
+        </div>
+
+        <div class="evidence-strip">
+          <div><span class="evidence-kicker">开放核验</span><p>精确算术检查覆盖计数、共线性、笔误诊断与整数缩放。</p></div>
+          <a href="https://github.com/lixiang90/vibemath/tree/main/incidence-geometry/four-tree-orchard" rel="noreferrer">源码、测试与论文 <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="research-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading research-heading">
+          <p class="eyebrow">研究地图</p>
+          <h2 id="research-title">仓库中的其他工作</h2>
+          <p>围绕算术几何与丢番图问题，公开证明、精确证书、可执行检查，以及明确标注的开放边界。</p>
+        </div>
+        <div class="research-grid">
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/square-progressions/seven-consecutive-squareclasses">
+            <span class="status status-verified">内部验收</span><span class="card-number">01</span><h3>七个连续整数的平方类</h3><p>精确化简把 651 种等式模式缩减为两种；它们是否可实现仍是开放问题。</p><span class="card-link">查看项目 <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term">
+            <span class="status status-verified">内部验收</span><span class="card-number">02</span><h3>五项等差数列中的纯三次幂</h3><p>证明了四项命中结论，给出六个无穷族，并验证了第七个来源。</p><span class="card-link">查看项目 <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer">
+            <span class="status status-verified">内部验收</span><span class="card-number">03</span><h3>Campbell 双同源 Selmer 群</h3><p>精确算得同源 Selmer 维数 3 与 2，从而严谨证明秩上界 <span class="math">rank ≤ 3</span>。</p><span class="card-link">查看项目 <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/square-progressions/magic-squares-over-number-fields">
+            <span class="status status-active">进行中</span><span class="card-number">04</span><h3>数域上的平方数幻方</h3><p>研究低次数域上的 3 × 3 平方数幻方，包含精确搜索与化简。</p><span class="card-link">查看项目 <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/fourth-powers-six-term">
+            <span class="status status-active">进行中</span><span class="card-number">05</span><h3>六项四次幂问题</h3><p>为仍未解决的六项等差数列问题给出显式化简与商映射。</p><span class="card-link">查看项目 <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/elliptic-simultaneous-torsion-c29">
+            <span class="status status-active">进行中</span><span class="card-number">06</span><h3>同时挠点与一个亏格二模型</h3><p>给出显式模型并审计双有理映射；秩与有理点问题仍然开放。</p><span class="card-link">查看项目 <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="principles" aria-labelledby="principles-title">
+        <div><p class="eyebrow">工作原则</p><h2 id="principles-title">主张止于证明所及。</h2></div>
+        <div class="principle-list">
+          <p><span>精确</span> 公开符号恒等式与有限枚举，便于独立核验。</p>
+          <p><span>开放</span> 源码、论文、测试、证书与审计记录共处一处。</p>
+          <p><span>有边界</span> 实验明确标作实验；开放问题依然保持开放。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">V</span><div><strong>vibemath</strong><span>精确数学，开放核验。</span></div></div>
+      <div class="footer-links"><a href="https://github.com/lixiang90/vibemath">代码仓库</a><a href="https://oeis.org/A172992">OEIS A172992</a></div>
+    </footer>
+  </body>
+</html>

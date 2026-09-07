@@ -85,11 +85,29 @@ a { color: inherit; }
   font-style: italic;
 }
 
+.header-actions { display: flex; align-items: center; gap: 1.25rem; }
 nav { display: flex; align-items: center; gap: 1.75rem; }
 nav a { color: var(--muted); font-size: 0.9rem; text-decoration: none; transition: color 150ms ease; }
 nav a:hover, nav a:focus-visible { color: var(--ink); }
 .nav-github { padding-left: 1.75rem; border-left: 1px solid var(--line); }
+.language-switch {
+  min-width: 58px;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+.language-switch:hover, .language-switch:focus-visible { border-color: rgba(121,200,255,0.62); background: rgba(121,200,255,0.08); color: var(--ink); }
 main { overflow: hidden; }
+
+html[lang="zh-CN"] body { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; }
+html[lang="zh-CN"] h1, html[lang="zh-CN"] h2, html[lang="zh-CN"] .milestone-copy h3, html[lang="zh-CN"] .research-card h3 { font-family: "Songti SC", "SimSun", "Noto Serif CJK SC", Georgia, serif; letter-spacing: -0.025em; }
+html[lang="zh-CN"] .eyebrow, html[lang="zh-CN"] .status, html[lang="zh-CN"] .evidence-kicker { letter-spacing: 0.1em; }
 
 .hero {
   display: grid;
@@ -249,6 +267,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 
 @media (max-width: 680px) {
   .site-header { min-height: 72px; }
+  .header-actions { gap: 0.75rem; }
   nav { gap: 1rem; }
   nav a:not(.nav-github) { display: none; }
   .nav-github { padding-left: 0; border-left: 0; }
