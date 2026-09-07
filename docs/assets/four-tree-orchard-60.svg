@@ -4,7 +4,7 @@
   <style>
     .frame { fill: #081523; stroke: #31475b; stroke-width: 1; }
     .support { fill: none; stroke: #7e94a8; stroke-width: 1.25; stroke-dasharray: 7 7; stroke-opacity: .82; }
-    .four-line { fill: none; stroke: #ffcb66; stroke-width: .62; stroke-opacity: .095; }
+    .four-line { fill: none; stroke: #ffcb66; stroke-width: 2.0; stroke-opacity: .195; }
     .four-line.highlighted { stroke-width: 2.2; stroke-opacity: .92; }
     .point { stroke: #07111f; stroke-width: 1.15; }
     .family-a { fill: #79c8ff; } .family-b { fill: #73e0b0; }
