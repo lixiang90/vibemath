@@ -28,6 +28,8 @@ optimality or equality with the unknown maxima.
 - `paper/main.tex` and `paper/main.pdf`: two-page English note.
 - `paper/main-zh.tex` and `paper/main-zh.pdf`: two-page Chinese version.
 - `code/verify_construction.py`: exact integer/rational implementation.
+- `code/render_configurations.py`: deterministic SVG renderer for the complete
+  `n=59` and `n=60` configurations.
 - `tests/test_verify_construction.py`: regression checks for the count,
   special cases, typo diagnostic, collinearity, and integer dilation.
 
@@ -37,6 +39,7 @@ From this directory, run:
 
 ```powershell
 python -m unittest -v tests/test_verify_construction.py
+python code/render_configurations.py
 xelatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/main.tex
 xelatex -interaction=nonstopmode -halt-on-error -output-directory=paper paper/main-zh.tex
 ```
