@@ -1,5 +1,7 @@
 # vibemath
 
+Project site: [lixiang90.github.io/vibemath](https://lixiang90.github.io/vibemath/)
+
 Research sources, papers, certificates, and audit records for arithmetic
 progressions of powers, magic squares of squares, arithmetic progressions on
 elliptic curves, and incidence-geometric orchard constructions.

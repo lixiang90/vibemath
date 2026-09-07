@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vibemath: open mathematical research, exact certificates, and a new four-point-line construction for OEIS A172992." />
+    <meta name="theme-color" content="#07111f" />
+    <title>Vibemath — Exact mathematics, openly checked</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Vibemath home"><span class="brand-mark" aria-hidden="true">V</span><span>vibemath</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#result">Featured result</a>
+        <a href="#research">Research map</a>
+        <a class="nav-github" href="https://github.com/lixiang90/vibemath" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>Featured result</span> · Incidence geometry</p>
+          <h1 id="hero-title">Four supporting lines.<br />A quadratic harvest.</h1>
+          <p class="hero-lede">For every integer <span class="math">n ≥ 28</span>, an explicit configuration of <span class="math">n</span> integer-coordinate points guarantees</p>
+          <div class="formula" aria-label="A172992 of n is at least the floor of n squared plus twelve over twenty-eight">
+            <span class="math-name">A172992(n)</span><span class="formula-sign">≥</span><span class="floor">⌊</span><span class="fraction"><span>n² + 12</span><span>28</span></span><span class="floor">⌋</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="papers/a172992-construction.pdf">Read the note</a>
+            <a class="button button-secondary" href="papers/a172992-construction-zh.pdf">中文版本</a>
+          </div>
+        </div>
+
+        <figure class="construction-card" aria-labelledby="construction-caption">
+          <div class="diagram-header"><span>One certified four-point line</span><span class="diagram-index">n = 60</span></div>
+          <svg viewBox="0 0 520 430" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">Four supporting lines and one four-point transversal</title>
+            <desc id="diagram-desc">Points P, Q, R, and S lie respectively on the horizontal axis, vertical axis, and two diagonal lines. A gold line passes through all four points.</desc>
+            <g class="grid-lines" aria-hidden="true">
+              <path d="M40 80H500M40 150H500M40 220H500M40 290H500M40 360H500" />
+              <path d="M80 32V404M160 32V404M240 32V404M320 32V404M400 32V404M480 32V404" />
+            </g>
+            <g class="supports" aria-hidden="true">
+              <path d="M52 280H496" /><path d="M180 28V408" /><path d="M58 375L490 39" /><path d="M58 185L350 412" />
+            </g>
+            <g class="support-labels" aria-hidden="true">
+              <text x="457" y="271">Y = 0</text><text x="190" y="48">X = 0</text><text x="432" y="70">Y = X</text><text x="294" y="406">Y = −X</text>
+            </g>
+            <path class="four-line" d="M153 0L342 430" aria-hidden="true" />
+            <g class="points">
+              <circle cx="276" cy="280" r="7" /><circle cx="180" cy="61" r="7" /><circle cx="251" cy="224" r="7" /><circle cx="325" cy="393" r="7" />
+            </g>
+            <g class="point-labels" aria-hidden="true">
+              <text x="287" y="274">P</text><text x="194" y="62">Q</text><text x="264" y="218">R</text><text x="338" y="391">S</text>
+            </g>
+          </svg>
+          <figcaption id="construction-caption"><span class="legend-line" aria-hidden="true"></span>The conditions <span class="math">z = x + y</span> and <span class="math">w = x − y</span> force collinearity.</figcaption>
+        </figure>
+      </section>
+
+      <section class="result-section" id="result" aria-labelledby="result-title">
+        <div class="section-heading">
+          <p class="eyebrow">The construction</p>
+          <h2 id="result-title">A short proof with an exact boundary</h2>
+          <p>Rational points are placed on four fixed lines. Every admissible pair selects one point from each family, and one common dilation converts the whole configuration to integer coordinates.</p>
+        </div>
+        <div class="result-grid">
+          <article class="proof-card">
+            <span class="step">01</span><h3>Choose the four families</h3>
+            <p>Place indexed points on <span class="math">Y=0</span>, <span class="math">X=0</span>, <span class="math">Y=X</span>, and <span class="math">Y=−X</span>. Their family sizes add to exactly <span class="math">n</span>.</p>
+          </article>
+          <article class="proof-card">
+            <span class="step">02</span><h3>Force four points onto one line</h3>
+            <p>The line through the two axis points is <span class="equation">(3n+x)X + (n+y)Y = 1</span>. The diagonal points lie on it precisely when <span class="math">z=x+y</span> and <span class="math">w=x−y</span>.</p>
+          </article>
+          <article class="proof-card proof-card-accent">
+            <span class="step">03</span><h3>Count — and keep the correction</h3>
+            <p>A 28-class integer count yields the closed formula. The essential parameter is <span class="equation">v = ⌈(s−d−1)/2⌉</span>: replacing <span class="math">d</span> by <span class="math">c</span> already loses a line at <span class="math">n=29</span>.</p>
+          </article>
+        </div>
+
+        <div class="milestones" aria-label="New lower bounds">
+          <div class="milestone-copy">
+            <p class="eyebrow">Two immediate improvements</p>
+            <h3>The construction sharpens the recorded best-known values.</h3>
+            <p>These are rigorous lower bounds, not optimality claims. Larger configurations may still exist.</p>
+          </div>
+          <div class="milestone-stat"><span class="stat-label">n = 59</span><strong>124</strong><span>previously listed: 123</span></div>
+          <div class="milestone-stat"><span class="stat-label">n = 60</span><strong>129</strong><span>previously listed: 126</span></div>
+        </div>
+
+        <div class="evidence-strip">
+          <div><span class="evidence-kicker">Open verification</span><p>Exact arithmetic checks cover the count, collinearity, typo diagnostic, and integer dilation.</p></div>
+          <a href="https://github.com/lixiang90/vibemath/tree/main/incidence-geometry/four-tree-orchard" rel="noreferrer">Source, tests &amp; papers <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="research-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading research-heading">
+          <p class="eyebrow">Research map</p>
+          <h2 id="research-title">Other work in the repository</h2>
+          <p>Proofs, exact certificates, executable checks, and explicit open boundaries across arithmetic geometry and Diophantine problems.</p>
+        </div>
+        <div class="research-grid">
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/square-progressions/seven-consecutive-squareclasses">
+            <span class="status status-verified">Internally accepted</span><span class="card-number">01</span><h3>Seven consecutive squareclasses</h3><p>Exact reductions take 651 equality patterns down to two. Their realizability remains open.</p><span class="card-link">Explore project <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/pure-cubic-five-term">
+            <span class="status status-verified">Internally accepted</span><span class="card-number">02</span><h3>Pure-cubic five-term progressions</h3><p>Proves the four-hit result, with six infinite families and a seventh verified source.</p><span class="card-link">Explore project <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/elliptic-curve-progressions/campbell-two-isogeny-selmer">
+            <span class="status status-verified">Internally accepted</span><span class="card-number">03</span><h3>Campbell two-isogeny Selmer groups</h3><p>Computes exact isogeny Selmer dimensions 3 and 2, proving the careful bound rank ≤ 3.</p><span class="card-link">Explore project <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/square-progressions/magic-squares-over-number-fields">
+            <span class="status status-active">Active project</span><span class="card-number">04</span><h3>Magic squares over number fields</h3><p>Exact searches and reductions for 3 × 3 magic squares of squares over low-degree fields.</p><span class="card-link">Explore project <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/fourth-powers-six-term">
+            <span class="status status-active">Active project</span><span class="card-number">05</span><h3>Six-term fourth powers</h3><p>Explicit reductions and quotient maps for a still-open six-term progression problem.</p><span class="card-link">Explore project <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="research-card" href="https://github.com/lixiang90/vibemath/tree/main/powers-in-progressions/elliptic-simultaneous-torsion-c29">
+            <span class="status status-active">Active project</span><span class="card-number">06</span><h3>Simultaneous torsion and a genus-two model</h3><p>An explicit model and birational-map audit, with rank and rational points left open.</p><span class="card-link">Explore project <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="principles" aria-labelledby="principles-title">
+        <div><p class="eyebrow">Working principles</p><h2 id="principles-title">Claims stop where the proof stops.</h2></div>
+        <div class="principle-list">
+          <p><span>Exact</span> Symbolic identities and finite enumerations are exposed to independent checks.</p>
+          <p><span>Open</span> Sources, papers, tests, certificates, and audit trails live together.</p>
+          <p><span>Bounded</span> Experiments are labelled as experiments; open questions stay open.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">V</span><div><strong>vibemath</strong><span>Exact mathematics, openly checked.</span></div></div>
+      <div class="footer-links"><a href="https://github.com/lixiang90/vibemath">Repository</a><a href="https://oeis.org/A172992">OEIS A172992</a></div>
+    </footer>
+  </body>
+</html>
