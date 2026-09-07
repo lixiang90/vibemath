@@ -119,6 +119,12 @@ def c29_group() -> tuple[list[tuple[Path, str]], list[str]]:
     return all_files(base, "*.py") + all_files(base, "*.json"), ["PAPER_CUBE_C29_test_model"]
 
 
+def orchard_group() -> tuple[list[tuple[Path, str]], list[str]]:
+    base = ROOT / "incidence-geometry" / "four-tree-orchard"
+    mappings = all_files(base / "code", "*.py") + all_files(base / "tests", "*.py")
+    return mappings, ["test_verify_construction"]
+
+
 def elliptic_group() -> tuple[Path, list[str]]:
     base = ROOT / "elliptic-curve-progressions" / "campbell-two-isogeny-selmer"
     modules = [
@@ -143,6 +149,7 @@ def main() -> None:
         ("pure-cubic", *cube_group()),
         ("fourth-powers", *fourth_power_group()),
         ("c29", *c29_group()),
+        ("four-tree-orchard", *orchard_group()),
     ]
     for name, mappings, modules in groups:
         run_group(name, mappings, modules)

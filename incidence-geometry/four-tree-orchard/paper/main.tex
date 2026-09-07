@@ -1,0 +1,137 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs,array,microtype}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.35em}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\Z}{\mathbb Z}
+\DeclareMathOperator{\lcm}{lcm}
+
+\title{A Four-Point-Line Construction for OEIS A172992}
+\author{}
+\date{September 6, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+
+\begin{abstract}
+We verify a construction that places $n$ rational points on four supporting
+lines.  The correct parameter is $v=\ceil{(s-d-1)/2}$ (with $d$, not $c$).
+With this correction, for every $n\ge28$ the construction guarantees
+$\floor{(n^2+12)/28}$ lines containing exactly four selected points, and a
+uniform dilation converts all coordinates to integers.  In particular, it
+improves the known lower bounds for OEIS A172992 at $n=59,60$ to $124,129$.
+These are lower bounds, not proofs of optimality.
+\end{abstract}
+
+\section*{Construction and collinearity}
+Set
+\[
+ s=\floor{\frac{3(n+1)}7},\quad
+ a=\floor{\frac s2},\quad b=\ceil{\frac s2},\quad
+ c=\floor{\frac{n-s}2},\quad d=\ceil{\frac{n-s}2},
+\]
+and
+\[
+ u=\floor{\frac{s-c-1}{2}},\qquad
+ v=\ceil{\frac{s-d-1}{2}}.
+\]
+Define the integer intervals
+\[
+\begin{split}
+ A&=[0,a-1]\cap\Z,\qquad B=[0,b-1]\cap\Z,\\
+ C&=[u,u+c-1]\cap\Z,\\
+ D&=[-(b-1)+v,\;-(b-1)+v+d-1]\cap\Z.
+\end{split}
+\]
+On $Y=0,X=0,Y=X,Y=-X$, respectively, place
+\[
+\begin{aligned}
+ P_x&=\left(\frac1{3n+x},0\right),&
+ Q_y&=\left(0,\frac1{n+y}\right),\\
+ R_z&=\left(\frac1{4n+z},\frac1{4n+z}\right),&
+ S_w&=\left(\frac1{2n+w},-\frac1{2n+w}\right).
+\end{aligned}
+\]
+There are $a+b+c+d=s+(n-s)=n$ points.  The line through $P_x,Q_y$ is
+\[
+ (3n+x)X+(n+y)Y=1.
+\]
+Substitution of $R_z$ and $S_w$ gives, respectively,
+\[
+ \frac{4n+x+y}{4n+z}=1\iff z=x+y,
+ \qquad
+ \frac{2n+x-y}{2n+w}=1\iff w=x-y.
+\]
+Thus, whenever $x\in A,y\in B,x+y\in C,x-y\in D$, the four points
+$P_x,Q_y,R_{x+y},S_{x-y}$ are collinear.  Such a line has a unique
+intersection with each supporting line, so it contains exactly these four
+selected points.  Distinct pairs $(x,y)$ give distinct lines because their
+two axis intercepts are different.
+
+\section*{Counting}
+Put $L=-(b-1)+v$.  For fixed $x\in A$, the admissible values of $y$ form an
+integer interval.  Hence the number of guaranteed four-point lines is
+\[
+ N(n)=\sum_{x=0}^{a-1}
+ \Bigl[\min\{b-1,u+c-1-x,x-L\}
+ -\max\{0,u-x,x-L-d+1\}+1\Bigr]_+,
+ \tag{1}
+\]
+where $[t]_+=\max(t,0)$.  Formula (1) is also a direct, geometry-free way to
+check the count.
+
+Write $n=28q+r$, $0\le r<28$.  Substituting the endpoints in (1) and
+simplifying separately in the 28 residue classes gives
+\[
+ N(n)=28q^2+2qr+h_r,\qquad h_r=\floor{\frac{r^2+12}{28}}.
+\]
+For auditability, all values of $h_r$ are displayed below; the calculation
+only compares the finitely many integer-interval endpoints in (1).
+\begingroup\scriptsize
+\[
+\begin{array}{c|rrrrrrrrrrrrrr}
+r&0&1&2&3&4&5&6&7&8&9&10&11&12&13\\ \midrule
+h_r&0&0&0&0&1&1&1&2&2&3&4&4&5&6\\[2pt]
+r&14&15&16&17&18&19&20&21&22&23&24&25&26&27\\ \midrule
+h_r&7&8&9&10&12&13&14&16&17&19&21&22&24&26
+\end{array}
+\]
+\endgroup
+Consequently,
+\[
+ N(n)=\floor{\frac{(28q+r)^2+12}{28}}
+      =\floor{\frac{n^2+12}{28}},\qquad n\ge28.
+\]
+
+\section*{Integer coordinates and the cases 59 and 60}
+All coordinates are rational.  Let $M$ be the least common multiple of all
+positive denominators in
+\[
+ \{3n+x:x\in A\}\cup\{n+y:y\in B\}\cup
+ \{4n+z:z\in C\}\cup\{2n+w:w\in D\}.
+\]
+The dilation $(X,Y)\mapsto(MX,MY)$ produces integer coordinates.  Being
+invertible and linear, it preserves collinearity and the number of selected
+points on each line.
+
+For $n=59$ the parameters are
+$(s,a,b,c,d,u,v)=(25,12,13,17,17,3,4)$, and (1) gives $124$.
+For $n=60$ they are $(26,13,13,17,17,4,4)$, and (1) gives $129$.
+As checked on September 6, 2026, the OEIS A172992 page still lists
+$a(59)=123,a(60)=126$ and notes that its terms are the best solutions known,
+not necessarily optimal ones.\footnote{OEIS A172992,
+\url{https://oeis.org/A172992}, accessed September 6, 2026.}
+The rigorous conclusion is therefore
+\[
+ A172992(59)\ge124,\qquad A172992(60)\ge129.
+\]
+If the sequence is updated according to its convention of recording the
+best known constructions, the candidate entries are $124$ and $129$; this
+construction does not rule out still larger values.
+
+\end{document}

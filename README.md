@@ -1,8 +1,8 @@
 # vibemath
 
 Research sources, papers, certificates, and audit records for arithmetic
-progressions of powers, magic squares of squares, and arithmetic progressions
-on elliptic curves.
+progressions of powers, magic squares of squares, arithmetic progressions on
+elliptic curves, and incidence-geometric orchard constructions.
 
 The repository is organized as `theme/paper`.  A directory may be a completed
 paper or a clearly labelled long-term paper project.  Mathematical correctness,
@@ -13,6 +13,7 @@ over journal-specific formatting.
 
 | Theme / paper | Status | Main result or current boundary |
 |---|---|---|
+| `incidence-geometry/four-tree-orchard` | verified short note | For every `n >= 28`, an explicit integer-coordinate configuration gives `floor((n^2+12)/28)` four-point lines. In particular, it improves the known lower bounds for OEIS A172992 at `n=59,60` to `124,129`; optimality is not claimed. |
 | `square-progressions/seven-consecutive-squareclasses` | internally accepted + Round12 novelty cross-review PASS | For integer `t`, the equality patterns of the nonzero block `t,...,t+6` with affine rational squareclass rank at most two are reduced through the exact chain `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7 -> 4 -> 2`.  Realizability or impossibility of the final 2 patterns, and therefore `R_2(7)`, remain open. |
 | `powers-in-progressions/pure-cubic-five-term` | internally accepted + Round12 novelty cross-review PASS/HIGH-CAUTION | `R^times_(3,1)(5)=4`; six of the initial 31 four-hit models yield infinite families, and a seventh has a rigorously verified nondegenerate point.  The Round09 reconstruction groups its 29-model input into 25 clusters under the explicitly stated permutation action.  Seven models are closed for existence and 24 remain open; no infinite family is claimed for the seventh genus-four source. |
 | `elliptic-curve-progressions/campbell-two-isogeny-selmer` | internally accepted + Round12 novelty/second-CAS cross-review PASS | The two exact isogeny Selmer groups have dimensions 3 and 2, giving only `rank <= 3`; an explicit global minimal model has conductor `301245307115205810`.  The exact support/place bridge incorporates the Round09 `E`-side and Round10 `E'`-side local theorems and revalidates every surviving bad-place witness.  No ninth rational point, global obstruction, full 2-Selmer group, Cassels--Tate value, or rank equality is claimed; the independent second-CAS protocol remains unexecuted. |

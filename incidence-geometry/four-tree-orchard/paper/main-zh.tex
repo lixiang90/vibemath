@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs,array,microtype}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\Z}{\mathbb Z}
+\DeclareMathOperator{\lcm}{lcm}
+
+\title{一个关于 OEIS A172992 的四点共线构造}
+\author{}
+\date{2026 年 9 月 6 日}
+
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+
+\begin{abstract}
+核对一个把 $n$ 个有理点放在四条直线上的构造。正确的参数是
+$v=\ceil{(s-d-1)/2}$（其中出现的是 $d$，不是 $c$）。在此前提下，
+该构造对每个 $n\ge 28$ 保证
+$\floor{(n^2+12)/28}$ 条恰含四点的直线，并可整体放大为整数坐标。
+因此它把 OEIS A172992 在 $n=59,60$ 处的已知下界分别提高到
+$124,129$；这里得到的是下界，而不是最优性的证明。
+\end{abstract}
+
+\section*{构造与共线性}
+令
+\[
+ s=\floor{\frac{3(n+1)}7},\quad
+ a=\floor{\frac s2},\quad b=\ceil{\frac s2},\quad
+ c=\floor{\frac{n-s}2},\quad d=\ceil{\frac{n-s}2},
+\]
+以及
+\[
+ u=\floor{\frac{s-c-1}{2}},\qquad
+ v=\ceil{\frac{s-d-1}{2}}.
+\]
+取整数区间
+\[
+\begin{split}
+ A&=[0,a-1]\cap\Z,\qquad B=[0,b-1]\cap\Z,\\
+ C&=[u,u+c-1]\cap\Z,\\
+ D&=[-(b-1)+v,\;-(b-1)+v+d-1]\cap\Z.
+\end{split}
+\]
+分别在 $Y=0,X=0,Y=X,Y=-X$ 上放置
+\[
+\begin{aligned}
+ P_x&=\left(\frac1{3n+x},0\right),&
+ Q_y&=\left(0,\frac1{n+y}\right),\\
+ R_z&=\left(\frac1{4n+z},\frac1{4n+z}\right),&
+ S_w&=\left(\frac1{2n+w},-\frac1{2n+w}\right).
+\end{aligned}
+\]
+点数为 $a+b+c+d=s+(n-s)=n$。过 $P_x,Q_y$ 的直线方程是
+\[
+ (3n+x)X+(n+y)Y=1.
+\]
+代入 $R_z$ 与 $S_w$，分别得到
+\[
+ \frac{4n+x+y}{4n+z}=1\iff z=x+y,
+ \qquad
+ \frac{2n+x-y}{2n+w}=1\iff w=x-y.
+\]
+所以只要 $x\in A,y\in B,x+y\in C,x-y\in D$，四点
+$P_x,Q_y,R_{x+y},S_{x-y}$ 就共线。每条这样的直线在四条支撑线
+上各有唯一交点，故在所构造的点集中恰含这四点；不同的 $(x,y)$
+又由两个轴截点唯一确定不同直线。
+
+\section*{计数}
+记 $L=-(b-1)+v$。固定 $x\in A$ 后，可用的 $y$ 构成整数区间，故
+保证的四点线总数为
+\[
+ N(n)=\sum_{x=0}^{a-1}
+ \Bigl[\min\{b-1,u+c-1-x,x-L\}
+ -\max\{0,u-x,x-L-d+1\}+1\Bigr]_+,
+ \tag{1}
+\]
+其中 $[t]_+=\max(t,0)$。式 (1) 也提供了直接、无几何歧义的核对方法。
+
+将 $n=28q+r$（$0\le r<28$）代入所有端点并逐个剩余类化简，得到
+\[
+ N(n)=28q^2+2qr+h_r,\qquad h_r=\floor{\frac{r^2+12}{28}}.
+\]
+为便于复核，$h_r$ 的全部值如下；这一步只是式 (1) 中有限个
+整数区间端点的比较。
+\begingroup\scriptsize
+\[
+\begin{array}{c|rrrrrrrrrrrrrr}
+r&0&1&2&3&4&5&6&7&8&9&10&11&12&13\\ \midrule
+h_r&0&0&0&0&1&1&1&2&2&3&4&4&5&6\\[2pt]
+r&14&15&16&17&18&19&20&21&22&23&24&25&26&27\\ \midrule
+h_r&7&8&9&10&12&13&14&16&17&19&21&22&24&26
+\end{array}
+\]
+\endgroup
+因此
+\[
+ N(n)=\floor{\frac{(28q+r)^2+12}{28}}
+      =\floor{\frac{n^2+12}{28}},\qquad n\ge 28.
+\]
+
+这里 $v$ 的定义至关重要。若误写成
+$\ceil{(s-c-1)/2}$，断言并非对所有 $n$ 成立：例如 $n=29$ 时只数得
+$29$ 条，而目标值为 $30$；一般会在若干模 $28$ 的剩余类中少一条。
+
+\section*{整数化及 $n=59,60$}
+所有坐标均为有理数。令 $M$ 为构造中全部正分母
+\[
+ \{3n+x:x\in A\}\cup\{n+y:y\in B\}\cup
+ \{4n+z:z\in C\}\cup\{2n+w:w\in D\}
+\]
+的最小公倍数，并施行伸缩 $(X,Y)\mapsto(MX,MY)$，便得到整数坐标；
+该可逆线性变换保持所有共线关系及每条线上的点数。
+
+当 $n=59$ 时
+$(s,a,b,c,d,u,v)=(25,12,13,17,17,3,4)$，式 (1) 给出 $124$；
+当 $n=60$ 时相应参数为 $(26,13,13,17,17,4,4)$，给出 $129$。
+截至本文核对之日，OEIS A172992 页面仍列出 $a(59)=123,a(60)=126$，
+并说明各项是当前最佳已知值、未必最优\footnote{OEIS A172992，
+\url{https://oeis.org/A172992}，访问于 2026-09-06。}。
+故严格的结论是
+\[
+ A172992(59)\ge124,\qquad A172992(60)\ge129.
+\]
+若按该序列记录“最佳已知构造”的惯例更新条目，则候选新值正是
+$124$ 与 $129$；本构造本身不排除更大的值。
+
+\end{document}

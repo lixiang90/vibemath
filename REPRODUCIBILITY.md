@@ -15,6 +15,11 @@ PDFs are reference renderings.  Rebuilding a PDF may require TeX Live and the
 packages imported by its source.  Generated LaTeX auxiliary files must remain
 untracked.
 
+The four-tree orchard note has a focused exact-arithmetic check at
+`incidence-geometry/four-tree-orchard/tests/test_verify_construction.py`; it is
+also included in `tools/run_all_checks.py`.  Its English and Chinese PDFs are
+built from the corresponding sources in the project's `paper/` directory.
+
 Certificate hashes in historical supplement manifests refer to the original
 research workspace paths.  The repository-wide `MANIFEST.sha256` records the
 actual public-tree bytes and is the current integrity index.

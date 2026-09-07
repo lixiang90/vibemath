@@ -1,6 +1,6 @@
 # Verification snapshot
 
-Date: 2026-09-04
+Date: 2026-09-07
 
 The organized public source tree was checked again after the mathematical and
 novelty audit.
@@ -14,11 +14,14 @@ novelty audit.
   Round11 strict-existence certificate for a seventh model.
 - 14 tests passed for the six-term fourth-power project.
 - 8 tests passed for the C29 simultaneous-torsion project.
+- 6 tests passed for the four-tree orchard construction, covering the closed
+  count over twenty full residue cycles, the `n=59,60` improvements, the
+  `v`-parameter typo diagnostic, exact collinearity, and integer dilation.
 - 73 tests passed for the Campbell two-isogeny Selmer project, including the
   exact minimal-model/conductor audit, the Round09 `E`-side two-place local
   gate, the Round10 `E'`-side `Q_2`/`Q_3` gate, and the Round11 support/place
   bridge proving both exact isogeny Selmer groups and only `rank <= 3`.
-- Total: 266 passing tests, 0 failures.
+- Total: 272 passing tests, 0 failures.
 - The public tree contained no LaTeX auxiliaries, caches, temporary build
   directories, archive ZIPs, or duplicate build-output directories.
 - A targeted scan found no environment files, private-key files, GitHub tokens,
