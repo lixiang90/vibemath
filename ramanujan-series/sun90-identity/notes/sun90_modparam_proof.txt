@@ -1,0 +1,210 @@
+An independent eta-product/Sturm proof of the level-60 modular parametrization
+16 October 2026
+
+Purpose and status
+
+This supplement proves the general eta identities used in the Sun90 proof.
+It does not assume the particular parametrization in Campbell--Cooper--Ye's
+Tables 2--4 as a theorem. The displayed eta quotients and polynomials are
+candidates whose identities are established here by modularity, holomorphy
+at all cusps, and exact Sturm certificates. No earlier Sun90, CM, pullback,
+or jet certificate is imported by the accompanying verifier. This note
+accompanies the public proof and exact verification programs.
+
+Standard inputs: the eta-quotient modularity/character and cusp-order
+criteria, D log eta(d tau)=d E2(d tau)/24, derivative covariance of modular
+forms (or the second Rankin--Cohen bracket), and Sturm's theorem. These are
+general classical results, independent of the 2026 level-60 table entries.
+
+1. Definitions and normalizations
+
+Let Q=exp(2 pi i tau), Im(tau)>0, D=Q d/dQ=(2 pi i)^(-1)d/dtau,
+and eta_d=eta(d tau). Write
+
+ A=eta_1 eta_3 eta_4 eta_5 eta_12 eta_15 eta_20 eta_60,
+ B=eta_2^2 eta_6^2 eta_10^2 eta_30^2,
+ C=eta_2 eta_6 eta_10 eta_30,
+ X=A/B,  Z=C B^2/A^2,
+ L=D log X.
+
+Then X=Q+O(Q^2), Z=1+O(Q), L=1+O(Q). The letter B in this
+supplement denotes an eta product, not the restricted bivariate period in
+the main proof.
+
+The two polynomials to be proved valid are
+
+ G(x)=(1-x)(1-4x)(1+4x^2)(1-x+4x^2)
+     =1-6x+17x^2-48x^3+68x^4-96x^5+64x^6,
+ J(x)=4x(1-8x+40x^2-83x^3+160x^4-144x^5).
+
+We prove the complete identities
+
+ (I)  L^2=G(X)Z^2,
+ (II) 2Z D^2Z-3(DZ)^2=Z^4 J(X).
+
+In particular, near Q=0,
+
+ DX=X sqrt(G(X)) Z,
+
+where sqrt(G(0))=1. Section 6 also fixes the positive square-root sign at
+the CM point of the main proof without making a table-dependent choice.
+
+2. Eta modularity and exact cusp orders
+
+For f=prod_{d|60} eta_d^{r_d}, its weight is (sum r_d)/2. The two
+congruences sum d r_d=0 mod24 and sum (60/d) r_d=0 mod24 hold for
+A,B,C,X,Z. Their respective characters are trivial: the products
+prod d^{r_d} equal 12960000,12960000,3600,1,3600, all rational squares;
+the weights 4,4,2,0,2 are even. Thus all five are modular on Gamma_0(60),
+possibly meromorphic at the cusps before their orders are checked.
+Eta has no zero in the upper half-plane, so X and Z have neither zeros
+nor poles there.
+
+The exponents of X are +1 for d in {1,3,4,5,12,15,20,60}, and -2 for
+d in {2,6,10,30}. The exponents of Z are -2 on the first set and +5 on
+the second set. For a cusp of denominator c|60, the order is
+
+ v_c(f)=60/[24 gcd(c^2,60)] * sum_{d|60} gcd(c,d)^2 r_d/d.
+
+The full list of cusp orders needed below is:
+
+ c                   1  2  3  4  5  6 10 12 15 20 30 60
+ v_c(X)              1 -2  1  1  1 -2 -2  1  1  1 -2  1
+ v_c(Z)              0  6  0  0  0  6  6  0  0  0  6  0
+ v_c(G(X) Z^2)       0  0  0  0  0  0  0  0  0  0  0  0
+ v_c(J(X) Z^4)       1 12  1  1  1 12 12  1  1  1 12  1
+
+The cusp denominator list covers every cusp; for level60, the multiplicity
+phi(gcd(c,60/c)) is one for each c. The verifier independently computes
+all orders as exact fractions, rather than taking this table as input.
+Thus Z is a holomorphic weight2 form. G(X)Z^2 and J(X)Z^4 are holomorphic
+weight4 and weight8 forms, respectively, despite the poles of X at four
+cusps. For example, at any such pole the two orders are
+6*(-2)+2*6=0 and 6*(-2)+4*6=12.
+
+3. The first identity has Sturm bound 48
+
+Because X is a weight0 modular unit,
+
+ L=(1/24) sum_{d|60} r_d d E2(d tau),
+
+where r is the exponent vector of X. The nonmodular E2 transformation
+terms cancel because sum r_d=0. Hence L is a modular form of weight2 on
+Gamma_0(60). It is holomorphic in the upper half-plane since X has no
+zero or pole there. It is also holomorphic at every cusp: the logarithmic
+derivative of the local leading factor Q_c^m tends to a finite constant,
+and the remaining local power series is holomorphic. Equivalently, apply
+weight2 covariance of D log X to each cusp expansion.
+
+Therefore L^2-G(X)Z^2 is a holomorphic weight4 modular form on Gamma_0(60)
+with trivial character. The group index is
+
+ [SL2(Z):Gamma_0(60)]=60(1+1/2)(1+1/3)(1+1/5)=144.
+
+Its Sturm bound is floor(4*144/12)=48. The verifier calculates its exact
+integral coefficients Q^0,...,Q^48 and proves they all vanish. By Sturm's
+theorem, (I) follows identically. For clarity, exact zero checking can be
+viewed as applying the congruence form of Sturm's theorem for every prime;
+an integer coefficient divisible by every prime is zero.
+
+4. The second identity has Sturm bound 96
+
+For any weight2 holomorphic modular form f, the expression
+
+ R(f)=2f D^2f-3(Df)^2
+
+is a holomorphic modular form of weight8. This is a scalar multiple of the
+second Rankin--Cohen bracket. One direct proof uses j=c tau+d and
+a=c/(2 pi i). Under tau -> (a0 tau+b)/(c tau+d), the derivative rules are
+
+ f -> j^2 f,
+ Df -> j^4 Df+2a j^3 f,
+ D^2f -> j^6 D^2f+6a j^5 Df+6a^2 j^4 f.
+
+Substitution shows R(f) -> j^8 R(f), since both the anomaly terms cancel.
+The same covariance, applied to each cusp expansion, proves holomorphy
+at the cusps; derivatives of the local holomorphic series contain no
+negative powers. The verifier checks the cancellation symbolically.
+
+Take f=Z. Section 2 proves that Z^4 J(X) is likewise holomorphic of
+weight8. Thus R(Z)-Z^4 J(X) has Sturm bound floor(8*144/12)=96.
+The exact integer coefficients Q^0,...,Q^96 all vanish, proving (II).
+This calculation is independent of the previously certified degree-seven
+modular equation, whose Sturm bound was 6144.
+
+5. Exact series arithmetic and the linear period equation
+
+The program requires only integer arithmetic for the Fourier coefficients.
+For an eta quotient f=Q^m U(Q), U(0)=1, write
+
+ D log U=sum_{n>=1} b_n Q^n,
+ b_n=-sum_{d|n} r_d d sigma_1(n/d).
+
+Its coefficients u_n are recovered by
+
+ u_0=1, n u_n=sum_{k=1}^n b_k u_{n-k}.
+
+All divisions are checked exact. The exponent vectors are fixed in the
+program, and convolution is ordinary finite integer convolution. Derivatives
+multiply the n-th coefficient by n. The verifier also checks DX=X L directly
+as a power-series identity through the working bound. The resulting Fourier
+identities become complete theorems only after the independently checked
+modularity, cusp orders, and Sturm bounds have been supplied.
+
+Since X=Q+O(Q^2), it is a local coordinate at the cusp. Regard Z as an
+analytic function of x=X and put delta=x d/dx. From (I), with the branch
+sqrt(G)=1+O(x), and from (II), the chain rule gives
+
+ 2G Z delta^2 Z-G(delta Z)^2+(delta G)Z delta Z-J Z^2=0.
+
+Apply delta. The derivative of the left side factors as
+
+ Z[2G delta^3 Z+3(delta G)delta^2 Z
+       +(delta^2 G-2J)delta Z-(delta J)Z].
+
+Consequently
+
+ G delta^3 Z+(3/2)(delta G)delta^2 Z
+     +[(delta^2 G)/2-J]delta Z-(delta J)Z/2=0.
+
+This is exactly the general period operator used in the main Sun90 proof.
+The verifier checks this differential-algebra factorization symbolically.
+Thus both the general DX parametrization and its linear third-order
+operator have now been proved without assuming the 2026 tables.
+
+6. Positive branch at the CM point
+
+The independent CM certificate already proves
+0<Q_0=exp(-2 pi sqrt(7/60))<h=59/500. The eta factors are positive on
+0<Q<1, so Z(Q)>0. For 0<x<1,
+
+ sum_{n>=1} sigma_1(n)x^n <= x/(1-x)^3,
+
+since sigma_1(n)<=n(n+1)/2. Dropping the positive terms of the E2 expression
+for L yields the exact rational lower bound
+
+ L(Q_0)>=1-sum_{d in {1,3,4,5,12,15,20,60}}
+                  d h^d/(1-h^d)^3 >0.
+
+The last strict comparison is checked as an exact fraction in the verifier.
+Therefore the identity (I) uses L=+sqrt(G(X))Z at this CM point. The negative
+sign at its Fricke partner is then forced by differentiating the Fricke
+invariance of X, exactly as in the main proof's direct weighted evaluation.
+
+7. Reproduction
+
+Run
+
+ python sun90_modparam_verify.py
+
+with Python3 and SymPy installed. The script is self-contained and writes
+sun90_modparam_result.json beside itself. It does not execute or import
+any earlier project script, does not access the network, and does not use
+floating-point arithmetic. Current run: every check passes; the working
+Fourier precision is through degree96, with Sturm bounds48 and96.
+The JSON records all cusp orders and hashes of the exact Fourier series.
+
+This independently establishes the general modular-parametrization input
+to the complete proof. The paper supplies the independent Fricke argument
+for the weighted CM evaluation. No confirmation of first-proof priority,
+acceptance, prize eligibility, or payment is claimed.

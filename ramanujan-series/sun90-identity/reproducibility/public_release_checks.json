@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-16",
+  "publication_form": "public preprint and exact certificates",
+  "author": "李想",
+  "python": "3.14.5",
+  "sympy": "1.14.0",
+  "full_repository_check_command": "python tools/run_all_checks.py",
+  "existing_unittest_groups_passed": [
+    96,
+    33,
+    42,
+    14,
+    8,
+    6,
+    73
+  ],
+  "existing_unittest_total": 272,
+  "sun90_exact_components_passed": 4,
+  "public_source_hashes_match_full_report": true,
+  "pdf": {
+    "path": "paper/main.pdf",
+    "source": "paper/main.tex",
+    "pages": 12,
+    "page_size": "A4",
+    "compiler": "XeLaTeX (TeX Live 2022)",
+    "all_pages_rendered_and_visually_reviewed": true,
+    "undefined_references": false,
+    "missing_character_reports": false,
+    "overfull_boxes": false,
+    "pdf_sha256": "929e6f2ca89bacae5b916d669ca0d078c33abf378d0095c20d28220b0dab70df",
+    "source_sha256": "5ccde8510d29ecb5358a9bbde825fed95804ab9f2eb7137acb9fa84016f64b64"
+  },
+  "scope": "Internal reproducibility evidence; the paper supplies standard-theorem applications and analytic arguments.",
+  "external_peer_review_completed": false,
+  "first_proof_priority_confirmed": false,
+  "prize_eligibility_confirmed": false
+}

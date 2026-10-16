@@ -1,0 +1,760 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,amsthm,mathtools,geometry,booktabs,array,hyperref}
+\geometry{margin=24mm}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\hypersetup{pdftitle={A proof of Sun's ninety-dollar series for 1/pi},pdfauthor={李想}}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\refname}{References}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\tht}{\vartheta}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\code}[1]{\path{#1}}
+\DeclareMathOperator{\Sym}{Sym}
+\title{A proof of Sun's ninety-dollar series for $1/\pi$}
+\author{李想}
+\date{16 October 2026}
+
+\begin{document}
+\maketitle
+\begin{center}
+\small\textbf{Version 2 --- public preprint; independent review pending}
+\end{center}
+\begin{abstract}
+We prove the double-series identity for $90/\pi$ proposed by Zhi-Wei Sun
+in 2011. A restriction of its bivariate generating function satisfies a
+third-order differential equation and an additional first-order gradient
+identity. An algebraic substitution identifies the restricted period with
+a modular form of level $60$. We prove the required general modular
+parametrization independently from eta products, cusp orders, and exact
+Sturm certificates of bounds $48$ and $96$. We also certify the degree-seven
+modular equation by Sturm's theorem, isolate the complex multiplication
+value by rational inequalities, and derive the weighted period evaluation
+directly by differentiating the Fricke transformation. No tabulated
+modular parametrization or special value is assumed. Exact rational-function
+and integer-series certificates accompany the proof.
+\end{abstract}
+
+\section{The identity and the proof strategy}
+Sun's conjectural identity \cite[Conjecture 5, (5.9)]{Sun} is the following.
+\begin{theorem}\label{thm:main}
+The series below converges absolutely, and
+\begin{equation}\label{eq:main}
+ \sum_{n=0}^{\infty}\frac{357n+103}{2160^n}\binom{2n}{n}
+ \sum_{k=0}^{n}\binom nk\binom{n+2k}{2k}\binom{2k}{k}
+                 (-324)^{n-k}=\frac{90}{\pi}.
+\end{equation}
+\end{theorem}
+Sun offered ninety US dollars for the first rigorous proof. The identity
+was also listed as an open conjecture in the 2024 version of
+\cite[Section 4, (4.3)]{vHTY}. This article supplies a proof and its
+computational certificates; it makes no claim that priority or a prize
+payment has been confirmed by the sponsor.
+
+For any variable $x$, write $\tht_x=x\dd/\dd x$.
+The eta quotients and polynomials suggested by
+\cite[Tables 2--4]{CCY} provided candidate modular data; no identity
+from those tables is a theorem input here. Section~\ref{sec:modparam}
+proves their required identities independently. The standard modular-form
+inputs are the eta-quotient modularity and cusp-order criteria
+\cite{Newman,Ligozat}, the eta transformation under $\tau\mapsto-1/\tau$,
+and Sturm's theorem \cite{Sturm}. The needed derivative covariance is
+proved explicitly below. The CM value and weighted evaluation are also
+proved independently. The algebraic bridge consists of a restriction
+identity, a gradient relation, and an exact transformation of differential
+operators, each checked over a rational-function field.
+
+\section{A bivariate period and its restriction}
+Define, initially near $(u,v)=(0,0)$,
+\begin{equation}\label{eq:H}
+ \HH(u,v)=\sum_{j,k\geq0}
+ \binom{2j+2k}{j+k}\frac{(j+3k)!}{j!(k!)^3}u^jv^k.
+\end{equation}
+Put $U=\tht_u\HH$ and $V=\tht_v\HH$. The substitution $j=n-k$
+shows that the left side of \eqref{eq:main} is
+\begin{equation}\label{eq:targetH}
+ \bigl[357(U+V)+103\HH\bigr]
+             \left(-\frac3{20},\frac1{2160}\right).
+\end{equation}
+Our restriction parameter is $q$, which is distinct from the modular
+nome used later. Set
+\begin{equation}\label{eq:curve}
+ u(q)=-\frac{2q(1+6q)}{1+8q},\qquad
+ v(q)=\frac{16q^4}{1+8q},\qquad B(q)=\HH(u(q),v(q)).
+\end{equation}
+The target point corresponds to $q_0=1/12$.
+
+\begin{lemma}\label{lem:restriction}
+On the curve \eqref{eq:curve},
+\begin{equation}\label{eq:gradient}
+ 4q(2q+1)B+(8q^2+12q+1)U+(24q^2+8q-1)V=0.
+\end{equation}
+Moreover, $L_BB=0$, where $\tht=\tht_q$ and coefficients in the following
+operator are placed to the left of powers of $\tht$:
+\begin{align}\label{eq:LB}
+L_B={}&-\tht^3
+ -2q(22\tht^3+15\tht^2+9\tht+2)\notag\\
+ &-4q^2(181\tht^3+219\tht^2+142\tht+32)\notag\\
+ &-32q^3(169\tht^3+270\tht^2+181\tht+45)\notag\\
+ &-64q^4(244\tht^3+384\tht^2+149\tht-18)\notag\\
+ &+512q^5(\tht+1)(20\tht^2+148\tht+159)
+ +49152q^6(\tht+1)(\tht+2)(2\tht+3).
+\end{align}
+The analytic solution of this equation with constant term $1$ is unique.
+\end{lemma}
+
+\begin{proof}
+We describe an exact certificate for both assertions. The coefficient
+ratios of \eqref{eq:H} give $P_1\HH=P_3\HH=0$, with
+\begin{align}\label{eq:PDE}
+P_1={}&u(1-4u)\partial_u^2+v(1-16u)\partial_u\partial_v
+       -12v^2\partial_v^2\notag\\
+ &+(1-10u)\partial_u-22v\partial_v-2,\notag\\
+P_3={}&u\tht_v^3-v\tht_u(\tht_u+3\tht_v+1)
+                              (\tht_u+3\tht_v+2).
+\end{align}
+For example, if $a_{j,k}$ is the coefficient in \eqref{eq:H}, then
+\[
+ \frac{a_{j+1,k}}{a_{j,k}}
+ =\frac{2(2j+2k+1)(j+3k+1)}{(j+k+1)(j+1)},\qquad
+ \frac{a_{j-1,k}}{a_{j,k-1}}
+ =\frac{j(j+3k-2)(j+3k-1)}{k^3}.
+\]
+The second equality is used for $j,k\geq1$; the multipliers in $P_3$
+make the boundary terms vanish.
+
+A further, fourth-order radial equation is obtained as follows. Define
+\[
+ a_n(c)=\sum_{k=0}^n\frac{(n+2k)!}{(n-k)!(k!)^3}c^{n-k},\qquad
+ F_c(z)=\sum_{n\geq0}\binom{2n}{n}a_n(c)z^n=\HH(cz,z).
+\]
+Summing first over $j=n-k$ by the binomial theorem gives
+\begin{equation}\label{eq:Gauss}
+ A_c(t):=\sum_{n\geq0}a_n(c)t^n
+ =\frac1{1-ct}\,{}_2F_1\left(\frac13,\frac23;1;
+                              \frac{27t}{(1-ct)^3}\right).
+\end{equation}
+The pulled-back Gauss equation is
+$\sum_{r=0}^4t^rP_r(\tht_t)A_c=0$, where
+\begin{align*}
+P_0(h)&=-h^2,\\
+P_1(h)&=(c+27)h^2+(5c+27)h+c+6,\\
+P_2(h)&=3c\bigl((c+18)h^2-2ch-c-2\bigr),\\
+P_3(h)&=-c^3h(5h+3),\\
+P_4(h)&=2c^4(h+1)^2.
+\end{align*}
+Here the temporary notation $P_r(h)$ denotes coefficient polynomials,
+not the partial differential operators in \eqref{eq:PDE}.
+Multiplying coefficients by $\binom{2n}{n}$ gives the fifth-order
+annihilator $M=\sum z^rM_r(\tht_z)$, where
+\[
+ M_r(h)=4^rP_r(h)\frac{(h+\tfrac12)_r}{(h+1)_r}
+                         (h+r)(h+r-1)(h+r-2).
+\]
+Each $M_r(h)$ simplifies to a polynomial. There is an exact Ore
+factorization $M=QL$, with
+\begin{equation}\label{eq:Ore}
+ Q=\frac{-(1+8cz)\tht_z+2(1+2cz)}{1-10cz},\qquad
+ L=\sum_{r=0}^4z^r\ell_r(\tht_z),
+\end{equation}
+where
+\begin{align*}
+\ell_0(h)&=h^3(h-1),\\
+\ell_1(h)&=-2h\bigl((11c+54)h^3+(-c+81)h^2+(7c+39)h+c+6\bigr),\\
+\ell_2(h)&=12c(2h+1)\bigl((7c+45)h^3+7ch^2+(6c-5)h+2c\bigr),\\
+\ell_3(h)&=-8c^3(2h+1)(2h+3)(17h^2+24h+12),\\
+\ell_4(h)&=80c^4(h+1)(2h+1)(2h+3)(2h+5).
+\end{align*}
+The rule $\tht_z f=f\tht_z+zf'$ verifies \eqref{eq:Ore} coefficient by
+coefficient. Thus $E=LF_c$ has the form
+$E=Cz^2(1+8cz)^{-3/2}$. The first three coefficients of $F_c$ are
+$1,2c+12,6c^2+144c+540$; substitution shows $[z^2]E=0$.
+Consequently $LF_c=0$.
+
+Replace $c$ by $u/v$, $z$ by $v$, and $\tht_z$ by
+$\tht_u+\tht_v$ in this radial equation. Together with
+\eqref{eq:PDE}, it supplies the three equations used by the jet
+certificate. More precisely, the certificate gives rational functions
+of $q$ expressing $L_BB$ as a linear combination of derivatives of
+these three equations of total order at most five. A second multiplier
+vector proves, for the left side $W$ of \eqref{eq:gradient},
+\begin{equation}\label{eq:Wode}
+ \tht_qW=\frac{4q}{1+8q}W.
+\end{equation}
+Both statements are checked by matching all $21$ ordinary jets
+$\partial_u^a\partial_v^b\HH$, $a+b\leq5$, over $\mathbb Q(q)$.
+The vectors are given in
+\code{prize_congruence_curve90_jet_certificate.json}; the independent
+verifier reconstructs the operators and checks every coefficient.
+Equation \eqref{eq:Wode} gives $W=C\sqrt{1+8q}$, while $W(0)=0$.
+This proves \eqref{eq:gradient}. Finally,
+$L_B|_{q=0}=-\tht_q^3$, so the coefficient of $q^n$, $n\geq1$,
+is determined uniquely after division by $-n^3$.
+\end{proof}
+
+At $q_0$, \eqref{eq:gradient} and the chain rule give
+\[
+ 7B+37U-3V=0,\qquad
+ \tht_qB=\frac{14}{15}U+\frac{18}{5}V.
+\]
+Eliminating $U,V$ therefore reduces \eqref{eq:targetH} to
+\begin{equation}\label{eq:reduction}
+ S=3\bigl[(35\tht_q+18)B\bigr](1/12).
+\end{equation}
+
+\section{The level-60 modular transformation}\label{sec:modparam}
+For $\tau$ in the upper half-plane, write $\eta_d=\eta(d\tau)$ and
+$Q_\tau=e^{2\pi i\tau}$. Put
+$D=(2\pi i)^{-1}\dd/\dd\tau=Q_\tau\dd/\dd Q_\tau$. Define
+\begin{align}\label{eq:eta}
+ \mathcal A&=\eta_1\eta_3\eta_4\eta_5\eta_{12}\eta_{15}\eta_{20}\eta_{60},&
+ \mathcal B&=\eta_2^2\eta_6^2\eta_{10}^2\eta_{30}^2,\notag\\
+ X&=\mathcal A/\mathcal B,&
+ Z&=\eta_2\eta_6\eta_{10}\eta_{30}/X^2.
+\end{align}
+Write $\mathcal C=\eta_2\eta_6\eta_{10}\eta_{30}$ and $L=D\log X$.
+The product expansions give $X=Q_\tau+O(Q_\tau^2)$,
+$Z=1+O(Q_\tau)$, and $L=1+O(Q_\tau)$. The candidate polynomials are
+\begin{align}\label{eq:GJ}
+ G(x)&=(1-x)(1-4x)(1+4x^2)(1-x+4x^2),\notag\\
+ J(x)&=4x(1-8x+40x^2-83x^3+160x^4-144x^5).
+\end{align}
+
+\subsection{An independent eta-product and Sturm proof}
+\begin{proposition}\label{prop:modparam}
+The eta quotients in \eqref{eq:eta} satisfy the identities
+\begin{equation}\label{eq:modidentities}
+ L^2=G(X)Z^2,\qquad
+ 2Z D^2Z-3(DZ)^2=Z^4J(X).
+\end{equation}
+In particular, near the cusp $Q_\tau=0$,
+\begin{equation}\label{eq:DXlocal}
+ DX=X\sqrt{G(X)}Z,\qquad \sqrt{G(0)}=1.
+\end{equation}
+As a function of the local coordinate $x=X$, the normalized period
+$Z(x)=1+O(x)$ satisfies
+\begin{equation}\label{eq:LZ}
+ L_ZZ=0,\qquad
+ L_Z=G\delta^3+\frac32(\delta G)\delta^2
+             +\left(\frac12\delta^2G-J\right)\delta-\frac12\delta J,
+ \quad \delta=x\frac{\dd}{\dd x}.
+\end{equation}
+The analytic solution of \eqref{eq:LZ} with constant term $1$ is unique.
+\end{proposition}
+\begin{proof}
+We give all modularity and holomorphy hypotheses needed for the exact
+Sturm checks. For an eta quotient
+$f=\prod_{d\mid60}\eta_d^{r_d}$ of integer weight
+$k=\tfrac12\sum r_d$, the classical eta-quotient criterion
+\cite{Newman,Ligozat} requires
+\begin{equation}\label{eq:etacriterion}
+ \sum_{d\mid60}d r_d\equiv
+ \sum_{d\mid60}(60/d)r_d\equiv0\pmod {24}.
+\end{equation}
+Its character is the Kronecker character determined by
+$(-1)^k\prod d^{r_d}$. Thus, for even $k$, a rational square
+$\prod d^{r_d}$ gives trivial character. For
+$\mathcal A,\mathcal B,\mathcal C,X,Z$, respectively, the weights are
+$4,4,2,0,2$, both sums in \eqref{eq:etacriterion} give the list
+$120,96,48,24,0$, and the corresponding products are
+$12960000,12960000,3600,1,3600$. These are all squares, and the two
+congruences hold for each quotient. Eta has no zeros in the upper
+half-plane, so $X$ is a modular unit there.
+
+Put
+\[
+ S_+=\{1,3,4,5,12,15,20,60\},\qquad S_-=\{2,6,10,30\}.
+\]
+The exponents of $X$ are $1$ on $S_+$ and $-2$ on $S_-$;
+those of $Z$ are $-2$ and $5$, respectively.
+The cusp-order formula \cite{Ligozat}, for a cusp of denominator
+$c\mid60$, is
+\begin{equation}\label{eq:cuspformula}
+ v_c(f)=\frac{60}{24\gcd(c^2,60)}
+             \sum_{d\mid60}\frac{\gcd(c,d)^2}{d}r_d.
+\end{equation}
+Here the order is with respect to the local parameter of that cusp.
+There is one cusp for each divisor $c$: the multiplicity
+$\varphi(\gcd(c,60/c))$ is $1$ in every case. Formula
+\eqref{eq:cuspformula} gives the following complete table, grouped
+according to the twelve cusp denominators:
+\begin{center}
+\small
+\begin{tabular}{c|rrrr}
+denominators $c$&$v_c(X)$&$v_c(Z)$&
+$v_c(G(X)Z^2)$&$v_c(J(X)Z^4)$\\ \hline
+$2,6,10,30$&$-2$&$6$&$0$&$12$\\
+$1,3,4,5,12,15,20,60$&$1$&$0$&$0$&$1$
+\end{tabular}
+\end{center}
+For example, at a pole of $X$, both $G$ and $J$ have degree $6$,
+so the last two orders are $6(-2)+2(6)=0$ and
+$6(-2)+4(6)=12$. At a zero of $X$, use $G(0)=1$ and the
+simple zero of $J$ at $0$. Consequently $Z$ is a holomorphic
+weight-$2$ form, and $G(X)Z^2$ and $J(X)Z^4$ are holomorphic forms of
+weights $4$ and $8$ on $\Gamma_0(60)$ with trivial character.
+
+The logarithmic derivative of the eta product gives
+\begin{equation}\label{eq:LE2}
+ L=\frac1{24}\sum_{d\mid60}r_d d E_2(d\tau),
+ \qquad
+ E_2(\tau)=1-24\sum_{n\geq1}\sigma_1(n)Q_\tau^n,
+\end{equation}
+where $r_d$ is the exponent vector of $X$ and
+$\sigma_1(n)=\sum_{a\mid n}a$. The $E_2$ transformation anomaly
+cancels because $\sum r_d=0$, so $L$ has weight $2$.
+Alternatively this follows directly by differentiating the weight-$0$
+transformation of $X$. It is holomorphic in the upper half-plane.
+For any cusp represented by $\sigma\in\mathrm{SL}_2(\mathbb Z)$,
+write its width as $w$, and
+$X(\sigma\tau)=q_c^m(a_0+O(q_c))$, where
+$q_c=e^{2\pi i\tau/w}$ and $a_0\ne0$. Then
+\[
+ (L|_2\sigma)(\tau)=D\log X(\sigma\tau)
+                  =\frac m w+O(q_c).
+\]
+This proves holomorphy at all cusps, including poles of $X$.
+Hence $L^2-G(X)Z^2$ is a holomorphic weight-$4$ form.
+
+For completeness, the derivative expression
+$R(f)=2fD^2f-3(Df)^2$ of a holomorphic weight-$2$ form is holomorphic
+of weight $8$. It equals one third of the second Rankin--Cohen bracket
+$[f,f]_2$. Directly, for
+$\gamma=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$,
+$j=c\tau+d$, and $\alpha=c/(2\pi i)$, differentiation gives
+\begin{align*}
+ f(\gamma\tau)&=j^2f(\tau),\\
+ (Df)(\gamma\tau)&=j^4Df(\tau)+2\alpha j^3f(\tau),\\
+ (D^2f)(\gamma\tau)&=j^6D^2f(\tau)+6\alpha j^5Df(\tau)
+                                  +6\alpha^2j^4f(\tau).
+\end{align*}
+Substitution cancels the anomaly terms and gives
+$R(f)(\gamma\tau)=j^8R(f)(\tau)$. The same calculation for the slash
+operator at any cusp gives
+$R(f)|_8\sigma=R(f|_2\sigma)$. The right side has a holomorphic local
+Fourier series. This proves the cusp holomorphy as well as covariance.
+Apply this to $f=Z$. Thus $R(Z)-Z^4J(X)$ is a holomorphic
+weight-$8$ form.
+
+The index is
+\[
+ [\mathrm{SL}_2(\mathbb Z):\Gamma_0(60)]
+ =60(1+1/2)(1+1/3)(1+1/5)=144.
+\]
+The Sturm bounds \cite{Sturm} for the two differences are therefore
+$4\cdot144/12=48$ and $8\cdot144/12=96$.
+The self-contained program \code{sun90_modparam_verify.py}
+proves that their exact integer coefficients vanish from degree $0$
+through $48$ and $96$, respectively. It also computes
+\eqref{eq:etacriterion}, every cusp order, and the derivative anomaly
+cancellation independently from the displayed exponent vectors.
+
+Here is a reproducible specification of the integer-series arithmetic.
+For $f=Q_\tau^m\sum_{n\geq0}u_nQ_\tau^n$, $u_0=1$, the eta product
+gives
+\begin{equation}\label{eq:etarecurrence}
+ b_n=-\sum_{\substack{d\mid60\\d\mid n}}r_d d\,\sigma_1(n/d),
+ \qquad
+ n u_n=\sum_{k=1}^n b_k u_{n-k}.
+\end{equation}
+Each division is checked exact. Ordinary integer convolutions give the
+products, and $D$ multiplies the coefficient of $Q_\tau^n$ by $n$.
+The polynomial coefficients used in the checks are
+\begin{align*}
+ G&=(1,-6,17,-48,68,-96,64),\\
+ J&=(0,4,-32,160,-332,640,-576),
+\end{align*}
+listed in ascending powers. Sturm's theorem now proves both complete
+identities in \eqref{eq:modidentities}. Equivalently one can apply its
+congruence formulation for every prime to these integral coefficients.
+Thus these checks are finite certificates for identities, with their
+modularity hypotheses supplied above.
+
+Near the cusp, $L,Z$, and the square root of $G$ all have constant
+term $1$, proving \eqref{eq:DXlocal}. Since $X=Q_\tau+O(Q_\tau^2)$,
+we may use $x=X$ as a local coordinate. Applying the chain rule to
+\eqref{eq:modidentities} gives
+\[
+ 2GZ\delta^2Z-G(\delta Z)^2+(\delta G)Z\delta Z-JZ^2=0.
+\]
+Its $\delta$ derivative is
+\[
+ Z\bigl[2G\delta^3Z+3(\delta G)\delta^2Z
+             +(\delta^2G-2J)\delta Z-(\delta J)Z\bigr]=0.
+\]
+Because $Z(0)=1$, division by $2Z$ proves \eqref{eq:LZ}.
+Finally its constant-coefficient indicial operator is $\delta^3$:
+the coefficient of $x^n$ is determined recursively by division by
+$n^3$ for every $n\geq1$. This proves uniqueness.
+\end{proof}
+
+\subsection{The algebraic pullback}
+
+Set
+\begin{equation}\label{eq:phiK}
+ \phi(x)=\frac{x}{2(1-2x)^2},\qquad
+ K(x)=(1-2x)^2\sqrt{1+4x^2}.
+\end{equation}
+An exact differential-operator identity is
+\begin{equation}\label{eq:pullback}
+ K^{-1}L_B(\phi(x),\tht_q)K
+ =\frac{(1+4x^2)^2}{(2x-1)^9(2x+1)}L_Z,
+ \qquad \tht_q=\frac{x(1-2x)}{1+2x}\frac{\dd}{\dd x}.
+\end{equation}
+To verify it, use
+$K'/K=-4/(1-2x)+4x/(1+4x^2)$ and compare the four coefficients of
+$(\dd/\dd x)^r$, $0\leq r\leq3$. These are rational-function
+identities, all checked in the attached verifier. Since
+$\phi(0)=0$, $\phi'(0)=1/2$, and $K(0)=1$, uniqueness in
+Lemma~\ref{lem:restriction} yields
+\begin{equation}\label{eq:BZ}
+ B(\phi(x))=K(x)Z(x).
+\end{equation}
+
+\section{An independently certified modular equation and CM point}
+We next establish the needed special value of $X$, rather than assuming
+its entry in a table. Define the symmetric polynomial
+\begin{equation}\label{eq:Phi}
+ \Phi(x,y)=x^8+y^8+\sum_{i=1}^7\sum_{j=1}^i c_{ij}S_{ij}(x,y),
+\end{equation}
+where $S_{ii}=x^iy^i$ and $S_{ij}=x^iy^j+x^jy^i$ for $i>j$.
+Its complete coefficient array is
+\begin{center}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{r|rrrrrrr}
+$i\backslash j$&1&2&3&4&5&6&7\\\hline
+1&$-1$&&&&&&\\
+2&7&$-14$&&&&&\\
+3&$-21$&49&$-392$&&&&\\
+4&49&$-119$&588&$-168$&&&\\
+5&$-77$&231&$-1120$&2352&$-6272$&&\\
+6&77&$-245$&924&$-1904$&3136&$-3584$&\\
+7&$-56$&308&$-1232$&3136&$-5376$&7168&$-4096$
+\end{tabular}
+\end{center}
+
+\begin{lemma}\label{lem:CM}
+The identity $\Phi(X(\tau),X(7\tau))=0$ holds. At
+$\tau_0=i\sqrt{7/60}$,
+\begin{equation}\label{eq:CM}
+ X(\tau_0)=x_0:=\frac{5-\sqrt{21}}4.
+\end{equation}
+The branch $y=y(x)$ of $\Phi(x,y)=0$ through $(x_0,x_0)$ satisfies
+\begin{equation}\label{eq:ysecond}
+ y'(x_0)=-1,\qquad y''(x_0)=\frac{56}{15}+\frac{32\sqrt{21}}{63}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The eta-quotient criterion shows that $\mathcal A$ and $\mathcal B$
+are holomorphic weight-$4$ forms of trivial character on $\Gamma_0(60)$.
+For their exponent vectors, respectively, both sums
+$\sum d r_d$ and $\sum (60/d)r_d$ equal $120$ and $96$; their products
+$\prod d^{r_d}$ are squares. All exponents are nonnegative.
+Thus
+\[
+ \mathcal B(\tau)^8\mathcal B(7\tau)^8
+                \Phi(X(\tau),X(7\tau))
+\]
+is a holomorphic weight-$64$ form of trivial character on
+$\Gamma_0(420)$. The index of this group is $1152$, so its Sturm
+bound is $64\cdot1152/12=6144$. The exact integer eta-product
+calculation in \code{prize90_geometry_mod7_sturm.py} proves that
+every coefficient from $Q_\tau^0$ through $Q_\tau^{6144}$ is zero.
+Sturm's theorem \cite{Sturm} proves the modular identity.
+The computation uses exact integer convolution with a rigorous
+coefficient bound; its result is not a finite numerical test substituted
+for a modular identity.
+
+The eta transformation $\eta(-1/\tau)=\sqrt{-i\tau}\eta(\tau)$,
+together with the reciprocal symmetry of the exponents of $X$, gives
+\begin{equation}\label{eq:FrickeX}
+ X\left(-\frac1{60\tau}\right)=X(\tau).
+\end{equation}
+Put $\tau_1=i/\sqrt{420}$. Then
+$7\tau_1=-1/(60\tau_1)=\tau_0$, so $X(\tau_0)$ lies on the diagonal
+of the modular equation. Direct factorization gives
+\begin{align}\label{eq:diagonal}
+\Phi(x,x)={}&-x^2(2x-1)^2(4x^2-10x+1)(4x^2+2x+1)\notag\\
+ &\hspace{10mm}\cdot(4x^3+2x-1)(16x^3-8x^2-1).
+\end{align}
+
+For completeness, the correct root is selected by rational inequalities.
+Machin's formula with alternating-series bounds, followed by positive
+Taylor bounds for the exponential, gives
+\[
+ \frac{29}{250}<e^{-2\pi\sqrt{7/60}}<\frac{59}{500}.
+\]
+One may use $6283/2000<\pi<22/7$ and
+$683/2000<\sqrt{7/60}<427/1250$, and twenty exponential Taylor terms.
+Let $l=29/250$, $h=59/500$, and put
+\[
+ S_A=\sum_{d\in\{1,3,4,5,12,15,20,60\}}\frac{h^d}{1-h^d},\qquad
+ S_B=2\sum_{d\in\{2,6,10,30\}}\frac{h^d}{1-h^d}.
+\]
+Using $\prod(1-a_n)\geq1-\sum a_n$ first for finite products and then
+by a limit, the eta products imply
+\[
+ l(1-S_A)<X(\tau_0)<\frac{h(1-l)}{1-S_B}.
+\]
+Exact rational comparison makes the lower bound greater than $1/10$
+and the upper bound smaller than $11/100$.
+Only one root of \eqref{eq:diagonal} lies in this interval: it is the
+smaller root of $4x^2-10x+1$. This proves \eqref{eq:CM}.
+These inequalities and the root count are independently checked by
+\code{prize90_geometry_cm_verify.py}.
+
+Finally $\Phi_x(x_0,x_0)\ne0$. Symmetry gives $y'(x_0)=-1$, and
+implicit differentiation gives
+\[
+ y''(x_0)=-\frac{2(\Phi_{xx}-\Phi_{xy})}{\Phi_x}(x_0,x_0).
+\]
+Substitution of the explicit polynomial \eqref{eq:Phi} proves
+\eqref{eq:ysecond} in the quadratic field $\mathbb Q(\sqrt{21})$.
+\end{proof}
+
+\section{The weighted period value by Fricke differentiation}
+Here we derive the weighted evaluation directly, so that no specific
+CM table or displayed Ramanujan--Sato formula is needed. Write
+\[
+ D=\frac1{2\pi i}\frac{\dd}{\dd\tau},\qquad g(x)=\sqrt{G(x)}.
+\]
+Proposition~\ref{prop:modparam} gives
+\begin{equation}\label{eq:DX}
+ DX=Xg(X)Z
+\end{equation}
+on the branch from the cusp. We check its sign at the required CM point
+without a table convention. Lemma~\ref{lem:CM} proves
+$0<Q_0=e^{-2\pi\sqrt{7/60}}<h=59/500$.
+All eta factors, and hence $Z$, are positive for real $0<Q_\tau<1$.
+The elementary inequality
+\[
+ \sum_{n\geq1}\sigma_1(n)t^n\leq\frac{t}{(1-t)^3}
+ \quad(0<t<1)
+\]
+follows from $\sigma_1(n)\leq n(n+1)/2$. Dropping the positive
+$S_-$ terms in \eqref{eq:LE2} gives, for $0<Q_\tau\leq h$,
+\begin{equation}\label{eq:Lpositive}
+ L(Q_\tau)\geq
+ 1-\sum_{d\in S_+}\frac{d h^d}{(1-h^d)^3}>0.
+\end{equation}
+The last comparison is exact rational arithmetic, also checked by
+\code{sun90_modparam_verify.py}. Thus $L=+\sqrt{G(X)}Z$ at $\tau_0$,
+with $g(x_0)>0$. This also shows that $X$ is strictly increasing on the
+real nome interval from the cusp to $Q_0$, so that the local coordinate
+and period in Proposition~\ref{prop:modparam} reach this CM value on
+the chosen branch. The eta transformation
+and \eqref{eq:FrickeX} give
+\begin{equation}\label{eq:FrickeZ}
+ Z\left(-\frac1{60\tau}\right)=-60\tau^2Z(\tau).
+\end{equation}
+Set $t=\tau_1$, $s=7t=\tau_0$, and abbreviate $Z_s=Z(s)$.
+Differentiating \eqref{eq:FrickeX} and \eqref{eq:FrickeZ} yields
+\begin{equation}\label{eq:FrickeD}
+ Z(t)=7Z_s,\qquad DX(t)=-7DX(s),\qquad
+ DZ(t)+49DZ(s)=\frac{14\sqrt{105}}{\pi}Z_s.
+\end{equation}
+In particular the two occurrences of $DX$ have opposite signs; at $t$
+one must use $DX(t)=-x_0g(x_0)Z(t)$.
+
+The branch $y(x)=X(7\tau)$, $x=X(\tau)$, has
+\[
+ y''(x_0)=\frac{49D^2X(s)+D^2X(t)}{DX(t)^2}.
+\]
+At $s$ and $t$, respectively, differentiating \eqref{eq:DX} with the
+appropriate signs gives
+\begin{align*}
+ D^2X(s)&=x_0g(g+x_0g')Z_s^2+x_0g\,DZ(s),\\
+ D^2X(t)&=x_0g(g+x_0g')Z(t)^2-x_0g\,DZ(t),
+\end{align*}
+where $g,g'$ are evaluated at $x_0$. Substitute
+\eqref{eq:FrickeD}, and use $DZ(s)=x_0gZ_sZ_x(x_0)$. The result is
+\begin{equation}\label{eq:yFricke}
+ y''(x_0)=\frac2{x_0}+\frac{G'(x_0)}{G(x_0)}
+     +\frac{2Z_x(x_0)}{Z_s}
+     -\frac{14\sqrt{105}}{49\pi x_0g(x_0)Z_s}.
+\end{equation}
+Consequently, if
+\begin{equation}\label{eq:lambda}
+ \lambda=1+\frac{x_0G'(x_0)}{2G(x_0)}-\frac{x_0y''(x_0)}2
+         =\frac32-\frac{11\sqrt{21}}{42},
+\end{equation}
+then \eqref{eq:yFricke} proves the exact evaluation
+\begin{equation}\label{eq:value}
+ [ (\delta+\lambda)Z ](x_0)
+       =\frac{\sqrt{60/7}}{2\pi\sqrt{G(x_0)}}.
+\end{equation}
+This derivation uses the independent modular equation and its implicit
+derivatives from Lemma~\ref{lem:CM}.
+
+\section{Completion of the proof and convergence}
+Since $\phi(x_0)=1/12$, differentiate \eqref{eq:BZ} to obtain
+\begin{align}\label{eq:weightedbridge}
+(35\tht_q+18)B
+={}&\frac{35K(x)(1-2x)}{1+2x}\notag\\[-1mm]
+ &\cdot\left[\delta+\delta\log K(x)
+                   +\frac{18(1+2x)}{35(1-2x)}\right]Z(x).
+\end{align}
+At $x=x_0$, the constant inside the square brackets equals
+$\lambda$ in \eqref{eq:lambda}. All these equalities are exact in
+$\mathbb Q(\sqrt{21})$. The positive algebraic factor
+\[
+ \frac{35K(x_0)(1-2x_0)}{1+2x_0}
+               \frac{\sqrt{60/7}}{2\sqrt{G(x_0)}}
+\]
+has square $900$. Since $0<x_0<1/4$, every displayed square root
+and remaining factor is positive, so this factor equals $30$.
+Equations \eqref{eq:value} and \eqref{eq:weightedbridge} now give
+$[(35\tht_q+18)B](1/12)=30/\pi$. Combined with
+\eqref{eq:reduction}, this proves \eqref{eq:main}.
+
+We justify all analytic operations and continuation used above.
+Replacing $-324$ by $324$ majorizes the original double series
+termwise. From $\binom{2n}{n}\leq4^n$ and \eqref{eq:Gauss}, at
+$z_0=1/2160$ the corresponding Gauss parameters are
+\[
+ 1296z_0=\frac35<1,\qquad
+ \frac{108z_0}{(1-1296z_0)^3}=\frac{25}{32}<1.
+\]
+The strict inequalities hold in a neighborhood, proving local uniform
+absolute convergence, including differentiated series. A fully rational
+majorant is available at $R=1/2088>z_0$:
+\[
+ 1-1296R=\frac{11}{29},\qquad
+ \frac{108R}{(1-1296R)^3}=\frac{2523}{2662},\qquad
+ \sum_n\left|\binom{2n}{n}a_n(-324)\right|R^n
+       \leq\frac{7018}{139}.
+\]
+For example, the absolute tail of \eqref{eq:main} after $n=N-1$ is at most
+\[
+ \frac{7018}{139}\left(\frac{29}{30}\right)^N
+                 \bigl(30(357N+103)+310590\bigr).
+\]
+Along $0\leq q\leq1/12$, both $|u(q)|$ and $v(q)$ increase, so this
+entire path lies in the same domain of the bivariate series. The leading
+coefficient of \eqref{eq:LB} in $\tht_q^3$ is
+\[
+ (2q-1)(6q+1)(8q+1)^3(16q+1),
+\]
+which has no zero on $0<q\leq1/12$. For $0\leq x\leq x_0$,
+$K(x)$ and $\sqrt{G(x)}$ take their positive branches, and no singularity
+of \eqref{eq:LZ} is crossed. The identities proved near the origin
+therefore extend to the required point.
+
+\section{Exact certificates and disclosure}
+From the repository root, run the complete verification entry point:
+\begin{quote}\small\ttfamily
+python ramanujan-series/sun90-identity/verify.py
+\end{quote}
+It stages the programs in \code{code/} and the inputs in
+\code{certificates/} into a temporary flat directory, runs all four
+components, and leaves tracked files unchanged. Python~3.9 or later and
+SymPy~1.14.0 are required. Component JSON reports named below are generated
+in that temporary directory; their contents are retained under
+\code{component_results} in \code{reproducibility/full_verification.json}.
+The ancillary files have distinct roles.
+The differential-algebra verification is performed by
+\code{verify_sun90.py}, using only
+\code{prize_congruence_curve90_jet_certificate.json} alongside it in the
+staged directory. This component checks the coefficient-ratio PDEs, the Gauss pullback and Ore
+factorization, all jet multipliers, the algebraic modular pullback,
+and the final constants and convergence majorant. Its modular special-value
+comparison is consistent with \eqref{eq:value}. The general modular data
+and the special value are established independently of that comparison
+by the eta/Sturm and Fricke proofs above, with the following additional
+certificates:
+\begin{itemize}
+\item \code{sun90_modparam_verify.py} independently computes the eta
+      modularity congruences, characters and all twelve cusp orders, checks
+      the weight-$4$ and weight-$8$ identities through the complete Sturm
+      bounds $48$ and $96$, and verifies the derivative covariance,
+      the linear period equation, and the positive sign bound
+      \eqref{eq:Lpositive}. It imports no earlier project script.
+\item \code{sun90_modparam_result.json} records these exact results,
+      the cusp table, and the Fourier-series hashes.
+\item \code{sun90_modparam_proof.txt} gives a separate prose account of
+      the modularity hypotheses and the same independent proof.
+\item \code{prize90_geometry_mod7_result.json} specifies the polynomial
+      \eqref{eq:Phi}. The discovery script alone is not its proof.
+\item \code{prize90_geometry_mod7_sturm.py} proves the modular identity
+      through the complete Sturm bound; its result is recorded in
+      \code{prize90_geometry_mod7_sturm_result.json}.
+\item \code{prize90_geometry_cm_verify.py} checks the rational nome bounds,
+      isolates the CM root, and verifies the implicit derivatives and
+      \eqref{eq:lambda}; its result is recorded in
+      \code{prize90_geometry_cm_verify_result.json}.
+\item \code{verify_sun90_full.py} runs the independent general
+      parametrization, algebraic bridge, degree-seven Sturm, and CM
+      programs in sequence, checks that their conclusions agree, and
+      writes \code{sun90_full_verification.json}.
+\end{itemize}
+The independent general-parametrization component can also be run alone
+from the staged directory with \code{python sun90_modparam_verify.py}. The separate degree-seven Sturm certificate
+checks coefficients through degree $6144$,
+including the constant term, at weight $64$ and level $420$. Its polynomial
+string has SHA-256 digest
+\begin{quote}\small\ttfamily
+b24469bdc909d58bce0e29b1dc0e51b26\\
+a9c47d98d5b19a7f8f6d5cad43fa768.
+\end{quote}
+The table in \eqref{eq:Phi} also specifies this polynomial without relying
+on a digest. No floating-point root recognition is used in the proof.
+
+\paragraph{AI assistance and submission status.}
+OpenAI Codex assisted with symbolic exploration, organization of the
+argument, and preparation of the exact verification programs and this
+manuscript. The author is 李想. The external mathematical
+inputs and the executable certificates are disclosed above. The discovery
+computations, including exploratory geometric and numerical calculations,
+are not assumptions of the proof. Version~1 was emailed to the problem's
+author on 16 October 2026. This public Version~2 has not been emailed
+separately. Independent external review, first-proof priority, and prize
+eligibility remain unconfirmed.
+
+\begin{thebibliography}{9}
+\bibitem{Sun}
+Z.-W.~Sun, \emph{List of conjectural series for powers of $\pi$ and other
+constants}, arXiv:1102.5649v47, 2014.
+\url{https://arxiv.org/html/1102.5649}.
+
+\bibitem{vHTY}
+M.~van Hoeij, W.-L.~Tsai and D.~Ye,
+\emph{The modularity of Z.-W.~Sun's conjectural formulas for $1/\pi$},
+arXiv:2410.19289v2, 2024.
+\url{https://arxiv.org/html/2410.19289v2}.
+
+\bibitem{CCY}
+J.~M.~Campbell, S.~Cooper and D.~Ye,
+\emph{Quadratic irrational analogues of Ramanujan's series for $1/\pi$},
+arXiv:2602.09352v1, 2026. During discovery, Tables 2--4
+suggested the candidate eta quotients and polynomials, and Table~50
+provided candidate CM data. The required general identities are
+independently proved in Section~\ref{sec:modparam}, and the CM data and
+weighted evaluation are independently proved in the following two
+sections. No table identity or special value is assumed as a theorem.
+\url{https://arxiv.org/html/2602.09352v1}.
+
+\bibitem{Newman}
+M.~Newman, \emph{Construction and application of a class of modular
+functions (II)}, Proceedings of the London Mathematical Society
+\textbf{s3-9} (1959), 373--387.
+\url{https://doi.org/10.1112/plms/s3-9.3.373}.
+
+\bibitem{Ligozat}
+G.~Ligozat, \emph{Courbes modulaires de genre 1},
+Bulletin de la Soci\'et\'e math\'ematique de France, M\'emoire
+\textbf{43} (1975), 80~pp.
+\url{https://www.numdam.org/item/MSMF_1975__43__5_0/}.
+
+\bibitem{Sturm}
+J.~Sturm, \emph{On the congruence of modular forms}, in
+\emph{Number Theory (New York, 1984--1985)}, Lecture Notes in Mathematics
+\textbf{1240}, Springer, 1987, pp.~275--280.
+\end{thebibliography}
+\end{document}

@@ -4,7 +4,8 @@ Project site: [lixiang90.github.io/vibemath](https://lixiang90.github.io/vibemat
 
 Research sources, papers, certificates, and audit records for arithmetic
 progressions of powers, magic squares of squares, arithmetic progressions on
-elliptic curves, and incidence-geometric orchard constructions.
+elliptic curves, incidence-geometric orchard constructions, and Ramanujan-type
+series.
 
 The repository is organized as `theme/paper`.  A directory may be a completed
 paper or a clearly labelled long-term paper project.  Mathematical correctness,
@@ -15,6 +16,7 @@ over journal-specific formatting.
 
 | Theme / paper | Status | Main result or current boundary |
 |---|---|---|
+| `ramanujan-series/sun90-identity` | public preprint + exact certificates | A proof of Sun's equation (5.9), the double series for `90/pi`, via a bivariate period, an algebraic modular transformation, and independent eta/Sturm and Fricke arguments. External peer review, first-proof priority, and prize eligibility remain unconfirmed. |
 | `incidence-geometry/four-tree-orchard` | verified short note | For every `n >= 28`, an explicit integer-coordinate configuration gives `floor((n^2+12)/28)` four-point lines. In particular, it improves the known lower bounds for OEIS A172992 at `n=59,60` to `124,129`; optimality is not claimed. |
 | `square-progressions/seven-consecutive-squareclasses` | internally accepted + Round12 novelty cross-review PASS | For integer `t`, the equality patterns of the nonzero block `t,...,t+6` with affine rational squareclass rank at most two are reduced through the exact chain `651 -> 343 -> 284 -> 98 -> 54 -> 35 -> 23 -> 15 -> 10 -> 7 -> 4 -> 2`.  Realizability or impossibility of the final 2 patterns, and therefore `R_2(7)`, remain open. |
 | `powers-in-progressions/pure-cubic-five-term` | internally accepted + Round12 novelty cross-review PASS/HIGH-CAUTION | `R^times_(3,1)(5)=4`; six of the initial 31 four-hit models yield infinite families, and a seventh has a rigorously verified nondegenerate point.  The Round09 reconstruction groups its 29-model input into 25 clusters under the explicitly stated permutation action.  Seven models are closed for existence and 24 remain open; no infinite family is claimed for the seventh genus-four source. |
@@ -34,6 +36,11 @@ evidence, never as proof that a result is first.
 The sole named author of the three research-ready manuscripts is
 `Codex (GPT-5.6-sol)`.  No affiliation, contact address, ORCID, funding source,
 venue selection, or actual journal submission is asserted.
+
+The manuscript in `ramanujan-series/sun90-identity` is authored by **李想
+(Li Xiang)**. Its project README discloses Codex assistance and the original
+email submission to Professor Sun; the author attribution for the earlier
+three manuscripts remains as stated above.
 
 The Round12 working tree incorporates three primary-source novelty audits and
 their cross-reviews.  All three cross-reviews pass under explicit residual-risk

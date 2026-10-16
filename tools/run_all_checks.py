@@ -155,6 +155,11 @@ def main() -> None:
         run_group(name, mappings, modules)
     elliptic_directory, elliptic_modules = elliptic_group()
     run_direct("campbell-selmer", elliptic_directory, elliptic_modules)
+    print("\n=== sun90: exact certificate components ===", flush=True)
+    subprocess.run(
+        [sys.executable, str(ROOT / "ramanujan-series" / "sun90-identity" / "verify.py")],
+        cwd=ROOT, env=test_environment(), check=True,
+    )
     print("\nAll archived mathematical checks passed.")
 
 

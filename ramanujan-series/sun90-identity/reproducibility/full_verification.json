@@ -1,0 +1,220 @@
+{
+  "status": "all four exact certificate components passed",
+  "identity": "Sun equation (5.9), value 90/pi",
+  "particular_literature_table_values_assumed": false,
+  "discovery_reference": "Campbell--Cooper--Ye, arXiv:2602.09352v1, Tables 2-4 and 50",
+  "standard_mathematical_inputs": [
+    "eta-quotient modularity, character and cusp-order criteria",
+    "Dedekind eta transformation law",
+    "logarithmic derivative of eta and derivative covariance",
+    "Sturm theorem for modular forms"
+  ],
+  "arguments_supplied_by_paper": [
+    "The modularity and holomorphy hypotheses for the exact Sturm checks",
+    "The eta/Fricke differentiation of the weighted CM period",
+    "Analytic continuation, signs, and convergence arguments"
+  ],
+  "scope_note": "The suite checks explicit exact computational identities. The paper supplies the standard-theorem applications and analytic arguments; running the suite alone is not a complete proof review.",
+  "Fricke_argument_verified_by_programs": false,
+  "component_results": {
+    "sun90_modparam_verify.py": {
+      "status": "independently proved level-60 eta parametrization",
+      "literature_table_data_used_as_theorems": false,
+      "standard_theorems": [
+        "eta-quotient modularity and cusp-order criterion",
+        "E2 logarithmic derivative of eta",
+        "derivative covariance / Rankin-Cohen bracket",
+        "Sturm bound theorem"
+      ],
+      "level": 60,
+      "index": 144,
+      "weight4_sturm_bound": 48,
+      "weight8_sturm_bound": 96,
+      "coefficients_exactly_checked_through": 96,
+      "identity4": "(D log X)^2 = G(X) Z^2",
+      "identity8": "2 Z D^2 Z - 3 (D Z)^2 = Z^4 J(X)",
+      "linear_ode": "G delta^3 Z + (3/2) delta(G) delta^2 Z + ((1/2)delta^2(G)-J)delta Z -(1/2)delta(J) Z = 0",
+      "G_coefficients": [
+        1,
+        -6,
+        17,
+        -48,
+        68,
+        -96,
+        64
+      ],
+      "J_coefficients": [
+        0,
+        4,
+        -32,
+        160,
+        -332,
+        640,
+        -576
+      ],
+      "cusp_orders": [
+        {
+          "denominator": 1,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 2,
+          "X_order": "-2",
+          "Z_order": "6",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "12"
+        },
+        {
+          "denominator": 3,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 4,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 5,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 6,
+          "X_order": "-2",
+          "Z_order": "6",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "12"
+        },
+        {
+          "denominator": 10,
+          "X_order": "-2",
+          "Z_order": "6",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "12"
+        },
+        {
+          "denominator": 12,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 15,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 20,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        },
+        {
+          "denominator": 30,
+          "X_order": "-2",
+          "Z_order": "6",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "12"
+        },
+        {
+          "denominator": 60,
+          "X_order": "1",
+          "Z_order": "0",
+          "G_X_Z_squared_order": "0",
+          "J_X_Z_fourth_order": "1"
+        }
+      ],
+      "positive_sign_at_CM_nome_bound": "0<Q<59/500",
+      "L_lower_exact": "13756292841394951603183652359942189307920202771412587569876056187449531752029415599066757689979491946734800268449900088875164315512619363011411498127765872669699250308087977364045199948896868958093676651635370409744689380895111148488190129977017179035718306870702553632923467824017241988417078718192919856709947596183964569055601253579073893816067218526766941575332078175191501105695358724577629939964282682828918392321598744081473742602324278235802450237474989477149904005966739828841/16731549917944934683872548998093711681285036559151196275272437988426567077852774613256838511104903938272720570103324493353863953610958716920113236568080552477104133490391300343933549566310835958103056212358761502435301762545665926430049615120556139768001070875472461745284080511659595518107568025230546215959865392636533405824947611775044721718874151175388093403004897805447242431281327182673749163432290921338351515240939070173648243390215001601134589193575069544828354345887974578841",
+      "X_series_sha256": "051b4f7f0d6e5a53fd6f2fa3a5cc1ddd7f61b8911419ed2bec7fc233ca6be24a",
+      "Z_series_sha256": "2778a3314e67ffd9ae755b6867f3c83877da4293c8c4324ddb3b8bac561efcde"
+    },
+    "verify_sun90.py": {
+      "all_exact_checks_passed": true,
+      "scope": "exact differential-algebra bridge, constants, and convergence majorant",
+      "value": "90/pi",
+      "discovery_reference": "arXiv:2602.09352v1, Tables 2-4 and 50",
+      "particular_literature_table_values_assumed": false,
+      "general_modular_parametrization_certificate": "sun90_modparam_verify.py",
+      "weighted_CM_evaluation_proof": "paper: independent Fricke differentiation",
+      "Fricke_argument_verified_by_this_program": false,
+      "prize_priority_or_payment_confirmed": false
+    },
+    "prize90_geometry_mod7_sturm.py": {
+      "status": "proved modular identity by exact Sturm bound",
+      "level": 420,
+      "weight": 64,
+      "index": 1152,
+      "sturm_bound": 6144,
+      "common_q_shift": 256,
+      "coefficients_verified_zero_through": 6144,
+      "polynomial_sha256": "b24469bdc909d58bce0e29b1dc0e51b26a9c47d98d5b19a7f8f6d5cad43fa768",
+      "diagonal": "-x**2*(2*x - 1)**2*(4*x**2 - 10*x + 1)*(4*x**2 + 2*x + 1)*(4*x**3 + 2*x - 1)*(16*x**3 - 8*x**2 - 1)",
+      "target_lambda_from_implicit_derivatives": "3/2 - 11*sqrt(21)/42",
+      "target_second_implicit_derivative": "32*sqrt(21)/63 + 56/15",
+      "elapsed_seconds": 7.04418749999968,
+      "cm_branch_certificate": "prize90_geometry_cm_verify.py: exact rational eta-product bounds and root isolation"
+    },
+    "prize90_geometry_cm_verify.py": {
+      "status": "exact rational CM branch and implicit derivative checks passed",
+      "modular_polynomial_proof_dependency": "prize90_geometry_mod7_sturm.py",
+      "cm_tau": "i*sqrt(7/60)",
+      "q_lower": "29/250",
+      "q_upper": "59/500",
+      "X_lower_exact": "7247145028492619198776214361488139426445072226002500090184345786627235910117814141561839496784519525219652934393770254995787850054065250930188885264374382376600613/72280144832366962267163520057996114095052083333333333331847604839534124743227554385110785671457692356549609937112236295069474876867995738349290555155027200562633250",
+      "X_upper_exact": "4047838350137074788411458332752992164780653201789953598305031476470644996979153674387/37708993726848989728500278753403640557912720465294337488117330077727262632885924625000",
+      "X_interval": "(1/10,11/100)",
+      "diagonal_roots_in_interval": 1,
+      "proved_X60_CM_value": "5/4 - sqrt(21)/4",
+      "proved_lambda60_CM_value": "3/2 - 11*sqrt(21)/42",
+      "lambda_formula": "1 + x*Gprime/(2*G) - x*Ysecond/2",
+      "scope": "exact arithmetic checks of the CM branch and implicit derivatives",
+      "general_modular_parametrization_certificate": "sun90_modparam_verify.py",
+      "weighted_CM_evaluation_proof": "paper: independent Fricke differentiation",
+      "Fricke_argument_verified_by_this_program": false,
+      "particular_literature_table_values_assumed": false,
+      "priority_or_prize_eligibility_verified": false
+    }
+  },
+  "program_and_data_sha256": {
+    "sun90_modparam_verify.py": "9457abf224291899ec71eeb0077e1930cf59bd192df6dabb73f4e0667fe1597d",
+    "verify_sun90.py": "fb9d2e1156f6965253414a8c14ec9bdef3d0f5d28bf017d7e934bdc1fd775dc1",
+    "prize90_geometry_mod7_sturm.py": "4f212e3bc941292be1bee7bafcd3b03aa9ab4619db7ef682d31180481a149031",
+    "prize90_geometry_cm_verify.py": "ab1fed39fb1840c4cefd5fcdb9158c8696758e81c31283fb5ab279211aa319d5",
+    "prize_congruence_curve90_jet_certificate.json": "4a51a6231f27dc9b4542c72159d730e2f7d350d4d0fe0e9f843a365f20612c6e",
+    "prize90_geometry_mod7_result.json": "3b33b9304ad0ea298045e9e12ae45800a28b52f77bd42b3244ba41bb320e056d",
+    "verify_sun90_full.py": "f65cacfb67d3cfe2a7cfd24dd9bdeb8f90181f676ea8d6cffb9284fd05562ece"
+  },
+  "first_proof_priority_confirmed_by_sponsor": false,
+  "prize_eligibility_confirmed_by_sponsor": false,
+  "reproduction_environment": {
+    "python": "3.14.5",
+    "sympy": "1.14.0"
+  },
+  "public_source_sha256": {
+    "code/sun90_modparam_verify.py": "9457abf224291899ec71eeb0077e1930cf59bd192df6dabb73f4e0667fe1597d",
+    "code/verify_sun90.py": "fb9d2e1156f6965253414a8c14ec9bdef3d0f5d28bf017d7e934bdc1fd775dc1",
+    "code/prize90_geometry_mod7_sturm.py": "4f212e3bc941292be1bee7bafcd3b03aa9ab4619db7ef682d31180481a149031",
+    "code/prize90_geometry_cm_verify.py": "ab1fed39fb1840c4cefd5fcdb9158c8696758e81c31283fb5ab279211aa319d5",
+    "code/verify_sun90_full.py": "f65cacfb67d3cfe2a7cfd24dd9bdeb8f90181f676ea8d6cffb9284fd05562ece",
+    "certificates/prize_congruence_curve90_jet_certificate.json": "4a51a6231f27dc9b4542c72159d730e2f7d350d4d0fe0e9f843a365f20612c6e",
+    "certificates/prize90_geometry_mod7_result.json": "3b33b9304ad0ea298045e9e12ae45800a28b52f77bd42b3244ba41bb320e056d",
+    "verify.py": "f0a3f7d792c7d09893c72812206c78f5aa2609b37a6b621d155ea1be45ca91c3",
+    "requirements.txt": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+  },
+  "staged_hashes_match_public_sources": true
+}
